@@ -197,4 +197,4 @@ function fetchAndUpdate() {
 
 fetchAndUpdate();
 
-const updateLoop = setInterval(fetchAndUpdate, 15000);
+const updateLoop = setInterval(fetchAndUpdate, 5000);
