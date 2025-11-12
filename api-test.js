@@ -1,5 +1,5 @@
 function fetchAndUpdate() {
-    fetch("https://live.euroleague.net/api/PlaybyPlay?gamecode=83&seasoncode=E2025")
+    fetch("https://live.euroleague.net/api/PlaybyPlay?gamecode=99&seasoncode=E2025")
         .then(response => response.json())
         .then(data => {
             const players = {};
@@ -48,6 +48,7 @@ function fetchAndUpdate() {
             });
             console.log(players);
 
+            // stats calculation
             allPlays.forEach(play => {
                 const player = players[play.PLAYER_ID];
                 if (!player) return;
@@ -131,22 +132,27 @@ function fetchAndUpdate() {
                         player.fantasy -= 5;
                     }
                 }
+
+                
             })
 
-            console.clear();
-            console.table(Object.values(players).map(p => ({
-                Name: p.name,
-                Team: p.team,
-                Points: p.stats.points,
-                Rebounds: p.stats.total_rebounds,
-                Assists: p.stats.assists,
-                Fantasy_Points: p.fantasy
-            })));
+            if (data.Live === true) {
+                console.clear();
+                console.table(Object.values(players).map(p => ({
+                    Name: p.name,
+                    Team: p.team,
+                    Points: p.stats.points,
+                    Rebounds: p.stats.total_rebounds,
+                    Assists: p.stats.assists,
+                    Fantasy_Points: p.fantasy
+                })));
+            }
 
             if (data.Live === false) {
                 clearInterval(updateLoop);
                 const teamTotal = {};
 
+                // team total points calculation
                 for (const id in players) {
                     const player = players[id];
                     const team = player.team;
@@ -156,38 +162,56 @@ function fetchAndUpdate() {
                     }
                     
                     teamTotal[team].points += player.stats.points;
+
                 }
-                console.table(teamTotal);
 
-                const teamCodes = Object.keys(teamTotal);
-                const [team1, team2] = teamCodes;
-                
-                if (teamCodes.length === 2) {
-                    let winnerTeam;
+                // winning team calculation
+                const teamsPlayed = Object.keys(teamTotal);
+                const teamOneScore = teamTotal[teamsPlayed[0]].points;
+                const teamTwoScore = teamTotal[teamsPlayed[1]].points;
+                let winningTeam;
 
-                    if (teamTotal[team1].points > teamTotal[team2].points) {
-                        winnerTeam = team1;
+                if (teamOneScore > teamTwoScore) {
+                     winningTeam = teamsPlayed[0];
+                }
+                else {
+                    winningTeam = teamsPlayed[1];
+                }
+                console.log('Winner is:', winningTeam);
+
+                // end game calculations
+                for (id in players) {
+                    const player = players[id];
+                    const team = player.team;
+
+                    if ((player.stats.points >= 10 && player.stats.total_rebounds >= 10 && player.stats.assists >= 10 && player.stats.steals >= 10)
+                    || (player.stats.points >= 10 && player.stats.total_rebounds >= 10 && player.stats.assists >= 10 && player.stats.blocks >= 10)) {
+                        player.fantasy += 100;
+                    }
+                    else if ((player.stats.points >= 10 && player.stats.total_rebounds >= 10 && player.stats.assists >= 10)
+                    || (player.stats.points >= 10 && player.stats.total_rebounds >= 10 && player.stats.blocks >= 10)
+                    || (player.stats.points >= 10 && player.stats.assists >= 10 && player.stats.steals >= 10)
+                    || (player.stats.total_rebounds >= 10 && player.stats.assists >= 10 && player.stats.blocks >= 10)) {
+                        player.fantasy += 30;
+                    }
+                    else if ((player.stats.points >= 10 && player.stats.total_rebounds >= 10)
+                    || (player.stats.points >= 10 && player.stats.assists >= 10)
+                    || (player.stats.total_rebounds >= 10 && player.stats.assists >= 10)) {
+                        player.fantasy += 10;
+                    }
+
+                    if (team === winningTeam) {
+                        player.fantasy += 1.5;
                     }
                     else {
-                        winnerTeam = team2;
+                        player.fantasy -= 1.5;
                     }
-
-                    for (const id in players) {
-                        if (players[id].team === winnerTeam) {
-                            players[id].fantasy += 1.5;
-                        }
-                    }
-                    console.clear();
-                    console.log("GAME FINISHED")
-                    console.table(Object.values(players).map(p => ({
-                        Name: p.name,
-                        Team: p.team,
-                        Points: p.stats.points,
-                        Rebounds: p.stats.total_rebounds,
-                        Assists: p.stats.assists,
-                        Fantasy_Points: p.fantasy
-                    })));
                 }
+
+                console.table(Object.values(players).map(p => ({
+                    Name: p.name,
+                    Fantasy_Points: p.fantasy
+                })));
             }
         })
         .catch(error => {
@@ -197,4 +221,4 @@ function fetchAndUpdate() {
 
 fetchAndUpdate();
 
-const updateLoop = setInterval(fetchAndUpdate, 5000);
+const updateLoop = setInterval(fetchAndUpdate, 20000);
