@@ -1,5 +1,5 @@
-function fetchAndUpdate() {
-    fetch("https://live.euroleague.net/api/PlaybyPlay?gamecode=99&seasoncode=E2025")
+export async function fetchAndUpdate() {
+    fetch("https://live.euroleague.net/api/PlaybyPlay?gamecode=104&seasoncode=E2025")
         .then(response => response.json())
         .then(data => {
             const players = {};
@@ -46,7 +46,6 @@ function fetchAndUpdate() {
                     }
                 }
             });
-            console.log(players);
 
             // stats calculation
             allPlays.forEach(play => {
@@ -132,12 +131,10 @@ function fetchAndUpdate() {
                         player.fantasy -= 5;
                     }
                 }
-
-                
             })
 
             if (data.Live === true) {
-                console.clear();
+                // console.clear();
                 console.table(Object.values(players).map(p => ({
                     Name: p.name,
                     Team: p.team,
@@ -146,6 +143,17 @@ function fetchAndUpdate() {
                     Assists: p.stats.assists,
                     Fantasy_Points: p.fantasy
                 })));
+
+                const playerCount = Object.values(players).length;
+                const fantasyInfo = [];
+
+                for (let i = 0; i < playerCount; i++) {
+                    const playerName = Object.values(players)[i].name;
+                    const playerFantasyPoints = Object.values(players)[i].fantasy;
+
+                    fantasyInfo.push({ name: playerName, fantasy_points: playerFantasyPoints});
+                }
+                return fantasyInfo;  
             }
 
             if (data.Live === false) {
@@ -207,7 +215,6 @@ function fetchAndUpdate() {
                         player.fantasy -= 1.5;
                     }
                 }
-
                 console.table(Object.values(players).map(p => ({
                     Name: p.name,
                     Fantasy_Points: p.fantasy
