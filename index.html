@@ -4,16 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <title>EL Fantasy Calculator</title>
 </head>
 <body>
     <div class="main-container">
-        <div class="player-card">
-            <div class="player-fantasy-points">
-
+        <div class="navbar">
+            Fantasy Calculator
+        </div>
+        <div class="content-grid">
+            <div class="game-select-disclaimer js-select-game">
+                Select Game
+            </div>
+            <!-- GAME SELECTOR -->
+            <!-- <div class="game-selector">
+                <div class="game-tab">
+                    <img class="home-logo" src="images/teams/FCB.svg" alt="">
+                    <div class="game-info">
+                        <h2 class="home-name">FCB</h2>
+                        <h4 class="game-vs">vs</h4>
+                        <h2 class="away-name">OLY</h2>
+                    </div>
+                    <img class="away-logo" src="images/teams/OLY.svg" alt="">
+                </div>
+                <div class="game-tab">
+                    <img class="home-logo" src="images/teams/FCB.svg" alt="">
+                    <div class="game-info">
+                        <h2 class="home-name">FCB</h2>
+                        <h4 class="game-vs">vs</h4>
+                        <h2 class="away-name">OLY</h2>
+                    </div>
+                    <img class="away-logo" src="images/teams/OLY.svg" alt="">
+                </div>
+                <div class="game-tab">
+                    <img class="home-logo" src="images/teams/FCB.svg" alt="">
+                    <div class="game-info">
+                        <h2 class="home-name">FCB</h2>
+                        <h4 class="game-vs">vs</h4>
+                        <h2 class="away-name">OLY</h2>
+                    </div>
+                    <img class="away-logo" src="images/teams/OLY.svg" alt="">
+                </div>
+                <div class="game-tab">
+                    <img class="home-logo" src="images/teams/FCB.svg" alt="">
+                    <div class="game-info">
+                        <h2 class="home-name">FCB</h2>
+                        <h4 class="game-vs">vs</h4>
+                        <h2 class="away-name">OLY</h2>
+                    </div>
+                    <img class="away-logo" src="images/teams/OLY.svg" alt="">
+                </div>
+                <div class="game-tab">
+                    <img class="home-logo" src="images/teams/FCB.svg" alt="">
+                    <div class="game-info">
+                        <h2 class="home-name">FCB</h2>
+                        <h4 class="game-vs">vs</h4>
+                        <h2 class="away-name">OLY</h2>
+                    </div>
+                    <img class="away-logo" src="images/teams/OLY.svg" alt="">
+                </div>
+            </div> -->
+            <!-- PLAYER STATS -->
+            <div class="stats-container">
+                <!-- HOME TEAM -->
+                <div class="home-column">
+                    <div class="home-team-name">
+                        <span class="js-home-team-name"></span>
+                    </div>
+                    <div class="home-team team-box">
+                    </div>
+                </div>
+                <!-- AWAY TEAM -->
+                <div class="away-column">
+                    <div class="away-team-name">
+                        <span class="js-away-team-name"></span>
+                    </div>
+                    <div class="away-team team-box">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script type="module" src="./dom.js"></script>
+    <script type="module" src="dom.js"></script>
 </body>
 </html>
