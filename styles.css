@@ -25,7 +25,7 @@ body {
 
 .content-grid {
     display: grid;
-    grid-template-rows: 1fr 2fr 6fr;
+    grid-template-rows: auto;
     row-gap: 30px;
 }
 
@@ -49,16 +49,22 @@ body {
 .game-selector {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    justify-content: flex-start;
+    align-items: stretch;
+    box-sizing: border-box;
+    gap: 10px;
     width: 75%;
-    height: 10em;
+    height: 100px;
+    min-height: 0;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
     overflow-x: auto;
+    overflow-y: hidden;
     scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .game-selector::-webkit-scrollbar {
@@ -68,16 +74,33 @@ body {
 .game-tab {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    flex: 0 0 auto;
+    margin: 0;
     width: 400px;
     height: 100px;
     color: white;
     border: .5px solid #474747;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, .5);
+    transform: scale(0.95);
+    transition: transform 0.25s;
+    transform-origin: center;
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+    transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
-.game-tab:hover {
+.game-tab.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(0.95);
+}
+
+.game-tab:hover,
+.game-tab.active {
     border: .5px solid #FF6200;
+    opacity: 1;
+    transform: scale(1);
 }
 
 .game-info {
@@ -85,7 +108,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: inherit;
     gap: 15px;
 }
 
@@ -95,11 +118,16 @@ body {
     text-align: center;
 }
 
-.home-logo,
-.away-logo {
-    height: 45%;
-    width: auto;
-    margin: 10px;
+.team-logo {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    align-items: center;
+}
+
+.team-logo img {
+    height: 80%;
+    padding: 10px;
 }
 
 .stats-container {
@@ -195,6 +223,20 @@ body {
     font-size: 12px;
 }
 
+.loading-alert {
+    width: 100%;
+    padding: 20px 0;
+
+    text-align: center;
+    color: #FF6200;
+
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+
+    opacity: 0.8;
+}
+
 @media (max-width: 1500px) {
     .player-tab {
         grid-template-columns: 3fr 1fr;
@@ -210,12 +252,42 @@ body {
     }
 }
 
-@media (max-width: 856px) {
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-rows: auto;
+        row-gap: 16px;
+    }
+
     .stats-container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         row-gap: 20px;
+    }
+
+    .game-selector {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        -webkit-mask-image: none !important;
+        mask-image: none !important;
+    }
+
+    .game-tab {
+        height: 40px;
+        width: 100%;
+    }
+
+    .game-tab img {
+        height: inherit;
+    }
+
+    .game-tab:hover {
+        transform: scale(1);
     }
 }
 

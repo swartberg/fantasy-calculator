@@ -1,19 +1,9 @@
 import { fetchAndUpdate } from "./api-stats.js";
+import { TEAM_NAMES } from "./teams.js";
+import { gameSelect } from "./game-selector.js";
 
-const selectGameBtn = document.querySelector(".js-select-game");
+
 let updateLoop = null;
-
-selectGameBtn.addEventListener("click", () => {
-    const gameCode = prompt("Enter game number:");
-
-    if (!gameCode) return;
-
-    console.log("Selected game:", gameCode);
-
-    localStorage.setItem("gameCode", gameCode);
-
-    loadGame(gameCode);
-});
 
 async function loadGame(gameCode) {
     if (updateLoop) {
@@ -24,28 +14,7 @@ async function loadGame(gameCode) {
     await getStats(gameCode);
 }
 
-const TEAM_NAMES = {
-    MCO: "AS Monaco",
-    RED: "Crvena Zvezda Belgrade",
-    ZAL: "Žalgiris Kaunas",
-    PAN: "Panathinaikos Athens",
-    MAD: "Real Madrid",
-    PRS: "Paris Basketball",
-    PAM: "Valencia Basket",
-    TEL: "Maccabi Tel Aviv",
-    BAS: "Baskonia Vitoria-Gasteiz",
-    ULK: "Fenerbahce Istanbul",
-    HTA: "Hapoel Tel Aviv",
-    OLY: "Olympiacos Piraeus",
-    IST: "Anadolu Efes Istanbul",
-    MUN: "Bayern Munich",
-    DUB: "Dubai Basketball",
-    MIL: "Emporio Armani Milan",
-    BAR: "FC Barcelona",
-    VIR: "Virtus Bologna",
-    ASV: "ASVEL Villeurbanne",
-    PAR: "Partizan Belgrade",
-}
+gameSelect(loadGame);
 
 async function getStats(gameCode) {
     const result = await fetchAndUpdate(gameCode);
