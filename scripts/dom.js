@@ -2,8 +2,16 @@ import { fetchAndUpdate } from "./api-stats.js";
 import { TEAM_NAMES } from "./teams.js";
 import { gameSelect } from "./game-selector.js";
 
-
 let updateLoop = null;
+let statsContainer = null;
+
+document.addEventListener("DOMContentLoaded", () => {
+    statsContainer = document.querySelector(".stats-container");
+
+    statsContainer.classList.remove("is-active");
+
+    gameSelect(loadGame);
+});
 
 async function loadGame(gameCode) {
     if (updateLoop) {
@@ -17,6 +25,8 @@ async function loadGame(gameCode) {
 gameSelect(loadGame);
 
 async function getStats(gameCode) {
+    statsContainer.classList.remove("is-active");
+
     const result = await fetchAndUpdate(gameCode);
     if(!result || result.players.length === 0) return;
 
@@ -79,6 +89,7 @@ async function getStats(gameCode) {
             awayContainer.appendChild(playerTab);
         }
     });
+    statsContainer.classList.add("is-active");
 
     if (isLive && !updateLoop) {
         updateLoop = setInterval(() => {
