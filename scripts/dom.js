@@ -94,7 +94,7 @@ async function getStats(gameCode) {
     if (isLive && !updateLoop) {
         updateLoop = setInterval(() => {
             getStats(gameCode);
-        }, 5000);
+        }, 10000);
     }
 
     if (!isLive && updateLoop) {

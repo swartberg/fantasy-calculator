@@ -38,6 +38,10 @@ async function getRoundGames(round, wrapper, loadGame) {
         const gameTab = document.createElement("div");
         gameTab.className = "game-tab";
 
+        if (game.isLive === true) {
+            gameTab.classList.add("is-live");
+        }
+
         gameTab.innerHTML = `
             <div class="team-logo">
                 <img class="home-logo" src="images/teams/${game.homeTeam}.svg" alt="${game.homeTeam}">
@@ -86,6 +90,7 @@ async function getGameTeams(gameCode) {
     return {
         gameCode,
         homeTeam: teams[0],
-        awayTeam: teams[1]
+        awayTeam: teams[1],
+        isLive: result.Live === true
     };
 }

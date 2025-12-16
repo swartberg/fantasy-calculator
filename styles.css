@@ -64,7 +64,7 @@ body {
     box-sizing: border-box;
     gap: 10px;
     width: 75%;
-    height: 100px;
+    height: 120px;
     min-height: 0;
     margin: 0 auto;
     position: relative;
@@ -75,6 +75,7 @@ body {
     scroll-behavior: smooth;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 10px;
 }
 
 .game-selector::-webkit-scrollbar {
@@ -111,6 +112,24 @@ body {
     border: .5px solid #FF6200;
     opacity: 1;
     transform: scale(1);
+}
+
+.game-tab.is-live {
+    border: 2px solid #ff2d2d;
+    box-shadow: 0 0 6px rgba(255, 45, 45, 0.6);
+    animation: livePulse 1.6s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+    0% {
+        box-shadow: 0 0 4px rgba(255, 45, 45, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(255, 45, 45, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 4px rgba(255, 45, 45, 0.4);
+    }
 }
 
 .game-info {
