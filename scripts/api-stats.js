@@ -191,10 +191,10 @@ export async function fetchAndUpdate(gameCode) {
                     player.fantasy -= 1.5;
                 }
             }
-            console.table(Object.values(players).map(p => ({
-                Name: p.name,
-                Fantasy_Points: p.fantasy
-            })));
+            // console.table(Object.values(players).map(p => ({
+            //     Name: p.name,
+            //     Fantasy_Points: p.fantasy
+            // })));
         }
         return {
             players: Object.values(players).map(p => ({
@@ -214,3 +214,5 @@ export async function fetchAndUpdate(gameCode) {
         return [];
     }
 }
+
+window.fetchAndUpdate = fetchAndUpdate;

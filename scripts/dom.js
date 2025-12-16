@@ -48,7 +48,7 @@ async function getStats(gameCode) {
 
     players.forEach(player => {
         const playerName = (player.Name).split(",");
-        console.log(playerName)
+        // console.log(playerName)
         const playerTab = document.createElement("div");
         playerTab.className = "player-tab";
 
@@ -94,7 +94,7 @@ async function getStats(gameCode) {
     if (isLive && !updateLoop) {
         updateLoop = setInterval(() => {
             getStats(gameCode);
-        }, 20000);
+        }, 5000);
     }
 
     if (!isLive && updateLoop) {
