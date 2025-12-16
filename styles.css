@@ -103,7 +103,7 @@ body {
 }
 
 .game-tab.is-visible {
-    opacity: 1;
+    opacity: .5;
     transform: translateY(0) scale(0.95);
 }
 
