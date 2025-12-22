@@ -4,6 +4,8 @@ export async function fetchAndUpdate(gameCode) {
         const data = await response.json();
         const players = {};
 
+        let gameTime = data.ActualQuarter;
+
         const allPlays = [
             ...(data.FirstQuarter || []),
             ...(data.SecondQuarter || []),
@@ -161,7 +163,8 @@ export async function fetchAndUpdate(gameCode) {
             else {
                 winningTeam = teamsPlayed[1];
             }
-            console.log('Winner is:', winningTeam);
+
+            console.log("ActualQuarter:", data.ActualQuarter);
 
             // end game calculations
             for (const id in players) {
@@ -206,7 +209,8 @@ export async function fetchAndUpdate(gameCode) {
                 Turnovers: p.stats.turnovers,
                 Fantasy_Points: p.fantasy
         })),
-            Live: data.Live === true,  
+            Live: data.Live === true,
+            ActualQuarter: data.ActualQuarter,
     };
     }
     catch (error) {

@@ -36,21 +36,40 @@ async function getRoundGames(round, wrapper, loadGame) {
 
     games.forEach(game => {
         const gameTab = document.createElement("div");
+        let gameStatus = "-";
         gameTab.className = "game-tab";
+        const quarter = game.actualQuarter;
 
         if (game.isLive === true) {
             gameTab.classList.add("is-live");
+            if (quarter === 7){
+                gameStatus = "OT 3"
+            }
+            else if (quarter === 6) {
+                gameStatus = "OT 2"
+            }
+            else if (quarter === 5) {
+                gameStatus = "OT"
+            }
+            else {
+                gameStatus = `${quarter}Q`;
+            }
+        }
+        else if (game.isLive === false) {
+            gameStatus = "END";
         }
 
         gameTab.innerHTML = `
             <div class="team-logo">
                 <img class="home-logo" src="images/teams/${game.homeTeam}.svg" alt="${game.homeTeam}">
             </div>
-
             <div class="game-info">
-                <h2 class="home-name">${game.homeTeam}</h2>
-                <h4 class="game-vs">vs</h4>
-                <h2 class="away-name">${game.awayTeam}</h2>
+                <div class="game-time">${gameStatus}</div>
+                <div class="game-names">
+                    <h2 class="home-name">${game.homeTeam}</h2>
+                    <h4 class="game-vs">vs</h4>
+                    <h2 class="away-name">${game.awayTeam}</h2>
+                </div>
             </div>
 
             <div class="team-logo">
@@ -91,6 +110,7 @@ async function getGameTeams(gameCode) {
         gameCode,
         homeTeam: teams[0],
         awayTeam: teams[1],
-        isLive: result.Live === true
+        isLive: result.Live === true,
+        actualQuarter: result.ActualQuarter,
     };
 }

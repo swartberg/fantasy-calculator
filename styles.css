@@ -133,6 +133,19 @@ body {
 }
 
 .game-info {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.game-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    color: #474747;
+}
+
+.game-names {
     display: flex;
     flex-direction: row;
     justify-content: center;
