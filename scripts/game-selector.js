@@ -1,4 +1,5 @@
 import { fetchAndUpdate } from "./api-stats.js";
+import { TEAM_ABB } from "./teams.js";
 
 export function gameSelect(loadGame) {
     const roundSelector = document.querySelector(".js-select-round");
@@ -66,9 +67,9 @@ async function getRoundGames(round, wrapper, loadGame) {
             <div class="game-info">
                 <div class="game-time">${gameStatus}</div>
                 <div class="game-names">
-                    <h2 class="home-name">${game.homeTeam}</h2>
+                    <h2 class="home-name">${game.homeTeamAbb}</h2>
                     <h4 class="game-vs">vs</h4>
-                    <h2 class="away-name">${game.awayTeam}</h2>
+                    <h2 class="away-name">${game.awayTeamAbb}</h2>
                 </div>
             </div>
 
@@ -110,6 +111,8 @@ async function getGameTeams(gameCode) {
         gameCode,
         homeTeam: teams[0],
         awayTeam: teams[1],
+        homeTeamAbb: TEAM_ABB[teams[0]] || teams[0],
+        awayTeamAbb: TEAM_ABB[teams[1]] || teams[1],
         isLive: result.Live === true,
         actualQuarter: result.ActualQuarter,
     };

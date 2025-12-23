@@ -20,3 +20,27 @@ export const TEAM_NAMES = {
     ASV: "ASVEL Villeurbanne",
     PAR: "Partizan Belgrade",
 }
+
+
+export const TEAM_ABB = {
+    MCO: "ASM",
+    RED: "CZV",
+    ZAL: "ZAL",
+    PAN: "PAO",
+    MAD: "RMB",
+    PRS: "PBB",
+    PAM: "VAL",
+    TEL: "MAC",
+    BAS: "BSK",
+    ULK: "FEN",
+    HTA: "HTA",
+    OLY: "OLY",
+    IST: "EFS",
+    MUN: "BAY",
+    DUB: "DUB",
+    MIL: "EA7",
+    BAR: "BAR",
+    VIR: "VIR",
+    ASV: "ASV",
+    PAR: "PAR",
+}
