@@ -5,6 +5,7 @@
     font-family: "Unbounded", sans-serif;
 }
 
+
 body {
     background: #1B0C03;
     background: linear-gradient(
@@ -15,6 +16,7 @@ body {
 
     min-height: 100vh;
 }
+
 
 .navbar {
     display: flex;
@@ -31,6 +33,7 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
+
 
 .content-grid {
     display: grid;
@@ -755,6 +758,7 @@ body {
     .player-fpts {
         justify-content: flex-end;
     }
+
 }
 
 
@@ -874,38 +878,57 @@ body {
 
         height: 92px;
 
-        gap: 8px;
+        gap: 10px;
 
-        padding: 6px 25px 6px 25px;
+        padding: 6px 15px 6px 15px;
 
         margin: 0;
 
         overflow-x: auto;
-
         overflow-y: hidden;
+
+        /*
+            Make the horizontal nature obvious.
+            The next card will always peek into view.
+        */
+        scroll-snap-type: x mandatory;
+
+        scroll-padding-left: 15px;
+
+        scrollbar-width: none;
+
+        -webkit-overflow-scrolling: touch;
 
         -webkit-mask-image: linear-gradient(
             to right,
             transparent,
-            black 20px,
-            black calc(100% - 20px),
+            black 15px,
+            black calc(100% - 15px),
             transparent
         );
 
         mask-image: linear-gradient(
             to right,
             transparent,
-            black 20px,
-            black calc(100% - 20px),
+            black 15px,
+            black calc(100% - 15px),
             transparent
         );
     }
 
+    .game-selector::-webkit-scrollbar {
+        display: none;
+    }
+
     .game-tab {
-        width: calc(100vw - 70px);
+        /*
+            82% means approximately 18% of
+            the next card remains visible.
+        */
+        flex: 0 0 82%;
 
-        min-width: calc(100vw - 70px);
-
+        width: 82%;
+        min-width: 82%;
         max-width: 400px;
 
         height: 80px;
@@ -913,6 +936,8 @@ body {
         border-radius: 9px;
 
         transform: scale(.97);
+
+        scroll-snap-align: start;
     }
 
     .game-tab.is-visible {
@@ -1121,10 +1146,27 @@ body {
         font-size: 8px;
     }
 
-    .game-tab {
-        width: calc(100vw - 50px);
+    .game-selector {
+        padding-left: 10px;
+        padding-right: 10px;
 
-        min-width: calc(100vw - 50px);
+        gap: 8px;
+
+        scroll-padding-left: 10px;
+    }
+
+    .game-tab {
+        /*
+            Still leave a visible portion
+            of the following game on very
+            small screens.
+        */
+        flex: 0 0 84%;
+
+        width: 84%;
+        min-width: 84%;
+
+        max-width: none;
     }
 
     .stats-container {
@@ -1156,6 +1198,7 @@ body {
     }
 
 }
+
 
 /* =========================
    MY TEAM VIEW
@@ -1548,6 +1591,7 @@ body {
 
 }
 
+
 /* =========================
    SAVE TEAM
 ========================= */
@@ -1652,7 +1696,7 @@ body {
 
 
 /* =========================
-   MOBILE
+   MOBILE SAVE / LOCK
 ========================= */
 
 @media (max-width: 768px) {
