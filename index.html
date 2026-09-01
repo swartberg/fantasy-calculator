@@ -3,21 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet"
+    >
+
     <title>EL Fantasy Calculator</title>
 </head>
+
 <body>
+
     <div class="main-container">
+
+        <!-- NAVBAR -->
         <div class="navbar">
             Fantasy Calculator
         </div>
+
+
         <div class="content-grid">
+
+            <!-- ROUND SELECTOR -->
             <div class="game-select-wrapper">
+
                 <h6>Select round</h6>
-                <select class="game-select-disclaimer js-select-round">
+
+                <button
+                    class="round-current"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="round-grid"
+                >
+                    <span class="round-label">ROUND</span>
+                    <span class="round-number js-round-number">1</span>
+                </button>
+
+
+                <!-- ROUND GRID -->
+                <div class="round-grid" id="round-grid">
+
+                    <button class="round-tile" type="button" data-round="1">01</button>
+                    <button class="round-tile" type="button" data-round="2">02</button>
+                    <button class="round-tile" type="button" data-round="3">03</button>
+                    <button class="round-tile" type="button" data-round="4">04</button>
+                    <button class="round-tile" type="button" data-round="5">05</button>
+                    <button class="round-tile" type="button" data-round="6">06</button>
+                    <button class="round-tile" type="button" data-round="7">07</button>
+                    <button class="round-tile" type="button" data-round="8">08</button>
+
+                    <button class="round-tile" type="button" data-round="9">09</button>
+                    <button class="round-tile" type="button" data-round="10">10</button>
+                    <button class="round-tile" type="button" data-round="11">11</button>
+                    <button class="round-tile" type="button" data-round="12">12</button>
+                    <button class="round-tile" type="button" data-round="13">13</button>
+                    <button class="round-tile" type="button" data-round="14">14</button>
+                    <button class="round-tile" type="button" data-round="15">15</button>
+                    <button class="round-tile" type="button" data-round="16">16</button>
+
+                    <button class="round-tile" type="button" data-round="17">17</button>
+                    <button class="round-tile" type="button" data-round="18">18</button>
+                    <button class="round-tile" type="button" data-round="19">19</button>
+                    <button class="round-tile" type="button" data-round="20">20</button>
+                    <button class="round-tile" type="button" data-round="21">21</button>
+                    <button class="round-tile" type="button" data-round="22">22</button>
+                    <button class="round-tile" type="button" data-round="23">23</button>
+                    <button class="round-tile" type="button" data-round="24">24</button>
+
+                    <button class="round-tile" type="button" data-round="25">25</button>
+                    <button class="round-tile" type="button" data-round="26">26</button>
+                    <button class="round-tile" type="button" data-round="27">27</button>
+                    <button class="round-tile" type="button" data-round="28">28</button>
+                    <button class="round-tile" type="button" data-round="29">29</button>
+                    <button class="round-tile" type="button" data-round="30">30</button>
+                    <button class="round-tile" type="button" data-round="31">31</button>
+                    <button class="round-tile" type="button" data-round="32">32</button>
+
+                    <button class="round-tile" type="button" data-round="33">33</button>
+                    <button class="round-tile" type="button" data-round="34">34</button>
+                    <button class="round-tile" type="button" data-round="35">35</button>
+                    <button class="round-tile" type="button" data-round="36">36</button>
+                    <button class="round-tile" type="button" data-round="37">37</button>
+                    <button class="round-tile" type="button" data-round="38">38</button>
+
+                </div>
+
+
+                <!--
+                    Hidden original select.
+
+                    Kept because game-selector.js currently uses
+                    this element to control round selection.
+                -->
+                <select
+                    class="js-select-round round-select-hidden"
+                    aria-hidden="true"
+                    tabindex="-1"
+                >
                     <option value="1">Round 1</option>
                     <option value="2">Round 2</option>
                     <option value="3">Round 3</option>
@@ -57,30 +143,105 @@
                     <option value="37">Round 37</option>
                     <option value="38">Round 38</option>
                 </select>
+
             </div>
+
+
+            <!-- VIEW TABS -->
+            <div class="view-tabs">
+
+                <button
+                    class="view-tab js-view-tab is-active"
+                    data-view="game"
+                    type="button"
+                >
+                    Selected Game
+                </button>
+
+                <button
+                    class="view-tab js-view-tab"
+                    data-view="my-team"
+                    type="button"
+                >
+                    My Team
+                </button>
+
+            </div>
+
+
             <!-- GAME SELECTOR -->
             <div class="game-selector"></div>
-            <!-- PLAYER STATS -->
-            <div class="stats-container">
-                <!-- HOME TEAM -->
-                <div class="home-column">
-                    <div class="home-team-name">
-                        <span class="js-home-team-name"></span>
+
+
+            <!-- SELECTED GAME VIEW -->
+            <div class="view-container js-view-game">
+
+                <div class="stats-container">
+
+                    <!-- HOME TEAM -->
+                    <div class="home-column">
+
+                        <div class="home-team-name">
+                            <span class="js-home-team-name"></span>
+                        </div>
+
+                        <div class="home-team team-box">
+                        </div>
+
                     </div>
-                    <div class="home-team team-box">
+
+
+                    <!-- AWAY TEAM -->
+                    <div class="away-column">
+
+                        <div class="away-team-name">
+                            <span class="js-away-team-name"></span>
+                        </div>
+
+                        <div class="away-team team-box">
+                        </div>
+
                     </div>
+
                 </div>
-                <!-- AWAY TEAM -->
-                <div class="away-column">
-                    <div class="away-team-name">
-                        <span class="js-away-team-name"></span>
-                    </div>
-                    <div class="away-team team-box">
-                    </div>
-                </div>
+
             </div>
+
+
+            <!-- MY TEAM VIEW -->
+            <div class="view-container js-view-my-team">
+
+                <div class="my-team-container">
+
+                    <div class="my-team-empty">
+
+                        <span>MY TEAM</span>
+
+                        <p>
+                            Select players from a game to add them here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
     </div>
-    <script type="module" src="scripts/dom.js"></script>
+
+
+    <!-- JAVASCRIPT -->
+    <script
+        type="module"
+        src="scripts/dom.js"
+    ></script>
+
+    <script
+        type="module"
+        src="scripts/view-selector.js"
+    ></script>
+
 </body>
 </html>

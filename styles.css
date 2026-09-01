@@ -7,19 +7,27 @@
 
 body {
     background: #1B0C03;
-    background: linear-gradient(90deg, rgba(27, 12, 3, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(27, 12, 3, 1) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+
     min-height: 100vh;
 }
 
 .navbar {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+
     width: 100%;
     height: 50px;
+
     background-color: rgba(0, 0, 0, .5);
+
     color: #FF6200;
+
     font-size: 20px;
     font-weight: 600;
 }
@@ -28,174 +36,472 @@ body {
     display: grid;
     grid-template-rows: auto;
     row-gap: 30px;
+
     padding-bottom: 40px;
 }
 
-.game-select-disclaimer {
-    width: 200px;
-    height: 50px;
+
+/* =========================
+   ROUND SELECTOR
+========================= */
+
+.game-select-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 10px;
-    border: .5px solid #FF6200;
-    border-radius: 10px;
-    color: white;
-    font-size: 12px;
-    font-weight: 300;
-    background-color: rgba(0, 0, 0, .5);
 }
 
 .game-select-wrapper h6 {
-    font-size: 14px;
-    color: white;
-    font-weight: 300;
-    text-align: center;
     margin-top: 20px;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    text-align: center;
 }
+
+.round-current {
+    width: 140px;
+    height: 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    padding: 0;
+
+    border: .5px solid #474747;
+    border-radius: 10px;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    color: white;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition:
+        border-color .2s ease,
+        background-color .2s ease;
+}
+
+.round-current:hover {
+    border-color: #FF6200;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.round-label {
+    color: #777;
+
+    font-size: 8px;
+    font-weight: 400;
+
+    letter-spacing: .15em;
+}
+
+.round-number {
+    margin-top: 4px;
+
+    color: #FF6200;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.round-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+
+    width: min(650px, 90%);
+
+    gap: 6px;
+
+    margin-top: 10px;
+    padding: 10px;
+
+    border: .5px solid #474747;
+    border-radius: 10px;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    max-height: 0;
+
+    opacity: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    transform: translateY(-5px);
+
+    transition:
+        max-height .3s ease,
+        opacity .2s ease,
+        transform .3s ease;
+}
+
+.round-grid.is-open {
+    max-height: 400px;
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+    transform: translateY(0);
+}
+
+.round-tile {
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    border: .5px solid #474747;
+    border-radius: 7px;
+
+    background-color: rgba(0, 0, 0, .4);
+
+    color: #777;
+
+    font-family: "Unbounded", sans-serif;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition:
+        color .2s ease,
+        border-color .2s ease,
+        background-color .2s ease;
+}
+
+.round-tile:hover {
+    border-color: #FF6200;
+
+    background-color: rgba(255, 98, 0, .08);
+
+    color: white;
+}
+
+.round-tile.is-selected {
+    border-color: #FF6200;
+
+    background-color: rgba(255, 98, 0, .12);
+
+    color: #FF6200;
+}
+
+.round-select-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   VIEW TABS
+========================= */
+
+.view-tabs {
+    display: flex;
+
+    width: 80%;
+    max-width: 900px;
+    height: 50px;
+
+    margin: 0 auto;
+
+    border-bottom: 1px solid #474747;
+}
+
+.view-tab {
+    flex: 1;
+
+    height: 50px;
+
+    border: none;
+    border-bottom: 2px solid transparent;
+
+    background: transparent;
+
+    color: #474747;
+
+    font-family: "Unbounded", sans-serif;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition:
+        color .2s ease,
+        border-color .2s ease;
+}
+
+.view-tab:hover {
+    color: white;
+}
+
+.view-tab.is-active {
+    border-bottom-color: #FF6200;
+
+    color: #FF6200;
+}
+
+
+/* =========================
+   GAME SELECTOR
+========================= */
 
 .game-selector {
     display: flex;
     flex-direction: row;
+
     justify-content: flex-start;
     align-items: stretch;
-    box-sizing: border-box;
+
     gap: 10px;
+
     width: 75%;
     height: 120px;
+
     min-height: 0;
+
     margin: 0 auto;
+
     position: relative;
-    overflow: hidden;
+
     overflow-x: auto;
     overflow-y: hidden;
+
     scrollbar-width: none;
+
     scroll-behavior: smooth;
+
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 10px;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 40px,
+        black calc(100% - 40px),
+        transparent
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 40px,
+        black calc(100% - 40px),
+        transparent
+    );
 }
 
 .game-selector::-webkit-scrollbar {
     display: none;
 }
 
+
+/* =========================
+   GAME CARDS
+========================= */
+
 .game-tab {
     display: grid;
+
     grid-template-columns: 1fr 2fr 1fr;
+
     align-items: center;
+
     flex: 0 0 auto;
-    margin: 0;
+
     width: 400px;
     height: 100px;
-    color: white;
+
+    margin: 0;
+
     border: .5px solid #474747;
     border-radius: 10px;
+
     background-color: rgba(0, 0, 0, .5);
-    transform: scale(0.95);
-    transition: transform 0.25s;
-    transform-origin: center;
+
+    color: white;
+
     opacity: 0;
-    transform: translateY(10px) scale(0.95);
-    transition: opacity 0.35s ease, transform 0.35s ease;
+
+    transform:
+        translateY(10px)
+        scale(.95);
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        border-color .25s ease;
 }
 
 .game-tab.is-visible {
     opacity: .5;
-    transform: translateY(0) scale(0.95);
+
+    transform:
+        translateY(0)
+        scale(.95);
 }
 
 .game-tab:hover,
 .game-tab.active {
-    border: .5px solid #FF6200;
+    border-color: #FF6200;
+
     opacity: 1;
+
     transform: scale(1);
 }
 
 .game-tab.is-live {
     border: 2px solid #ff2d2d;
-    box-shadow: 0 0 6px rgba(255, 45, 45, 0.6);
+
+    box-shadow:
+        0 0 6px rgba(255, 45, 45, .6);
+
     animation: livePulse 1.6s ease-in-out infinite;
 }
 
 @keyframes livePulse {
     0% {
-        box-shadow: 0 0 4px rgba(255, 45, 45, 0.4);
+        box-shadow:
+            0 0 4px rgba(255, 45, 45, .4);
     }
+
     50% {
-        box-shadow: 0 0 10px rgba(255, 45, 45, 0.9);
+        box-shadow:
+            0 0 10px rgba(255, 45, 45, .9);
     }
+
     100% {
-        box-shadow: 0 0 4px rgba(255, 45, 45, 0.4);
+        box-shadow:
+            0 0 4px rgba(255, 45, 45, .4);
     }
 }
 
 .game-info {
     display: grid;
+
     grid-template-rows: 1fr 2fr;
 }
 
 .game-time {
     display: flex;
-    flex-direction: row;
+
     justify-content: center;
+
     margin-top: 15px;
+
     color: #474747;
+
     font-size: 16px;
 }
 
 .game-names {
     display: flex;
-    flex-direction: row;
+
     justify-content: center;
     align-items: center;
+
     height: inherit;
+
     gap: 15px;
 }
 
 .game-vs {
     color: #FF6200;
+
     font-weight: 300;
+
     text-align: center;
 }
 
 .team-logo {
     display: flex;
+
     justify-content: center;
-    height: inherit;
     align-items: center;
+
+    height: inherit;
 }
 
 .team-logo img {
     height: 80%;
+
     padding: 10px;
 }
 
-.stats-container {
-    opacity: 0;
-    pointer-events: none;
+
+/* =========================
+   VIEW CONTAINERS
+========================= */
+
+.view-container {
+    width: 100%;
+}
+
+.js-view-my-team {
     display: none;
+}
+
+
+/* =========================
+   PLAYER STATS
+========================= */
+
+.stats-container {
+    display: none;
+
     width: 80%;
+
     grid-template-columns: 1fr 1fr;
+
     margin: 0 auto;
+
     column-gap: 20px;
+
+    opacity: 0;
+
+    pointer-events: none;
 }
 
 .stats-container.is-active {
     display: grid;
+
     opacity: 1;
+
     pointer-events: auto;
 }
 
 .home-team-name,
 .away-team-name {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
     display: flex;
+
     margin-bottom: 10px;
+
+    color: white;
+
+    font-size: 20px;
+
+    text-transform: uppercase;
 }
 
 .home-team-name {
@@ -208,90 +514,238 @@ body {
 
 .team-box {
     display: flex;
+
     flex-direction: column;
+
     gap: 7px;
 }
 
+
+/* =========================
+   PLAYER CARD
+========================= */
+
 .player-tab {
     display: grid;
-    grid-template-columns: 2fr 4fr 1fr;
+
+    grid-template-columns: 2fr 4fr 1fr auto;
+
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+
     width: 100%;
+    height: 40px;
+
     padding: 10px;
+
     gap: 45px;
-    color: white;
-    background-color: rgba(0, 0, 0, .5);
+
     border: .5px solid #474747;
     border-radius: 10px;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    color: white;
 }
 
 .player-info {
     display: flex;
+
     flex-direction: row;
+
     gap: 20px;
-    font-weight: 400;
+
+    min-width: 0;
+
     font-size: 12px;
+    font-weight: 400;
 }
 
 .player-name,
 .player-name span {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
 }
 
 .player-stats {
     display: flex;
+
     flex-direction: row;
+
     justify-content: space-around;
+
     gap: 10px;
 }
 
 .stat-pair {
     display: flex;
+
     flex-direction: row;
+
     justify-content: space-around;
+
     gap: 10px;
 }
 
 .player-fpts {
     display: flex;
+
     flex-direction: row;
+
     justify-content: space-between;
+
     font-size: 12px;
+
     font-weight: 100;
 }
 
 .stat-label {
-    font-weight: 100;
     font-size: 12px;
+
+    font-weight: 100;
 }
 
 .js-stat {
-    font-weight: 400;
     font-size: 12px;
+
+    font-weight: 400;
 }
 
-.loading-alert {
-    width: 100%;
-    padding: 20px 0;
 
-    text-align: center;
-    color: #FF6200;
+/* =========================
+   MY TEAM BUTTON
+========================= */
+
+.my-team-button {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    padding: 0;
+
+    border: 1px solid #474747;
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: #777;
+
+    font-family: "Unbounded", sans-serif;
 
     font-size: 14px;
     font-weight: 300;
-    letter-spacing: 0.05em;
 
-    opacity: 0.8;
+    cursor: pointer;
+
+    transition:
+        color .2s ease,
+        border-color .2s ease,
+        background-color .2s ease,
+        transform .15s ease;
 }
 
+.my-team-button:hover {
+    border-color: #FF6200;
+
+    color: #FF6200;
+
+    transform: scale(1.05);
+}
+
+.my-team-button.is-selected {
+    border-color: #FF6200;
+
+    background-color: rgba(255, 98, 0, .12);
+
+    color: #FF6200;
+}
+
+
+/* =========================
+   MY TEAM
+========================= */
+
+.my-team-container {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.my-team-empty {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 150px;
+
+    color: #474747;
+
+    text-align: center;
+}
+
+.my-team-empty span {
+    color: #FF6200;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.my-team-empty p {
+    margin-top: 10px;
+
+    font-size: 10px;
+
+    font-weight: 300;
+
+    opacity: .7;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.loading-alert {
+    width: 100%;
+
+    padding: 20px 0;
+
+    color: #FF6200;
+
+    font-size: 14px;
+
+    font-weight: 300;
+
+    letter-spacing: .05em;
+
+    text-align: center;
+
+    opacity: .8;
+}
+
+
+/* =========================
+   TABLET / SMALL DESKTOP
+========================= */
+
 @media (max-width: 1500px) {
+
     .player-tab {
-        grid-template-columns: 3fr 1fr;
-        justify-content: space-between;
+        grid-template-columns: 3fr 1fr auto;
     }
 
     .player-stats {
@@ -299,79 +753,926 @@ body {
     }
 
     .player-fpts {
-        justify-content: space-around;
+        justify-content: flex-end;
     }
 }
 
-@media (max-width: 768px) {
-    .content-grid {
-        grid-template-rows: auto;
-        row-gap: 16px;
-        padding-bottom: 80px;
-    }
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
 
     .stats-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 20px;
+        width: 90%;
     }
 
     .game-selector {
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        -webkit-mask-image: none !important;
-        mask-image: none !important;
+        width: 90%;
     }
 
     .game-tab {
-        height: 60px;
+        width: 350px;
+    }
+
+    .view-tabs {
+        width: 90%;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: 50px;
+
+        font-size: 15px;
+    }
+
+    .content-grid {
+        row-gap: 18px;
+
+        padding-bottom: 50px;
+    }
+
+
+    /* =====================
+       ROUND SELECTOR
+    ===================== */
+
+    .game-select-wrapper h6 {
+        margin-top: 18px;
+
+        font-size: 11px;
+    }
+
+    .round-current {
+        width: 130px;
+        height: 52px;
+    }
+
+    .round-grid {
+        grid-template-columns: repeat(4, 1fr);
+
+        width: calc(100% - 30px);
+
+        max-width: 420px;
+
+        gap: 6px;
+
+        padding: 8px;
+    }
+
+    .round-grid.is-open {
+        max-height: 500px;
+    }
+
+    .round-tile {
+        height: 42px;
+
+        font-size: 9px;
+
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+    /* =====================
+       VIEW TABS
+    ===================== */
+
+    .view-tabs {
+        width: calc(100% - 30px);
+
+        height: 46px;
+    }
+
+    .view-tab {
+        height: 46px;
+
+        font-size: 9px;
+
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+    /* =====================
+       GAME SELECTOR
+    ===================== */
+
+    .game-selector {
         width: 100%;
+
+        height: 92px;
+
+        gap: 8px;
+
+        padding: 6px 25px 6px 25px;
+
+        margin: 0;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        -webkit-mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 20px,
+            black calc(100% - 20px),
+            transparent
+        );
+
+        mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 20px,
+            black calc(100% - 20px),
+            transparent
+        );
     }
 
-    .game-tab img {
-        height: inherit;
+    .game-tab {
+        width: calc(100vw - 70px);
+
+        min-width: calc(100vw - 70px);
+
+        max-width: 400px;
+
+        height: 80px;
+
+        border-radius: 9px;
+
+        transform: scale(.97);
     }
 
-    .game-tab:hover {
+    .game-tab.is-visible {
+        transform: scale(.97);
+    }
+
+    .game-tab:hover,
+    .game-tab.active {
         transform: scale(1);
     }
 
-    .game-time {
-        margin-top: 5px;
-        font-size: 12px;
+    .game-tab.is-live {
+        border-width: 2px;
     }
+
+
+    /* Game logos */
+
+    .team-logo img {
+        height: 65%;
+
+        padding: 6px;
+    }
+
+
+    /* Game information */
 
     .game-info {
         grid-template-rows: 1fr 1fr;
     }
 
+    .game-time {
+        margin-top: 6px;
+
+        font-size: 9px;
+    }
+
     .game-names {
+        gap: 7px;
+
+        font-size: 10px;
+    }
+
+    .game-names h2 {
+        font-size: 11px;
+    }
+
+    .game-vs {
+        font-size: 8px;
+    }
+
+
+    /* =====================
+       PLAYER STATS
+    ===================== */
+
+    .stats-container {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto auto;
+
+        width: calc(100% - 30px);
+
+        row-gap: 18px;
+    }
+
+    .home-team-name,
+    .away-team-name {
+        margin-bottom: 7px;
+
+        font-size: 13px;
+    }
+
+
+    /* =====================
+       PLAYER CARDS
+    ===================== */
+
+    .team-box {
+        gap: 6px;
+    }
+
+    .player-tab {
+        grid-template-columns: minmax(0, 1fr) auto auto;
+
+        width: 100%;
+
+        min-height: 44px;
+        height: 44px;
+
+        padding: 7px 9px;
+
+        gap: 8px;
+
+        border-radius: 8px;
+    }
+
+    .player-info {
+        min-width: 0;
+
+        font-size: 10px;
+    }
+
+    .player-name,
+    .player-name span {
+        max-width: 100%;
+    }
+
+
+    /* Hide detailed statistics */
+
+    .player-stats {
+        display: none;
+    }
+
+
+    /* FPTS */
+
+    .player-fpts {
+        justify-content: flex-end;
+
+        align-items: center;
+
+        gap: 5px;
+
+        white-space: nowrap;
+
+        font-size: 9px;
+    }
+
+    .player-fpts .stat-label {
+        display: none;
+    }
+
+    .player-fpts .js-fpts {
+        font-size: 10px;
+
+        font-weight: 500;
+
+        color: white;
+    }
+
+
+    /* My Team button */
+
+    .my-team-button {
+        width: 28px;
+        height: 28px;
+
+        font-size: 12px;
+
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+    /* =====================
+       MY TEAM
+    ===================== */
+
+    .my-team-container {
+        width: calc(100% - 30px);
+    }
+
+    .my-team-empty {
+        min-height: 130px;
+
+        padding: 20px;
+    }
+
+    .my-team-empty span {
         font-size: 12px;
     }
+
+    .my-team-empty p {
+        max-width: 280px;
+
+        font-size: 9px;
+
+        line-height: 1.6;
+    }
+
 }
 
 
+/* =========================
+   VERY SMALL PHONES
+========================= */
 
-/* EFFECTS */
-.game-selector {
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 40px,
-    black calc(100% - 40px),
-    transparent
-  );
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 40px,
-    black calc(100% - 40px),
-    transparent
-  );
+@media (max-width: 400px) {
+
+    .navbar {
+        font-size: 13px;
+    }
+
+    .round-current {
+        width: 120px;
+    }
+
+    .view-tabs {
+        width: calc(100% - 20px);
+    }
+
+    .view-tab {
+        font-size: 8px;
+    }
+
+    .game-tab {
+        width: calc(100vw - 50px);
+
+        min-width: calc(100vw - 50px);
+    }
+
+    .stats-container {
+        width: calc(100% - 20px);
+    }
+
+    .player-tab {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        gap: 6px;
+    }
+
+    .player-info {
+        font-size: 9px;
+    }
+
+    .player-fpts .js-fpts {
+        font-size: 9px;
+    }
+
+    .my-team-button {
+        width: 26px;
+        height: 26px;
+    }
+
+    .my-team-container {
+        width: calc(100% - 20px);
+    }
+
+}
+
+/* =========================
+   MY TEAM VIEW
+========================= */
+
+.my-team-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.my-team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.my-team-header strong {
+    color: #474747;
+
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+.my-team-section {
+    margin-bottom: 25px;
+}
+
+
+.my-team-section-title {
+    margin-bottom: 8px;
+
+    color: #FF6200;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: .08em;
+}
+
+
+.my-team-player-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.my-team-player {
+    display: grid;
+
+    grid-template-columns: 1fr auto auto;
+
+    align-items: center;
+
+    min-height: 45px;
+
+    padding: 8px 10px;
+
+    border: .5px solid #474747;
+    border-radius: 9px;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    color: white;
+
+    gap: 15px;
+}
+
+
+.my-team-player-info {
+    display: flex;
+    align-items: center;
+
+    min-width: 0;
+
+    gap: 12px;
+}
+
+
+.my-team-player-name {
+    min-width: 0;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    font-size: 11px;
+}
+
+
+.my-team-player-team {
+    color: #474747;
+
+    font-size: 8px;
+}
+
+
+.my-team-player-score {
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-end;
+
+    min-width: 55px;
+
+    gap: 8px;
+}
+
+
+.my-team-actual-fpts {
+    color: #474747;
+
+    font-size: 9px;
+}
+
+
+.my-team-contribution {
+    color: white;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+.my-team-player-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+
+.my-team-role-button,
+.my-team-remove-button {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    border: 1px solid #474747;
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: #474747;
+
+    font-family: "Unbounded", sans-serif;
+
+    font-size: 8px;
+
+    cursor: pointer;
+
+    transition:
+        color .2s ease,
+        border-color .2s ease,
+        background-color .2s ease;
+}
+
+
+.my-team-role-button:hover {
+    color: white;
+
+    border-color: white;
+}
+
+
+.my-team-role-button.is-active {
+    color: #FF6200;
+
+    border-color: #FF6200;
+
+    background-color: rgba(255, 98, 0, .1);
+}
+
+
+.my-team-remove-button {
+    margin-left: 4px;
+
+    font-size: 13px;
+}
+
+
+.my-team-remove-button:hover {
+    color: #ff3b30;
+
+    border-color: #ff3b30;
+}
+
+
+.my-team-total {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 10px;
+    padding: 15px 10px;
+
+    border-top: 1px solid #474747;
+
+    color: white;
+
+    font-size: 11px;
+}
+
+
+.my-team-total strong {
+    color: #FF6200;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.my-team-empty,
+.my-team-loading,
+.my-team-no-players {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100px;
+
+    color: #474747;
+
+    text-align: center;
+
+    font-size: 10px;
+}
+
+
+.my-team-loading {
+    color: #FF6200;
+
+    opacity: .8;
+}
+
+
+/* =========================
+   MY TEAM MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .my-team-container {
+        width: calc(100% - 30px);
+    }
+
+
+    .my-team-header {
+        font-size: 13px;
+    }
+
+
+    .my-team-header strong {
+        font-size: 8px;
+    }
+
+
+    .my-team-section {
+        margin-bottom: 20px;
+    }
+
+
+    .my-team-section-title {
+        font-size: 9px;
+    }
+
+
+    .my-team-player {
+        grid-template-columns: minmax(0, 1fr) auto auto;
+
+        min-height: 44px;
+
+        padding: 7px 8px;
+
+        gap: 8px;
+    }
+
+
+    .my-team-player-info {
+        gap: 7px;
+    }
+
+
+    .my-team-player-name {
+        font-size: 9px;
+    }
+
+
+    .my-team-player-team {
+        display: none;
+    }
+
+
+    .my-team-player-score {
+        min-width: 45px;
+
+        gap: 4px;
+    }
+
+
+    .my-team-actual-fpts {
+        font-size: 8px;
+    }
+
+
+    .my-team-contribution {
+        font-size: 10px;
+    }
+
+
+    .my-team-player-actions {
+        gap: 3px;
+    }
+
+
+    .my-team-role-button,
+    .my-team-remove-button {
+        width: 25px;
+        height: 25px;
+
+        font-size: 7px;
+    }
+
+
+    .my-team-remove-button {
+        font-size: 12px;
+    }
+
+
+    .my-team-total {
+        padding: 13px 8px;
+
+        font-size: 9px;
+    }
+
+
+    .my-team-total strong {
+        font-size: 17px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .my-team-container {
+        width: calc(100% - 20px);
+    }
+
+
+    .my-team-player {
+        gap: 5px;
+    }
+
+
+    .my-team-player-name {
+        font-size: 8px;
+    }
+
+
+    .my-team-role-button,
+    .my-team-remove-button {
+        width: 23px;
+        height: 23px;
+    }
+
+}
+
+/* =========================
+   SAVE TEAM
+========================= */
+
+.save-team-button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    margin-top: 15px;
+
+    border: 1px solid #FF6200;
+    border-radius: 9px;
+
+    background: rgba(255, 98, 0, .08);
+
+    color: #FF6200;
+
+    font-family: "Unbounded", sans-serif;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background-color .2s ease,
+        color .2s ease;
+}
+
+.save-team-button:hover {
+    background: #FF6200;
+
+    color: black;
+}
+
+
+/* =========================
+   LOCKED TEAM
+========================= */
+
+.my-team-locked-banner {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 35px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #474747;
+    border-radius: 7px;
+
+    color: #777;
+
+    font-size: 9px;
+    font-weight: 400;
+
+    letter-spacing: .08em;
+}
+
+
+.my-team-save-status {
+    margin-top: 15px;
+
+    color: #474747;
+
+    font-size: 8px;
+
+    text-align: center;
+}
+
+
+/* Locked player */
+
+.my-team-player.is-locked {
+    opacity: .8;
+}
+
+
+/* Locked + button */
+
+.my-team-button:disabled {
+    cursor: default;
+
+    opacity: .45;
+}
+
+.my-team-button:disabled:hover {
+    transform: none;
+
+    border-color: #474747;
+
+    color: #777;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .save-team-button {
+        height: 48px;
+
+        margin-top: 12px;
+
+        font-size: 9px;
+    }
+
+    .my-team-locked-banner {
+        height: 32px;
+
+        font-size: 8px;
+    }
+
+    .my-team-save-status {
+        font-size: 7px;
+    }
+
 }
