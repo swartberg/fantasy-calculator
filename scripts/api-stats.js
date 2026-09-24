@@ -1,7 +1,7 @@
 export async function fetchAndUpdate(gameCode) {
     try {
         const response = await fetch(
-            `https://live.euroleague.net/api/PlaybyPlay?gamecode=${gameCode}&seasoncode=E2025`
+            `https://live.euroleague.net/api/PlaybyPlay?gamecode=${gameCode}&seasoncode=E2026`
         );
 
         const data = await response.json();

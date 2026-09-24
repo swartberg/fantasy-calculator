@@ -1,7 +1,8 @@
 const STORAGE_KEY = "fantasyMyTeams";
 
 const MAX_STARTERS = 5;
-const MAX_BENCH = 7;
+const MAX_SIXTH = 1;
+const MAX_BENCH = 4;
 
 
 /* =========================
@@ -67,11 +68,9 @@ export function addPlayer(round, player) {
         };
     }
 
-
     if (teams[round].finalized) {
         return false;
     }
-
 
     const alreadySelected =
         teams[round].players.some(
@@ -80,62 +79,58 @@ export function addPlayer(round, player) {
                 String(player.id)
         );
 
-
     if (alreadySelected) {
         return false;
     }
 
-
     const starters =
         teams[round].players.filter(
-            player =>
-                player.role === "starter"
+            savedPlayer =>
+                savedPlayer.role === "starter"
         ).length;
 
+    const sixth =
+        teams[round].players.filter(
+            savedPlayer =>
+                savedPlayer.role === "sixth"
+        ).length;
 
     const bench =
         teams[round].players.filter(
-            player =>
-                player.role === "bench"
+            savedPlayer =>
+                savedPlayer.role === "bench"
         ).length;
 
-
-    let role = "starter";
-
+    let role = null;
 
     /*
-        New players become starters
-        until the five starter slots
-        are full.
+        Fill the roster in this order:
 
-        After that they automatically
-        become bench players.
+        1. 5 starters
+        2. 1 sixth man
+        3. 4 regular bench players
     */
 
-    if (starters >= MAX_STARTERS) {
+    if (starters < MAX_STARTERS) {
+        role = "starter";
 
-        if (bench >= MAX_BENCH) {
-            return false;
-        }
+    } else if (sixth < MAX_SIXTH) {
+        role = "sixth";
 
+    } else if (bench < MAX_BENCH) {
         role = "bench";
+
+    } else {
+        return false;
     }
 
-
     teams[round].players.push({
-
         id: player.id,
-
         name: player.name,
-
         team: player.team,
-
         gameCode: player.gameCode,
-
         role: role
-
     });
-
 
     saveAllTeams(teams);
 
@@ -147,10 +142,7 @@ export function addPlayer(round, player) {
    REMOVE PLAYER
 ========================= */
 
-export function removePlayer(
-    round,
-    playerId
-) {
+export function removePlayer(round, playerId) {
 
     const teams = getAllTeams();
 
@@ -158,11 +150,9 @@ export function removePlayer(
         return false;
     }
 
-
     if (teams[round].finalized) {
         return false;
     }
-
 
     teams[round].players =
         teams[round].players.filter(
@@ -170,7 +160,6 @@ export function removePlayer(
                 String(player.id) !==
                 String(playerId)
         );
-
 
     saveAllTeams(teams);
 
@@ -182,19 +171,15 @@ export function removePlayer(
    CHANGE ROLE
 ========================= */
 
-export function setPlayerRole(
-    round,
-    playerId,
-    role
-) {
+export function setPlayerRole(round, playerId, role) {
 
     if (
         role !== "starter" &&
+        role !== "sixth" &&
         role !== "bench"
     ) {
         return false;
     }
-
 
     const teams = getAllTeams();
 
@@ -202,65 +187,63 @@ export function setPlayerRole(
         return false;
     }
 
-
     if (teams[round].finalized) {
         return false;
     }
 
-
     const player =
         teams[round].players.find(
-            player =>
-                String(player.id) ===
+            savedPlayer =>
+                String(savedPlayer.id) ===
                 String(playerId)
         );
-
 
     if (!player) {
         return false;
     }
 
-
     if (player.role === role) {
         return true;
     }
-
-
-    /*
-        Check destination limit.
-    */
 
     if (role === "starter") {
 
         const starterCount =
             teams[round].players.filter(
-                player =>
-                    player.role === "starter"
+                savedPlayer =>
+                    savedPlayer.role === "starter"
             ).length;
-
 
         if (starterCount >= MAX_STARTERS) {
             return false;
         }
-
     }
 
+    if (role === "sixth") {
+
+        const sixthCount =
+            teams[round].players.filter(
+                savedPlayer =>
+                    savedPlayer.role === "sixth"
+            ).length;
+
+        if (sixthCount >= MAX_SIXTH) {
+            return false;
+        }
+    }
 
     if (role === "bench") {
 
         const benchCount =
             teams[round].players.filter(
-                player =>
-                    player.role === "bench"
+                savedPlayer =>
+                    savedPlayer.role === "bench"
             ).length;
-
 
         if (benchCount >= MAX_BENCH) {
             return false;
         }
-
     }
-
 
     player.role = role;
 
@@ -274,11 +257,7 @@ export function setPlayerRole(
    SWAP PLAYERS
 ========================= */
 
-export function swapPlayerRoles(
-    round,
-    playerIdA,
-    playerIdB
-) {
+export function swapPlayerRoles(round, playerIdA, playerIdB) {
 
     const teams = getAllTeams();
 
@@ -286,16 +265,9 @@ export function swapPlayerRoles(
         return false;
     }
 
-
-    /*
-        Never allow changes after
-        the team has been saved.
-    */
-
     if (teams[round].finalized) {
         return false;
     }
-
 
     const playerA =
         teams[round].players.find(
@@ -304,7 +276,6 @@ export function swapPlayerRoles(
                 String(playerIdA)
         );
 
-
     const playerB =
         teams[round].players.find(
             player =>
@@ -312,16 +283,9 @@ export function swapPlayerRoles(
                 String(playerIdB)
         );
 
-
     if (!playerA || !playerB) {
         return false;
     }
-
-
-    /*
-        Dropping a player onto himself
-        does nothing.
-    */
 
     if (
         String(playerA.id) ===
@@ -330,40 +294,14 @@ export function swapPlayerRoles(
         return false;
     }
 
-
-    /*
-        If both players already have
-        the same role, there is nothing
-        to swap.
-    */
-
-    if (
-        playerA.role ===
-        playerB.role
-    ) {
+    if (playerA.role === playerB.role) {
         return false;
     }
 
+    const temporaryRole = playerA.role;
 
-    /*
-        Exchange roles.
-
-        Because one is a starter and
-        the other is a bench player,
-        the limits remain valid.
-    */
-
-    const temporaryRole =
-        playerA.role;
-
-
-    playerA.role =
-        playerB.role;
-
-
-    playerB.role =
-        temporaryRole;
-
+    playerA.role = playerB.role;
+    playerB.role = temporaryRole;
 
     saveAllTeams(teams);
 
@@ -375,14 +313,9 @@ export function swapPlayerRoles(
    PLAYER SELECTED?
 ========================= */
 
-export function isPlayerSelected(
-    round,
-    playerId
-) {
+export function isPlayerSelected(round, playerId) {
 
-    const team =
-        getMyTeam(round);
-
+    const team = getMyTeam(round);
 
     return team.players.some(
         player =>
@@ -396,27 +329,20 @@ export function isPlayerSelected(
    PLAYER ROLE
 ========================= */
 
-export function getPlayerRole(
-    round,
-    playerId
-) {
+export function getPlayerRole(round, playerId) {
 
-    const team =
-        getMyTeam(round);
-
+    const team = getMyTeam(round);
 
     const player =
         team.players.find(
-            player =>
-                String(player.id) ===
+            savedPlayer =>
+                String(savedPlayer.id) ===
                 String(playerId)
         );
-
 
     if (!player) {
         return null;
     }
-
 
     return player.role || "starter";
 }
@@ -428,9 +354,7 @@ export function getPlayerRole(
 
 export function getTeamCounts(round) {
 
-    const team =
-        getMyTeam(round);
-
+    const team = getMyTeam(round);
 
     const starters =
         team.players.filter(
@@ -438,6 +362,11 @@ export function getTeamCounts(round) {
                 player.role === "starter"
         ).length;
 
+    const sixth =
+        team.players.filter(
+            player =>
+                player.role === "sixth"
+        ).length;
 
     const bench =
         team.players.filter(
@@ -445,12 +374,14 @@ export function getTeamCounts(round) {
                 player.role === "bench"
         ).length;
 
-
     return {
         starters,
+        sixth,
         bench,
         total:
-            starters + bench
+            starters +
+            sixth +
+            bench
     };
 }
 
@@ -461,13 +392,12 @@ export function getTeamCounts(round) {
 
 export function isTeamValid(round) {
 
-    const counts =
-        getTeamCounts(round);
-
+    const counts = getTeamCounts(round);
 
     return (
         counts.starters === MAX_STARTERS &&
-        counts.bench <= MAX_BENCH
+        counts.sixth === MAX_SIXTH &&
+        counts.bench === MAX_BENCH
     );
 }
 
@@ -481,17 +411,13 @@ export function calculateMyTeamPoints(
     currentPlayers = []
 ) {
 
-    const team =
-        getMyTeam(round);
-
+    const team = getMyTeam(round);
 
     if (!team.players.length) {
         return 0;
     }
 
-
     let total = 0;
-
 
     team.players.forEach(
         savedPlayer => {
@@ -503,35 +429,30 @@ export function calculateMyTeamPoints(
                         String(savedPlayer.id)
                 );
 
-
             if (!currentPlayer) {
                 return;
             }
-
 
             const fantasyPoints =
                 Number(
                     currentPlayer.Fantasy_Points
                 ) || 0;
 
-
             if (
+                savedPlayer.role === "starter" ||
+                savedPlayer.role === "sixth"
+            ) {
+
+                total += fantasyPoints;
+
+            } else if (
                 savedPlayer.role === "bench"
             ) {
 
-                total +=
-                    fantasyPoints / 2;
-
-            } else {
-
-                total +=
-                    fantasyPoints;
-
+                total += fantasyPoints / 2;
             }
-
         }
     );
-
 
     return total;
 }
@@ -543,19 +464,15 @@ export function calculateMyTeamPoints(
 
 export function finalizeRound(round) {
 
-    const teams =
-        getAllTeams();
-
+    const teams = getAllTeams();
 
     if (!teams[round]) {
         return false;
     }
 
-
     if (!teams[round].players.length) {
         return false;
     }
-
 
     const starters =
         teams[round].players.filter(
@@ -563,6 +480,11 @@ export function finalizeRound(round) {
                 player.role === "starter"
         ).length;
 
+    const sixth =
+        teams[round].players.filter(
+            player =>
+                player.role === "sixth"
+        ).length;
 
     const bench =
         teams[round].players.filter(
@@ -570,29 +492,19 @@ export function finalizeRound(round) {
                 player.role === "bench"
         ).length;
 
-
-    /*
-        Exactly five starters are
-        required to save the team.
-    */
-
-    if (
-        starters !== MAX_STARTERS
-    ) {
+    if (starters !== MAX_STARTERS) {
         return false;
     }
 
-
-    if (
-        bench > MAX_BENCH
-    ) {
+    if (sixth !== MAX_SIXTH) {
         return false;
     }
 
+    if (bench !== MAX_BENCH) {
+        return false;
+    }
 
-    teams[round].finalized =
-        true;
-
+    teams[round].finalized = true;
 
     saveAllTeams(teams);
 
@@ -606,13 +518,9 @@ export function finalizeRound(round) {
 
 export function isRoundFinalized(round) {
 
-    const team =
-        getMyTeam(round);
+    const team = getMyTeam(round);
 
-
-    return (
-        team.finalized === true
-    );
+    return team.finalized === true;
 }
 
 
@@ -622,5 +530,6 @@ export function isRoundFinalized(round) {
 
 export {
     MAX_STARTERS,
+    MAX_SIXTH,
     MAX_BENCH
 };
