@@ -1811,3 +1811,176 @@ body {
     }
 
 }
+
+/* =========================
+   PLAYER SEARCH
+========================= */
+
+.player-search {
+    position: relative;
+
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 0 auto 20px;
+}
+
+
+.player-search-input {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 14px;
+
+    border: .5px solid #474747;
+    border-radius: 9px;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    color: white;
+
+    font-family: "Unbounded", sans-serif;
+    font-size: 11px;
+
+    outline: none;
+
+    transition: border-color .2s ease;
+}
+
+
+.player-search-input::placeholder {
+    color: #474747;
+}
+
+
+.player-search-input:focus {
+    border-color: #FF6200;
+}
+
+
+.player-search-results {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    z-index: 20;
+
+    overflow: hidden;
+
+    border-radius: 9px;
+
+    background-color: #0d0d0d;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .7);
+}
+
+
+.player-search-results:empty {
+    display: none;
+}
+
+
+.player-search-result {
+    display: flex;
+    align-items: center;
+
+    min-height: 45px;
+
+    padding: 7px 10px;
+
+    border: .5px solid #262626;
+
+    color: white;
+
+    gap: 10px;
+}
+
+
+.player-search-logo {
+    flex-shrink: 0;
+
+    width: 22px;
+    height: 22px;
+
+    object-fit: contain;
+}
+
+
+.player-search-name {
+    flex: 1;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    font-size: 11px;
+}
+
+
+.player-search-team,
+.player-search-position {
+    flex-shrink: 0;
+
+    color: #474747;
+
+    font-size: 8px;
+}
+
+
+.player-search-add:disabled {
+    cursor: default;
+
+    transform: none;
+}
+
+
+.player-search-message {
+    padding: 14px 10px;
+
+    border: .5px solid #262626;
+    border-radius: 9px;
+
+    color: #474747;
+
+    font-size: 10px;
+
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+    .player-search {
+        width: calc(100% - 30px);
+    }
+
+
+    .player-search-input {
+        /* 16px stops iOS zooming in on focus */
+        font-size: 16px;
+    }
+
+
+    .player-search-name {
+        font-size: 9px;
+    }
+
+
+    .player-search-position {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .player-search {
+        width: calc(100% - 20px);
+    }
+
+}

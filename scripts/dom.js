@@ -4,6 +4,8 @@ import { TEAM_NAMES } from "./teams.js";
 
 import { gameSelect } from "./game-selector.js";
 
+import { setupPlayerSearch } from "./player-search.js";
+
 
 
 import {
@@ -29,6 +31,8 @@ import {
     setCaptain,
 
     getPointsMultiplier,
+
+    setPlayerGameCode,
 
     MAX_STARTERS,
 
@@ -93,6 +97,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     setupMyTeamRefresh();
+
+
+
+    setupPlayerSearch({
+
+        getRound: getCurrentRound,
+
+        onAdd: () => {
+
+            renderMyTeam();
+
+            syncGameTableSelection();
+
+        }
+
+    });
 
 
 
@@ -1395,145 +1415,15 @@ async function renderMyTeam() {
 
 
 
-    /* =========================
+    const allPlayers =
 
-       GET UNIQUE GAMES
+        await fetchMyTeamPlayers(
 
-    ========================= */
-
-
-
-    const gameCodes = [
-
-        ...new Set(
+            round,
 
             myTeam.players
 
-                .map(
-
-                    player =>
-
-                        player.gameCode
-
-                )
-
-                .filter(Boolean)
-
-        )
-
-    ];
-
-
-
-
-
-    const allPlayers = [];
-
-
-
-
-
-    /* =========================
-
-       FETCH GAMES
-
-    ========================= */
-
-
-
-    for (
-
-        const gameCode of gameCodes
-
-    ) {
-
-
-
-        const result =
-
-            await fetchAndUpdate(
-
-                gameCode
-
-            );
-
-
-
-
-
-        if (
-
-            !result ||
-
-            !result.players
-
-        ) {
-
-
-
-            continue;
-
-
-
-        }
-
-
-
-
-
-        result.players.forEach(
-
-            player => {
-
-
-
-                const exists =
-
-                    allPlayers.some(
-
-                        existing =>
-
-                            String(
-
-                                existing.id
-
-                            ) ===
-
-                            String(
-
-                                player.id
-
-                            )
-
-                    );
-
-
-
-
-
-                if (!exists) {
-
-
-
-                    allPlayers.push(
-
-                        player
-
-                    );
-
-
-
-                }
-
-
-
-            }
-
         );
-
-
-
-    }
 
 
 
@@ -1636,6 +1526,81 @@ async function renderMyTeam() {
 
 
 
+}
+
+
+
+
+
+/* =========================
+
+   FETCH MY TEAM STATS
+
+========================= */
+
+/*
+    Latest stats for the saved players' games.
+
+    Players added from search have no game yet,
+    so while any are unresolved, fetch the whole
+    round and remember the game each one is in.
+*/
+
+async function fetchMyTeamPlayers(round, savedPlayers) {
+
+    const unresolved =
+        savedPlayers.filter(player => !player.gameCode);
+
+    const gameCodes = new Set(
+        savedPlayers
+            .map(player => player.gameCode)
+            .filter(Boolean)
+    );
+
+    if (unresolved.length) {
+        getRoundGameCodes(round)
+            .forEach(gameCode => gameCodes.add(gameCode));
+    }
+
+    const results = await Promise.all(
+        [...gameCodes].map(async gameCode => ({
+            gameCode,
+            result: await fetchAndUpdate(gameCode)
+        }))
+    );
+
+    const allPlayers = [];
+
+    results.forEach(({ gameCode, result }) => {
+        if (!result || !result.players) return;
+
+        result.players.forEach(player => {
+            if (
+                allPlayers.some(existing => String(existing.id) === String(player.id))
+            ) return;
+
+            allPlayers.push(player);
+
+            if (
+                unresolved.some(saved => String(saved.id) === String(player.id))
+            ) {
+                setPlayerGameCode(round, player.id, gameCode);
+            }
+        });
+    });
+
+    return allPlayers;
+}
+
+
+function getRoundGameCodes(round) {
+
+    const firstGame = (round - 1) * 10 + 1;
+
+    return Array.from(
+        { length: 10 },
+        (_, index) => firstGame + index
+    );
 }
 
 
@@ -3266,137 +3231,15 @@ async function refreshMyTeamStats() {
 
 
 
-        const gameCodes = [
+        const allPlayers =
 
-            ...new Set(
+            await fetchMyTeamPlayers(
+
+                round,
 
                 myTeam.players
 
-                    .map(
-
-                        player =>
-
-                            player.gameCode
-
-                    )
-
-                    .filter(Boolean)
-
-            )
-
-        ];
-
-
-
-
-
-        const allPlayers = [];
-
-
-
-
-
-        /* =========================
-
-           FETCH LATEST STATS
-
-        ========================= */
-
-
-
-        for (
-
-            const gameCode of gameCodes
-
-        ) {
-
-
-
-            const result =
-
-                await fetchAndUpdate(
-
-                    gameCode
-
-                );
-
-
-
-
-
-            if (
-
-                !result ||
-
-                !result.players
-
-            ) {
-
-
-
-                continue;
-
-
-
-            }
-
-
-
-
-
-            result.players.forEach(
-
-                player => {
-
-
-
-                    const exists =
-
-                        allPlayers.some(
-
-                            existing =>
-
-                                String(
-
-                                    existing.id
-
-                                ) ===
-
-                                String(
-
-                                    player.id
-
-                                )
-
-                        );
-
-
-
-
-
-                    if (!exists) {
-
-
-
-                        allPlayers.push(
-
-                            player
-
-                        );
-
-
-
-                    }
-
-
-
-                }
-
             );
-
-
-
-        }
 
 
 

@@ -17,7 +17,20 @@ function getAllTeams() {
             return {};
         }
 
-        return JSON.parse(saved);
+        const teams = JSON.parse(saved);
+
+        /*
+            Older saves kept PLAYER_ID with its
+            trailing spaces. Trim so they match
+            ids from the stats and search.
+        */
+        Object.values(teams).forEach(team => {
+            team.players?.forEach(player => {
+                player.id = String(player.id).trim();
+            });
+        });
+
+        return teams;
 
     } catch (error) {
         console.error("Error loading My Team:", error);
@@ -125,12 +138,44 @@ export function addPlayer(round, player) {
     }
 
     teams[round].players.push({
-        id: player.id,
+        id: String(player.id).trim(),
         name: player.name,
         team: player.team,
         gameCode: player.gameCode,
         role: role
     });
+
+    saveAllTeams(teams);
+
+    return true;
+}
+
+
+/* =========================
+   PLAYER GAME
+========================= */
+
+/*
+    Players added from search have no game yet.
+    Once their game shows up in the round, remember
+    it so later refreshes only fetch that game.
+    Allowed on locked rounds — it's not a team change.
+*/
+export function setPlayerGameCode(round, playerId, gameCode) {
+    const teams = getAllTeams();
+
+    const player =
+        teams[round]?.players.find(
+            savedPlayer =>
+                String(savedPlayer.id) ===
+                String(playerId)
+        );
+
+    if (!player) {
+        return false;
+    }
+
+    player.gameCode = gameCode;
 
     saveAllTeams(teams);
 

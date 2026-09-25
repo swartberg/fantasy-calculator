@@ -1,7 +1,9 @@
+export const SEASON_CODE = "E2026";
+
 export async function fetchAndUpdate(gameCode) {
     try {
         const response = await fetch(
-            `https://live.euroleague.net/api/PlaybyPlay?gamecode=${gameCode}&seasoncode=E2026`
+            `https://live.euroleague.net/api/PlaybyPlay?gamecode=${gameCode}&seasoncode=${SEASON_CODE}`
         );
 
         if (!response.ok) {
@@ -39,7 +41,8 @@ export async function fetchAndUpdate(gameCode) {
         // =========================
 
         allPlays.forEach(play => {
-            const id = play.PLAYER_ID;
+            // PLAYER_ID comes padded with trailing spaces
+            const id = play.PLAYER_ID?.trim();
             const name = play.PLAYER;
             const team = play.CODETEAM?.trim();
 
@@ -88,7 +91,7 @@ export async function fetchAndUpdate(gameCode) {
         // =========================
 
         allPlays.forEach(play => {
-            const player = players[play.PLAYER_ID];
+            const player = players[play.PLAYER_ID?.trim()];
 
             if (!player) return;
 
