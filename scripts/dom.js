@@ -3768,19 +3768,13 @@ function setupMyTeamRefresh() {
 
             /* =====================
 
-               SELECTED GAME
+               OTHER VIEWS
 
             ===================== */
 
 
 
-            else if (
-
-                tab.dataset.view ===
-
-                "game"
-
-            ) {
+            else {
 
 
 
