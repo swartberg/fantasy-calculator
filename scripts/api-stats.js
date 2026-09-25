@@ -4,7 +4,22 @@ export async function fetchAndUpdate(gameCode) {
             `https://live.euroleague.net/api/PlaybyPlay?gamecode=${gameCode}&seasoncode=E2026`
         );
 
-        const data = await response.json();
+        if (!response.ok) {
+            // Non-OK responses (e.g. an invalid/unplayed game code) are
+            // expected, not exceptional — treat them as "no data" rather
+            // than throwing.
+            return null;
+        }
+
+        const text = await response.text();
+
+        if (!text) {
+            // The EuroLeague API returns an empty body (not valid JSON)
+            // for game codes with no data yet. Same treatment as above.
+            return null;
+        }
+
+        const data = JSON.parse(text);
 
         const players = {};
 
@@ -358,7 +373,7 @@ export async function fetchAndUpdate(gameCode) {
             error
         );
 
-        return [];
+        return null;
     }
 }
 

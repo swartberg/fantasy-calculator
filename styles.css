@@ -551,6 +551,15 @@ body {
     color: white;
 }
 
+/* Player is in My Team */
+.player-tab.is-in-my-team {
+    border-color: #FF6200;
+
+    background-color: rgba(255, 98, 0, .1);
+
+    box-shadow: inset 3px 0 0 #FF6200;
+}
+
 .player-info {
     display: flex;
 
@@ -1276,6 +1285,36 @@ body {
     color: white;
 
     gap: 15px;
+
+    /* Long-press starts a touch drag, so no callout/selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+.my-team-player.is-dragging {
+    opacity: .6;
+}
+
+
+.my-team-player.is-touch-dragging {
+    position: relative;
+    z-index: 10;
+
+    opacity: .85;
+
+    /* Let elementFromPoint see what's under the finger */
+    pointer-events: none;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .6);
+}
+
+
+.my-team-player.is-drag-over,
+.my-team-player-list.is-drag-over {
+    outline: 1px dashed rgba(255, 255, 255, .6);
+    outline-offset: 2px;
 }
 
 
@@ -1393,6 +1432,28 @@ body {
 }
 
 
+/* Only starters can be captain */
+.my-team-player:not([data-role="starter"]) .my-team-captain-button {
+    display: none;
+}
+
+
+.my-team-captain-badge {
+    flex-shrink: 0;
+
+    padding: 1px 5px;
+
+    border-radius: 4px;
+
+    background-color: #FF6200;
+
+    color: white;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
 .my-team-remove-button {
     margin-left: 4px;
 
@@ -1449,6 +1510,36 @@ body {
     text-align: center;
 
     font-size: 10px;
+}
+
+
+/* Placeholder for an open roster spot — same size as a player row */
+.my-team-empty-slot {
+    display: flex;
+
+    align-items: center;
+
+    min-height: 45px;
+
+    padding: 8px 10px;
+
+    border: 1px dashed #474747;
+    border-radius: 9px;
+
+    color: #474747;
+
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+
+.my-team-player-list.is-drag-over .my-team-empty-slot {
+    border-color: #FF6200;
+
+    color: #FF6200;
+
+    background-color: rgba(255, 98, 0, .08);
 }
 
 

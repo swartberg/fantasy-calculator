@@ -247,6 +247,11 @@ export function setPlayerRole(round, playerId, role) {
 
     player.role = role;
 
+    // Only starters can captain
+    if (role !== "starter") {
+        player.captain = false;
+    }
+
     saveAllTeams(teams);
 
     return true;
@@ -303,9 +308,85 @@ export function swapPlayerRoles(round, playerIdA, playerIdB) {
     playerA.role = playerB.role;
     playerB.role = temporaryRole;
 
+    // Only starters can captain
+    [playerA, playerB].forEach(player => {
+        if (player.role !== "starter") {
+            player.captain = false;
+        }
+    });
+
     saveAllTeams(teams);
 
     return true;
+}
+
+
+/* =========================
+   CAPTAIN
+========================= */
+
+/*
+    Toggle captain on a starter. Only one captain
+    per round, so making a new one clears the old.
+*/
+
+export function setCaptain(round, playerId) {
+
+    const teams = getAllTeams();
+
+    if (!teams[round]) {
+        return false;
+    }
+
+    if (teams[round].finalized) {
+        return false;
+    }
+
+    const player =
+        teams[round].players.find(
+            savedPlayer =>
+                String(savedPlayer.id) ===
+                String(playerId)
+        );
+
+    if (!player || player.role !== "starter") {
+        return false;
+    }
+
+    const makeCaptain = !player.captain;
+
+    teams[round].players.forEach(savedPlayer => {
+        savedPlayer.captain = false;
+    });
+
+    player.captain = makeCaptain;
+
+    saveAllTeams(teams);
+
+    return true;
+}
+
+
+/*
+    How much of a player's fantasy points count
+    toward the team total.
+*/
+
+export function getPointsMultiplier(role, captain) {
+
+    if (role === "bench") {
+        return 0.5;
+    }
+
+    if (role === "starter" && captain) {
+        return 2;
+    }
+
+    if (role === "starter" || role === "sixth") {
+        return 1;
+    }
+
+    return 0;
 }
 
 
@@ -438,19 +519,12 @@ export function calculateMyTeamPoints(
                     currentPlayer.Fantasy_Points
                 ) || 0;
 
-            if (
-                savedPlayer.role === "starter" ||
-                savedPlayer.role === "sixth"
-            ) {
-
-                total += fantasyPoints;
-
-            } else if (
-                savedPlayer.role === "bench"
-            ) {
-
-                total += fantasyPoints / 2;
-            }
+            total +=
+                fantasyPoints *
+                getPointsMultiplier(
+                    savedPlayer.role,
+                    savedPlayer.captain
+                );
         }
     );
 

@@ -22,7 +22,19 @@ import {
 
     finalizeRound,
 
-    isRoundFinalized
+    isRoundFinalized,
+
+    getTeamCounts,
+
+    setCaptain,
+
+    getPointsMultiplier,
+
+    MAX_STARTERS,
+
+    MAX_SIXTH,
+
+    MAX_BENCH
 
 } from "./my-team.js";
 
@@ -526,6 +538,12 @@ async function getStats(gameCode) {
 
                 );
 
+            // Highlight rows already in My Team
+            playerTab.classList.toggle(
+                "is-in-my-team",
+                selected
+            );
+
 
 
 
@@ -968,6 +986,15 @@ async function getStats(gameCode) {
 
 
 
+
+
+                    playerTab.classList.toggle(
+                        "is-in-my-team",
+                        isPlayerSelected(
+                            currentRound,
+                            player.id
+                        )
+                    );
 
 
                     /*
@@ -1554,15 +1581,12 @@ async function renderMyTeam() {
 
 
 
-                    if (!currentPlayer) {
-
-                        return null;
-
-                    }
-
-
-
-
+                    /*
+                        Keep players whose stats
+                        couldn't be loaded (0 FPTS),
+                        so the UI always matches
+                        what's saved.
+                    */
 
                     return {
 
@@ -1578,7 +1602,7 @@ async function renderMyTeam() {
 
                                 currentPlayer
 
-                                    .Fantasy_Points
+                                    ?.Fantasy_Points
 
                             ) || 0
 
@@ -1648,7 +1672,7 @@ function renderMyTeamHTML(
 
 
 
-    const starterPoints = starters.reduce((total, player) => total + player.fantasyPoints, 0);
+    const starterPoints = starters.reduce((total, player) => total + player.fantasyPoints * getPointsMultiplier("starter", player.captain), 0);
 
     const sixthPoints = sixthMan.reduce((total, player) => total + player.fantasyPoints, 0);
 
@@ -1686,13 +1710,8 @@ function renderMyTeamHTML(
 
             <div class="my-team-player-list">
 
-                ${starters.length
-
-                    ? starters.map(player => createMyTeamPlayer(player, "starter", locked)).join("")
-
-                    : `<div class="my-team-no-players">No starters</div>`
-
-                }
+                ${starters.map(player => createMyTeamPlayer(player, "starter", locked)).join("")}
+                    ${createEmptySlots("starter", MAX_STARTERS - starters.length)}
 
             </div>
 
@@ -1728,13 +1747,8 @@ function renderMyTeamHTML(
 
                 <div class="my-team-player-list my-team-sixth-list" style="margin-bottom: 10px;">
 
-                    ${sixthMan.length
-
-                        ? sixthMan.map(player => createMyTeamPlayer(player, "sixth", locked)).join("")
-
-                        : `<div class="my-team-no-players">No 6th man</div>`
-
-                    }
+                    ${sixthMan.map(player => createMyTeamPlayer(player, "sixth", locked)).join("")}
+                        ${createEmptySlots("sixth", MAX_SIXTH - sixthMan.length)}
 
                 </div>
 
@@ -1758,13 +1772,8 @@ function renderMyTeamHTML(
 
                 <div class="my-team-player-list my-team-bench-list">
 
-                    ${bench.length
-
-                        ? bench.map(player => createMyTeamPlayer(player, "bench", locked)).join("")
-
-                        : `<div class="my-team-no-players">No bench players</div>`
-
-                    }
+                    ${bench.map(player => createMyTeamPlayer(player, "bench", locked)).join("")}
+                        ${createEmptySlots("bench", MAX_BENCH - bench.length)}
 
                 </div>
 
@@ -1870,13 +1879,19 @@ function createMyTeamPlayer(
 
 
 
+    const captain =
+
+        role === "starter" &&
+
+        player.captain === true;
+
+
+
     const contribution =
 
-        role === "bench"
+        player.fantasyPoints *
 
-            ? player.fantasyPoints / 2
-
-            : player.fantasyPoints;
+        getPointsMultiplier(role, captain);
 
 
 
@@ -1892,6 +1907,8 @@ function createMyTeamPlayer(
 
             data-role="${role}"
 
+            data-captain="${captain}"
+
             draggable="${!locked}"
 
         >
@@ -1904,11 +1921,13 @@ function createMyTeamPlayer(
 
                 <span class="my-team-player-team">${player.team}</span>
 
+                ${captain ? `<span class="my-team-captain-badge">C</span>` : ""}
+
             </div>
 
             <div class="my-team-player-score">
 
-                ${role !== "starter" ? `<span class="my-team-actual-fpts">${formatFantasyPoints(player.fantasyPoints)}</span>` : ""}
+                ${role !== "starter" || captain ? `<span class="my-team-actual-fpts">${formatFantasyPoints(player.fantasyPoints)}</span>` : ""}
 
                 <span class="my-team-contribution">${formatFantasyPoints(contribution)}</span>
 
@@ -1917,6 +1936,8 @@ function createMyTeamPlayer(
             ${!locked ? `
 
                 <div class="my-team-player-actions">
+
+                    <button class="my-team-role-button my-team-captain-button ${captain ? "is-active" : ""}" type="button" title="Captain (2x points)">C</button>
 
                     <button class="my-team-role-button ${role === "starter" ? "is-active" : ""}" data-role="starter" type="button">S</button>
 
@@ -2006,6 +2027,48 @@ function setupMyTeamPlayerEvents(
     }
 
 
+    function getRoleMax(role) {
+
+        if (role === "starter") return MAX_STARTERS;
+
+        if (role === "sixth") return MAX_SIXTH;
+
+        if (role === "bench") return MAX_BENCH;
+
+        return 0;
+    }
+
+
+    function getRoleCount(role) {
+
+        const counts = getTeamCounts(round);
+
+        if (role === "starter") return counts.starters;
+
+        if (role === "sixth") return counts.sixth;
+
+        if (role === "bench") return counts.bench;
+
+        return 0;
+    }
+
+
+    /*
+        Whether `role` can accept one more player right now.
+
+        Used to decide between moving a dragged player into a
+        role (room available) and swapping it with an existing
+        occupant (role is already at its limit, so swapping is
+        the only way to place it there without exceeding the
+        roster size).
+    */
+
+    function hasRoomForRole(role) {
+
+        return getRoleCount(role) < getRoleMax(role);
+    }
+
+
     function clearDragState() {
 
         draggedPlayerId = null;
@@ -2044,7 +2107,210 @@ function setupMyTeamPlayerEvents(
         updatePlayerRoleUI(playerElement);
         updateTeamCounters();
         updateMyTeamTotal();
-        removeEmptyMessages();
+        syncEmptySlots();
+    }
+
+
+    /* =========================
+       DROP ACTIONS
+    ========================= */
+
+    function getPlayerElement(playerId) {
+
+        return document.querySelector(
+            `.my-team-player[data-player-id="${playerId}"]`
+        );
+    }
+
+
+    /*
+        Dropping a player onto another player's card.
+    */
+
+    function dropOnPlayer(
+        sourcePlayerId,
+        playerElement
+    ) {
+
+        const targetPlayerId =
+            playerElement.dataset.playerId;
+
+        if (
+            !sourcePlayerId ||
+            !targetPlayerId
+        ) {
+            return;
+        }
+
+        if (
+            String(sourcePlayerId) ===
+            String(targetPlayerId)
+        ) {
+            return;
+        }
+
+        const sourceElement =
+            getPlayerElement(sourcePlayerId);
+
+        if (!sourceElement) {
+            return;
+        }
+
+        const sourceRole =
+            sourceElement.dataset.role;
+
+        const targetRole =
+            playerElement.dataset.role;
+
+        if (
+            sourceRole ===
+            targetRole
+        ) {
+            return;
+        }
+
+        /*
+            If the target role still has room, just
+            move the dragged player into it and leave
+            the card it was dropped on alone. Only
+            swap roles once the target role is already
+            full — that's the only way to place the
+            dragged player there without exceeding the
+            roster limit.
+        */
+
+        if (hasRoomForRole(targetRole)) {
+
+            const moved =
+                setPlayerRole(
+                    round,
+                    sourcePlayerId,
+                    targetRole
+                );
+
+            if (!moved) {
+                return;
+            }
+
+            updateAfterRoleChange(
+                sourceElement,
+                targetRole
+            );
+
+        } else {
+
+            const swapped =
+                swapPlayerRoles(
+                    round,
+                    sourcePlayerId,
+                    targetPlayerId
+                );
+
+            if (!swapped) {
+                return;
+            }
+
+            /*
+                The source player takes the
+                target player's role, and vice
+                versa.
+            */
+
+            updateAfterRoleChange(
+                sourceElement,
+                targetRole
+            );
+
+            updateAfterRoleChange(
+                playerElement,
+                sourceRole
+            );
+        }
+
+        sourceElement.classList.remove(
+            "is-dragging"
+        );
+    }
+
+
+    /*
+        Dropping on empty space within a list works
+        as long as that role still has room. Once it's
+        full, the user needs to drop directly onto a
+        player card to trigger a swap.
+    */
+
+    function canDropOnList(
+        sourcePlayerId,
+        list
+    ) {
+
+        const targetRole =
+            getListRole(list);
+
+        if (!targetRole) {
+            return false;
+        }
+
+        const sourceElement =
+            sourcePlayerId
+                ? getPlayerElement(sourcePlayerId)
+                : null;
+
+        if (!sourceElement) {
+            return false;
+        }
+
+        if (
+            sourceElement.dataset.role ===
+            targetRole
+        ) {
+            return false;
+        }
+
+        return hasRoomForRole(targetRole);
+    }
+
+
+    function dropOnList(
+        sourcePlayerId,
+        list
+    ) {
+
+        if (
+            !canDropOnList(
+                sourcePlayerId,
+                list
+            )
+        ) {
+            return;
+        }
+
+        const targetRole =
+            getListRole(list);
+
+        const sourceElement =
+            getPlayerElement(sourcePlayerId);
+
+        const changed =
+            setPlayerRole(
+                round,
+                sourcePlayerId,
+                targetRole
+            );
+
+        if (!changed) {
+            return;
+        }
+
+        updateAfterRoleChange(
+            sourceElement,
+            targetRole
+        );
+
+        sourceElement.classList.remove(
+            "is-dragging"
+        );
     }
 
 
@@ -2134,83 +2400,15 @@ function setupMyTeamPlayerEvents(
                     event.preventDefault();
                     event.stopPropagation();
 
-                    const targetPlayerId =
-                        playerElement.dataset.playerId;
-
-                    const sourcePlayerId =
-                        event.dataTransfer.getData(
-                            "text/plain"
-                        );
-
                     playerElement.classList.remove(
                         "is-drag-over"
                     );
 
-                    if (
-                        !sourcePlayerId ||
-                        !targetPlayerId
-                    ) {
-                        return;
-                    }
-
-                    if (
-                        String(sourcePlayerId) ===
-                        String(targetPlayerId)
-                    ) {
-                        return;
-                    }
-
-                    const sourceElement =
-                        document.querySelector(
-                            `.my-team-player[data-player-id="${sourcePlayerId}"]`
-                        );
-
-                    if (!sourceElement) {
-                        return;
-                    }
-
-                    const sourceRole =
-                        sourceElement.dataset.role;
-
-                    const targetRole =
-                        playerElement.dataset.role;
-
-                    if (
-                        sourceRole ===
-                        targetRole
-                    ) {
-                        return;
-                    }
-
-                    const swapped =
-                        swapPlayerRoles(
-                            round,
-                            sourcePlayerId,
-                            targetPlayerId
-                        );
-
-                    if (!swapped) {
-                        return;
-                    }
-
-                    /*
-                        The source player takes the
-                        target player's role, and vice
-                        versa.
-                    */
-
-                    updateAfterRoleChange(
-                        sourceElement,
-                        targetRole
-                    );
-
-                    updateAfterRoleChange(
-                        playerElement,
-                        sourceRole
-                    );
-
-                    sourceElement.classList.remove(
-                        "is-dragging"
+                    dropOnPlayer(
+                        event.dataTransfer.getData(
+                            "text/plain"
+                        ),
+                        playerElement
                     );
                 }
             );
@@ -2231,41 +2429,10 @@ function setupMyTeamPlayerEvents(
 
                     event.preventDefault();
 
-                    const targetRole =
-                        getListRole(list);
-
-                    if (!targetRole) {
-                        return;
-                    }
-
-                    const sourceElement =
-                        draggedPlayerId
-                            ? document.querySelector(
-                                `.my-team-player[data-player-id="${draggedPlayerId}"]`
-                            )
-                            : null;
-
-                    if (!sourceElement) {
-                        return;
-                    }
-
                     if (
-                        sourceElement.dataset.role ===
-                        targetRole
-                    ) {
-                        return;
-                    }
-
-                    /*
-                        A list is a drop target only
-                        when it is empty. Occupied
-                        destinations are handled by
-                        dropping directly on a player.
-                    */
-
-                    if (
-                        list.querySelector(
-                            ".my-team-player"
+                        !canDropOnList(
+                            draggedPlayerId,
+                            list
                         )
                     ) {
                         return;
@@ -2322,65 +2489,264 @@ function setupMyTeamPlayerEvents(
                         return;
                     }
 
-                    const targetRole =
-                        getListRole(list);
-
-                    if (!targetRole) {
-                        return;
-                    }
-
-                    const sourcePlayerId =
+                    dropOnList(
                         event.dataTransfer.getData(
                             "text/plain"
-                        );
+                        ),
+                        list
+                    );
+                }
+            );
+        }
+    );
 
-                    if (!sourcePlayerId) {
-                        return;
-                    }
 
-                    const sourceElement =
-                        document.querySelector(
-                            `.my-team-player[data-player-id="${sourcePlayerId}"]`
-                        );
+    /* =========================
+       TOUCH DRAG (MOBILE)
+    ========================= */
 
-                    if (!sourceElement) {
-                        return;
-                    }
+    /*
+        Mobile browsers don't fire HTML5 drag events
+        from touch, so touch gets its own path.
+
+        A drag starts after a short long-press, so a
+        normal swipe still scrolls the page. While
+        dragging, the card follows the finger and the
+        element under the finger is the drop target.
+    */
+
+    const TOUCH_HOLD_MS = 250;
+    const TOUCH_MOVE_TOLERANCE = 10;
+
+    players.forEach(
+        playerElement => {
+
+            let holdTimer = null;
+            let touchDragging = false;
+            let startX = 0;
+            let startY = 0;
+            let dropTarget = null;
+
+
+            function getDropTargetAt(x, y) {
+
+                const element =
+                    document.elementFromPoint(x, y);
+
+                if (!element) {
+                    return null;
+                }
+
+                const targetPlayer =
+                    element.closest(".my-team-player");
+
+                if (
+                    targetPlayer &&
+                    targetPlayer !== playerElement
+                ) {
+                    return targetPlayer;
+                }
+
+                const targetList =
+                    element.closest(".my-team-player-list");
+
+                if (
+                    targetList &&
+                    canDropOnList(
+                        draggedPlayerId,
+                        targetList
+                    )
+                ) {
+                    return targetList;
+                }
+
+                return null;
+            }
+
+
+            function setDropTarget(target) {
+
+                if (dropTarget === target) {
+                    return;
+                }
+
+                if (dropTarget) {
+                    dropTarget.classList.remove(
+                        "is-drag-over"
+                    );
+                }
+
+                dropTarget = target;
+
+                if (dropTarget) {
+                    dropTarget.classList.add(
+                        "is-drag-over"
+                    );
+                }
+            }
+
+
+            function endTouchDrag() {
+
+                clearTimeout(holdTimer);
+                holdTimer = null;
+
+                if (!touchDragging) {
+                    return;
+                }
+
+                touchDragging = false;
+
+                playerElement.style.transform = "";
+                playerElement.classList.remove(
+                    "is-touch-dragging"
+                );
+
+                const target = dropTarget;
+                const sourcePlayerId = draggedPlayerId;
+
+                setDropTarget(null);
+
+                if (target) {
 
                     if (
-                        sourceElement.dataset.role ===
-                        targetRole
-                    ) {
-                        return;
-                    }
-
-                    if (
-                        list.querySelector(
-                            ".my-team-player"
+                        target.classList.contains(
+                            "my-team-player"
                         )
                     ) {
-                        return;
-                    }
-
-                    const changed =
-                        setPlayerRole(
-                            round,
+                        dropOnPlayer(
                             sourcePlayerId,
-                            targetRole
+                            target
                         );
+                    } else {
+                        dropOnList(
+                            sourcePlayerId,
+                            target
+                        );
+                    }
+                }
 
-                    if (!changed) {
+                clearDragState();
+            }
+
+
+            playerElement.addEventListener(
+                "touchstart",
+                event => {
+
+                    if (
+                        event.touches.length !== 1 ||
+                        event.target.closest("button")
+                    ) {
                         return;
                     }
 
-                    updateAfterRoleChange(
-                        sourceElement,
-                        targetRole
-                    );
+                    const touch = event.touches[0];
 
-                    sourceElement.classList.remove(
-                        "is-dragging"
+                    startX = touch.clientX;
+                    startY = touch.clientY;
+
+                    holdTimer = setTimeout(
+                        () => {
+
+                            holdTimer = null;
+                            touchDragging = true;
+
+                            draggedPlayerId =
+                                playerElement.dataset.playerId;
+
+                            playerElement.classList.add(
+                                "is-dragging",
+                                "is-touch-dragging"
+                            );
+
+                            if (navigator.vibrate) {
+                                navigator.vibrate(15);
+                            }
+                        },
+                        TOUCH_HOLD_MS
                     );
+                },
+                { passive: true }
+            );
+
+
+            playerElement.addEventListener(
+                "touchmove",
+                event => {
+
+                    const touch = event.touches[0];
+
+                    const dx = touch.clientX - startX;
+                    const dy = touch.clientY - startY;
+
+                    if (!touchDragging) {
+
+                        /*
+                            Finger moved before the hold
+                            finished — treat it as a scroll.
+                        */
+
+                        if (
+                            Math.abs(dx) > TOUCH_MOVE_TOLERANCE ||
+                            Math.abs(dy) > TOUCH_MOVE_TOLERANCE
+                        ) {
+                            clearTimeout(holdTimer);
+                            holdTimer = null;
+                        }
+
+                        return;
+                    }
+
+                    event.preventDefault();
+
+                    playerElement.style.transform =
+                        `translate(${dx}px, ${dy}px)`;
+
+                    setDropTarget(
+                        getDropTargetAt(
+                            touch.clientX,
+                            touch.clientY
+                        )
+                    );
+                },
+                { passive: false }
+            );
+
+
+            playerElement.addEventListener(
+                "touchend",
+                endTouchDrag
+            );
+
+
+            playerElement.addEventListener(
+                "touchcancel",
+                () => {
+                    setDropTarget(null);
+                    touchDragging = false;
+                    playerElement.style.transform = "";
+                    playerElement.classList.remove(
+                        "is-touch-dragging"
+                    );
+                    clearTimeout(holdTimer);
+                    holdTimer = null;
+                    clearDragState();
+                }
+            );
+
+
+            /*
+                Stop the long-press context menu /
+                text selection from hijacking the drag.
+            */
+
+            playerElement.addEventListener(
+                "contextmenu",
+                event => {
+                    if (touchDragging || holdTimer) {
+                        event.preventDefault();
+                    }
                 }
             );
         }
@@ -2399,7 +2765,7 @@ function setupMyTeamPlayerEvents(
 
             const roleButtons =
                 playerElement.querySelectorAll(
-                    ".my-team-role-button"
+                    ".my-team-role-button[data-role]"
                 );
 
             roleButtons.forEach(
@@ -2434,6 +2800,67 @@ function setupMyTeamPlayerEvents(
 
 
             /* =====================
+               CAPTAIN
+            ===================== */
+
+            const captainButton =
+                playerElement.querySelector(
+                    ".my-team-captain-button"
+                );
+
+            if (captainButton) {
+
+                captainButton.addEventListener(
+                    "click",
+                    () => {
+
+                        const changed =
+                            setCaptain(
+                                round,
+                                playerId
+                            );
+
+                        if (!changed) {
+                            return;
+                        }
+
+                        /*
+                            Setting a captain can clear
+                            the previous one, so sync
+                            every card from storage.
+                        */
+
+                        const savedPlayers =
+                            getMyTeam(round).players;
+
+                        document.querySelectorAll(
+                            ".my-team-player"
+                        ).forEach(
+                            element => {
+
+                                const savedPlayer =
+                                    savedPlayers.find(
+                                        player =>
+                                            String(player.id) ===
+                                            String(element.dataset.playerId)
+                                    );
+
+                                element.dataset.captain =
+                                    String(
+                                        savedPlayer?.captain === true
+                                    );
+
+                                updatePlayerRoleUI(element);
+                            }
+                        );
+
+                        updateMyTeamTotal();
+                    }
+                );
+            }
+
+
+            /* =====================
                REMOVE
             ===================== */
 
@@ -2447,11 +2874,6 @@ function setupMyTeamPlayerEvents(
                 removeButton.addEventListener(
                     "click",
                     () => {
-
-                        const section =
-                            playerElement.closest(
-                                ".my-team-section"
-                            );
 
                         const removed =
                             removePlayer(
@@ -2468,9 +2890,9 @@ function setupMyTeamPlayerEvents(
                         updateTeamCounters();
                         updateMyTeamTotal();
 
-                        restoreEmptySection(
-                            section
-                        );
+                        syncEmptySlots();
+
+                        syncGameTableSelection();
                     }
                 );
             }
@@ -2515,9 +2937,52 @@ function updatePlayerRoleUI(playerElement) {
 
 
 
+    // Only starters can captain
+    if (role !== "starter") {
+
+        playerElement.dataset.captain = "false";
+
+    }
+
+    const captain = playerElement.dataset.captain === "true";
+
+
+
+    const captainButton = playerElement.querySelector(".my-team-captain-button");
+
+    if (captainButton) captainButton.classList.toggle("is-active", captain);
+
+
+
+    let captainBadge = playerElement.querySelector(".my-team-captain-badge");
+
+    if (captain && !captainBadge) {
+
+        const info = playerElement.querySelector(".my-team-player-info");
+
+        if (info) {
+
+            captainBadge = document.createElement("span");
+
+            captainBadge.className = "my-team-captain-badge";
+
+            captainBadge.textContent = "C";
+
+            info.appendChild(captainBadge);
+
+        }
+
+    } else if (!captain && captainBadge) {
+
+        captainBadge.remove();
+
+    }
+
+
+
     const fantasyPoints = Number(playerElement.dataset.fantasyPoints) || 0;
 
-    const contribution = role === "bench" ? fantasyPoints / 2 : fantasyPoints;
+    const contribution = fantasyPoints * getPointsMultiplier(role, captain);
 
 
 
@@ -2535,7 +3000,7 @@ function updatePlayerRoleUI(playerElement) {
 
 
 
-    if (role === "starter") {
+    if (role === "starter" && !captain) {
 
         if (actualFpts) actualFpts.remove();
 
@@ -2667,17 +3132,11 @@ function updateMyTeamTotal() {
 
         const role = player.dataset.role;
 
+        const captain = player.dataset.captain === "true";
 
 
-        if (role === "bench") {
 
-            total += fantasyPoints / 2;
-
-        } else if (role === "starter" || role === "sixth") {
-
-            total += fantasyPoints;
-
-        }
+        total += fantasyPoints * getPointsMultiplier(role, captain);
 
     });
 
@@ -3123,11 +3582,15 @@ async function refreshMyTeamStats() {
 
                     const contribution =
 
-                        role === "bench"
+                        fantasyPoints *
 
-                            ? fantasyPoints / 2
+                        getPointsMultiplier(
 
-                            : fantasyPoints;
+                            role,
+
+                            playerElement.dataset.captain === "true"
+
+                        );
 
 
 
@@ -3361,129 +3824,93 @@ function setupMyTeamRefresh() {
 
 /* =========================
 
-   EMPTY MESSAGES
+   GAME TABLE SELECTION
 
 ========================= */
 
+/*
+    Re-sync the game stat table with My Team, for
+    changes made from the My Team view (the table
+    isn't re-rendered when switching views).
+*/
 
+function syncGameTableSelection() {
 
-function removeEmptyMessages() {
+    const round = getCurrentRound();
 
+    document.querySelectorAll(".player-tab").forEach(playerTab => {
 
-
-    document
-
-        .querySelectorAll(
-
-            ".my-team-player-list .my-team-no-players"
-
-        )
-
-        .forEach(
-
-            element => {
-
-
-
-                element.remove();
-
-
-
-            }
-
+        const selected = isPlayerSelected(
+            round,
+            playerTab.dataset.playerId
         );
 
+        playerTab.classList.toggle("is-in-my-team", selected);
 
+        const button = playerTab.querySelector(".my-team-button");
 
+        if (button) {
+            button.classList.toggle("is-selected", selected);
+            button.textContent = selected ? "✓" : "+";
+        }
+    });
 }
 
 
+/* =========================
+
+   EMPTY SLOTS
+
+========================= */
+
+/*
+    Placeholder rows for each open spot in a
+    role, so the user can see where players can
+    be dragged. They sit inside the player list,
+    so dropping on one drops on that list.
+*/
+
+const EMPTY_SLOT_LABELS = {
+    starter: "Starter",
+    sixth: "6th man",
+    bench: "Bench"
+};
 
 
+function createEmptySlots(role, count) {
 
-function restoreEmptySection(
-
-    section
-
-) {
-
-
-
-    if (!section) {
-
-        return;
-
-    }
-
-
-
-
-
-    const list =
-
-        section.querySelector(
-
-            ".my-team-player-list"
-
-        );
-
-
-
-
-
-    if (!list) {
-
-        return;
-
-    }
-
-
-
-
-
-    const players =
-
-        list.querySelectorAll(
-
-            ".my-team-player"
-
-        );
-
-
-
-
-
-    if (
-
-        players.length === 0
-
-    ) {
-
-
-
-        list.innerHTML = `
-
-
-
-            <div class="my-team-no-players">
-
-                No players
-
-            </div>
-
-
-
-        `;
-
-
-
-    }
-
-
-
+    return Array.from(
+        { length: Math.max(0, count) },
+        () => `<div class="my-team-empty-slot">${EMPTY_SLOT_LABELS[role]} slot</div>`
+    ).join("");
 }
 
 
+function syncEmptySlots() {
+
+    const lists = [
+        ["starter", ".my-team-section:not(.my-team-bench-section) .my-team-player-list", MAX_STARTERS],
+        ["sixth", ".my-team-sixth-list", MAX_SIXTH],
+        ["bench", ".my-team-bench-list", MAX_BENCH]
+    ];
+
+    lists.forEach(([role, selector, max]) => {
+
+        const list = document.querySelector(selector);
+
+        if (!list) return;
+
+        list.querySelectorAll(".my-team-empty-slot, .my-team-no-players")
+            .forEach(element => element.remove());
+
+        const count = list.querySelectorAll(".my-team-player").length;
+
+        list.insertAdjacentHTML(
+            "beforeend",
+            createEmptySlots(role, max - count)
+        );
+    });
+}
 
 
 
