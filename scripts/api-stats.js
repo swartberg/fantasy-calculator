@@ -1,9 +1,15 @@
 export const SEASON_CODE = "E2026";
 
-export async function fetchAndUpdate(gameCode) {
+export const PREVIOUS_SEASON_CODE =
+    `E${Number(SEASON_CODE.slice(1)) - 1}`;
+
+// Regular season: 38 rounds of 10 games
+export const ROUNDS_PER_SEASON = 38;
+
+export async function fetchAndUpdate(gameCode, seasonCode = SEASON_CODE) {
     try {
         const response = await fetch(
-            `https://live.euroleague.net/api/PlaybyPlay?gamecode=${gameCode}&seasoncode=${SEASON_CODE}`
+            `https://live.euroleague.net/api/PlaybyPlay?gamecode=${gameCode}&seasoncode=${seasonCode}`
         );
 
         if (!response.ok) {

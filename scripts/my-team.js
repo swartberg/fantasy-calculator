@@ -158,10 +158,11 @@ export function addPlayer(round, player) {
 /*
     Players added from search have no game yet.
     Once their game shows up in the round, remember
-    it so later refreshes only fetch that game.
+    it so later refreshes only fetch that game, and
+    their current club in case they have moved.
     Allowed on locked rounds — it's not a team change.
 */
-export function setPlayerGameCode(round, playerId, gameCode) {
+export function setPlayerGameCode(round, playerId, gameCode, team) {
     const teams = getAllTeams();
 
     const player =
@@ -176,6 +177,10 @@ export function setPlayerGameCode(round, playerId, gameCode) {
     }
 
     player.gameCode = gameCode;
+
+    if (team) {
+        player.team = team;
+    }
 
     saveAllTeams(teams);
 

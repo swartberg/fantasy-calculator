@@ -1486,6 +1486,14 @@ async function renderMyTeam() {
 
 
 
+                        team:
+
+                            currentPlayer?.Team ||
+
+                            savedPlayer.team,
+
+
+
                         fantasyPoints:
 
                             Number(
@@ -1584,7 +1592,7 @@ async function fetchMyTeamPlayers(round, savedPlayers) {
             if (
                 unresolved.some(saved => String(saved.id) === String(player.id))
             ) {
-                setPlayerGameCode(round, player.id, gameCode);
+                setPlayerGameCode(round, player.id, gameCode, player.Team);
             }
         });
     });
@@ -3344,6 +3352,36 @@ async function refreshMyTeamStats() {
                     .fantasyPoints =
 
                     fantasyPoints;
+
+
+
+
+
+                /* =====================
+
+                   TEAM
+
+                ===================== */
+
+
+
+                const teamElement =
+
+                    playerElement.querySelector(
+
+                        ".my-team-player-team"
+
+                    );
+
+
+
+                if (teamElement && currentPlayer.Team) {
+
+                    teamElement.textContent =
+
+                        currentPlayer.Team;
+
+                }
 
 
 

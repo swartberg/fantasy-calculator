@@ -1,12 +1,20 @@
-import { SEASON_CODE } from "./api-stats.js";
+import {
+    fetchAndUpdate,
+    SEASON_CODE,
+    PREVIOUS_SEASON_CODE,
+    ROUNDS_PER_SEASON
+} from "./api-stats.js";
 import { TEAM_NAMES, TEAM_ABB } from "./teams.js";
 import { addPlayer, isPlayerSelected, isRoundFinalized } from "./my-team.js";
 
-const ROSTER_CACHE_KEY = `fantasyRoster_${SEASON_CODE}`;
-const ROSTER_CACHE_HOURS = 12;
+// How many rounds back to collect players from
+const ROSTER_ROUNDS = 3;
 const MAX_RESULTS = 8;
 
-let rosterPromise = null;
+const GAME_CACHE_KEY = "fantasyRosterGames";
+
+// Roster per round, so switching rounds back and forth is instant
+const rosterPromises = {};
 
 
 /* =========================
@@ -15,8 +23,9 @@ let rosterPromise = null;
 
 /*
     Search box on the My Team tab. Lets players be
-    added before they have played (and so before
-    they appear in any game's stats table).
+    added before they have played in the selected
+    round, using everyone who played in the rounds
+    before it.
 */
 export function setupPlayerSearch({ getRound, onAdd }) {
     const input = document.querySelector(".js-player-search-input");
@@ -25,7 +34,7 @@ export function setupPlayerSearch({ getRound, onAdd }) {
     if (!input || !results) return;
 
     input.addEventListener("focus", () => {
-        loadRoster().catch(() => {});
+        loadRoster(getRound()).catch(() => {});
     });
 
     input.addEventListener("input", () => {
@@ -92,15 +101,17 @@ async function renderResults(input, results, round) {
         return;
     }
 
+    showMessage(results, "Loading players…");
+
     let roster;
 
     try {
-        roster = await loadRoster();
+        roster = await loadRoster(round);
     }
     catch (error) {
-        console.error("Error loading rosters:", error);
+        console.error("Error loading players:", error);
 
-        showMessage(results, "Could not load player list. Try again later.");
+        showMessage(results, "Could not load players from previous rounds.");
 
         return;
     }
@@ -130,7 +141,6 @@ async function renderResults(input, results, round) {
                 >
                 <span class="player-search-name">${player.name}</span>
                 <span class="player-search-team">${TEAM_ABB[player.team] || player.team}</span>
-                <span class="player-search-position">${player.position}</span>
                 <button
                     class="my-team-button player-search-add ${selected ? "is-selected" : ""}"
                     type="button"
@@ -157,111 +167,120 @@ function showMessage(results, message) {
 ========================= */
 
 /*
-    All players registered with the season's
-    clubs, cached so the 20 club requests only
-    run once in a while.
+    Everyone who played in the last few rounds
+    before the selected one. Early rounds reach
+    back into the previous season's last rounds.
 */
-function loadRoster() {
-    if (!rosterPromise) {
-        rosterPromise = fetchRoster().catch(error => {
+function loadRoster(round) {
+    if (!rosterPromises[round]) {
+        rosterPromises[round] = fetchRoster(round).catch(error => {
             // Allow a retry on the next search
-            rosterPromise = null;
+            delete rosterPromises[round];
 
             throw error;
         });
     }
 
-    return rosterPromise;
+    return rosterPromises[round];
 }
 
 
-async function fetchRoster() {
-    const cached = readCache();
+async function fetchRoster(round) {
+    const games = getPreviousRounds(round).flatMap(getRoundGames);
 
-    if (cached) return cached;
+    const gamePlayers = await Promise.all(
+        games.map(game => getGamePlayers(game))
+    );
 
-    const clubCodes = Object.keys(TEAM_NAMES);
-    const players = [];
+    // Newest games come first, so a player who changed
+    // clubs is listed with their latest team
+    const players = new Map();
 
-    // A few clubs at a time — the API rate-limits bursts
-    for (let i = 0; i < clubCodes.length; i += 5) {
-        const batch = clubCodes.slice(i, i + 5);
-        const rosters = await Promise.all(batch.map(fetchClubRoster));
+    gamePlayers.flat().forEach(player => {
+        if (!players.has(player.id)) {
+            players.set(player.id, {
+                ...player,
+                search: normalize(`${player.name} ${player.team} ${TEAM_NAMES[player.team] || ""}`)
+            });
+        }
+    });
 
-        rosters.forEach(roster => players.push(...roster));
+    if (!players.size) {
+        throw new Error("No players found in previous rounds");
     }
 
-    if (!players.length) {
-        throw new Error("No roster data returned");
-    }
+    return [...players.values()]
+        .sort((a, b) => a.name.localeCompare(b.name));
+}
 
-    writeCache(players);
+
+// Newest first: [{ season, round }, ...]
+function getPreviousRounds(round) {
+    return Array.from({ length: ROSTER_ROUNDS }, (_, index) => {
+        const previous = round - 1 - index;
+
+        return previous >= 1
+            ? { season: SEASON_CODE, round: previous }
+            : { season: PREVIOUS_SEASON_CODE, round: ROUNDS_PER_SEASON + previous };
+    });
+}
+
+
+function getRoundGames({ season, round }) {
+    const firstGame = (round - 1) * 10 + 1;
+
+    return Array.from({ length: 10 }, (_, index) => ({
+        season,
+        gameCode: firstGame + index
+    }));
+}
+
+
+/*
+    Players in one game. Finished games never
+    change, so they're kept in localStorage.
+*/
+async function getGamePlayers({ season, gameCode }) {
+    const cacheKey = `${season}_${gameCode}`;
+    const cache = readGameCache();
+
+    if (cache[cacheKey]) return cache[cacheKey];
+
+    const result = await fetchAndUpdate(gameCode, season);
+
+    if (!result || !result.players) return [];
+
+    const players = result.players.map(player => ({
+        id: player.id,
+        name: player.Name,
+        team: player.Team
+    }));
+
+    if (!result.Live) {
+        writeGameCache(cacheKey, players);
+    }
 
     return players;
 }
 
 
-async function fetchClubRoster(clubCode) {
+function readGameCache() {
     try {
-        const response = await fetch(
-            `https://api-live.euroleague.net/v2/competitions/E/seasons/${SEASON_CODE}/clubs/${clubCode}/people`
-        );
-
-        if (!response.ok) return [];
-
-        const people = await response.json();
-
-        if (!Array.isArray(people)) return [];
-
-        return people
-            .filter(entry => entry.type === "J" && entry.active !== false && entry.person?.code)
-            .map(entry => {
-                const team = entry.club?.code || clubCode;
-
-                return {
-                    // Same format as PLAYER_ID in the play-by-play feed
-                    id: `P${entry.person.code}`,
-                    name: entry.person.name,
-                    team,
-                    position: entry.positionName || "",
-                    search: normalize(`${entry.person.name} ${team} ${TEAM_NAMES[team] || ""}`)
-                };
-            });
+        return JSON.parse(localStorage.getItem(GAME_CACHE_KEY)) || {};
     }
     catch (error) {
-        console.error(`Error loading roster for ${clubCode}:`, error);
-
-        return [];
+        return {};
     }
 }
 
 
-function readCache() {
+function writeGameCache(cacheKey, players) {
     try {
-        const cached = JSON.parse(localStorage.getItem(ROSTER_CACHE_KEY));
+        const cache = readGameCache();
 
-        if (
-            cached &&
-            Date.now() - cached.savedAt < ROSTER_CACHE_HOURS * 60 * 60 * 1000 &&
-            cached.players?.length
-        ) {
-            return cached.players;
-        }
-    }
-    catch (error) {
-        // Ignore broken cache
-    }
+        cache[cacheKey] = players;
 
-    return null;
-}
-
-
-function writeCache(players) {
-    try {
-        localStorage.setItem(
-            ROSTER_CACHE_KEY,
-            JSON.stringify({ savedAt: Date.now(), players })
-        );
+        localStorage.setItem(GAME_CACHE_KEY, JSON.stringify(cache));
     }
     catch (error) {
         // Cache is optional

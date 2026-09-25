@@ -1819,42 +1819,107 @@ body {
 .player-search {
     position: relative;
 
-    width: 80%;
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    margin: 0 auto 20px;
+    width: min(420px, 90%);
+
+    margin: 0 auto 30px;
+}
+
+
+.player-search-title {
+    color: white;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+
+.player-search-field {
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+
+.player-search-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+
+    width: 14px;
+    height: 14px;
+
+    color: #777;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
 }
 
 
 .player-search-input {
     width: 100%;
-    height: 42px;
+    height: 55px;
 
-    padding: 0 14px;
+    padding: 0 16px 0 42px;
 
     border: .5px solid #474747;
-    border-radius: 9px;
+    border-radius: 10px;
 
     background-color: rgba(0, 0, 0, .5);
 
     color: white;
 
-    font-family: "Unbounded", sans-serif;
     font-size: 11px;
+    font-weight: 300;
+
+    letter-spacing: .05em;
 
     outline: none;
 
-    transition: border-color .2s ease;
+    -webkit-appearance: none;
+    appearance: none;
+
+    transition:
+        border-color .2s ease,
+        background-color .2s ease;
 }
 
 
 .player-search-input::placeholder {
-    color: #474747;
+    color: #777;
+
+    font-size: 9px;
+
+    letter-spacing: .15em;
+    text-transform: uppercase;
 }
 
 
+.player-search-input:hover,
 .player-search-input:focus {
     border-color: #FF6200;
+
+    background-color: rgba(0, 0, 0, .7);
+}
+
+
+.player-search-input:focus + .player-search-icon,
+.player-search-field:hover .player-search-icon {
+    color: #FF6200;
+}
+
+
+/* Hide the browser's own clear button */
+.player-search-input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
 }
 
 
@@ -1865,13 +1930,23 @@ body {
     right: 0;
     z-index: 20;
 
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
-    border-radius: 9px;
+    max-height: 400px;
 
-    background-color: #0d0d0d;
+    overflow-y: auto;
+
+    padding: 6px;
+
+    border: .5px solid #474747;
+    border-radius: 10px;
+
+    background-color: #0a0502;
 
     box-shadow: 0 8px 24px rgba(0, 0, 0, .7);
+
+    gap: 4px;
 }
 
 
@@ -1884,15 +1959,22 @@ body {
     display: flex;
     align-items: center;
 
-    min-height: 45px;
+    min-height: 42px;
 
-    padding: 7px 10px;
+    padding: 6px 8px;
 
-    border: .5px solid #262626;
+    border-radius: 7px;
 
     color: white;
 
     gap: 10px;
+
+    transition: background-color .2s ease;
+}
+
+
+.player-search-result:hover {
+    background-color: rgba(255, 98, 0, .08);
 }
 
 
@@ -1917,12 +1999,11 @@ body {
 
     text-overflow: ellipsis;
 
-    font-size: 11px;
+    font-size: 10px;
 }
 
 
-.player-search-team,
-.player-search-position {
+.player-search-team {
     flex-shrink: 0;
 
     color: #474747;
@@ -1939,14 +2020,13 @@ body {
 
 
 .player-search-message {
-    padding: 14px 10px;
+    padding: 12px 8px;
 
-    border: .5px solid #262626;
-    border-radius: 9px;
+    color: #777;
 
-    color: #474747;
+    font-size: 9px;
 
-    font-size: 10px;
+    letter-spacing: .05em;
 
     text-align: center;
 }
@@ -1956,10 +2036,18 @@ body {
 
     .player-search {
         width: calc(100% - 30px);
+        max-width: 420px;
+    }
+
+
+    .player-search-title {
+        font-size: 12px;
     }
 
 
     .player-search-input {
+        height: 52px;
+
         /* 16px stops iOS zooming in on focus */
         font-size: 16px;
     }
@@ -1967,20 +2055,6 @@ body {
 
     .player-search-name {
         font-size: 9px;
-    }
-
-
-    .player-search-position {
-        display: none;
-    }
-
-}
-
-
-@media (max-width: 400px) {
-
-    .player-search {
-        width: calc(100% - 20px);
     }
 
 }
