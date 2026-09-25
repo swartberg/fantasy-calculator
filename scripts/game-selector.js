@@ -1,5 +1,5 @@
-import { fetchAndUpdate } from "./api-stats.js";
-import { TEAM_ABB } from "./teams.js";
+import { fetchAndUpdate } from "./api-stats.js?v=3";
+import { TEAM_ABB } from "./teams.js?v=3";
 
 export function gameSelect(loadGame) {
     const roundSelector = document.querySelector(".js-select-round");
