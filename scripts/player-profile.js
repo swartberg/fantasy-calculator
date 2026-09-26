@@ -1,6 +1,6 @@
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=25";
-import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=25";
-import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=25";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=26";
+import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=26";
+import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=26";
 
 const RECENT_GAMES = 5;
 

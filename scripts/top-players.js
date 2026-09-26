@@ -1,7 +1,7 @@
-import { TEAM_ABB } from "./teams.js?v=25";
-import { isPlayerSelected, getMyTeam } from "./my-team.js?v=25";
-import { getGameSummaries, getRoundGames } from "./season-games.js?v=25";
-import { getBestLineup, scoreTeam } from "./round-scores.js?v=25";
+import { TEAM_ABB } from "./teams.js?v=26";
+import { isPlayerSelected, getMyTeam } from "./my-team.js?v=26";
+import { getGameSummaries, getRoundGames } from "./season-games.js?v=26";
+import { getBestLineup, scoreTeam } from "./round-scores.js?v=26";
 
 // Role tags for the best possible lineup
 const ROLE_TAGS = {
