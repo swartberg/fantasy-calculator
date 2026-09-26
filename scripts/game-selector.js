@@ -1,5 +1,5 @@
-import { fetchAndUpdate } from "./api-stats.js?v=3";
-import { TEAM_ABB } from "./teams.js?v=3";
+import { fetchAndUpdate } from "./api-stats.js?v=4";
+import { TEAM_ABB } from "./teams.js?v=4";
 
 export function gameSelect(loadGame) {
     const roundSelector = document.querySelector(".js-select-round");
@@ -95,7 +95,15 @@ export function gameSelect(loadGame) {
 }
 
 
+// How often live scores update on the game cards
+const LIVE_REFRESH_INTERVAL = 20000;
+
+let liveRefreshLoop = null;
+
+
 async function getRoundGames(round, wrapper, loadGame) {
+    stopLiveRefresh();
+
     wrapper.innerHTML = `
         <div class="loading-alert">
             Loading games…
@@ -126,6 +134,8 @@ async function getRoundGames(round, wrapper, loadGame) {
         wrapper,
         loadGame
     );
+
+    startLiveRefresh(games, wrapper);
 }
 
 
@@ -135,31 +145,9 @@ function renderGames(games, wrapper, loadGame) {
     games.forEach(game => {
         const gameTab = document.createElement("div");
 
-        let gameStatus = "-";
-
         gameTab.className = "game-tab";
 
-        const quarter = game.actualQuarter;
-
-        if (game.isLive === true) {
-            gameTab.classList.add("is-live");
-
-            if (quarter === 7) {
-                gameStatus = "OT 3";
-            }
-            else if (quarter === 6) {
-                gameStatus = "OT 2";
-            }
-            else if (quarter === 5) {
-                gameStatus = "OT";
-            }
-            else {
-                gameStatus = `${quarter}Q`;
-            }
-        }
-        else if (game.isLive === false) {
-            gameStatus = "END";
-        }
+        gameTab.dataset.gameCode = game.gameCode;
 
         gameTab.innerHTML = `
             <div class="team-logo">
@@ -171,22 +159,28 @@ function renderGames(games, wrapper, loadGame) {
             </div>
 
             <div class="game-info">
-                <div class="game-time">
-                    ${gameStatus}
-                </div>
+                <div class="game-time js-game-status"></div>
 
                 <div class="game-names">
-                    <h2 class="home-name">
-                        ${game.homeTeamAbb}
-                    </h2>
+                    <div class="game-team">
+                        <h2 class="home-name">
+                            ${game.homeTeamAbb}
+                        </h2>
+
+                        <span class="game-score js-home-score"></span>
+                    </div>
 
                     <h4 class="game-vs">
                         vs
                     </h4>
 
-                    <h2 class="away-name">
-                        ${game.awayTeamAbb}
-                    </h2>
+                    <div class="game-team">
+                        <h2 class="away-name">
+                            ${game.awayTeamAbb}
+                        </h2>
+
+                        <span class="game-score js-away-score"></span>
+                    </div>
                 </div>
             </div>
 
@@ -198,6 +192,8 @@ function renderGames(games, wrapper, loadGame) {
                 >
             </div>
         `;
+
+        updateGameTab(gameTab, game);
 
         gameTab.addEventListener("click", () => {
             document
@@ -225,6 +221,111 @@ function renderGames(games, wrapper, loadGame) {
 }
 
 
+/*
+    Status, scores and live styling. Used for the
+    first render and for live score updates.
+*/
+function updateGameTab(gameTab, game) {
+    const quarter = game.actualQuarter;
+
+    let gameStatus = "-";
+
+    if (game.isLive === true) {
+        if (quarter === 7) {
+            gameStatus = "OT 3";
+        }
+        else if (quarter === 6) {
+            gameStatus = "OT 2";
+        }
+        else if (quarter === 5) {
+            gameStatus = "OT";
+        }
+        else {
+            gameStatus = `${quarter}Q`;
+        }
+    }
+    else if (game.isLive === false) {
+        gameStatus = "END";
+    }
+
+    gameTab.classList.toggle("is-live", game.isLive === true);
+
+    gameTab.querySelector(".js-game-status").textContent = gameStatus;
+
+    const homeScore = gameTab.querySelector(".js-home-score");
+    const awayScore = gameTab.querySelector(".js-away-score");
+
+    homeScore.textContent = game.homeScore;
+    awayScore.textContent = game.awayScore;
+
+    // Highlight the winner once the game is over
+    const finished = game.isLive === false;
+
+    homeScore.classList.toggle(
+        "is-winner",
+        finished && game.homeScore > game.awayScore
+    );
+
+    awayScore.classList.toggle(
+        "is-winner",
+        finished && game.awayScore > game.homeScore
+    );
+}
+
+
+/* =========================
+   LIVE SCORES
+========================= */
+
+function startLiveRefresh(games, wrapper) {
+    let liveGameCodes = games
+        .filter(game => game.isLive)
+        .map(game => game.gameCode);
+
+    if (!liveGameCodes.length) return;
+
+    liveRefreshLoop = setInterval(async () => {
+        const updates = (
+            await Promise.all(liveGameCodes.map(getGameTeams))
+        ).filter(Boolean);
+
+        // Round changed while fetching
+        if (!liveRefreshLoop) return;
+
+        updates.forEach(game => {
+            const gameTab = wrapper.querySelector(
+                `.game-tab[data-game-code="${game.gameCode}"]`
+            );
+
+            if (gameTab) {
+                updateGameTab(gameTab, game);
+            }
+        });
+
+        // Finished games no longer need updates; failed
+        // fetches are retried next time
+        liveGameCodes = liveGameCodes.filter(gameCode => {
+            const game = updates.find(update => update.gameCode === gameCode);
+
+            return !game || game.isLive;
+        });
+
+        if (!liveGameCodes.length) {
+            stopLiveRefresh();
+        }
+    }, LIVE_REFRESH_INTERVAL);
+}
+
+
+function stopLiveRefresh() {
+    if (liveRefreshLoop) {
+        clearInterval(liveRefreshLoop);
+
+        liveRefreshLoop = null;
+    }
+}
+
+
 async function getGameTeams(gameCode) {
     const result = await fetchAndUpdate(gameCode);
 
@@ -246,6 +347,14 @@ async function getGameTeams(gameCode) {
         return null;
     }
 
+    // Team score is the sum of its players' points
+    const scores = {};
+
+    result.players.forEach(player => {
+        scores[player.Team] =
+            (scores[player.Team] || 0) + player.Points;
+    });
+
     return {
         gameCode,
 
@@ -257,6 +366,9 @@ async function getGameTeams(gameCode) {
 
         awayTeamAbb:
             TEAM_ABB[teams[1]] || teams[1],
+
+        homeScore: scores[teams[0]],
+        awayScore: scores[teams[1]],
 
         isLive: result.Live === true,
 

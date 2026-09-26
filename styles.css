@@ -437,6 +437,32 @@ body {
     text-align: center;
 }
 
+.game-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4px;
+}
+
+.game-score {
+    color: #777;
+
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.game-score:empty {
+    display: none;
+}
+
+.game-tab.is-live .game-score,
+.game-score.is-winner {
+    color: white;
+
+    font-weight: 500;
+}
+
 .team-logo {
     display: flex;
 
@@ -996,6 +1022,14 @@ body {
 
     .game-vs {
         font-size: 8px;
+    }
+
+    .game-team {
+        gap: 2px;
+    }
+
+    .game-score {
+        font-size: 10px;
     }
 
 
