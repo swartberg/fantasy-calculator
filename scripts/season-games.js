@@ -1,6 +1,14 @@
-import { fetchGameResult, SEASON_CODE, ROUNDS_PER_SEASON } from "./api-stats.js?v=16";
+import {
+    fetchGameResult,
+    SEASON_CODE,
+    ROUNDS_PER_SEASON,
+    SCORING_VERSION
+} from "./api-stats.js?v=17";
 
-const CACHE_PREFIX = "fantasyGame_";
+// Includes the scoring version, so a rules change recalculates cached games
+const CACHE_PREFIX = `fantasyGame_s${SCORING_VERSION}_`;
+
+removeOutdatedGames();
 
 // Parallel requests when loading many games at once
 const BATCH_SIZE = 10;
@@ -205,6 +213,19 @@ async function getRoundState(round) {
 /* =========================
    CACHE
 ========================= */
+
+// Drop games cached under older scoring rules
+function removeOutdatedGames() {
+    try {
+        Object.keys(localStorage)
+            .filter(key => key.startsWith("fantasyGame_") && !key.startsWith(CACHE_PREFIX))
+            .forEach(key => localStorage.removeItem(key));
+    }
+    catch (error) {
+        // Storage unavailable
+    }
+}
+
 
 function readCache(cacheKey) {
     try {

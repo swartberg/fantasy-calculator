@@ -6,6 +6,43 @@ export const PREVIOUS_SEASON_CODE =
 // Regular season: 38 rounds of 10 games
 export const ROUNDS_PER_SEASON = 38;
 
+/*
+    Bump when the fantasy point rules change, so games
+    cached with the old rules are recalculated.
+*/
+export const SCORING_VERSION = 2;
+
+
+/* =========================
+   PLAY TYPES
+========================= */
+
+/*
+    Fouls that count toward five personal fouls:
+    personal, offensive, unsportsmanlike, technical
+    and disqualifying.
+*/
+const FOUL_TYPES = new Set(["CM", "OF", "CMU", "CMT", "CMTI", "CMD"]);
+
+// Play types that don't affect fantasy points
+const NON_SCORING_TYPES = new Set([
+    "BP", "EP", "EG", "IN", "OUT", "TOUT", "TOUT_TV", "JB"
+]);
+
+const reportedPlayTypes = new Set();
+
+/*
+    Logs each unknown play type once, so new foul or
+    stat codes in the feed can be spotted in the console.
+*/
+function reportUnscoredPlayType(action) {
+    if (NON_SCORING_TYPES.has(action) || reportedPlayTypes.has(action)) return;
+
+    reportedPlayTypes.add(action);
+
+    console.info(`Play type "${action}" is not used for fantasy points.`);
+}
+
 /* =========================
    REQUESTS
 ========================= */
@@ -311,12 +348,17 @@ function parsePlayByPlay(data) {
 
 
         // FOUL
-        else if (action === "CM") {
+        else if (FOUL_TYPES.has(action)) {
             player.stats.fouls += 1;
 
-            if (player.stats.fouls >= 5) {
+            // Five personal fouls: -5, once
+            if (player.stats.fouls === 5) {
                 player.fantasy -= 5;
             }
+        }
+
+        else {
+            reportUnscoredPlayType(action);
         }
     });
 
@@ -377,73 +419,23 @@ function parsePlayByPlay(data) {
             const team = player.team;
 
 
-            // QUADRUPLE DOUBLE
-            if (
-                (
-                    player.stats.points >= 10 &&
-                    player.stats.total_rebounds >= 10 &&
-                    player.stats.assists >= 10 &&
-                    player.stats.steals >= 10
-                )
-                ||
-                (
-                    player.stats.points >= 10 &&
-                    player.stats.total_rebounds >= 10 &&
-                    player.stats.assists >= 10 &&
-                    player.stats.blocks >= 10
-                )
-            ) {
+            // DOUBLE / TRIPLE / QUADRUPLE DOUBLE
+            // Any of the five categories at 10 or more count
+            const doubleDigits = [
+                player.stats.points,
+                player.stats.total_rebounds,
+                player.stats.assists,
+                player.stats.steals,
+                player.stats.blocks
+            ].filter(value => value >= 10).length;
+
+            if (doubleDigits >= 4) {
                 player.fantasy += 100;
             }
-
-
-            // TRIPLE DOUBLE
-            else if (
-                (
-                    player.stats.points >= 10 &&
-                    player.stats.total_rebounds >= 10 &&
-                    player.stats.assists >= 10
-                )
-                ||
-                (
-                    player.stats.points >= 10 &&
-                    player.stats.total_rebounds >= 10 &&
-                    player.stats.blocks >= 10
-                )
-                ||
-                (
-                    player.stats.points >= 10 &&
-                    player.stats.assists >= 10 &&
-                    player.stats.steals >= 10
-                )
-                ||
-                (
-                    player.stats.total_rebounds >= 10 &&
-                    player.stats.assists >= 10 &&
-                    player.stats.blocks >= 10
-                )
-            ) {
+            else if (doubleDigits === 3) {
                 player.fantasy += 30;
             }
-
-
-            // DOUBLE DOUBLE
-            else if (
-                (
-                    player.stats.points >= 10 &&
-                    player.stats.total_rebounds >= 10
-                )
-                ||
-                (
-                    player.stats.points >= 10 &&
-                    player.stats.assists >= 10
-                )
-                ||
-                (
-                    player.stats.total_rebounds >= 10 &&
-                    player.stats.assists >= 10
-                )
-            ) {
+            else if (doubleDigits === 2) {
                 player.fantasy += 10;
             }
 

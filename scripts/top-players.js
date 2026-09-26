@@ -1,6 +1,6 @@
-import { TEAM_ABB } from "./teams.js?v=16";
-import { isPlayerSelected } from "./my-team.js?v=16";
-import { getGameSummaries, getRoundGames } from "./season-games.js?v=16";
+import { TEAM_ABB } from "./teams.js?v=17";
+import { isPlayerSelected } from "./my-team.js?v=17";
+import { getGameSummaries, getRoundGames } from "./season-games.js?v=17";
 
 const TOP_COUNT = 10;
 

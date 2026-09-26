@@ -1,5 +1,5 @@
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=16";
-import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=16";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=17";
+import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=17";
 
 const RECENT_GAMES = 5;
 
