@@ -2092,3 +2092,337 @@ body {
     }
 
 }
+
+
+/* =========================
+   PLAYER PROFILE
+========================= */
+
+.player-tab {
+    cursor: pointer;
+
+    transition: background-color .2s ease;
+}
+
+
+.player-tab:hover {
+    background-color: rgba(255, 98, 0, .06);
+}
+
+
+body.has-player-profile {
+    overflow: hidden;
+}
+
+
+.player-profile-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, .7);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity .2s ease;
+}
+
+
+.player-profile-overlay.is-open {
+    opacity: 1;
+
+    pointer-events: auto;
+}
+
+
+.player-profile {
+    position: relative;
+
+    width: min(420px, 100%);
+
+    padding: 25px 20px 20px;
+
+    border: .5px solid #474747;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        160deg,
+        rgba(27, 12, 3, 1) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .8);
+
+    color: white;
+
+    transform: translateY(10px) scale(.97);
+
+    transition: transform .2s ease;
+}
+
+
+.player-profile-overlay.is-open .player-profile {
+    transform: none;
+}
+
+
+.player-profile-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    border: 1px solid #474747;
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: #777;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        color .2s ease,
+        border-color .2s ease;
+}
+
+
+.player-profile-close:hover {
+    border-color: #FF6200;
+
+    color: #FF6200;
+}
+
+
+.player-profile-header {
+    display: flex;
+    align-items: center;
+
+    padding-right: 30px;
+
+    gap: 14px;
+}
+
+
+.player-profile-logo {
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+}
+
+
+.player-profile-title {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    gap: 5px;
+}
+
+
+.player-profile-name {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.player-profile-team {
+    color: #777;
+
+    font-size: 9px;
+    font-weight: 300;
+}
+
+
+.player-profile-loading {
+    padding: 40px 0 20px;
+
+    color: #FF6200;
+
+    font-size: 10px;
+
+    text-align: center;
+
+    opacity: .8;
+}
+
+
+.player-profile-label {
+    color: #777;
+
+    font-size: 8px;
+
+    letter-spacing: .15em;
+}
+
+
+.player-profile-average {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 22px 0 20px;
+    padding: 15px 10px;
+
+    border: .5px solid #474747;
+    border-radius: 10px;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    gap: 6px;
+}
+
+
+.player-profile-average strong {
+    color: #FF6200;
+
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.player-profile-sub {
+    color: #474747;
+
+    font-size: 8px;
+}
+
+
+.player-profile-recent-title {
+    margin-bottom: 8px;
+}
+
+
+.player-profile-games {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 6px;
+}
+
+
+.player-profile-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 8px 4px;
+
+    border: .5px solid #474747;
+    border-radius: 8px;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    gap: 6px;
+}
+
+
+.player-profile-game.is-empty {
+    justify-content: flex-end;
+
+    min-height: 100%;
+
+    border-style: dashed;
+
+    background: transparent;
+
+    color: #474747;
+}
+
+
+.player-profile-game.is-live {
+    border-color: #ff2d2d;
+}
+
+
+.player-profile-bar {
+    display: flex;
+    align-items: flex-end;
+
+    width: 10px;
+    height: 50px;
+
+    border-radius: 3px;
+
+    background-color: rgba(255, 255, 255, .05);
+
+    overflow: hidden;
+}
+
+
+.player-profile-bar-fill {
+    width: 100%;
+
+    border-radius: 3px;
+
+    background-color: #FF6200;
+}
+
+
+.player-profile-game-fpts {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.player-profile-game-info {
+    color: #777;
+
+    font-size: 7px;
+
+    white-space: nowrap;
+}
+
+
+.player-profile-game.is-live .player-profile-game-info {
+    color: #ff2d2d;
+}
+
+
+@media (max-width: 400px) {
+
+    .player-profile {
+        padding: 22px 14px 16px;
+    }
+
+
+    .player-profile-games {
+        gap: 4px;
+    }
+
+
+    .player-profile-game-fpts {
+        font-size: 10px;
+    }
+
+
+    .player-profile-game-info {
+        font-size: 6px;
+    }
+
+}

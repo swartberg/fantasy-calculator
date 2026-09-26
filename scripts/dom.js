@@ -1,10 +1,12 @@
-import { fetchAndUpdate } from "./api-stats.js?v=4";
+import { fetchAndUpdate } from "./api-stats.js?v=5";
 
-import { TEAM_NAMES } from "./teams.js?v=4";
+import { TEAM_NAMES } from "./teams.js?v=5";
 
-import { gameSelect } from "./game-selector.js?v=4";
+import { gameSelect } from "./game-selector.js?v=5";
 
-import { setupPlayerSearch } from "./player-search.js?v=4";
+import { setupPlayerSearch } from "./player-search.js?v=5";
+
+import { setupPlayerProfile } from "./player-profile.js?v=5";
 
 
 
@@ -40,7 +42,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=4";
+} from "./my-team.js?v=5";
 
 
 
@@ -97,6 +99,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     setupMyTeamRefresh();
+
+
+
+    setupPlayerProfile({
+
+        getRound: getCurrentRound
+
+    });
 
 
 
@@ -543,6 +553,18 @@ async function getStats(gameCode) {
             playerTab.dataset.playerId =
 
                 player.id;
+
+
+
+            // Used by the player profile window
+
+            playerTab.dataset.playerName =
+
+                player.Name;
+
+            playerTab.dataset.playerTeam =
+
+                player.Team;
 
 
 

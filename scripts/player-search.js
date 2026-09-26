@@ -1,17 +1,23 @@
 import {
-    fetchAndUpdate,
     SEASON_CODE,
     PREVIOUS_SEASON_CODE,
     ROUNDS_PER_SEASON
-} from "./api-stats.js?v=4";
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=4";
-import { addPlayer, isPlayerSelected, isRoundFinalized } from "./my-team.js?v=4";
+} from "./api-stats.js?v=5";
+import { getGameSummaries, getRoundGames } from "./season-games.js?v=5";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=5";
+import { addPlayer, isPlayerSelected, isRoundFinalized } from "./my-team.js?v=5";
 
 // How many rounds back to collect players from
 const ROSTER_ROUNDS = 3;
 const MAX_RESULTS = 8;
 
-const GAME_CACHE_KEY = "fantasyRosterGames";
+// Replaced by the shared game cache in season-games.js
+try {
+    localStorage.removeItem("fantasyRosterGames");
+}
+catch (error) {
+    // Storage unavailable
+}
 
 // Roster per round, so switching rounds back and forth is instant
 const rosterPromises = {};
@@ -186,20 +192,21 @@ function loadRoster(round) {
 
 
 async function fetchRoster(round) {
-    const games = getPreviousRounds(round).flatMap(getRoundGames);
+    const games = getPreviousRounds(round)
+        .flatMap(previous => getRoundGames(previous.round, previous.season));
 
-    const gamePlayers = await Promise.all(
-        games.map(game => getGamePlayers(game))
-    );
+    const summaries = await getGameSummaries(games);
 
     // Newest games come first, so a player who changed
     // clubs is listed with their latest team
     const players = new Map();
 
-    gamePlayers.flat().forEach(player => {
+    summaries.flatMap(summary => summary.players).forEach(player => {
         if (!players.has(player.id)) {
             players.set(player.id, {
-                ...player,
+                id: player.id,
+                name: player.name,
+                team: player.team,
                 search: normalize(`${player.name} ${player.team} ${TEAM_NAMES[player.team] || ""}`)
             });
         }
@@ -223,68 +230,6 @@ function getPreviousRounds(round) {
             ? { season: SEASON_CODE, round: previous }
             : { season: PREVIOUS_SEASON_CODE, round: ROUNDS_PER_SEASON + previous };
     });
-}
-
-
-function getRoundGames({ season, round }) {
-    const firstGame = (round - 1) * 10 + 1;
-
-    return Array.from({ length: 10 }, (_, index) => ({
-        season,
-        gameCode: firstGame + index
-    }));
-}
-
-
-/*
-    Players in one game. Finished games never
-    change, so they're kept in localStorage.
-*/
-async function getGamePlayers({ season, gameCode }) {
-    const cacheKey = `${season}_${gameCode}`;
-    const cache = readGameCache();
-
-    if (cache[cacheKey]) return cache[cacheKey];
-
-    const result = await fetchAndUpdate(gameCode, season);
-
-    if (!result || !result.players) return [];
-
-    const players = result.players.map(player => ({
-        id: player.id,
-        name: player.Name,
-        team: player.Team
-    }));
-
-    if (!result.Live) {
-        writeGameCache(cacheKey, players);
-    }
-
-    return players;
-}
-
-
-function readGameCache() {
-    try {
-        return JSON.parse(localStorage.getItem(GAME_CACHE_KEY)) || {};
-    }
-    catch (error) {
-        return {};
-    }
-}
-
-
-function writeGameCache(cacheKey, players) {
-    try {
-        const cache = readGameCache();
-
-        cache[cacheKey] = players;
-
-        localStorage.setItem(GAME_CACHE_KEY, JSON.stringify(cache));
-    }
-    catch (error) {
-        // Cache is optional
-    }
 }
 
 
