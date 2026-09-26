@@ -1,6 +1,15 @@
-import { TEAM_ABB } from "./teams.js?v=17";
-import { isPlayerSelected } from "./my-team.js?v=17";
-import { getGameSummaries, getRoundGames } from "./season-games.js?v=17";
+import { TEAM_ABB } from "./teams.js?v=18";
+import { isPlayerSelected, getMyTeam } from "./my-team.js?v=18";
+import { getGameSummaries, getRoundGames } from "./season-games.js?v=18";
+import { getBestLineup, scoreTeam } from "./round-scores.js?v=18";
+
+// Role tags for the best possible lineup
+const ROLE_TAGS = {
+    captain: { label: "C", title: "Captain (2x)" },
+    starter: { label: "S", title: "Starter" },
+    sixth: { label: "6", title: "6th man" },
+    bench: { label: "B", title: "Bench (0.5x)" }
+};
 
 const TOP_COUNT = 10;
 
@@ -134,14 +143,26 @@ async function renderTopPlayers(round, showLoading) {
 
     const liveGames = summaries.filter(summary => summary.live).length;
 
+    // Ranked order already puts the best lineup first: the top 10
+    const best = getBestLineup(ranked);
+
+    const lineupRoles = new Map(best.lineup.map(player => [
+        String(player.id),
+        player.captain ? "captain" : player.role
+    ]));
+
     container.innerHTML = `
+        ${renderBestLineup(best, players, round, liveGames)}
+
         <div class="my-team-header">
             <span>TOP ${TOP_COUNT}</span>
             <strong>ROUND ${round}${liveGames ? ` · <em class="top-players-live">${liveGames} LIVE</em>` : ""}</strong>
         </div>
 
         <div class="my-team-player-list">
-            ${top.map((player, index) => createPlayerRow(player, index + 1, round)).join("")}
+            ${top.map((player, index) =>
+                createPlayerRow(player, index + 1, round, false, lineupRoles.get(String(player.id)))
+            ).join("")}
         </div>
 
         <div class="top-players-worst">
@@ -164,8 +185,50 @@ async function renderTopPlayers(round, showLoading) {
 }
 
 
-function createPlayerRow(player, rank, round, worst = false) {
+/*
+    Best possible lineup total, and the user's team
+    score for the round next to it.
+*/
+function renderBestLineup(best, players, round, liveGames) {
+    const myTeam = getMyTeam(round);
+
+    let comparison = `<span class="best-lineup-note">Pick a team for round ${round} to compare.</span>`;
+
+    if (myTeam.players?.length) {
+        const points = new Map(players.map(player => [String(player.id), player.fpts]));
+
+        const myScore = scoreTeam(myTeam.players, points);
+
+        const share = best.total > 0 ? Math.round(myScore / best.total * 100) : 0;
+
+        comparison = `
+            <span class="best-lineup-mine">
+                Your team <strong>${formatFantasyPoints(myScore)}</strong>
+                <em>${share}% of best</em>
+            </span>
+        `;
+    }
+
+    return `
+        <div class="best-lineup">
+            <div class="best-lineup-main">
+                <span class="best-lineup-label">BEST POSSIBLE LINEUP</span>
+                <strong class="best-lineup-total">${formatFantasyPoints(best.total)}</strong>
+                <span class="best-lineup-note">
+                    Top scorer as captain, next five at full points, next four on the bench${liveGames ? " · so far" : ""}
+                </span>
+            </div>
+
+            ${comparison}
+        </div>
+    `;
+}
+
+
+function createPlayerRow(player, rank, round, worst = false, lineupRole = null) {
     const inMyTeam = isPlayerSelected(round, player.id);
+
+    const tag = lineupRole && ROLE_TAGS[lineupRole];
 
     return `
         <div
@@ -185,6 +248,8 @@ function createPlayerRow(player, rank, round, worst = false) {
 
                 <span class="my-team-player-name">${formatPlayerName(player.name)}</span>
                 <span class="my-team-player-team">${TEAM_ABB[player.team] || player.team}</span>
+
+                ${tag ? `<span class="lineup-tag is-${lineupRole}" title="${tag.title}">${tag.label}</span>` : ""}
             </div>
 
             <div class="top-player-stats">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css?v=17">
+    <link rel="stylesheet" href="styles.css?v=18">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -310,6 +310,35 @@
 
                 </div>
 
+
+                <!-- SEASON OVERVIEW (filled by season-overview.js) -->
+                <div class="season-overview js-season-overview"></div>
+
+
+                <!-- BACKUP -->
+                <div class="team-backup">
+
+                    <div class="my-team-section-title team-backup-title">BACKUP</div>
+
+                    <p class="team-backup-text">
+                        Your teams are saved only in this browser. Export a backup
+                        to keep them safe or move them to another device.
+                    </p>
+
+                    <div class="team-backup-buttons">
+                        <button class="team-backup-button js-export-teams" type="button">Export teams</button>
+                        <button class="team-backup-button js-import-teams" type="button">Import teams</button>
+                    </div>
+
+                    <input
+                        class="js-import-file"
+                        type="file"
+                        accept=".json,application/json"
+                        hidden
+                    >
+
+                </div>
+
             </div>
 
 
@@ -328,12 +357,12 @@
     <!-- JAVASCRIPT -->
     <script
         type="module"
-        src="scripts/dom.js?v=17"
+        src="scripts/dom.js?v=18"
     ></script>
 
     <script
         type="module"
-        src="scripts/view-selector.js?v=17"
+        src="scripts/view-selector.js?v=18"
     ></script>
 
 </body>

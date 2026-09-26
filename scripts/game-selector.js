@@ -1,5 +1,5 @@
-import { TEAM_ABB } from "./teams.js?v=17";
-import { findCurrentRound, getGameSummary } from "./season-games.js?v=17";
+import { TEAM_ABB } from "./teams.js?v=18";
+import { findCurrentRound, getGameSummary } from "./season-games.js?v=18";
 
 const ROUND_COUNT = 38;
 

@@ -1,14 +1,18 @@
-import { fetchAndUpdate } from "./api-stats.js?v=17";
+import { fetchAndUpdate } from "./api-stats.js?v=18";
 
-import { TEAM_NAMES } from "./teams.js?v=17";
+import { TEAM_NAMES } from "./teams.js?v=18";
 
-import { gameSelect } from "./game-selector.js?v=17";
+import { gameSelect } from "./game-selector.js?v=18";
 
-import { setupPlayerSearch } from "./player-search.js?v=17";
+import { setupPlayerSearch } from "./player-search.js?v=18";
 
-import { setupPlayerProfile } from "./player-profile.js?v=17";
+import { setupPlayerProfile } from "./player-profile.js?v=18";
 
-import { setupTopPlayers } from "./top-players.js?v=17";
+import { setupTopPlayers } from "./top-players.js?v=18";
+
+import { setupSeasonOverview } from "./season-overview.js?v=18";
+
+import { setupBackup } from "./backup.js?v=18";
 
 
 
@@ -46,7 +50,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=17";
+} from "./my-team.js?v=18";
 
 
 
@@ -117,6 +121,24 @@ document.addEventListener("DOMContentLoaded", () => {
     setupTopPlayers({
 
         getRound: getCurrentRound
+
+    });
+
+
+
+    setupSeasonOverview();
+
+
+
+    setupBackup({
+
+        onImport: () => {
+
+            renderMyTeam();
+
+            syncGameTableSelection();
+
+        }
 
     });
 
@@ -1407,6 +1429,10 @@ async function renderMyTeam() {
 
 
 
+        document.dispatchEvent(new Event("myteam:rendered"));
+
+
+
         return;
 
 
@@ -1817,6 +1843,11 @@ function renderMyTeamHTML(
 
 
 
+    // Lets other sections (season overview) follow team changes
+    document.dispatchEvent(new Event("myteam:rendered"));
+
+
+
     const unlockButton = container.querySelector(".unlock-team-button");
 
     if (unlockButton) {
@@ -2144,6 +2175,9 @@ function setupMyTeamPlayerEvents(
         updateTeamCounters();
         updateMyTeamTotal();
         syncEmptySlots();
+
+        // Keep the season overview in step
+        document.dispatchEvent(new Event("myteam:rendered"));
     }
 
 
@@ -2891,6 +2925,8 @@ function setupMyTeamPlayerEvents(
                         );
 
                         updateMyTeamTotal();
+
+                        document.dispatchEvent(new Event("myteam:rendered"));
                     }
                 );
             }

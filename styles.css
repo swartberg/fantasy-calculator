@@ -3097,3 +3097,416 @@ body.has-player-profile {
     }
 
 }
+
+
+/* =========================
+   SEASON OVERVIEW
+========================= */
+
+.season-overview {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 35px auto 0;
+}
+
+
+.season-overview:empty {
+    display: none;
+}
+
+
+.season-title {
+    color: var(--text-muted);
+}
+
+
+.season-summary {
+    display: flex;
+    align-items: center;
+
+    padding: 16px;
+
+    border: .5px solid var(--border);
+    border-radius: 10px;
+
+    background-color: var(--surface);
+
+    gap: 24px;
+}
+
+
+.season-total {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.season-total strong {
+    color: var(--accent);
+
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.season-label {
+    color: var(--text-faint);
+
+    font-size: 8px;
+
+    letter-spacing: .15em;
+}
+
+
+.season-stats {
+    flex: 1;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+.season-stat {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.season-stat-value {
+    color: var(--text);
+
+    font-size: 11px;
+}
+
+
+.season-stat.is-best .season-stat-value {
+    color: var(--green);
+}
+
+
+.season-stat.is-worst .season-stat-value {
+    color: var(--danger);
+}
+
+
+.season-rounds {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 10px;
+
+    gap: 6px;
+}
+
+
+.season-round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 58px;
+
+    padding: 7px 8px;
+
+    border: .5px solid var(--border);
+    border-radius: 8px;
+
+    background-color: var(--surface);
+
+    color: var(--text);
+
+    font-family: "Unbounded", sans-serif;
+
+    cursor: pointer;
+
+    gap: 4px;
+
+    transition: border-color .2s ease;
+}
+
+
+.season-round:hover {
+    border-color: var(--accent);
+}
+
+
+.season-round.is-unsaved {
+    border-style: dashed;
+}
+
+
+.season-round.is-live {
+    border-color: var(--live);
+}
+
+
+.season-round-number {
+    color: var(--text-faint);
+
+    font-size: 8px;
+}
+
+
+.season-round-score {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   TEAM BACKUP
+========================= */
+
+.team-backup {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 35px auto 0;
+}
+
+
+.team-backup-title {
+    color: var(--text-muted);
+}
+
+
+.team-backup-text {
+    max-width: 520px;
+
+    color: var(--text-faint);
+
+    font-size: 9px;
+    font-weight: 300;
+
+    line-height: 1.6;
+}
+
+
+.team-backup-buttons {
+    display: flex;
+
+    margin-top: 12px;
+
+    gap: 8px;
+}
+
+
+.team-backup-button {
+    height: 40px;
+
+    padding: 0 16px;
+
+    border: .5px solid var(--border);
+    border-radius: 9px;
+
+    background-color: var(--surface);
+
+    color: var(--text);
+
+    font-family: "Unbounded", sans-serif;
+    font-size: 9px;
+
+    cursor: pointer;
+
+    transition: border-color .2s ease;
+}
+
+
+.team-backup-button:hover {
+    border-color: var(--accent);
+}
+
+
+/* =========================
+   BEST LINEUP
+========================= */
+
+.best-lineup {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+    padding: 16px;
+
+    border: .5px solid rgba(242, 193, 78, .35);
+    border-radius: 10px;
+
+    background-color: var(--yellow-soft);
+
+    gap: 20px;
+}
+
+
+.best-lineup-main {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.best-lineup-label {
+    color: var(--yellow);
+
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: .12em;
+}
+
+
+.best-lineup-total {
+    color: var(--text);
+
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.best-lineup-note {
+    color: var(--text-muted);
+
+    font-size: 8px;
+    font-weight: 300;
+
+    line-height: 1.5;
+}
+
+
+.best-lineup-mine {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    text-align: right;
+
+    gap: 4px;
+}
+
+
+.best-lineup-mine strong {
+    color: var(--accent);
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.best-lineup-mine em {
+    font-style: normal;
+}
+
+
+/* Role in the best lineup, colored like My Team roles */
+.lineup-tag {
+    flex-shrink: 0;
+
+    padding: 1px 5px;
+
+    border: 1px solid currentColor;
+    border-radius: 4px;
+
+    font-size: 8px;
+    font-weight: 600;
+}
+
+
+.lineup-tag.is-captain {
+    border-color: var(--yellow);
+
+    background-color: var(--yellow);
+
+    color: #1a1204;
+}
+
+
+.lineup-tag.is-starter {
+    color: var(--accent);
+}
+
+
+.lineup-tag.is-sixth {
+    color: var(--purple);
+}
+
+
+.lineup-tag.is-bench {
+    color: var(--green);
+}
+
+
+@media (max-width: 768px) {
+
+    .season-overview,
+    .team-backup {
+        width: calc(100% - 30px);
+    }
+
+
+    .season-summary {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 14px;
+    }
+
+
+    .season-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .season-round {
+        min-width: 52px;
+    }
+
+
+    .team-backup-buttons {
+        flex-direction: column;
+    }
+
+
+    .best-lineup {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+
+    .best-lineup-mine {
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+
+    .best-lineup-total {
+        font-size: 22px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .season-overview,
+    .team-backup {
+        width: calc(100% - 20px);
+    }
+
+}

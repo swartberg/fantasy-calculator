@@ -673,6 +673,78 @@ export function isRoundFinalized(round) {
 
 
 /* =========================
+   SAVED ROUNDS
+========================= */
+
+// Rounds that have at least one player, in order
+export function getSavedRounds() {
+    const teams = getAllTeams();
+
+    return Object.keys(teams)
+        .map(Number)
+        .filter(round => round > 0 && teams[round]?.players?.length)
+        .sort((a, b) => a - b);
+}
+
+
+/* =========================
+   BACKUP
+========================= */
+
+const BACKUP_FORMAT = "fantasy-calculator-teams";
+
+// Everything needed to restore all saved teams
+export function exportTeams() {
+    return {
+        format: BACKUP_FORMAT,
+        version: 1,
+        exportedAt: new Date().toISOString(),
+        teams: getAllTeams()
+    };
+}
+
+
+/*
+    Replaces all saved teams with a backup. Checks the
+    backup first, so a wrong or damaged file changes
+    nothing. Returns the number of rounds restored.
+*/
+export function importTeams(backup) {
+    if (!backup || backup.format !== BACKUP_FORMAT || typeof backup.teams !== "object") {
+        throw new Error("This file is not a Fantasy Calculator backup.");
+    }
+
+    const teams = {};
+
+    Object.entries(backup.teams).forEach(([round, team]) => {
+        const roundNumber = Number(round);
+
+        if (!Number.isInteger(roundNumber) || roundNumber < 1 || !Array.isArray(team?.players)) {
+            throw new Error(`Round ${round} in the backup is not valid.`);
+        }
+
+        teams[roundNumber] = {
+            finalized: team.finalized === true,
+            players: team.players
+                .filter(player => player && player.id && player.name)
+                .map(player => ({
+                    id: String(player.id).trim(),
+                    name: String(player.name),
+                    team: String(player.team || ""),
+                    gameCode: player.gameCode ?? null,
+                    role: ["starter", "sixth", "bench"].includes(player.role) ? player.role : "bench",
+                    captain: player.captain === true
+                }))
+        };
+    });
+
+    saveAllTeams(teams);
+
+    return Object.keys(teams).length;
+}
+
+
+/* =========================
    LIMITS
 ========================= */
 
