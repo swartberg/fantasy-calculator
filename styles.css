@@ -301,7 +301,7 @@ body {
 .view-tab.is-active {
     border-bottom-color: var(--accent);
 
-    color: var(--accent);
+    color: var(--text);
 }
 
 
@@ -618,12 +618,11 @@ body {
 }
 
 /* Player is in My Team */
+/* Subtle: a thin orange edge and a faint tint */
 .player-tab.is-in-my-team {
-    border-color: var(--accent);
+    background-color: var(--accent-tint);
 
-    background-color: var(--accent-soft);
-
-    box-shadow: inset 3px 0 0 var(--accent);
+    box-shadow: inset 2px 0 0 var(--accent);
 }
 
 .player-info {
@@ -2538,7 +2537,7 @@ body.has-player-profile {
 /* --- Inactive elements stay quiet --- */
 
 .view-tab {
-    color: var(--text-faint);
+    color: var(--text);
 }
 
 
