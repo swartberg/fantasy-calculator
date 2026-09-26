@@ -1,9 +1,11 @@
 /*
     Player photos: images/players/firstname_lastname.<ext>
     Tried in this order; a placeholder shows if none exist.
+    The photo workflow converts uploads to .webp, so that
+    comes first; the rest cover photos not yet converted.
 */
 const PHOTO_FOLDER = "images/players";
-const PHOTO_EXTENSIONS = ["png", "jpg", "jpeg", "webp", "avif"];
+const PHOTO_EXTENSIONS = ["webp", "png", "jpg", "jpeg", "avif"];
 
 // Photo URL found per file name (null = none), so re-renders don't flicker
 const photoUrls = new Map();

@@ -1,4 +1,4 @@
-import { exportTeams, importTeams, getSavedRounds } from "./my-team.js?v=21";
+import { exportTeams, importTeams, getSavedRounds } from "./my-team.js?v=22";
 
 
 /* =========================

@@ -1,0 +1,47 @@
+# Shrinks player photos whenever they're added or changed,
+# using .github/scripts/optimize-photos.mjs, and commits
+# the smaller versions back to the branch.
+name: Optimize player photos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "images/players/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: optimize-photos
+  cancel-in-progress: false
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install image tools
+        run: npm install --no-save sharp@0.33
+
+      - name: Optimize photos
+        run: node .github/scripts/optimize-photos.mjs
+
+      - name: Commit smaller photos
+        run: |
+          git add -A images/players
+          if git diff --cached --quiet; then
+            echo "Photos already optimized."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Optimize player photos"
+          git push
