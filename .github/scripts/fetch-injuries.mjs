@@ -140,7 +140,18 @@ function parseReport(html) {
         });
     });
 
-    return players;
+    // The page contains the report twice (e.g. desktop and mobile copies)
+    const seen = new Set();
+
+    return players.filter(player => {
+        const key = `${player.name}|${player.teamName}`;
+
+        if (seen.has(key)) return false;
+
+        seen.add(key);
+
+        return true;
+    });
 }
 
 
