@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="stylesheet" href="styles.css?v=16">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -192,6 +192,31 @@
                     <span>My Team</span>
                 </button>
 
+                <button
+                    class="view-tab js-view-tab"
+                    data-view="top-players"
+                    type="button"
+                >
+                    <svg
+                        class="view-tab-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <path d="M7 4h10v5a5 5 0 0 1-10 0z"></path>
+                        <path d="M7 6H4.5a2.5 2.5 0 0 0 2.8 3.5"></path>
+                        <path d="M17 6h2.5a2.5 2.5 0 0 1-2.8 3.5"></path>
+                        <path d="M12 14v3.5"></path>
+                        <path d="M8.5 20.5h7l-.8-3h-5.4z"></path>
+                    </svg>
+
+                    <span>Top Players</span>
+                </button>
+
             </div>
 
 
@@ -287,6 +312,14 @@
 
             </div>
 
+
+            <!-- TOP PLAYERS VIEW -->
+            <div class="view-container js-view-top-players">
+
+                <div class="top-players-container"></div>
+
+            </div>
+
         </div>
 
     </div>
@@ -295,12 +328,12 @@
     <!-- JAVASCRIPT -->
     <script
         type="module"
-        src="scripts/dom.js?v=15"
+        src="scripts/dom.js?v=16"
     ></script>
 
     <script
         type="module"
-        src="scripts/view-selector.js?v=15"
+        src="scripts/view-selector.js?v=16"
     ></script>
 
 </body>

@@ -1,12 +1,14 @@
-import { fetchAndUpdate } from "./api-stats.js?v=15";
+import { fetchAndUpdate } from "./api-stats.js?v=16";
 
-import { TEAM_NAMES } from "./teams.js?v=15";
+import { TEAM_NAMES } from "./teams.js?v=16";
 
-import { gameSelect } from "./game-selector.js?v=15";
+import { gameSelect } from "./game-selector.js?v=16";
 
-import { setupPlayerSearch } from "./player-search.js?v=15";
+import { setupPlayerSearch } from "./player-search.js?v=16";
 
-import { setupPlayerProfile } from "./player-profile.js?v=15";
+import { setupPlayerProfile } from "./player-profile.js?v=16";
+
+import { setupTopPlayers } from "./top-players.js?v=16";
 
 
 
@@ -44,7 +46,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=15";
+} from "./my-team.js?v=16";
 
 
 
@@ -105,6 +107,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     setupPlayerProfile({
+
+        getRound: getCurrentRound
+
+    });
+
+
+
+    setupTopPlayers({
 
         getRound: getCurrentRound
 
@@ -3702,19 +3712,13 @@ function setupMyTeamRefresh() {
 
             /* =====================
 
-               SELECTED GAME
+               OTHER VIEWS
 
             ===================== */
 
 
 
-            else if (
-
-                tab.dataset.view ===
-
-                "game"
-
-            ) {
+            else {
 
 
 

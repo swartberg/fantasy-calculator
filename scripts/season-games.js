@@ -1,4 +1,4 @@
-import { fetchGameResult, SEASON_CODE, ROUNDS_PER_SEASON } from "./api-stats.js?v=15";
+import { fetchGameResult, SEASON_CODE, ROUNDS_PER_SEASON } from "./api-stats.js?v=16";
 
 const CACHE_PREFIX = "fantasyGame_";
 

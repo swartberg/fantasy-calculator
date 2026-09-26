@@ -1,5 +1,5 @@
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=15";
-import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=15";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=16";
+import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=16";
 
 const RECENT_GAMES = 5;
 
@@ -30,7 +30,8 @@ let openToken = 0;
 */
 export function setupPlayerProfile({ getRound }) {
     document.addEventListener("click", event => {
-        const playerTab = event.target.closest(".player-tab");
+        // Stat rows and any other element marked to open a profile
+        const playerTab = event.target.closest(".player-tab, .js-open-profile");
 
         if (!playerTab || event.target.closest(".my-team-button")) return;
 

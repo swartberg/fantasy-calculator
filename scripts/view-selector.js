@@ -2,15 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const tabs = document.querySelectorAll(".js-view-tab");
 
-    const gameView = document.querySelector(".js-view-game");
-    const myTeamView = document.querySelector(".js-view-my-team");
+    const views = {
+        "game": document.querySelector(".js-view-game"),
+        "my-team": document.querySelector(".js-view-my-team"),
+        "top-players": document.querySelector(".js-view-top-players")
+    };
 
     const gameSelector = document.querySelector(".game-selector");
 
     if (
         !tabs.length ||
-        !gameView ||
-        !myTeamView ||
+        Object.values(views).some(view => !view) ||
         !gameSelector
     ) {
         return;
@@ -21,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         tab.addEventListener("click", () => {
 
-            const view = tab.dataset.view;
+            const activeView = tab.dataset.view;
 
 
             // Update active tab
@@ -32,34 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
             tab.classList.add("is-active");
 
 
-            // =========================
-            // SELECTED GAME
-            // =========================
-
-            if (view === "game") {
-
-                gameView.style.display = "block";
-
-                myTeamView.style.display = "none";
-
-                gameSelector.style.display = "flex";
-
-            }
+            // Show only the selected view
+            Object.entries(views).forEach(([name, view]) => {
+                view.style.display =
+                    name === activeView ? "block" : "none";
+            });
 
 
-            // =========================
-            // MY TEAM
-            // =========================
-
-            else if (view === "my-team") {
-
-                gameView.style.display = "none";
-
-                myTeamView.style.display = "block";
-
-                gameSelector.style.display = "none";
-
-            }
+            // Game list is only used by the Selected Game view
+            gameSelector.style.display =
+                activeView === "game" ? "flex" : "none";
 
         });
 
