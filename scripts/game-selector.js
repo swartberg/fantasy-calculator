@@ -1,5 +1,6 @@
-import { fetchAndUpdate } from "./api-stats.js?v=6";
-import { TEAM_ABB } from "./teams.js?v=6";
+import { fetchAndUpdate } from "./api-stats.js?v=7";
+import { TEAM_ABB } from "./teams.js?v=7";
+import { findCurrentRound } from "./season-games.js?v=7";
 
 export function gameSelect(loadGame) {
     const roundSelector = document.querySelector(".js-select-round");
@@ -11,6 +12,9 @@ export function gameSelect(loadGame) {
     const roundTiles = document.querySelectorAll(".round-tile");
 
     if (!roundSelector || !gameSelector) return;
+
+    // Set once the user picks a round, so auto-selection won't override it
+    let userPickedRound = false;
 
     function updateRoundUI() {
         const round = Number(roundSelector.value);
@@ -48,6 +52,8 @@ export function gameSelect(loadGame) {
             const round = Number(tile.dataset.round);
 
             if (!round) return;
+
+            userPickedRound = true;
 
             // Update hidden select
             roundSelector.value = round;
@@ -88,10 +94,46 @@ export function gameSelect(loadGame) {
         );
     });
 
-    // Default to Round 1
+    // Round 1 until the current round is found
     roundSelector.value = "1";
 
     updateRoundUI();
+
+    selectCurrentRound();
+
+
+    /*
+        Pick the round with live or upcoming games
+        and load its games, as if the user chose it.
+    */
+    async function selectCurrentRound() {
+        if (roundNumber) {
+            roundNumber.textContent = "…";
+        }
+
+        gameSelector.innerHTML = `
+            <div class="loading-alert">
+                Finding current round…
+            </div>
+        `;
+
+        let round = 1;
+
+        try {
+            round = await findCurrentRound();
+        }
+        catch (error) {
+            console.error("Error finding current round:", error);
+        }
+
+        if (userPickedRound) return;
+
+        roundSelector.value = String(round);
+
+        roundSelector.dispatchEvent(
+            new Event("change")
+        );
+    }
 }
 
 
@@ -141,6 +183,17 @@ async function getRoundGames(round, wrapper, loadGame) {
 
 function renderGames(games, wrapper, loadGame) {
     wrapper.innerHTML = "";
+
+    // Unplayed games have no data, so they can't be shown yet
+    if (!games.length) {
+        wrapper.innerHTML = `
+            <div class="loading-alert">
+                No games in this round have started yet.
+            </div>
+        `;
+
+        return;
+    }
 
     games.forEach(game => {
         const gameTab = document.createElement("div");
