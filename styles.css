@@ -258,6 +258,7 @@ body {
    VIEW TABS
 ========================= */
 
+/* Two side-by-side buttons, styled like the round selector */
 .view-tabs {
     display: flex;
 
@@ -267,7 +268,7 @@ body {
 
     margin: 0 auto;
 
-    border-bottom: 1px solid var(--border);
+    gap: 10px;
 }
 
 .view-tab {
@@ -275,12 +276,12 @@ body {
 
     height: 50px;
 
-    border: none;
-    border-bottom: 2px solid transparent;
+    border: .5px solid var(--border);
+    border-radius: 10px;
 
-    background: transparent;
+    background-color: var(--surface);
 
-    color: var(--text-faint);
+    color: var(--text);
 
     font-family: "Unbounded", sans-serif;
 
@@ -290,16 +291,20 @@ body {
     cursor: pointer;
 
     transition:
-        color .2s ease,
-        border-color .2s ease;
+        border-color .2s ease,
+        background-color .2s ease;
 }
 
 .view-tab:hover {
-    color: var(--text);
+    border-color: var(--accent);
+
+    background-color: var(--surface-hover);
 }
 
 .view-tab.is-active {
-    border-bottom-color: var(--accent);
+    border-color: var(--accent);
+
+    background-color: var(--accent-soft);
 
     color: var(--text);
 }
@@ -2535,11 +2540,6 @@ body.has-player-profile {
 ========================= */
 
 /* --- Inactive elements stay quiet --- */
-
-.view-tab {
-    color: var(--text);
-}
-
 
 .game-tab {
     border-color: var(--border-subtle);
