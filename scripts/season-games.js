@@ -1,4 +1,4 @@
-import { fetchAndUpdate, SEASON_CODE } from "./api-stats.js?v=5";
+import { fetchAndUpdate, SEASON_CODE } from "./api-stats.js?v=6";
 
 const CACHE_PREFIX = "fantasyGame_";
 

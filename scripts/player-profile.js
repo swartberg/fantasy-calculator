@@ -1,7 +1,17 @@
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=5";
-import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=5";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=6";
+import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=6";
 
 const RECENT_GAMES = 5;
+
+/*
+    Player photos: images/players/firstname_lastname.<ext>
+    Tried in this order; a placeholder shows if none exist.
+*/
+const PHOTO_FOLDER = "images/players";
+const PHOTO_EXTENSIONS = ["png", "jpg", "jpeg", "webp", "avif"];
+
+// Photo URL found per file name (null = none), so re-renders don't flicker
+const photoUrls = new Map();
 
 let modal = null;
 
@@ -59,6 +69,8 @@ async function openPlayerProfile(player, round) {
         </div>
     `;
 
+    loadPlayerPhoto(content, player.name);
+
     const games = Array.from(
         { length: round },
         (_, index) => getRoundGames(index + 1)
@@ -84,6 +96,8 @@ async function openPlayerProfile(player, round) {
 
         ${renderStats(playerGames, round)}
     `;
+
+    loadPlayerPhoto(content, player.name);
 }
 
 
@@ -181,11 +195,20 @@ function getPlayerGames(player, summaries) {
 function renderHeader(player) {
     return `
         <div class="player-profile-header">
-            <img
-                class="player-profile-logo"
-                src="images/teams/${player.team}.svg"
-                alt="${player.team}"
-            >
+            <div class="player-profile-photo">
+                <div class="player-profile-photo-placeholder">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4.5"></circle>
+                        <path d="M3 22c0-5 4-8.5 9-8.5s9 3.5 9 8.5z"></path>
+                    </svg>
+                </div>
+
+                <img
+                    class="player-profile-logo"
+                    src="images/teams/${player.team}.svg"
+                    alt="${player.team}"
+                >
+            </div>
 
             <div class="player-profile-title">
                 <span class="player-profile-name">${formatName(player.name)}</span>
@@ -260,6 +283,88 @@ function renderStats(playerGames, round) {
             ${slots}
         </div>
     `;
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+/*
+    Tries each extension until one loads. Until then
+    (or if none exist) the placeholder stays visible.
+*/
+function loadPlayerPhoto(content, name) {
+    const frame = content.querySelector(".player-profile-photo");
+    const fileName = getPhotoFileName(name);
+
+    if (!frame || !fileName) return;
+
+    const showPhoto = url => {
+        const photo = new Image();
+
+        photo.className = "player-profile-photo-img";
+        photo.alt = formatName(name);
+        photo.src = url;
+
+        frame.querySelector(".player-profile-photo-placeholder")?.remove();
+        frame.prepend(photo);
+    };
+
+    if (photoUrls.has(fileName)) {
+        const url = photoUrls.get(fileName);
+
+        if (url) showPhoto(url);
+
+        return;
+    }
+
+    const tryExtension = index => {
+        if (index >= PHOTO_EXTENSIONS.length) {
+            photoUrls.set(fileName, null);
+
+            return;
+        }
+
+        const photo = new Image();
+
+        photo.onload = () => {
+            photoUrls.set(fileName, photo.src);
+
+            // Profile was re-rendered or closed meanwhile
+            if (frame.isConnected) {
+                showPhoto(photo.src);
+            }
+        };
+
+        photo.onerror = () => tryExtension(index + 1);
+
+        photo.src = `${PHOTO_FOLDER}/${fileName}.${PHOTO_EXTENSIONS[index]}`;
+    };
+
+    tryExtension(0);
+}
+
+
+/*
+    "DE COLO, NANDO" → "nando_de_colo"
+    Lowercase, accents removed, spaces become "_",
+    hyphens are kept ("hayes-davis").
+*/
+function getPhotoFileName(name = "") {
+    const [last, first] = name.split(",").map(part => part.trim());
+
+    if (!last) return "";
+
+    return [first, last]
+        .filter(Boolean)
+        .join(" ")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, "")
+        .trim()
+        .replace(/\s+/g, "_");
 }
 
 
