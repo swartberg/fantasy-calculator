@@ -42,19 +42,19 @@
       "name": "Garrison Mathews",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1",
-      "comment": "Muscle issue"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (Muscle issue)"
     },
     {
       "name": "Yagiz Aksu",
       "teamName": "Besiktas Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1",
-      "comment": "Coach's decision"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (Coach's decision)"
     },
     {
       "name": "Patrick Baldwin Jr.",
@@ -249,9 +249,9 @@
       "name": "A. Kone",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 1",
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 2",
       "comment": "DNP in Round 1 (coach's decision)"
     },
     {
@@ -276,19 +276,19 @@
       "name": "Marcus Bingham Jr.",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1",
-      "comment": "Undisclosed"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (Undisclosed)"
     },
     {
       "name": "Shane Larkin",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1",
-      "comment": "Didn't play in EuroLeague SuperCup (Undisclosed injury)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (Undisclosed injury)"
     },
     {
       "name": "Oz Blayzer",
@@ -609,18 +609,18 @@
       "name": "Joffrey Lauvergne",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1",
-      "comment": "Undisclosed"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (Undisclosed)"
     },
     {
       "name": "Vanja Marinkovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1",
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 2",
       "comment": "Working back from Achilles surgery"
     },
     {
@@ -690,63 +690,36 @@
       "name": "Gonzalo Corbalan",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1",
-      "comment": "Didn't travel with the team"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "Didn't travel with the team in Round 1"
     },
     {
       "name": "Lucas Mari",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1",
-      "comment": "Didn't travel with the team"
-    },
-    {
-      "name": "Nikola Mirotic",
-      "teamName": "Valencia Basket",
-      "team": "PAM",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 1",
-      "comment": "Travels with the team to Istanbul"
-    },
-    {
-      "name": "Jasiel Rivero",
-      "teamName": "Valencia Basket",
-      "team": "PAM",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 1",
-      "comment": "Travels with the team to Istanbul (minor muscular injury)"
-    },
-    {
-      "name": "Neal Sako",
-      "teamName": "Valencia Basket",
-      "team": "PAM",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 1",
-      "comment": "Travels with the team to Istanbul (groin injury)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "Didn't travel with the team in Round 1"
     },
     {
       "name": "Yankuba Sima",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1",
-      "comment": "Didn't travel with the team"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "Didn't travel with the team in Round 1"
     },
     {
       "name": "Kevin Kokila",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
       "comment": "Tear right thigh biceps (09.02). Out for 4 weeks"
     },
     {
@@ -786,5 +759,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-09-26T09:23:05.633Z"
+  "updatedAt": "2026-09-26T14:32:34.858Z"
 }
