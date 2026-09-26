@@ -48,9 +48,9 @@ export async function fetchAndUpdate(gameCode, seasonCode = SEASON_CODE) {
 
         allPlays.forEach(play => {
             // PLAYER_ID comes padded with trailing spaces
-            const id = play.PLAYER_ID?.trim();
-            const name = play.PLAYER;
-            const team = play.CODETEAM?.trim();
+            const id = asText(play.PLAYER_ID);
+            const name = asText(play.PLAYER);
+            const team = asText(play.CODETEAM);
 
             if (!id || !name) return;
 
@@ -97,11 +97,11 @@ export async function fetchAndUpdate(gameCode, seasonCode = SEASON_CODE) {
         // =========================
 
         allPlays.forEach(play => {
-            const player = players[play.PLAYER_ID?.trim()];
+            const player = players[asText(play.PLAYER_ID)];
 
             if (!player) return;
 
-            const action = play.PLAYTYPE;
+            const action = asText(play.PLAYTYPE);
 
             if (!action) return;
 
@@ -243,10 +243,10 @@ export async function fetchAndUpdate(gameCode, seasonCode = SEASON_CODE) {
                 Object.keys(teamTotal);
 
             const teamOneScore =
-                teamTotal[teamsPlayed[0]].points;
+                teamTotal[teamsPlayed[0]]?.points || 0;
 
             const teamTwoScore =
-                teamTotal[teamsPlayed[1]].points;
+                teamTotal[teamsPlayed[1]]?.points || 0;
 
             let winningTeam;
 
@@ -388,3 +388,15 @@ export async function fetchAndUpdate(gameCode, seasonCode = SEASON_CODE) {
 
 
 window.fetchAndUpdate = fetchAndUpdate;
+
+
+/*
+    Feed fields as trimmed text. Not every play has
+    every field as a string, and one bad value
+    mustn't make the whole game look empty.
+*/
+function asText(value) {
+    if (typeof value === "string") return value.trim();
+
+    return value === undefined || value === null ? "" : String(value);
+}
