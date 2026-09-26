@@ -1,5 +1,5 @@
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=14";
-import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=14";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=15";
+import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=15";
 
 const RECENT_GAMES = 5;
 
@@ -76,13 +76,38 @@ async function openPlayerProfile(player, round) {
         (_, index) => getRoundGames(index + 1)
     ).flat();
 
-    const summaries = await getGameSummaries(games, (loaded, total) => {
+    let summaries;
+
+    try {
+        summaries = await getGameSummaries(games, (loaded, total) => {
+            const loading = content.querySelector(".js-profile-loading");
+
+            if (token === openToken && loading) {
+                loading.textContent = `Loading season… ${Math.round(loaded / total * 100)}%`;
+            }
+        });
+    }
+    catch (error) {
+        console.error("Error loading player profile:", error);
+
+        if (token !== openToken) return;
+
         const loading = content.querySelector(".js-profile-loading");
 
-        if (token === openToken && loading) {
-            loading.textContent = `Loading season… ${Math.round(loaded / total * 100)}%`;
+        if (loading) {
+            loading.innerHTML = `
+                Couldn't load the season.
+                <button class="retry-button" type="button">Retry</button>
+            `;
+
+            // Finished games loaded so far are cached, so a retry is quicker
+            loading.querySelector(".retry-button").addEventListener("click", () => {
+                openPlayerProfile(player, round);
+            });
         }
-    });
+
+        return;
+    }
 
     if (token !== openToken) return;
 

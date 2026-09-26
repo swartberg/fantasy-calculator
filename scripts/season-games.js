@@ -1,4 +1,4 @@
-import { fetchAndUpdate, SEASON_CODE, ROUNDS_PER_SEASON } from "./api-stats.js?v=14";
+import { fetchGameResult, SEASON_CODE, ROUNDS_PER_SEASON } from "./api-stats.js?v=15";
 
 const CACHE_PREFIX = "fantasyGame_";
 
@@ -11,7 +11,11 @@ const BATCH_SIZE = 10;
 ========================= */
 
 /*
-    Players and fantasy points for one game.
+    Players and fantasy points for one game, or null
+    when it has no data yet. Throws when the game
+    couldn't be loaded, so callers can tell that
+    apart from "not played".
+
     Finished games never change, so they're kept
     in localStorage and only fetched once.
 */
@@ -22,7 +26,11 @@ export async function getGameSummary(gameCode, season = SEASON_CODE) {
 
     if (cached) return cached;
 
-    const result = await fetchAndUpdate(gameCode, season);
+    const { ok, result } = await fetchGameResult(gameCode, season);
+
+    if (!ok) {
+        throw new Error(`Game ${gameCode} (${season}) could not be loaded`);
+    }
 
     if (!result || !result.players || !result.players.length) {
         return null;
@@ -32,6 +40,7 @@ export async function getGameSummary(gameCode, season = SEASON_CODE) {
         season,
         gameCode,
         live: result.Live === true,
+        quarter: result.ActualQuarter,
         players: result.players.map(player => ({
             id: player.id,
             name: player.Name,
@@ -51,7 +60,8 @@ export async function getGameSummary(gameCode, season = SEASON_CODE) {
 
 /*
     Summaries for many games, a batch at a time.
-    Games with no data are left out.
+    Games with no data are left out. Throws if any
+    game couldn't be loaded.
 */
 export async function getGameSummaries(games, onProgress) {
     const summaries = [];

@@ -2912,3 +2912,42 @@ body.has-player-profile {
 .my-team-player.is-touch-dragging[data-role] {
     box-shadow: 0 6px 18px rgba(0, 0, 0, .6);
 }
+
+
+/* =========================
+   LOAD ERRORS
+========================= */
+
+.load-error {
+    color: var(--text-muted);
+}
+
+
+.round-status[data-state="error"] .round-status-dot {
+    background-color: var(--danger);
+}
+
+
+.retry-button {
+    margin-left: 8px;
+    padding: 5px 12px;
+
+    border: 1px solid var(--accent);
+    border-radius: 7px;
+
+    background: transparent;
+
+    color: var(--accent);
+
+    font-family: "Unbounded", sans-serif;
+    font-size: 9px;
+
+    cursor: pointer;
+
+    transition: background-color .2s ease;
+}
+
+
+.retry-button:hover {
+    background-color: var(--accent-soft);
+}

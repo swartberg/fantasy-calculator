@@ -1,6 +1,5 @@
-import { fetchAndUpdate } from "./api-stats.js?v=14";
-import { TEAM_ABB } from "./teams.js?v=14";
-import { findCurrentRound } from "./season-games.js?v=14";
+import { TEAM_ABB } from "./teams.js?v=15";
+import { findCurrentRound, getGameSummary } from "./season-games.js?v=15";
 
 const ROUND_COUNT = 38;
 
@@ -157,7 +156,15 @@ export function gameSelect(loadGame) {
        ROUND STATE
     ========================= */
 
-    onRoundGames = (round, games) => {
+    onRoundGames = (round, games, failed = 0) => {
+        if (failed) {
+            if (round === Number(roundSelector.value)) {
+                setStatus("error", "Some games couldn't load");
+            }
+
+            return;
+        }
+
         const live = games.filter(game => game.isLive).length;
         const finished = games.length - live;
 
@@ -221,13 +228,28 @@ export function gameSelect(loadGame) {
     async function selectCurrentRound() {
         setStatus("loading", "Finding current round…");
 
-        let round = 1;
+        let round;
 
         try {
             round = await findCurrentRound();
         }
         catch (error) {
             console.error("Error finding current round:", error);
+
+            if (userPickedRound) return;
+
+            setStatus("error", "Couldn't reach EuroLeague data");
+
+            gameSelector.innerHTML = `
+                <div class="loading-alert load-error">
+                    Couldn't find the current round.
+                    <button class="retry-button" type="button">Retry</button>
+                </div>
+            `;
+
+            gameSelector.querySelector(".retry-button").addEventListener("click", selectCurrentRound);
+
+            return;
         }
 
         currentRound = round;
@@ -280,30 +302,47 @@ async function getRoundGames(round, wrapper, loadGame) {
         );
     }
 
-    const games = (
-        await Promise.all(requests)
-    ).filter(Boolean);
+    const results = await Promise.allSettled(requests);
 
     // Another round was picked while this one loaded
     if (token !== roundLoadToken) return;
 
-    renderGames(
-        games,
-        wrapper,
-        loadGame
-    );
+    const games = results
+        .filter(result => result.status === "fulfilled" && result.value)
+        .map(result => result.value);
 
-    onRoundGames?.(round, games);
+    const failed = results.filter(result => result.status === "rejected").length;
+
+    // A failed load must not read as "no games played"
+    if (failed) {
+        renderGames(games, wrapper, loadGame, true);
+
+        wrapper.insertAdjacentHTML("beforeend", `
+            <div class="loading-alert load-error">
+                Couldn't load ${failed} ${failed === 1 ? "game" : "games"}.
+                <button class="retry-button" type="button">Retry</button>
+            </div>
+        `);
+
+        wrapper.querySelector(".retry-button").addEventListener("click", () => {
+            getRoundGames(round, wrapper, loadGame);
+        });
+    }
+    else {
+        renderGames(games, wrapper, loadGame);
+    }
+
+    onRoundGames?.(round, games, failed);
 
     startLiveRefresh(round, games, wrapper);
 }
 
 
-function renderGames(games, wrapper, loadGame) {
+function renderGames(games, wrapper, loadGame, hasErrors = false) {
     wrapper.innerHTML = "";
 
     // Unplayed games have no data, so they can't be shown yet
-    if (!games.length) {
+    if (!games.length && !hasErrors) {
         wrapper.innerHTML = `
             <div class="loading-alert">
                 No games in this round have started yet.
@@ -457,7 +496,9 @@ function startLiveRefresh(round, games, wrapper) {
 
     liveRefreshLoop = setInterval(async () => {
         const updates = (
-            await Promise.all(liveGameCodes.map(getGameTeams))
+            await Promise.all(
+                liveGameCodes.map(gameCode => getGameTeams(gameCode).catch(() => null))
+            )
         ).filter(Boolean);
 
         // Round changed while fetching
@@ -504,20 +545,21 @@ function stopLiveRefresh() {
 }
 
 
+/*
+    Card data for a game, or null when it has no data
+    yet. Throws when it couldn't be loaded. Finished
+    games come from the shared cache.
+*/
 async function getGameTeams(gameCode) {
-    const result = await fetchAndUpdate(gameCode);
+    const summary = await getGameSummary(gameCode);
 
-    if (
-        !result ||
-        !result.players ||
-        result.players.length === 0
-    ) {
+    if (!summary) {
         return null;
     }
 
     const teams = [
         ...new Set(
-            result.players.map(p => p.Team)
+            summary.players.map(p => p.team)
         )
     ];
 
@@ -528,9 +570,9 @@ async function getGameTeams(gameCode) {
     // Team score is the sum of its players' points
     const scores = {};
 
-    result.players.forEach(player => {
-        scores[player.Team] =
-            (scores[player.Team] || 0) + player.Points;
+    summary.players.forEach(player => {
+        scores[player.team] =
+            (scores[player.team] || 0) + player.points;
     });
 
     return {
@@ -548,8 +590,8 @@ async function getGameTeams(gameCode) {
         homeScore: scores[teams[0]],
         awayScore: scores[teams[1]],
 
-        isLive: result.Live === true,
+        isLive: summary.live === true,
 
-        actualQuarter: result.ActualQuarter,
+        actualQuarter: summary.quarter,
     };
 }
