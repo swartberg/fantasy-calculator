@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
 
-            // Game list is only used by the Selected Game view
+            // Game list is only used by the Games view
             gameSelector.style.display =
                 activeView === "game" ? "flex" : "none";
 
