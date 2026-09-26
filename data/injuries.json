@@ -1,0 +1,1573 @@
+{
+  "available": true,
+  "source": "https://basketnews.com/news-212393-euroleague-injury-report-updated.html",
+  "players": [
+    {
+      "name": "Isaia Cordinier",
+      "teamName": "Anadolu Efes Istanbul",
+      "team": "IST",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "DNP in Round 1 (rehab after surgery)"
+    },
+    {
+      "name": "Burak Can Yildizli",
+      "teamName": "Anadolu Efes Istanbul",
+      "team": "IST",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "David Mutaf",
+      "teamName": "Anadolu Efes Istanbul",
+      "team": "IST",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Georgios Papagiannis",
+      "teamName": "Anadolu Efes Istanbul",
+      "team": "IST",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Left knee ACL injury"
+    },
+    {
+      "name": "Garrison Mathews",
+      "teamName": "Armani Olimpia Milan",
+      "team": "MIL",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Muscle issue"
+    },
+    {
+      "name": "Yagiz Aksu",
+      "teamName": "Besiktas Istanbul",
+      "team": "ULK",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Coach's decision"
+    },
+    {
+      "name": "Patrick Baldwin Jr.",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (minor injury)"
+    },
+    {
+      "name": "Jovan Bikic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1(coach's decision)"
+    },
+    {
+      "name": "Andrej Bjelic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Dejan Davidovac",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Nikola Djurisic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (quad injury)"
+    },
+    {
+      "name": "Vojin Medarevic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Aleksej Nedeljkovic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (knee injury)"
+    },
+    {
+      "name": "Ognjen Simjanovski",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Awudu Abass",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Not included in the EuroLeague roster."
+    },
+    {
+      "name": "Justin Anderson",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Nemanja Dangubic",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Mouhammadou Jaiteh",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Continues rehab after Achilles injury."
+    },
+    {
+      "name": "Kenan Kamenjas",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Dzanan Musa",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (knee injury)"
+    },
+    {
+      "name": "Klemen Prepelic",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Tomislav Vuckovic",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Kamar Baldwin",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Kilian Fischer",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Niels Giffey",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Duane Washington Jr.",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Tosan Evbuomwan",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Left shoulder injury"
+    },
+    {
+      "name": "A. Kone",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 1",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Yoan Makoundou",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1-6",
+      "comment": "Left knee injury"
+    },
+    {
+      "name": "Josh Nebo",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1-5",
+      "comment": "Right calf injury"
+    },
+    {
+      "name": "Marcus Bingham Jr.",
+      "teamName": "Fenerbahce Beko Istanbul",
+      "team": "ULK",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Undisclosed"
+    },
+    {
+      "name": "Shane Larkin",
+      "teamName": "Fenerbahce Beko Istanbul",
+      "team": "ULK",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Didn't play in EuroLeague SuperCup (Undisclosed injury)"
+    },
+    {
+      "name": "Oz Blayzer",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Tamir Blatt",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Out of the squad"
+    },
+    {
+      "name": "Frederic Bourdillon",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Khadeen Carrington",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Amir Coffey",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed injury)"
+    },
+    {
+      "name": "Tyler Ennis",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "out",
+      "label": "Out",
+      "round": "Long-term",
+      "comment": "Torn Achilles"
+    },
+    {
+      "name": "Tomer Ginat",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Max Heidegger",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Guy Palatin",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Itay Segev",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Yiftach Ziv",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Pedro Souza",
+      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "team": "BAS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Mathis Dossou-Yovo",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1-9",
+      "comment": "Adductor muscle injury (out until November)"
+    },
+    {
+      "name": "Edwin Jackson",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "TyTy Washington Jr.",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (ankle injury)"
+    },
+    {
+      "name": "Amit Ebo",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Shane Hunter",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Gur Lavi",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "T.J. Leaf",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Georgios Bourneles",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Antonios Karagiannidis",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Omiros Netzipoglou",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Nikolaos Plotas",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Moustapha Fall",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (hamstring injury)"
+    },
+    {
+      "name": "Nigel Hayes-Davis",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2-4",
+      "comment": "Fractured fourth metacarpal in his left hand"
+    },
+    {
+      "name": "Ioannis Kouzeloglou",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Kendrick Nunn",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2-4",
+      "comment": "Medial right meniscus tear"
+    },
+    {
+      "name": "Kostas Sloukas",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2-4",
+      "comment": "Rehab after leg injury"
+    },
+    {
+      "name": "Iason Varvaritis",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Joel Ayayi",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Nobel Boungou-Colo",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Amath M'Baye",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Frank Ntilikina",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Maozinha Pereira",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Enzo Shahrvin",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Joffrey Lauvergne",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Undisclosed"
+    },
+    {
+      "name": "Vanja Marinkovic",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Working back from Achilles surgery"
+    },
+    {
+      "name": "Jabari Parker",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Out of the squad"
+    },
+    {
+      "name": "Derek Willis",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "Left Round 1 with leg injury"
+    },
+    {
+      "name": "Usman Garuba",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "out",
+      "label": "Out",
+      "round": "Long-term",
+      "comment": "Torn ACL"
+    },
+    {
+      "name": "Sergio Llull",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1"
+    },
+    {
+      "name": "Chuma Okeke",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1"
+    },
+    {
+      "name": "Max Shulga",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1"
+    },
+    {
+      "name": "Nick Smith Jr.",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (not injured)"
+    },
+    {
+      "name": "Gonzalo Corbalan",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Didn't travel with the team"
+    },
+    {
+      "name": "Lucas Mari",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Didn't travel with the team"
+    },
+    {
+      "name": "Nikola Mirotic",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "ready",
+      "label": "Ready",
+      "round": "Round 1",
+      "comment": "Travels with the team to Istanbul"
+    },
+    {
+      "name": "Jasiel Rivero",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "ready",
+      "label": "Ready",
+      "round": "Round 1",
+      "comment": "Travels with the team to Istanbul (minor muscular injury)"
+    },
+    {
+      "name": "Neal Sako",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "ready",
+      "label": "Ready",
+      "round": "Round 1",
+      "comment": "Travels with the team to Istanbul (groin injury)"
+    },
+    {
+      "name": "Yankuba Sima",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Didn't travel with the team"
+    },
+    {
+      "name": "Kevin Kokila",
+      "teamName": "Virtus Bologna",
+      "team": "VIR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Tear right thigh biceps (09.02). Out for 4 weeks"
+    },
+    {
+      "name": "Kaodirichi Akobundu-Ehiogu",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Saben Lee",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (hamstring strain)"
+    },
+    {
+      "name": "Deividas Sirvydis",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Nigel Williams-Goss",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "out",
+      "label": "Out",
+      "round": "Rounds 2-4",
+      "comment": "Suffered hamstring injury in Round 1 game"
+    },
+    {
+      "name": "Isaia Cordinier",
+      "teamName": "Anadolu Efes Istanbul",
+      "team": "IST",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "DNP in Round 1 (rehab after surgery)"
+    },
+    {
+      "name": "Burak Can Yildizli",
+      "teamName": "Anadolu Efes Istanbul",
+      "team": "IST",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "David Mutaf",
+      "teamName": "Anadolu Efes Istanbul",
+      "team": "IST",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Georgios Papagiannis",
+      "teamName": "Anadolu Efes Istanbul",
+      "team": "IST",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Left knee ACL injury"
+    },
+    {
+      "name": "Garrison Mathews",
+      "teamName": "Armani Olimpia Milan",
+      "team": "MIL",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Muscle issue"
+    },
+    {
+      "name": "Yagiz Aksu",
+      "teamName": "Besiktas Istanbul",
+      "team": "ULK",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Coach's decision"
+    },
+    {
+      "name": "Patrick Baldwin Jr.",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (minor injury)"
+    },
+    {
+      "name": "Jovan Bikic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1(coach's decision)"
+    },
+    {
+      "name": "Andrej Bjelic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Dejan Davidovac",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Nikola Djurisic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (quad injury)"
+    },
+    {
+      "name": "Vojin Medarevic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Aleksej Nedeljkovic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (knee injury)"
+    },
+    {
+      "name": "Ognjen Simjanovski",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Awudu Abass",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Not included in the EuroLeague roster."
+    },
+    {
+      "name": "Justin Anderson",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Nemanja Dangubic",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Mouhammadou Jaiteh",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Continues rehab after Achilles injury."
+    },
+    {
+      "name": "Kenan Kamenjas",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Dzanan Musa",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (knee injury)"
+    },
+    {
+      "name": "Klemen Prepelic",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Tomislav Vuckovic",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Kamar Baldwin",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Kilian Fischer",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Niels Giffey",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Duane Washington Jr.",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Tosan Evbuomwan",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Left shoulder injury"
+    },
+    {
+      "name": "A. Kone",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 1",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Yoan Makoundou",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1-6",
+      "comment": "Left knee injury"
+    },
+    {
+      "name": "Josh Nebo",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1-5",
+      "comment": "Right calf injury"
+    },
+    {
+      "name": "Marcus Bingham Jr.",
+      "teamName": "Fenerbahce Beko Istanbul",
+      "team": "ULK",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Undisclosed"
+    },
+    {
+      "name": "Shane Larkin",
+      "teamName": "Fenerbahce Beko Istanbul",
+      "team": "ULK",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Didn't play in EuroLeague SuperCup (Undisclosed injury)"
+    },
+    {
+      "name": "Oz Blayzer",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Tamir Blatt",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Out of the squad"
+    },
+    {
+      "name": "Frederic Bourdillon",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Khadeen Carrington",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Amir Coffey",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed injury)"
+    },
+    {
+      "name": "Tyler Ennis",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "out",
+      "label": "Out",
+      "round": "Long-term",
+      "comment": "Torn Achilles"
+    },
+    {
+      "name": "Tomer Ginat",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Max Heidegger",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Guy Palatin",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Itay Segev",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Yiftach Ziv",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Pedro Souza",
+      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "team": "BAS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Mathis Dossou-Yovo",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1-9",
+      "comment": "Adductor muscle injury (out until November)"
+    },
+    {
+      "name": "Edwin Jackson",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "TyTy Washington Jr.",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (ankle injury)"
+    },
+    {
+      "name": "Amit Ebo",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Shane Hunter",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Gur Lavi",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "T.J. Leaf",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Georgios Bourneles",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Antonios Karagiannidis",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Omiros Netzipoglou",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Nikolaos Plotas",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Moustapha Fall",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (hamstring injury)"
+    },
+    {
+      "name": "Nigel Hayes-Davis",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2-4",
+      "comment": "Fractured fourth metacarpal in his left hand"
+    },
+    {
+      "name": "Ioannis Kouzeloglou",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Kendrick Nunn",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2-4",
+      "comment": "Medial right meniscus tear"
+    },
+    {
+      "name": "Kostas Sloukas",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2-4",
+      "comment": "Rehab after leg injury"
+    },
+    {
+      "name": "Iason Varvaritis",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Joel Ayayi",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Nobel Boungou-Colo",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Amath M'Baye",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Frank Ntilikina",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Maozinha Pereira",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Enzo Shahrvin",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (undisclosed)"
+    },
+    {
+      "name": "Joffrey Lauvergne",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Undisclosed"
+    },
+    {
+      "name": "Vanja Marinkovic",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Working back from Achilles surgery"
+    },
+    {
+      "name": "Jabari Parker",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Out of the squad"
+    },
+    {
+      "name": "Derek Willis",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "Left Round 1 with leg injury"
+    },
+    {
+      "name": "Usman Garuba",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "out",
+      "label": "Out",
+      "round": "Long-term",
+      "comment": "Torn ACL"
+    },
+    {
+      "name": "Sergio Llull",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1"
+    },
+    {
+      "name": "Chuma Okeke",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1"
+    },
+    {
+      "name": "Max Shulga",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1"
+    },
+    {
+      "name": "Nick Smith Jr.",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (not injured)"
+    },
+    {
+      "name": "Gonzalo Corbalan",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Didn't travel with the team"
+    },
+    {
+      "name": "Lucas Mari",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Didn't travel with the team"
+    },
+    {
+      "name": "Nikola Mirotic",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "ready",
+      "label": "Ready",
+      "round": "Round 1",
+      "comment": "Travels with the team to Istanbul"
+    },
+    {
+      "name": "Jasiel Rivero",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "ready",
+      "label": "Ready",
+      "round": "Round 1",
+      "comment": "Travels with the team to Istanbul (minor muscular injury)"
+    },
+    {
+      "name": "Neal Sako",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "ready",
+      "label": "Ready",
+      "round": "Round 1",
+      "comment": "Travels with the team to Istanbul (groin injury)"
+    },
+    {
+      "name": "Yankuba Sima",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Didn't travel with the team"
+    },
+    {
+      "name": "Kevin Kokila",
+      "teamName": "Virtus Bologna",
+      "team": "VIR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 1",
+      "comment": "Tear right thigh biceps (09.02). Out for 4 weeks"
+    },
+    {
+      "name": "Kaodirichi Akobundu-Ehiogu",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Saben Lee",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (hamstring strain)"
+    },
+    {
+      "name": "Deividas Sirvydis",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "DNP in Round 1 (coach's decision)"
+    },
+    {
+      "name": "Nigel Williams-Goss",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "out",
+      "label": "Out",
+      "round": "Rounds 2-4",
+      "comment": "Suffered hamstring injury in Round 1 game"
+    }
+  ],
+  "updatedAt": "2026-09-26T09:21:25.615Z"
+}
