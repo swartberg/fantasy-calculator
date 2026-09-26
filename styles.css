@@ -3745,36 +3745,6 @@ body.has-player-profile {
 
 @media (max-width: 768px) {
 
-    /* Scrollable row, about three cards in view */
-    .my-team-starters-court {
-        display: flex;
-
-        /* The list class stacks items vertically */
-        flex-direction: row;
-
-        overflow-x: auto;
-
-        padding-bottom: 6px;
-
-        gap: 8px;
-
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
-    }
-
-
-    .my-team-starters-court::-webkit-scrollbar {
-        display: none;
-    }
-
-
-    .my-team-starters-court > * {
-        flex: 0 0 31%;
-
-        scroll-snap-align: start;
-    }
-
-
     .my-team-starters-court .my-team-player {
         padding: 12px 4px 8px;
 
@@ -4038,4 +4008,122 @@ body.has-player-profile {
 
 .injury-note span {
     color: var(--text);
+}
+
+
+/* =========================
+   STARTERS ON NARROW SCREENS
+   Five cards don't fit side by side below ~700px,
+   so starters become rows: taller than bench rows,
+   with the photo next to the name.
+========================= */
+
+@media (max-width: 700px) {
+
+    .my-team-starters-court {
+        display: flex;
+        flex-direction: column;
+
+        gap: 7px;
+    }
+
+
+    .my-team-starters-court .my-team-player {
+        display: grid;
+
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        grid-template-areas:
+            "photo info score"
+            "photo info actions";
+
+        align-items: center;
+
+        min-height: 72px;
+
+        padding: 9px 10px 9px 24px;
+
+        text-align: left;
+
+        column-gap: 10px;
+        row-gap: 6px;
+
+        /* Left stripe, like the bench rows */
+        box-shadow: inset 3px 0 0 var(--accent);
+    }
+
+
+    .my-team-starters-court .my-team-player-photo {
+        grid-area: photo;
+
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .my-team-starters-court .my-team-player-info {
+        grid-area: info;
+
+        align-items: flex-start;
+
+        padding-bottom: 0;
+
+        border-bottom: none;
+
+        gap: 3px;
+    }
+
+
+    .my-team-starters-court .my-team-player-name {
+        align-items: flex-start;
+    }
+
+
+    .my-team-starters-court .my-team-player-name .name-last {
+        font-size: 13px;
+    }
+
+
+    .my-team-starters-court .injury-badge {
+        align-self: flex-start;
+    }
+
+
+    .my-team-starters-court .my-team-player-score {
+        grid-area: score;
+
+        justify-self: end;
+    }
+
+
+    .my-team-starters-court .my-team-player-actions {
+        grid-area: actions;
+
+        flex-wrap: nowrap;
+
+        justify-self: end;
+    }
+
+
+    /* Handle in the left margin, captain badge beside the name */
+    .my-team-starters-court .my-team-drag-handle {
+        top: 50%;
+        left: 7px;
+
+        transform: translateY(-50%);
+    }
+
+
+    .my-team-starters-court .my-team-captain-badge {
+        position: static;
+    }
+
+
+    .my-team-starters-court .my-team-empty-slot {
+        justify-content: flex-start;
+
+        min-height: 72px;
+
+        text-align: left;
+    }
+
 }

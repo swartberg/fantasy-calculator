@@ -1,22 +1,22 @@
-import { fetchAndUpdate } from "./api-stats.js?v=26";
+import { fetchAndUpdate } from "./api-stats.js?v=27";
 
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=26";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=27";
 
-import { gameSelect } from "./game-selector.js?v=26";
+import { gameSelect } from "./game-selector.js?v=27";
 
-import { setupPlayerSearch } from "./player-search.js?v=26";
+import { setupPlayerSearch } from "./player-search.js?v=27";
 
-import { setupPlayerProfile } from "./player-profile.js?v=26";
+import { setupPlayerProfile } from "./player-profile.js?v=27";
 
-import { setupTopPlayers } from "./top-players.js?v=26";
+import { setupTopPlayers } from "./top-players.js?v=27";
 
-import { setupSeasonOverview } from "./season-overview.js?v=26";
+import { setupSeasonOverview } from "./season-overview.js?v=27";
 
-import { setupBackup } from "./backup.js?v=26";
+import { setupBackup } from "./backup.js?v=27";
 
-import { setupInjuries } from "./injuries.js?v=26";
+import { setupInjuries } from "./injuries.js?v=27";
 
-import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=26";
+import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=27";
 
 
 
@@ -54,7 +54,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=26";
+} from "./my-team.js?v=27";
 
 
 
