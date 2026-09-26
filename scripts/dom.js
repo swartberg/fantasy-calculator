@@ -1,18 +1,20 @@
-import { fetchAndUpdate } from "./api-stats.js?v=20";
+import { fetchAndUpdate } from "./api-stats.js?v=21";
 
-import { TEAM_NAMES } from "./teams.js?v=20";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=21";
 
-import { gameSelect } from "./game-selector.js?v=20";
+import { gameSelect } from "./game-selector.js?v=21";
 
-import { setupPlayerSearch } from "./player-search.js?v=20";
+import { setupPlayerSearch } from "./player-search.js?v=21";
 
-import { setupPlayerProfile } from "./player-profile.js?v=20";
+import { setupPlayerProfile } from "./player-profile.js?v=21";
 
-import { setupTopPlayers } from "./top-players.js?v=20";
+import { setupTopPlayers } from "./top-players.js?v=21";
 
-import { setupSeasonOverview } from "./season-overview.js?v=20";
+import { setupSeasonOverview } from "./season-overview.js?v=21";
 
-import { setupBackup } from "./backup.js?v=20";
+import { setupBackup } from "./backup.js?v=21";
+
+import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=21";
 
 
 
@@ -50,7 +52,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=20";
+} from "./my-team.js?v=21";
 
 
 
@@ -1741,7 +1743,7 @@ function renderMyTeamHTML(
 
             </div>
 
-            <div class="my-team-player-list">
+            <div class="my-team-player-list my-team-starters-court">
 
                 ${starters.map(player => createMyTeamPlayer(player, "starter", locked)).join("")}
                     ${createEmptySlots("starter", MAX_STARTERS - starters.length)}
@@ -1840,6 +1842,23 @@ function renderMyTeamHTML(
 
 
     setupMyTeamPlayerEvents(round, locked);
+
+
+
+    // Player photos for the court cards
+    container.querySelectorAll(".my-team-player").forEach(element => {
+
+        loadPlayerPhoto(
+
+            element.querySelector(".my-team-player-photo"),
+
+            element.dataset.playerName,
+
+            "my-team-player-photo-img"
+
+        );
+
+    });
 
 
 
@@ -1970,6 +1989,8 @@ function createMyTeamPlayer(
 
             data-player-id="${player.id}"
 
+            data-player-name="${player.name}"
+
             data-fantasy-points="${player.fantasyPoints}"
 
             data-role="${role}"
@@ -1980,13 +2001,19 @@ function createMyTeamPlayer(
 
         >
 
+            <!-- Photo and team logo: shown on the starters court only -->
+            <div class="my-team-player-photo">
+                <span class="my-team-player-photo-placeholder js-photo-placeholder">${PHOTO_PLACEHOLDER}</span>
+                <img class="my-team-player-photo-logo" src="images/teams/${player.team}.svg" alt="">
+            </div>
+
             <div class="my-team-player-info">
 
                 ${!locked ? `<span class="my-team-drag-handle" title="Drag to swap">⋮⋮</span>` : ""}
 
                 <span class="my-team-player-name">${formatPlayerName(player.name)}</span>
 
-                <span class="my-team-player-team">${player.team}</span>
+                <span class="my-team-player-team">${TEAM_ABB[player.team] || player.team}</span>
 
                 ${captain ? `<span class="my-team-captain-badge">C</span>` : ""}
 
@@ -3478,7 +3505,7 @@ async function refreshMyTeamStats() {
 
                     teamElement.textContent =
 
-                        currentPlayer.Team;
+                        TEAM_ABB[currentPlayer.Team] || currentPlayer.Team;
 
                 }
 

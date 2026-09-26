@@ -1,5 +1,5 @@
-import { getSavedRounds } from "./my-team.js?v=20";
-import { getMyRoundScore } from "./round-scores.js?v=20";
+import { getSavedRounds } from "./my-team.js?v=21";
+import { getMyRoundScore } from "./round-scores.js?v=21";
 
 // Ignore results of a render that a newer one replaced
 let renderToken = 0;
