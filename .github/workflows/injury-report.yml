@@ -7,12 +7,6 @@ on:
   schedule:
     - cron: "23 */2 * * *"
   workflow_dispatch:
-  # Temporary: lets the job be checked on the feature branch before it reaches main
-  push:
-    branches: [claude/repo-access-check-bdxzsk]
-    paths:
-      - ".github/scripts/fetch-injuries.mjs"
-      - ".github/workflows/injury-report.yml"
 
 permissions:
   contents: write

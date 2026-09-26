@@ -3958,3 +3958,109 @@ body.has-player-profile {
     }
 
 }
+
+
+/* =========================
+   INJURY WARNINGS
+   Red: out · Orange: doubtful · Yellow: questionable / game-time / uncertain
+========================= */
+
+.injury-badge {
+    display: inline-flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    padding: 2px 5px;
+
+    border: 1px solid currentColor;
+    border-radius: 4px;
+
+    font-size: 7px;
+    font-weight: 600;
+
+    letter-spacing: .04em;
+
+    white-space: nowrap;
+
+    gap: 3px;
+}
+
+
+.injury-badge svg {
+    width: 9px;
+    height: 9px;
+}
+
+
+.injury-badge.is-out,
+.injury-note.is-out {
+    color: var(--danger);
+
+    background-color: rgba(255, 90, 79, .12);
+}
+
+
+.injury-badge.is-doubtful,
+.injury-note.is-doubtful {
+    color: #ff9a4a;
+
+    background-color: rgba(255, 154, 74, .12);
+}
+
+
+.injury-badge.is-questionable,
+.injury-note.is-questionable {
+    color: var(--yellow);
+
+    background-color: var(--yellow-soft);
+}
+
+
+/* Stats rows: badge next to the name */
+.player-name {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+/* Court cards: badge centered under the name */
+.my-team-starters-court .injury-badge {
+    align-self: center;
+}
+
+
+/* Profile window: full note under the header */
+.injury-note {
+    display: flex;
+    align-items: flex-start;
+
+    margin-top: 14px;
+    padding: 9px 11px;
+
+    border: 1px solid currentColor;
+    border-radius: 9px;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    gap: 8px;
+}
+
+
+.injury-note svg {
+    flex-shrink: 0;
+
+    width: 13px;
+    height: 13px;
+
+    margin-top: 1px;
+}
+
+
+.injury-note span {
+    color: var(--text);
+}

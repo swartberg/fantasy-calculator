@@ -1,20 +1,22 @@
-import { fetchAndUpdate } from "./api-stats.js?v=24";
+import { fetchAndUpdate } from "./api-stats.js?v=25";
 
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=24";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=25";
 
-import { gameSelect } from "./game-selector.js?v=24";
+import { gameSelect } from "./game-selector.js?v=25";
 
-import { setupPlayerSearch } from "./player-search.js?v=24";
+import { setupPlayerSearch } from "./player-search.js?v=25";
 
-import { setupPlayerProfile } from "./player-profile.js?v=24";
+import { setupPlayerProfile } from "./player-profile.js?v=25";
 
-import { setupTopPlayers } from "./top-players.js?v=24";
+import { setupTopPlayers } from "./top-players.js?v=25";
 
-import { setupSeasonOverview } from "./season-overview.js?v=24";
+import { setupSeasonOverview } from "./season-overview.js?v=25";
 
-import { setupBackup } from "./backup.js?v=24";
+import { setupBackup } from "./backup.js?v=25";
 
-import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=24";
+import { setupInjuries } from "./injuries.js?v=25";
+
+import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=25";
 
 
 
@@ -52,7 +54,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=24";
+} from "./my-team.js?v=25";
 
 
 
@@ -109,6 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     setupMyTeamRefresh();
+
+
+
+    // Injury warnings (nothing shows if the report is unavailable)
+    setupInjuries();
 
 
 

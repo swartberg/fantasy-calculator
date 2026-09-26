@@ -1,6 +1,6 @@
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=24";
-import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=24";
-import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=24";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=25";
+import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=25";
+import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=25";
 
 const RECENT_GAMES = 5;
 
@@ -212,7 +212,11 @@ function getPlayerGames(player, summaries) {
 
 function renderHeader(player) {
     return `
-        <div class="player-profile-header">
+        <div
+            class="player-profile-header"
+            data-player-name="${player.name}"
+            data-player-team="${player.team}"
+        >
             <div class="player-profile-photo">
                 <div class="player-profile-photo-placeholder js-photo-placeholder">
                     ${PHOTO_PLACEHOLDER}
