@@ -3875,3 +3875,14 @@ body.has-player-profile {
     }
 
 }
+
+
+/* My Team players open their profile when tapped */
+.my-team-player.js-open-profile {
+    cursor: pointer;
+}
+
+
+.my-team-player.js-open-profile .my-team-drag-handle {
+    cursor: grab;
+}

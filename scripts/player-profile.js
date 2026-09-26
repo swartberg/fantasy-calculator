@@ -1,6 +1,6 @@
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=22";
-import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=22";
-import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=22";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=23";
+import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=23";
+import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=23";
 
 const RECENT_GAMES = 5;
 
@@ -24,7 +24,8 @@ export function setupPlayerProfile({ getRound }) {
         // Stat rows and any other element marked to open a profile
         const playerTab = event.target.closest(".player-tab, .js-open-profile");
 
-        if (!playerTab || event.target.closest(".my-team-button")) return;
+        // Buttons (add, roles, remove) and the drag handle do their own thing
+        if (!playerTab || event.target.closest("button, .my-team-drag-handle")) return;
 
         openPlayerProfile(
             {

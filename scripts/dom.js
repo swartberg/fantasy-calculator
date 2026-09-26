@@ -1,20 +1,20 @@
-import { fetchAndUpdate } from "./api-stats.js?v=22";
+import { fetchAndUpdate } from "./api-stats.js?v=23";
 
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=22";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=23";
 
-import { gameSelect } from "./game-selector.js?v=22";
+import { gameSelect } from "./game-selector.js?v=23";
 
-import { setupPlayerSearch } from "./player-search.js?v=22";
+import { setupPlayerSearch } from "./player-search.js?v=23";
 
-import { setupPlayerProfile } from "./player-profile.js?v=22";
+import { setupPlayerProfile } from "./player-profile.js?v=23";
 
-import { setupTopPlayers } from "./top-players.js?v=22";
+import { setupTopPlayers } from "./top-players.js?v=23";
 
-import { setupSeasonOverview } from "./season-overview.js?v=22";
+import { setupSeasonOverview } from "./season-overview.js?v=23";
 
-import { setupBackup } from "./backup.js?v=22";
+import { setupBackup } from "./backup.js?v=23";
 
-import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=22";
+import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=23";
 
 
 
@@ -52,7 +52,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=22";
+} from "./my-team.js?v=23";
 
 
 
@@ -1985,11 +1985,13 @@ function createMyTeamPlayer(
 
         <div
 
-            class="my-team-player ${locked ? "is-locked" : ""}"
+            class="my-team-player js-open-profile ${locked ? "is-locked" : ""}"
 
             data-player-id="${player.id}"
 
             data-player-name="${player.name}"
+
+            data-player-team="${player.team}"
 
             data-fantasy-points="${player.fantasyPoints}"
 
@@ -2698,6 +2700,8 @@ function setupMyTeamPlayerEvents(
                 playerElement.classList.remove(
                     "is-touch-dragging"
                 );
+
+                ignoreNextClick(playerElement);
 
                 const target = dropTarget;
                 const sourcePlayerId = draggedPlayerId;
@@ -3918,6 +3922,43 @@ function syncEmptySlots() {
         );
     });
 }
+
+
+
+/* =========================
+
+   IGNORE CLICK AFTER DRAG
+
+========================= */
+
+/*
+    Releasing a long-press drag without moving still
+    counts as a tap, which would open the player's
+    profile. Swallow that one click.
+*/
+
+function ignoreNextClick(element) {
+
+    const swallow = event => {
+
+        event.stopPropagation();
+
+        event.preventDefault();
+
+    };
+
+    element.addEventListener("click", swallow, { capture: true, once: true });
+
+    // No click came (the finger moved): stop waiting
+    setTimeout(() => {
+
+        element.removeEventListener("click", swallow, { capture: true });
+
+    }, 500);
+
+}
+
+
 
 
 
