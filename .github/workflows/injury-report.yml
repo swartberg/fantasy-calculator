@@ -1,0 +1,53 @@
+# Reads the BasketNews EuroLeague injury report every 2 hours
+# with .github/scripts/fetch-injuries.mjs and commits
+# data/injuries.json when the list changes.
+name: Injury report
+
+on:
+  schedule:
+    - cron: "23 */2 * * *"
+  workflow_dispatch:
+  # Temporary: lets the job be checked on the feature branch before it reaches main
+  push:
+    branches: [claude/repo-access-check-bdxzsk]
+    paths:
+      - ".github/scripts/fetch-injuries.mjs"
+      - ".github/workflows/injury-report.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: injury-report
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install HTML parser
+        run: npm install --no-save cheerio@1
+
+      - name: Read injury report
+        run: node .github/scripts/fetch-injuries.mjs
+
+      - name: Commit changes
+        run: |
+          git add data/injuries.json
+          if git diff --cached --quiet; then
+            echo "Injury list unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update injury report"
+          # Other jobs (photo optimizer) may have pushed meanwhile
+          git pull --rebase
+          git push
