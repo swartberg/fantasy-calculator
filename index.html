@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css?v=11">
+    <link rel="stylesheet" href="styles.css?v=12">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -155,7 +155,23 @@
                     data-view="game"
                     type="button"
                 >
-                    Selected Game
+                    <svg
+                        class="view-tab-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M3 12h18"></path>
+                        <path d="M12 3v18"></path>
+                        <path d="M5.6 5.6c3.2 3.4 3.2 9.4 0 12.8"></path>
+                        <path d="M18.4 5.6c-3.2 3.4-3.2 9.4 0 12.8"></path>
+                    </svg>
+
+                    <span>Selected Game</span>
                 </button>
 
                 <button
@@ -163,7 +179,23 @@
                     data-view="my-team"
                     type="button"
                 >
-                    My Team
+                    <svg
+                        class="view-tab-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="9" cy="8" r="3.5"></circle>
+                        <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"></path>
+                        <circle cx="17" cy="9" r="2.5"></circle>
+                        <path d="M16.5 14.2c2.9.2 5 2.2 5 5"></path>
+                    </svg>
+
+                    <span>My Team</span>
                 </button>
 
             </div>
@@ -269,12 +301,12 @@
     <!-- JAVASCRIPT -->
     <script
         type="module"
-        src="scripts/dom.js?v=11"
+        src="scripts/dom.js?v=12"
     ></script>
 
     <script
         type="module"
-        src="scripts/view-selector.js?v=11"
+        src="scripts/view-selector.js?v=12"
     ></script>
 
 </body>

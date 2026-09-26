@@ -309,6 +309,32 @@ body {
     color: var(--text);
 }
 
+/* Icon + label, centered */
+.view-tab {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 9px;
+}
+
+.view-tab-icon {
+    flex-shrink: 0;
+
+    width: 17px;
+    height: 17px;
+
+    color: var(--text-muted);
+
+    transition: color .2s ease;
+}
+
+.view-tab:hover .view-tab-icon,
+.view-tab.is-active .view-tab-icon {
+    color: var(--accent);
+}
+
 
 /* =========================
    GAME SELECTOR
@@ -945,6 +971,15 @@ body {
         font-size: 9px;
 
         -webkit-tap-highlight-color: transparent;
+    }
+
+    .view-tab {
+        gap: 7px;
+    }
+
+    .view-tab-icon {
+        width: 15px;
+        height: 15px;
     }
 
 

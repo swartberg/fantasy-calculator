@@ -1,12 +1,12 @@
-import { fetchAndUpdate } from "./api-stats.js?v=11";
+import { fetchAndUpdate } from "./api-stats.js?v=12";
 
-import { TEAM_NAMES } from "./teams.js?v=11";
+import { TEAM_NAMES } from "./teams.js?v=12";
 
-import { gameSelect } from "./game-selector.js?v=11";
+import { gameSelect } from "./game-selector.js?v=12";
 
-import { setupPlayerSearch } from "./player-search.js?v=11";
+import { setupPlayerSearch } from "./player-search.js?v=12";
 
-import { setupPlayerProfile } from "./player-profile.js?v=11";
+import { setupPlayerProfile } from "./player-profile.js?v=12";
 
 
 
@@ -42,7 +42,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=11";
+} from "./my-team.js?v=12";
 
 
 
