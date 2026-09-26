@@ -57,6 +57,15 @@
       "comment": "DNP in Round 1 (Coach's decision)"
     },
     {
+      "name": "DaQuan Jeffries",
+      "teamName": "Besiktas Istanbul",
+      "team": "ULK",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2",
+      "comment": "Suffered left wrist fracture in Round 1 vs. Valencia"
+    },
+    {
       "name": "Patrick Baldwin Jr.",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
@@ -204,10 +213,10 @@
       "name": "Kamar Baldwin",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (undisclosed)"
+      "comment": "DNP in Round 1. Played in the domestic league (09.26)"
     },
     {
       "name": "Kilian Fischer",
@@ -222,19 +231,19 @@
       "name": "Niels Giffey",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (undisclosed)"
+      "comment": "DNP in Round 1. Played in the domestic league (09.26)"
     },
     {
       "name": "Duane Washington Jr.",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (undisclosed)"
+      "comment": "DNP in Round 1. Played in the domestic league (09.26)"
     },
     {
       "name": "Tosan Evbuomwan",
@@ -474,28 +483,28 @@
       "name": "Antonios Karagiannidis",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1 (coach's decision). Played in the domestic league (09.26)"
     },
     {
       "name": "Omiros Netzipoglou",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1 (coach's decision). Played in the domestic league (09.26)"
     },
     {
       "name": "Nikolaos Plotas",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1 (coach's decision).Played in the domestic league (09.26)"
     },
     {
       "name": "Moustapha Fall",
@@ -636,10 +645,10 @@
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 2",
-      "comment": "Left Round 1 with leg injury"
+      "comment": "The club announced that Willis will be sidelined for several weeks with an ankle injury suffered in Round 1. His status will be reassessed in three to four week"
     },
     {
       "name": "Usman Garuba",
@@ -759,5 +768,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-09-26T14:32:34.858Z"
+  "updatedAt": "2026-09-26T19:14:32.654Z"
 }
