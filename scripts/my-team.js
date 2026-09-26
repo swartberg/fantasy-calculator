@@ -637,6 +637,30 @@ export function finalizeRound(round) {
 
 
 /* =========================
+   UNLOCK ROUND
+========================= */
+
+/*
+    Undo a save, e.g. when a player was added by
+    mistake. The team can then be changed and saved
+    again.
+*/
+export function unlockRound(round) {
+    const teams = getAllTeams();
+
+    if (!teams[round] || !teams[round].finalized) {
+        return false;
+    }
+
+    teams[round].finalized = false;
+
+    saveAllTeams(teams);
+
+    return true;
+}
+
+
+/* =========================
    CHECK LOCKED
 ========================= */
 

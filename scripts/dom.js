@@ -1,12 +1,12 @@
-import { fetchAndUpdate } from "./api-stats.js?v=12";
+import { fetchAndUpdate } from "./api-stats.js?v=13";
 
-import { TEAM_NAMES } from "./teams.js?v=12";
+import { TEAM_NAMES } from "./teams.js?v=13";
 
-import { gameSelect } from "./game-selector.js?v=12";
+import { gameSelect } from "./game-selector.js?v=13";
 
-import { setupPlayerSearch } from "./player-search.js?v=12";
+import { setupPlayerSearch } from "./player-search.js?v=13";
 
-import { setupPlayerProfile } from "./player-profile.js?v=12";
+import { setupPlayerProfile } from "./player-profile.js?v=13";
 
 
 
@@ -28,6 +28,8 @@ import {
 
     isRoundFinalized,
 
+    unlockRound,
+
     getTeamCounts,
 
     setCaptain,
@@ -42,7 +44,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=12";
+} from "./my-team.js?v=13";
 
 
 
@@ -1790,7 +1792,8 @@ function renderMyTeamHTML(
 
         ${locked
 
-            ? `<div class="my-team-save-status">Your team is locked for this round.</div>`
+            ? `<div class="my-team-save-status">Your team is locked for this round.</div>
+               <button class="unlock-team-button" type="button">UNLOCK TEAM</button>`
 
             : `<button class="save-team-button" type="button">SAVE TEAM</button>`
 
@@ -1801,6 +1804,32 @@ function renderMyTeamHTML(
 
 
     setupMyTeamPlayerEvents(round, locked);
+
+
+
+    const unlockButton = container.querySelector(".unlock-team-button");
+
+    if (unlockButton) {
+
+        unlockButton.addEventListener("click", () => {
+
+            if (!window.confirm(`Unlock your team for round ${round}? You can change it and save it again.`)) return;
+
+            if (!unlockRound(round)) {
+
+                window.alert("Your team could not be unlocked.");
+
+                return;
+
+            }
+
+            renderMyTeam();
+
+            syncGameTableSelection();
+
+        });
+
+    }
 
 
 
@@ -1834,7 +1863,7 @@ function renderMyTeamHTML(
 
             }
 
-            if (!window.confirm("Save your team for this round? You will not be able to change it afterwards.")) return;
+            if (!window.confirm("Save your team for this round? It will be locked, but you can unlock it later if you need to fix a mistake.")) return;
 
             if (!finalizeRound(round)) {
 
@@ -1845,6 +1874,8 @@ function renderMyTeamHTML(
             }
 
             renderMyTeam();
+
+            syncGameTableSelection();
 
         });
 
@@ -3741,6 +3772,8 @@ function syncGameTableSelection() {
 
     const round = getCurrentRound();
 
+    const locked = isRoundFinalized(round);
+
     document.querySelectorAll(".player-tab").forEach(playerTab => {
 
         const selected = isPlayerSelected(
@@ -3755,6 +3788,10 @@ function syncGameTableSelection() {
         if (button) {
             button.classList.toggle("is-selected", selected);
             button.textContent = selected ? "✓" : "+";
+
+            // Saving locks the table buttons, unlocking frees them
+            button.disabled = locked;
+            button.classList.toggle("is-locked", locked);
         }
     });
 }
