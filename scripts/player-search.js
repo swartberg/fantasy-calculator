@@ -2,10 +2,10 @@ import {
     SEASON_CODE,
     PREVIOUS_SEASON_CODE,
     ROUNDS_PER_SEASON
-} from "./api-stats.js?v=13";
-import { getGameSummaries, getRoundGames } from "./season-games.js?v=13";
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=13";
-import { addPlayer, isPlayerSelected, isRoundFinalized } from "./my-team.js?v=13";
+} from "./api-stats.js?v=14";
+import { getGameSummaries, getRoundGames } from "./season-games.js?v=14";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=14";
+import { addPlayer, isPlayerSelected, isRoundFinalized } from "./my-team.js?v=14";
 
 // How many rounds back to collect players from
 const ROSTER_ROUNDS = 3;

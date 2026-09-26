@@ -1,89 +1,200 @@
-import { fetchAndUpdate } from "./api-stats.js?v=13";
-import { TEAM_ABB } from "./teams.js?v=13";
-import { findCurrentRound } from "./season-games.js?v=13";
+import { fetchAndUpdate } from "./api-stats.js?v=14";
+import { TEAM_ABB } from "./teams.js?v=14";
+import { findCurrentRound } from "./season-games.js?v=14";
+
+const ROUND_COUNT = 38;
+
+/*
+    Called with (round, games) whenever a round's games
+    load or live scores update, so the round strip and
+    status line can show the round's state.
+*/
+let onRoundGames = null;
+
 
 export function gameSelect(loadGame) {
     const roundSelector = document.querySelector(".js-select-round");
     const gameSelector = document.querySelector(".game-selector");
 
-    const roundCurrent = document.querySelector(".round-current");
     const roundNumber = document.querySelector(".js-round-number");
-    const roundGrid = document.querySelector(".round-grid");
-    const roundTiles = document.querySelectorAll(".round-tile");
+    const roundStrip = document.querySelector(".js-round-strip");
+    const roundStatus = document.querySelector(".js-round-status");
+    const roundStatusText = document.querySelector(".js-round-status-text");
+    const prevButton = document.querySelector(".js-round-prev");
+    const nextButton = document.querySelector(".js-round-next");
 
-    if (!roundSelector || !gameSelector) return;
+    if (!roundSelector || !gameSelector || !roundStrip) return;
 
     // Set once the user picks a round, so auto-selection won't override it
     let userPickedRound = false;
 
-    function updateRoundUI() {
-        const round = Number(roundSelector.value);
+    // Round the season is on; null until found
+    let currentRound = null;
 
-        if (roundNumber) {
-            roundNumber.textContent = round;
-        }
+    // Exact states of rounds whose games have loaded
+    const knownStates = {};
 
-        roundTiles.forEach(tile => {
-            const tileRound = Number(tile.dataset.round);
 
-            tile.classList.toggle(
-                "is-selected",
-                tileRound === round
-            );
-        });
-    }
+    /* =========================
+       ROUND STRIP
+    ========================= */
 
-    // Open / close round grid
-    if (roundCurrent && roundGrid) {
-        roundCurrent.addEventListener("click", () => {
-            const isOpen =
-                roundGrid.classList.toggle("is-open");
+    roundStrip.innerHTML = Array.from({ length: ROUND_COUNT }, (_, index) => `
+        <button
+            class="round-chip"
+            type="button"
+            data-round="${index + 1}"
+            aria-label="Round ${index + 1}"
+        >
+            <span class="round-chip-dot"></span>
+            <span>${index + 1}</span>
+        </button>
+    `).join("");
 
-            roundCurrent.setAttribute(
-                "aria-expanded",
-                isOpen
-            );
-        });
-    }
+    const roundChips = roundStrip.querySelectorAll(".round-chip");
 
-    // Round tile selection
-    roundTiles.forEach(tile => {
-        tile.addEventListener("click", () => {
-            const round = Number(tile.dataset.round);
-
-            if (!round) return;
-
-            userPickedRound = true;
-
-            // Update hidden select
-            roundSelector.value = round;
-
-            // Trigger existing round-loading logic
-            roundSelector.dispatchEvent(
-                new Event("change")
-            );
-
-            // Close grid
-            if (roundGrid) {
-                roundGrid.classList.remove("is-open");
-            }
-
-            if (roundCurrent) {
-                roundCurrent.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
-            }
-
-            updateRoundUI();
+    roundChips.forEach(chip => {
+        chip.addEventListener("click", () => {
+            pickRound(Number(chip.dataset.round));
         });
     });
 
-    // Manual round selection
+    prevButton?.addEventListener("click", () => {
+        pickRound(Number(roundSelector.value) - 1);
+    });
+
+    nextButton?.addEventListener("click", () => {
+        pickRound(Number(roundSelector.value) + 1);
+    });
+
+
+    function pickRound(round) {
+        if (round < 1 || round > ROUND_COUNT) return;
+
+        userPickedRound = true;
+
+        selectRound(round);
+    }
+
+
+    // Same path for user and automatic picks: the rest of
+    // the app listens for the hidden select's change event
+    function selectRound(round) {
+        roundSelector.value = String(round);
+
+        roundSelector.dispatchEvent(
+            new Event("change")
+        );
+    }
+
+
+    /*
+        Finished / live / in progress / upcoming. Loaded
+        rounds use their games; others are inferred from
+        the current round.
+    */
+    function getRoundState(round) {
+        if (knownStates[round]) return knownStates[round];
+
+        if (currentRound === null) return "unknown";
+
+        return round < currentRound ? "finished" : "upcoming";
+    }
+
+
+    function updateRoundUI(scroll = true) {
+        const round = Number(roundSelector.value);
+
+        // Nothing is selected yet while the current round is being found
+        const pending = currentRound === null && !userPickedRound;
+
+        if (roundNumber) {
+            roundNumber.textContent = pending ? "–" : round;
+        }
+
+        roundChips.forEach(chip => {
+            const chipRound = Number(chip.dataset.round);
+            const state = getRoundState(chipRound);
+
+            chip.classList.toggle("is-selected", !pending && chipRound === round);
+
+            ["finished", "live", "progress", "upcoming"].forEach(name => {
+                chip.classList.toggle(`is-${name}`, state === name);
+            });
+        });
+
+        if (prevButton) prevButton.disabled = round <= 1;
+        if (nextButton) nextButton.disabled = round >= ROUND_COUNT;
+
+        if (scroll) {
+            scrollToChip(round);
+        }
+    }
+
+
+    // Center the selected chip in the strip
+    function scrollToChip(round) {
+        const chip = roundStrip.querySelector(`.round-chip[data-round="${round}"]`);
+
+        if (!chip) return;
+
+        roundStrip.scrollTo({
+            left: chip.offsetLeft - (roundStrip.clientWidth - chip.offsetWidth) / 2,
+            behavior: "smooth"
+        });
+    }
+
+
+    function setStatus(state, text) {
+        if (!roundStatus || !roundStatusText) return;
+
+        roundStatus.dataset.state = state;
+        roundStatusText.textContent = text;
+    }
+
+
+    /* =========================
+       ROUND STATE
+    ========================= */
+
+    onRoundGames = (round, games) => {
+        const live = games.filter(game => game.isLive).length;
+        const finished = games.length - live;
+
+        let state = "upcoming";
+        let text = "No games played yet";
+
+        if (live) {
+            state = "live";
+            text = `${live} live now · ${finished} of 10 finished`;
+        }
+        else if (finished >= 10) {
+            state = "finished";
+            text = "All 10 games finished";
+        }
+        else if (finished) {
+            state = "progress";
+            text = `${finished} of 10 games finished`;
+        }
+
+        knownStates[round] = state;
+
+        // Only describe the round that's showing
+        if (round === Number(roundSelector.value)) {
+            setStatus(state, text);
+        }
+
+        updateRoundUI(false);
+    };
+
+
+    // Round selection (user, arrows or automatic)
     roundSelector.addEventListener("change", () => {
         const round = Number(roundSelector.value);
 
         if (!round) return;
+
+        setStatus("loading", "Loading games…");
 
         updateRoundUI();
 
@@ -94,10 +205,11 @@ export function gameSelect(loadGame) {
         );
     });
 
+
     // Round 1 until the current round is found
     roundSelector.value = "1";
 
-    updateRoundUI();
+    updateRoundUI(false);
 
     selectCurrentRound();
 
@@ -107,15 +219,7 @@ export function gameSelect(loadGame) {
         and load its games, as if the user chose it.
     */
     async function selectCurrentRound() {
-        if (roundNumber) {
-            roundNumber.textContent = "…";
-        }
-
-        gameSelector.innerHTML = `
-            <div class="loading-alert">
-                Finding current round…
-            </div>
-        `;
+        setStatus("loading", "Finding current round…");
 
         let round = 1;
 
@@ -126,13 +230,16 @@ export function gameSelect(loadGame) {
             console.error("Error finding current round:", error);
         }
 
-        if (userPickedRound) return;
+        currentRound = round;
 
-        roundSelector.value = String(round);
+        if (userPickedRound) {
+            // Still fill in the other rounds' dots
+            updateRoundUI(false);
 
-        roundSelector.dispatchEvent(
-            new Event("change")
-        );
+            return;
+        }
+
+        selectRound(round);
     }
 }
 
@@ -143,8 +250,14 @@ const LIVE_REFRESH_INTERVAL = 20000;
 let liveRefreshLoop = null;
 
 
+// Latest round load; older ones that finish late are ignored
+let roundLoadToken = 0;
+
+
 async function getRoundGames(round, wrapper, loadGame) {
     stopLiveRefresh();
+
+    const token = ++roundLoadToken;
 
     wrapper.innerHTML = `
         <div class="loading-alert">
@@ -171,13 +284,18 @@ async function getRoundGames(round, wrapper, loadGame) {
         await Promise.all(requests)
     ).filter(Boolean);
 
+    // Another round was picked while this one loaded
+    if (token !== roundLoadToken) return;
+
     renderGames(
         games,
         wrapper,
         loadGame
     );
 
-    startLiveRefresh(games, wrapper);
+    onRoundGames?.(round, games);
+
+    startLiveRefresh(round, games, wrapper);
 }
 
 
@@ -330,7 +448,7 @@ function updateGameTab(gameTab, game) {
    LIVE SCORES
 ========================= */
 
-function startLiveRefresh(games, wrapper) {
+function startLiveRefresh(round, games, wrapper) {
     let liveGameCodes = games
         .filter(game => game.isLive)
         .map(game => game.gameCode);
@@ -354,6 +472,13 @@ function startLiveRefresh(games, wrapper) {
                 updateGameTab(gameTab, game);
             }
         });
+
+        // Keep the round's state (status line, strip dot) current
+        games = games.map(game =>
+            updates.find(update => update.gameCode === game.gameCode) || game
+        );
+
+        onRoundGames?.(round, games);
 
         // Finished games no longer need updates; failed
         // fetches are retried next time

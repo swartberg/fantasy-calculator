@@ -64,20 +64,38 @@ body {
     align-items: center;
 
     width: 100%;
-    height: 50px;
+    height: 46px;
+
+    border-bottom: .5px solid var(--border-subtle);
 
     background-color: var(--surface);
 
-    color: var(--accent);
+    color: var(--text);
 
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+    gap: 10px;
+}
+
+
+.navbar-icon {
+    width: 18px;
+    height: 18px;
+
+    color: var(--accent);
 }
 
 
 .content-grid {
     display: grid;
     grid-template-rows: auto;
+
+    /* One column that can't be widened by wide content (e.g. the round strip) */
+    grid-template-columns: minmax(0, 1fr);
     row-gap: 30px;
 
     padding-bottom: 40px;
@@ -88,137 +106,243 @@ body {
    ROUND SELECTOR
 ========================= */
 
-.game-select-wrapper {
+.round-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    width: min(900px, 90%);
+
+    margin: 22px auto 0;
 }
 
-.game-select-wrapper h6 {
-    margin-top: 20px;
 
-    color: var(--text);
-
-    font-size: 14px;
-    font-weight: 300;
-
-    text-align: center;
-}
-
-.round-current {
-    width: 140px;
-    height: 55px;
-
+.round-heading {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: baseline;
 
-    margin-top: 10px;
-    padding: 0;
-
-    border: .5px solid var(--border);
-    border-radius: 10px;
-
-    background-color: var(--surface);
-
-    color: var(--text);
-
-    cursor: pointer;
-    user-select: none;
-
-    transition:
-        border-color .2s ease,
-        background-color .2s ease;
+    gap: 10px;
 }
 
-.round-current:hover {
-    border-color: var(--accent);
-    background-color: var(--surface-hover);
-}
 
-.round-label {
+.round-heading-label {
     color: var(--text-muted);
-
-    font-size: 8px;
-    font-weight: 400;
-
-    letter-spacing: .15em;
-}
-
-.round-number {
-    margin-top: 4px;
-
-    color: var(--accent);
-
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.round-grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-
-    width: min(650px, 90%);
-
-    gap: 6px;
-
-    margin-top: 10px;
-    padding: 10px;
-
-    border: .5px solid var(--border);
-    border-radius: 10px;
-
-    background-color: var(--surface);
-
-    max-height: 0;
-
-    opacity: 0;
-
-    overflow: hidden;
-
-    pointer-events: none;
-
-    transform: translateY(-5px);
-
-    transition:
-        max-height .3s ease,
-        opacity .2s ease,
-        transform .3s ease;
-}
-
-.round-grid.is-open {
-    max-height: 400px;
-
-    opacity: 1;
-
-    pointer-events: auto;
-
-    transform: translateY(0);
-}
-
-.round-tile {
-    height: 42px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0;
-
-    border: .5px solid var(--border);
-    border-radius: 7px;
-
-    background-color: rgba(0, 0, 0, .4);
-
-    color: var(--text-muted);
-
-    font-family: "Unbounded", sans-serif;
 
     font-size: 11px;
     font-weight: 400;
 
+    letter-spacing: .2em;
+}
+
+
+.round-heading-number {
+    color: var(--accent);
+
+    font-size: 30px;
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+/* Status line: dot + description of the round */
+.round-status {
+    display: flex;
+    align-items: center;
+
+    min-height: 16px;
+
+    margin-top: 10px;
+
+    color: var(--text-muted);
+
+    font-size: 9px;
+
+    letter-spacing: .05em;
+
+    gap: 7px;
+}
+
+
+.round-status-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background-color: var(--text-faint);
+}
+
+
+.round-status[data-state="finished"] .round-status-dot {
+    background-color: var(--green);
+}
+
+
+.round-status[data-state="progress"] .round-status-dot {
+    background-color: var(--accent);
+}
+
+
+.round-status[data-state="live"] {
+    color: var(--text);
+}
+
+
+.round-status[data-state="live"] .round-status-dot {
+    background-color: var(--live);
+
+    animation: roundLivePulse 1.4s ease-in-out infinite;
+}
+
+
+.round-status[data-state="loading"] .round-status-dot {
+    animation: roundLivePulse 1s ease-in-out infinite;
+}
+
+
+@keyframes roundLivePulse {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .3;
+    }
+}
+
+
+/* Arrows + scrollable strip of round chips */
+.round-bar {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 16px;
+
+    gap: 8px;
+}
+
+
+.round-nav {
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 44px;
+
+    padding: 0;
+
+    border: .5px solid var(--border);
+    border-radius: 10px;
+
+    background-color: var(--surface);
+
+    color: var(--text-muted);
+
     cursor: pointer;
+
+    transition:
+        color .2s ease,
+        border-color .2s ease;
+}
+
+
+.round-nav svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.round-nav:hover:not(:disabled) {
+    border-color: var(--accent);
+
+    color: var(--accent);
+}
+
+
+.round-nav:disabled {
+    opacity: .3;
+
+    cursor: default;
+}
+
+
+.round-strip {
+    position: relative;
+
+    flex: 1;
+
+    /* Let the strip scroll instead of growing to fit all chips */
+    min-width: 0;
+
+    display: flex;
+
+    overflow-x: auto;
+
+    padding: 2px 0;
+
+    gap: 6px;
+
+    scrollbar-width: none;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 24px,
+        black calc(100% - 24px),
+        transparent
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 24px,
+        black calc(100% - 24px),
+        transparent
+    );
+}
+
+
+.round-strip::-webkit-scrollbar {
+    display: none;
+}
+
+
+.round-chip {
+    flex: 0 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 0;
+
+    border: .5px solid var(--border-subtle);
+    border-radius: 10px;
+
+    background-color: var(--surface);
+
+    color: var(--text-faint);
+
+    font-family: "Unbounded", sans-serif;
+    font-size: 11px;
+
+    cursor: pointer;
+
+    gap: 5px;
+
+    -webkit-tap-highlight-color: transparent;
 
     transition:
         color .2s ease,
@@ -226,21 +350,62 @@ body {
         background-color .2s ease;
 }
 
-.round-tile:hover {
-    border-color: var(--accent);
 
-    background-color: var(--accent-tint);
+.round-chip:hover {
+    border-color: var(--border);
 
     color: var(--text);
 }
 
-.round-tile.is-selected {
+
+.round-chip.is-finished,
+.round-chip.is-progress,
+.round-chip.is-live {
+    color: var(--text-muted);
+}
+
+
+.round-chip.is-selected {
     border-color: var(--accent);
 
     background-color: var(--accent-soft);
 
-    color: var(--accent);
+    color: var(--text);
 }
+
+
+/* Status dot on each chip */
+.round-chip-dot {
+    width: 5px;
+    height: 5px;
+
+    border: 1px solid var(--text-faint);
+    border-radius: 50%;
+}
+
+
+.round-chip.is-finished .round-chip-dot {
+    border-color: var(--green);
+
+    background-color: var(--green);
+}
+
+
+.round-chip.is-progress .round-chip-dot {
+    border-color: var(--accent);
+
+    background-color: var(--accent);
+}
+
+
+.round-chip.is-live .round-chip-dot {
+    border-color: var(--live);
+
+    background-color: var(--live);
+
+    animation: roundLivePulse 1.4s ease-in-out infinite;
+}
+
 
 .round-select-hidden {
     position: absolute;
@@ -903,9 +1068,9 @@ body {
     }
 
     .navbar {
-        height: 50px;
+        height: 44px;
 
-        font-size: 15px;
+        font-size: 11px;
     }
 
     .content-grid {
@@ -919,39 +1084,32 @@ body {
        ROUND SELECTOR
     ===================== */
 
-    .game-select-wrapper h6 {
-        margin-top: 18px;
-
-        font-size: 11px;
-    }
-
-    .round-current {
-        width: 130px;
-        height: 52px;
-    }
-
-    .round-grid {
-        grid-template-columns: repeat(4, 1fr);
-
+    .round-panel {
         width: calc(100% - 30px);
 
-        max-width: 420px;
+        margin-top: 16px;
+    }
+
+    .round-heading-number {
+        font-size: 26px;
+    }
+
+    .round-bar {
+        margin-top: 12px;
 
         gap: 6px;
-
-        padding: 8px;
     }
 
-    .round-grid.is-open {
-        max-height: 500px;
+    .round-nav {
+        width: 32px;
+        height: 40px;
     }
 
-    .round-tile {
-        height: 42px;
+    .round-chip {
+        width: 40px;
+        height: 40px;
 
-        font-size: 9px;
-
-        -webkit-tap-highlight-color: transparent;
+        font-size: 10px;
     }
 
 
@@ -1252,12 +1410,8 @@ body {
 
 @media (max-width: 400px) {
 
-    .navbar {
-        font-size: 13px;
-    }
-
-    .round-current {
-        width: 120px;
+    .round-panel {
+        width: calc(100% - 20px);
     }
 
     .view-tabs {

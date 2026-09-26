@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css?v=13">
+    <link rel="stylesheet" href="styles.css?v=14">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,74 +21,68 @@
     <div class="main-container">
 
         <!-- NAVBAR -->
-        <div class="navbar">
-            Fantasy Calculator
-        </div>
+        <header class="navbar">
+
+            <svg
+                class="navbar-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                aria-hidden="true"
+            >
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M3 12h18"></path>
+                <path d="M12 3v18"></path>
+                <path d="M5.6 5.6c3.2 3.4 3.2 9.4 0 12.8"></path>
+                <path d="M18.4 5.6c-3.2 3.4-3.2 9.4 0 12.8"></path>
+            </svg>
+
+            <span>Fantasy Calculator</span>
+
+        </header>
 
 
         <div class="content-grid">
 
             <!-- ROUND SELECTOR -->
-            <div class="game-select-wrapper">
+            <div class="round-panel">
 
-                <h6>Select round</h6>
+                <div class="round-heading">
+                    <span class="round-heading-label">ROUND</span>
+                    <span class="round-heading-number js-round-number">–</span>
+                </div>
 
-                <button
-                    class="round-current"
-                    type="button"
-                    aria-expanded="false"
-                    aria-controls="round-grid"
-                >
-                    <span class="round-label">ROUND</span>
-                    <span class="round-number js-round-number">1</span>
-                </button>
+                <div class="round-status js-round-status">
+                    <span class="round-status-dot"></span>
+                    <span class="js-round-status-text">Finding current round…</span>
+                </div>
 
+                <div class="round-bar">
 
-                <!-- ROUND GRID -->
-                <div class="round-grid" id="round-grid">
+                    <button
+                        class="round-nav js-round-prev"
+                        type="button"
+                        aria-label="Previous round"
+                    >
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M15 5l-7 7 7 7"></path>
+                        </svg>
+                    </button>
 
-                    <button class="round-tile" type="button" data-round="1">01</button>
-                    <button class="round-tile" type="button" data-round="2">02</button>
-                    <button class="round-tile" type="button" data-round="3">03</button>
-                    <button class="round-tile" type="button" data-round="4">04</button>
-                    <button class="round-tile" type="button" data-round="5">05</button>
-                    <button class="round-tile" type="button" data-round="6">06</button>
-                    <button class="round-tile" type="button" data-round="7">07</button>
-                    <button class="round-tile" type="button" data-round="8">08</button>
+                    <!-- Round chips are added by game-selector.js -->
+                    <div class="round-strip js-round-strip"></div>
 
-                    <button class="round-tile" type="button" data-round="9">09</button>
-                    <button class="round-tile" type="button" data-round="10">10</button>
-                    <button class="round-tile" type="button" data-round="11">11</button>
-                    <button class="round-tile" type="button" data-round="12">12</button>
-                    <button class="round-tile" type="button" data-round="13">13</button>
-                    <button class="round-tile" type="button" data-round="14">14</button>
-                    <button class="round-tile" type="button" data-round="15">15</button>
-                    <button class="round-tile" type="button" data-round="16">16</button>
-
-                    <button class="round-tile" type="button" data-round="17">17</button>
-                    <button class="round-tile" type="button" data-round="18">18</button>
-                    <button class="round-tile" type="button" data-round="19">19</button>
-                    <button class="round-tile" type="button" data-round="20">20</button>
-                    <button class="round-tile" type="button" data-round="21">21</button>
-                    <button class="round-tile" type="button" data-round="22">22</button>
-                    <button class="round-tile" type="button" data-round="23">23</button>
-                    <button class="round-tile" type="button" data-round="24">24</button>
-
-                    <button class="round-tile" type="button" data-round="25">25</button>
-                    <button class="round-tile" type="button" data-round="26">26</button>
-                    <button class="round-tile" type="button" data-round="27">27</button>
-                    <button class="round-tile" type="button" data-round="28">28</button>
-                    <button class="round-tile" type="button" data-round="29">29</button>
-                    <button class="round-tile" type="button" data-round="30">30</button>
-                    <button class="round-tile" type="button" data-round="31">31</button>
-                    <button class="round-tile" type="button" data-round="32">32</button>
-
-                    <button class="round-tile" type="button" data-round="33">33</button>
-                    <button class="round-tile" type="button" data-round="34">34</button>
-                    <button class="round-tile" type="button" data-round="35">35</button>
-                    <button class="round-tile" type="button" data-round="36">36</button>
-                    <button class="round-tile" type="button" data-round="37">37</button>
-                    <button class="round-tile" type="button" data-round="38">38</button>
+                    <button
+                        class="round-nav js-round-next"
+                        type="button"
+                        aria-label="Next round"
+                    >
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
 
                 </div>
 
@@ -96,8 +90,8 @@
                 <!--
                     Hidden original select.
 
-                    Kept because game-selector.js currently uses
-                    this element to control round selection.
+                    Holds the selected round. The rest of the app
+                    reads its value and listens for its change event.
                 -->
                 <select
                     class="js-select-round round-select-hidden"
@@ -301,12 +295,12 @@
     <!-- JAVASCRIPT -->
     <script
         type="module"
-        src="scripts/dom.js?v=13"
+        src="scripts/dom.js?v=14"
     ></script>
 
     <script
         type="module"
-        src="scripts/view-selector.js?v=13"
+        src="scripts/view-selector.js?v=14"
     ></script>
 
 </body>
