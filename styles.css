@@ -1,3 +1,43 @@
+/* =========================
+   COLORS
+========================= */
+
+:root {
+    /* Background and surfaces */
+    --bg-start: #150b05;
+    --bg-end: #050403;
+    --surface: rgba(12, 9, 7, .55);
+    --surface-hover: rgba(12, 9, 7, .8);
+    --surface-raised: #0e0a07;
+
+    /* Text: main, secondary, inactive */
+    --text: #ece6df;
+    --text-muted: #8a8279;
+    --text-faint: #58514b;
+
+    /* Borders: default and very subtle */
+    --border: #36302b;
+    --border-subtle: #221e1a;
+
+    /* Main highlight */
+    --accent: #FF6200;
+    --accent-soft: rgba(255, 98, 0, .12);
+    --accent-tint: rgba(255, 98, 0, .07);
+
+    /* Secondary accents */
+    --purple: #a58cf0;
+    --purple-soft: rgba(165, 140, 240, .12);
+    --yellow: #f2c14e;
+    --yellow-soft: rgba(242, 193, 78, .12);
+    --green: #5cc98a;
+    --green-soft: rgba(92, 201, 138, .12);
+
+    /* States */
+    --live: #ff4d4d;
+    --danger: #ff5a4f;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,11 +47,11 @@
 
 
 body {
-    background: #1B0C03;
+    background: var(--bg-start);
     background: linear-gradient(
         90deg,
-        rgba(27, 12, 3, 1) 0%,
-        rgba(0, 0, 0, 1) 100%
+        var(--bg-start) 0%,
+        var(--bg-end) 100%
     );
 
     min-height: 100vh;
@@ -26,9 +66,9 @@ body {
     width: 100%;
     height: 50px;
 
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--surface);
 
-    color: #FF6200;
+    color: var(--accent);
 
     font-size: 20px;
     font-weight: 600;
@@ -57,7 +97,7 @@ body {
 .game-select-wrapper h6 {
     margin-top: 20px;
 
-    color: white;
+    color: var(--text);
 
     font-size: 14px;
     font-weight: 300;
@@ -77,12 +117,12 @@ body {
     margin-top: 10px;
     padding: 0;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 10px;
 
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--surface);
 
-    color: white;
+    color: var(--text);
 
     cursor: pointer;
     user-select: none;
@@ -93,12 +133,12 @@ body {
 }
 
 .round-current:hover {
-    border-color: #FF6200;
-    background-color: rgba(0, 0, 0, .7);
+    border-color: var(--accent);
+    background-color: var(--surface-hover);
 }
 
 .round-label {
-    color: #777;
+    color: var(--text-muted);
 
     font-size: 8px;
     font-weight: 400;
@@ -109,7 +149,7 @@ body {
 .round-number {
     margin-top: 4px;
 
-    color: #FF6200;
+    color: var(--accent);
 
     font-size: 18px;
     font-weight: 600;
@@ -126,10 +166,10 @@ body {
     margin-top: 10px;
     padding: 10px;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 10px;
 
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--surface);
 
     max-height: 0;
 
@@ -166,12 +206,12 @@ body {
 
     padding: 0;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 7px;
 
     background-color: rgba(0, 0, 0, .4);
 
-    color: #777;
+    color: var(--text-muted);
 
     font-family: "Unbounded", sans-serif;
 
@@ -187,19 +227,19 @@ body {
 }
 
 .round-tile:hover {
-    border-color: #FF6200;
+    border-color: var(--accent);
 
-    background-color: rgba(255, 98, 0, .08);
+    background-color: var(--accent-tint);
 
-    color: white;
+    color: var(--text);
 }
 
 .round-tile.is-selected {
-    border-color: #FF6200;
+    border-color: var(--accent);
 
-    background-color: rgba(255, 98, 0, .12);
+    background-color: var(--accent-soft);
 
-    color: #FF6200;
+    color: var(--accent);
 }
 
 .round-select-hidden {
@@ -227,7 +267,7 @@ body {
 
     margin: 0 auto;
 
-    border-bottom: 1px solid #474747;
+    border-bottom: 1px solid var(--border);
 }
 
 .view-tab {
@@ -240,7 +280,7 @@ body {
 
     background: transparent;
 
-    color: #474747;
+    color: var(--text-faint);
 
     font-family: "Unbounded", sans-serif;
 
@@ -255,13 +295,13 @@ body {
 }
 
 .view-tab:hover {
-    color: white;
+    color: var(--text);
 }
 
 .view-tab.is-active {
-    border-bottom-color: #FF6200;
+    border-bottom-color: var(--accent);
 
-    color: #FF6200;
+    color: var(--accent);
 }
 
 
@@ -338,12 +378,12 @@ body {
 
     margin: 0;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 10px;
 
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--surface);
 
-    color: white;
+    color: var(--text);
 
     opacity: 0;
 
@@ -367,7 +407,7 @@ body {
 
 .game-tab:hover,
 .game-tab.active {
-    border-color: #FF6200;
+    border-color: var(--accent);
 
     opacity: 1;
 
@@ -375,7 +415,7 @@ body {
 }
 
 .game-tab.is-live {
-    border: 2px solid #ff2d2d;
+    border: 2px solid var(--live);
 
     box-shadow:
         0 0 6px rgba(255, 45, 45, .6);
@@ -413,7 +453,7 @@ body {
 
     margin-top: 15px;
 
-    color: #474747;
+    color: var(--text-faint);
 
     font-size: 16px;
 }
@@ -430,7 +470,7 @@ body {
 }
 
 .game-vs {
-    color: #FF6200;
+    color: var(--accent);
 
     font-weight: 300;
 
@@ -446,7 +486,7 @@ body {
 }
 
 .game-score {
-    color: #777;
+    color: var(--text-muted);
 
     font-size: 14px;
     font-weight: 300;
@@ -458,7 +498,7 @@ body {
 
 .game-tab.is-live .game-score,
 .game-score.is-winner {
-    color: white;
+    color: var(--text);
 
     font-weight: 500;
 }
@@ -526,7 +566,7 @@ body {
 
     margin-bottom: 10px;
 
-    color: white;
+    color: var(--text);
 
     font-size: 20px;
 
@@ -569,21 +609,21 @@ body {
 
     gap: 45px;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 10px;
 
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--surface);
 
-    color: white;
+    color: var(--text);
 }
 
 /* Player is in My Team */
 .player-tab.is-in-my-team {
-    border-color: #FF6200;
+    border-color: var(--accent);
 
-    background-color: rgba(255, 98, 0, .1);
+    background-color: var(--accent-soft);
 
-    box-shadow: inset 3px 0 0 #FF6200;
+    box-shadow: inset 3px 0 0 var(--accent);
 }
 
 .player-info {
@@ -670,12 +710,12 @@ body {
 
     padding: 0;
 
-    border: 1px solid #474747;
+    border: 1px solid var(--border);
     border-radius: 50%;
 
     background: transparent;
 
-    color: #777;
+    color: var(--text-muted);
 
     font-family: "Unbounded", sans-serif;
 
@@ -692,19 +732,19 @@ body {
 }
 
 .my-team-button:hover {
-    border-color: #FF6200;
+    border-color: var(--accent);
 
-    color: #FF6200;
+    color: var(--accent);
 
     transform: scale(1.05);
 }
 
 .my-team-button.is-selected {
-    border-color: #FF6200;
+    border-color: var(--accent);
 
-    background-color: rgba(255, 98, 0, .12);
+    background-color: var(--accent-soft);
 
-    color: #FF6200;
+    color: var(--accent);
 }
 
 
@@ -729,13 +769,13 @@ body {
 
     min-height: 150px;
 
-    color: #474747;
+    color: var(--text-faint);
 
     text-align: center;
 }
 
 .my-team-empty span {
-    color: #FF6200;
+    color: var(--accent);
 
     font-size: 14px;
 
@@ -762,7 +802,7 @@ body {
 
     padding: 20px 0;
 
-    color: #FF6200;
+    color: var(--accent);
 
     font-size: 14px;
 
@@ -1122,7 +1162,7 @@ body {
 
         font-weight: 500;
 
-        color: white;
+        color: var(--text);
     }
 
 
@@ -1261,14 +1301,14 @@ body {
 
     margin-bottom: 15px;
 
-    color: white;
+    color: var(--text);
 
     font-size: 16px;
     font-weight: 500;
 }
 
 .my-team-header strong {
-    color: #474747;
+    color: var(--text-faint);
 
     font-size: 10px;
     font-weight: 400;
@@ -1283,7 +1323,7 @@ body {
 .my-team-section-title {
     margin-bottom: 8px;
 
-    color: #FF6200;
+    color: var(--accent);
 
     font-size: 10px;
     font-weight: 500;
@@ -1311,12 +1351,12 @@ body {
 
     padding: 8px 10px;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 9px;
 
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--surface);
 
-    color: white;
+    color: var(--text);
 
     gap: 15px;
 
@@ -1376,7 +1416,7 @@ body {
 
 
 .my-team-player-team {
-    color: #474747;
+    color: var(--text-faint);
 
     font-size: 8px;
 }
@@ -1395,14 +1435,14 @@ body {
 
 
 .my-team-actual-fpts {
-    color: #474747;
+    color: var(--text-faint);
 
     font-size: 9px;
 }
 
 
 .my-team-contribution {
-    color: white;
+    color: var(--text);
 
     font-size: 11px;
     font-weight: 500;
@@ -1430,12 +1470,12 @@ body {
 
     padding: 0;
 
-    border: 1px solid #474747;
+    border: 1px solid var(--border);
     border-radius: 5px;
 
     background: transparent;
 
-    color: #474747;
+    color: var(--text-faint);
 
     font-family: "Unbounded", sans-serif;
 
@@ -1451,18 +1491,18 @@ body {
 
 
 .my-team-role-button:hover {
-    color: white;
+    color: var(--text);
 
-    border-color: white;
+    border-color: var(--text);
 }
 
 
 .my-team-role-button.is-active {
-    color: #FF6200;
+    color: var(--accent);
 
-    border-color: #FF6200;
+    border-color: var(--accent);
 
-    background-color: rgba(255, 98, 0, .1);
+    background-color: var(--accent-soft);
 }
 
 
@@ -1479,9 +1519,9 @@ body {
 
     border-radius: 4px;
 
-    background-color: #FF6200;
+    background-color: var(--accent);
 
-    color: white;
+    color: var(--text);
 
     font-size: 9px;
     font-weight: 700;
@@ -1496,9 +1536,9 @@ body {
 
 
 .my-team-remove-button:hover {
-    color: #ff3b30;
+    color: var(--danger);
 
-    border-color: #ff3b30;
+    border-color: var(--danger);
 }
 
 
@@ -1511,16 +1551,16 @@ body {
     margin-top: 10px;
     padding: 15px 10px;
 
-    border-top: 1px solid #474747;
+    border-top: 1px solid var(--border);
 
-    color: white;
+    color: var(--text);
 
     font-size: 11px;
 }
 
 
 .my-team-total strong {
-    color: #FF6200;
+    color: var(--accent);
 
     font-size: 20px;
     font-weight: 500;
@@ -1539,7 +1579,7 @@ body {
 
     min-height: 100px;
 
-    color: #474747;
+    color: var(--text-faint);
 
     text-align: center;
 
@@ -1557,10 +1597,10 @@ body {
 
     padding: 8px 10px;
 
-    border: 1px dashed #474747;
+    border: 1px dashed var(--border);
     border-radius: 9px;
 
-    color: #474747;
+    color: var(--text-faint);
 
     font-size: 10px;
     text-transform: uppercase;
@@ -1569,16 +1609,16 @@ body {
 
 
 .my-team-player-list.is-drag-over .my-team-empty-slot {
-    border-color: #FF6200;
+    border-color: var(--accent);
 
-    color: #FF6200;
+    color: var(--accent);
 
-    background-color: rgba(255, 98, 0, .08);
+    background-color: var(--accent-tint);
 }
 
 
 .my-team-loading {
-    color: #FF6200;
+    color: var(--accent);
 
     opacity: .8;
 }
@@ -1732,12 +1772,12 @@ body {
 
     margin-top: 15px;
 
-    border: 1px solid #FF6200;
+    border: 1px solid var(--accent);
     border-radius: 9px;
 
-    background: rgba(255, 98, 0, .08);
+    background: var(--accent-tint);
 
-    color: #FF6200;
+    color: var(--accent);
 
     font-family: "Unbounded", sans-serif;
 
@@ -1752,7 +1792,7 @@ body {
 }
 
 .save-team-button:hover {
-    background: #FF6200;
+    background: var(--accent);
 
     color: black;
 }
@@ -1773,10 +1813,10 @@ body {
 
     margin-bottom: 15px;
 
-    border: 1px solid #474747;
+    border: 1px solid var(--border);
     border-radius: 7px;
 
-    color: #777;
+    color: var(--text-muted);
 
     font-size: 9px;
     font-weight: 400;
@@ -1788,7 +1828,7 @@ body {
 .my-team-save-status {
     margin-top: 15px;
 
-    color: #474747;
+    color: var(--text-faint);
 
     font-size: 8px;
 
@@ -1814,9 +1854,9 @@ body {
 .my-team-button:disabled:hover {
     transform: none;
 
-    border-color: #474747;
+    border-color: var(--border);
 
-    color: #777;
+    color: var(--text-muted);
 }
 
 
@@ -1864,7 +1904,7 @@ body {
 
 
 .player-search-title {
-    color: white;
+    color: var(--text);
 
     font-size: 14px;
     font-weight: 300;
@@ -1890,7 +1930,7 @@ body {
     width: 14px;
     height: 14px;
 
-    color: #777;
+    color: var(--text-muted);
 
     transform: translateY(-50%);
 
@@ -1904,12 +1944,12 @@ body {
 
     padding: 0 16px 0 42px;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 10px;
 
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--surface);
 
-    color: white;
+    color: var(--text);
 
     font-size: 11px;
     font-weight: 300;
@@ -1928,7 +1968,7 @@ body {
 
 
 .player-search-input::placeholder {
-    color: #777;
+    color: var(--text-muted);
 
     font-size: 9px;
 
@@ -1939,15 +1979,15 @@ body {
 
 .player-search-input:hover,
 .player-search-input:focus {
-    border-color: #FF6200;
+    border-color: var(--accent);
 
-    background-color: rgba(0, 0, 0, .7);
+    background-color: var(--surface-hover);
 }
 
 
 .player-search-input:focus + .player-search-icon,
 .player-search-field:hover .player-search-icon {
-    color: #FF6200;
+    color: var(--accent);
 }
 
 
@@ -1973,12 +2013,12 @@ body {
 
     padding: 6px;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 10px;
 
-    background-color: #0a0502;
+    background-color: var(--surface-raised);
 
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .7);
+    box-shadow: 0 8px 24px var(--surface-hover);
 
     gap: 4px;
 }
@@ -1999,7 +2039,7 @@ body {
 
     border-radius: 7px;
 
-    color: white;
+    color: var(--text);
 
     gap: 10px;
 
@@ -2008,7 +2048,7 @@ body {
 
 
 .player-search-result:hover {
-    background-color: rgba(255, 98, 0, .08);
+    background-color: var(--accent-tint);
 }
 
 
@@ -2040,7 +2080,7 @@ body {
 .player-search-team {
     flex-shrink: 0;
 
-    color: #474747;
+    color: var(--text-faint);
 
     font-size: 8px;
 }
@@ -2056,7 +2096,7 @@ body {
 .player-search-message {
     padding: 12px 8px;
 
-    color: #777;
+    color: var(--text-muted);
 
     font-size: 9px;
 
@@ -2106,7 +2146,7 @@ body {
 
 
 .player-tab:hover {
-    background-color: rgba(255, 98, 0, .06);
+    background-color: var(--accent-tint);
 }
 
 
@@ -2127,7 +2167,7 @@ body.has-player-profile {
 
     padding: 20px;
 
-    background-color: rgba(0, 0, 0, .7);
+    background-color: var(--surface-hover);
 
     opacity: 0;
 
@@ -2151,7 +2191,7 @@ body.has-player-profile {
 
     padding: 25px 20px 20px;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 12px;
 
     background: linear-gradient(
@@ -2162,7 +2202,7 @@ body.has-player-profile {
 
     box-shadow: 0 12px 40px rgba(0, 0, 0, .8);
 
-    color: white;
+    color: var(--text);
 
     transform: translateY(10px) scale(.97);
 
@@ -2190,12 +2230,12 @@ body.has-player-profile {
 
     padding: 0;
 
-    border: 1px solid #474747;
+    border: 1px solid var(--border);
     border-radius: 50%;
 
     background: transparent;
 
-    color: #777;
+    color: var(--text-muted);
 
     font-size: 14px;
 
@@ -2208,9 +2248,9 @@ body.has-player-profile {
 
 
 .player-profile-close:hover {
-    border-color: #FF6200;
+    border-color: var(--accent);
 
-    color: #FF6200;
+    color: var(--accent);
 }
 
 
@@ -2240,10 +2280,10 @@ body.has-player-profile {
     width: 100%;
     height: 100%;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 50%;
 
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--surface);
 }
 
 
@@ -2263,7 +2303,7 @@ body.has-player-profile {
 
     overflow: hidden;
 
-    color: #262626;
+    color: var(--border-subtle);
 }
 
 
@@ -2284,10 +2324,10 @@ body.has-player-profile {
 
     padding: 3px;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 50%;
 
-    background-color: #0a0502;
+    background-color: var(--surface-raised);
 
     object-fit: contain;
 }
@@ -2310,7 +2350,7 @@ body.has-player-profile {
 
 
 .player-profile-team {
-    color: #777;
+    color: var(--text-muted);
 
     font-size: 9px;
     font-weight: 300;
@@ -2320,7 +2360,7 @@ body.has-player-profile {
 .player-profile-loading {
     padding: 40px 0 20px;
 
-    color: #FF6200;
+    color: var(--accent);
 
     font-size: 10px;
 
@@ -2331,7 +2371,7 @@ body.has-player-profile {
 
 
 .player-profile-label {
-    color: #777;
+    color: var(--text-muted);
 
     font-size: 8px;
 
@@ -2347,17 +2387,17 @@ body.has-player-profile {
     margin: 22px 0 20px;
     padding: 15px 10px;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 10px;
 
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--surface);
 
     gap: 6px;
 }
 
 
 .player-profile-average strong {
-    color: #FF6200;
+    color: var(--accent);
 
     font-size: 30px;
     font-weight: 500;
@@ -2365,7 +2405,7 @@ body.has-player-profile {
 
 
 .player-profile-sub {
-    color: #474747;
+    color: var(--text-faint);
 
     font-size: 8px;
 }
@@ -2392,10 +2432,10 @@ body.has-player-profile {
 
     padding: 8px 4px;
 
-    border: .5px solid #474747;
+    border: .5px solid var(--border);
     border-radius: 8px;
 
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--surface);
 
     gap: 6px;
 }
@@ -2410,12 +2450,12 @@ body.has-player-profile {
 
     background: transparent;
 
-    color: #474747;
+    color: var(--text-faint);
 }
 
 
 .player-profile-game.is-live {
-    border-color: #ff2d2d;
+    border-color: var(--live);
 }
 
 
@@ -2439,7 +2479,7 @@ body.has-player-profile {
 
     border-radius: 3px;
 
-    background-color: #FF6200;
+    background-color: var(--accent);
 }
 
 
@@ -2450,7 +2490,7 @@ body.has-player-profile {
 
 
 .player-profile-game-info {
-    color: #777;
+    color: var(--text-muted);
 
     font-size: 7px;
 
@@ -2459,7 +2499,7 @@ body.has-player-profile {
 
 
 .player-profile-game.is-live .player-profile-game-info {
-    color: #ff2d2d;
+    color: var(--live);
 }
 
 
@@ -2484,4 +2524,164 @@ body.has-player-profile {
         font-size: 6px;
     }
 
+}
+
+
+/* =========================
+   ACCENT COLORS
+   Orange: selection and highlights
+   Yellow: captain, locked team
+   Purple: 6th man
+   Green:  bench, winners, good games
+========================= */
+
+/* --- Inactive elements stay quiet --- */
+
+.view-tab {
+    color: var(--text-faint);
+}
+
+
+.game-tab {
+    border-color: var(--border-subtle);
+}
+
+
+.game-time {
+    color: var(--text-faint);
+}
+
+
+.game-tab.is-live .game-time {
+    color: var(--live);
+}
+
+
+.stat-label {
+    color: var(--text-faint);
+}
+
+
+/* --- Game cards --- */
+
+.game-score {
+    color: var(--text-muted);
+}
+
+
+.game-tab.is-live .game-score {
+    color: var(--text);
+}
+
+
+.game-score.is-winner {
+    color: var(--green);
+}
+
+
+/* --- My Team roles --- */
+
+/* Colored stripe on each player row shows the role */
+.my-team-player[data-role="starter"] {
+    box-shadow: inset 3px 0 0 var(--accent);
+}
+
+
+.my-team-player[data-role="sixth"] {
+    box-shadow: inset 3px 0 0 var(--purple);
+}
+
+
+.my-team-player[data-role="bench"] {
+    box-shadow: inset 3px 0 0 var(--green);
+}
+
+
+.my-team-bench-section > .my-team-section-title {
+    color: var(--green);
+}
+
+
+.my-team-sixth-slot .my-team-subsection-title {
+    color: var(--purple);
+}
+
+
+.my-team-regular-bench .my-team-subsection-title {
+    color: var(--text-muted);
+}
+
+
+.my-team-role-button[data-role="sixth"].is-active {
+    border-color: var(--purple);
+
+    background-color: var(--purple-soft);
+
+    color: var(--purple);
+}
+
+
+.my-team-role-button[data-role="bench"].is-active {
+    border-color: var(--green);
+
+    background-color: var(--green-soft);
+
+    color: var(--green);
+}
+
+
+/* --- Captain --- */
+
+.my-team-captain-badge {
+    background-color: var(--yellow);
+
+    color: #1a1204;
+}
+
+
+.my-team-captain-button.is-active {
+    border-color: var(--yellow);
+
+    background-color: var(--yellow-soft);
+
+    color: var(--yellow);
+}
+
+
+/* --- Locked team --- */
+
+.my-team-locked-banner {
+    border-color: rgba(242, 193, 78, .35);
+
+    background-color: var(--yellow-soft);
+
+    color: var(--yellow);
+}
+
+
+/* --- Player profile --- */
+
+.player-profile-game-fpts.is-good {
+    color: var(--green);
+}
+
+
+.player-profile-game-fpts.is-bad {
+    color: var(--danger);
+}
+
+
+.player-profile-bar-fill.is-negative {
+    background-color: var(--danger);
+}
+
+
+.player-profile-sub {
+    color: var(--text-faint);
+}
+
+
+/* Keep the lift shadow while dragging on touch */
+.my-team-player.is-touch-dragging[data-role] {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .6);
 }

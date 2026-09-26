@@ -1,5 +1,5 @@
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=8";
-import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=8";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=9";
+import { getGameSummaries, getRoundGames, getGameRound } from "./season-games.js?v=9";
 
 const RECENT_GAMES = 5;
 
@@ -253,7 +253,7 @@ function renderStats(playerGames, round) {
                     ></div>
                 </div>
 
-                <span class="player-profile-game-fpts">${formatFantasyPoints(game.fpts)}</span>
+                <span class="player-profile-game-fpts ${getGameClass(game.fpts, average)}">${formatFantasyPoints(game.fpts)}</span>
 
                 <span class="player-profile-game-info">
                     ${game.live ? "LIVE" : `R${game.round}`}
@@ -283,6 +283,16 @@ function renderStats(playerGames, round) {
             ${slots}
         </div>
     `;
+}
+
+
+// Green when at or above the player's average, red when negative
+function getGameClass(fpts, average) {
+    if (fpts < 0) return "is-bad";
+
+    if (fpts > 0 && fpts >= average) return "is-good";
+
+    return "";
 }
 
 

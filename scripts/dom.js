@@ -1,12 +1,12 @@
-import { fetchAndUpdate } from "./api-stats.js?v=8";
+import { fetchAndUpdate } from "./api-stats.js?v=9";
 
-import { TEAM_NAMES } from "./teams.js?v=8";
+import { TEAM_NAMES } from "./teams.js?v=9";
 
-import { gameSelect } from "./game-selector.js?v=8";
+import { gameSelect } from "./game-selector.js?v=9";
 
-import { setupPlayerSearch } from "./player-search.js?v=8";
+import { setupPlayerSearch } from "./player-search.js?v=9";
 
-import { setupPlayerProfile } from "./player-profile.js?v=8";
+import { setupPlayerProfile } from "./player-profile.js?v=9";
 
 
 
@@ -42,7 +42,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=8";
+} from "./my-team.js?v=9";
 
 
 
@@ -1732,7 +1732,7 @@ function renderMyTeamHTML(
 
                     class="my-team-subsection-title"
 
-                    style="font-size: 10px; padding-bottom: 5px; color: #fff; font-weight: 300;"
+                    style="font-size: 10px; padding-bottom: 5px; font-weight: 300;"
 
                 >
 
@@ -1757,7 +1757,7 @@ function renderMyTeamHTML(
 
                     class="my-team-subsection-title"
 
-                    style="font-size: 12px; padding-bottom: 5px; color: #fff; font-weight: 300;"
+                    style="font-size: 12px; padding-bottom: 5px; font-weight: 300;"
 
                 >
 

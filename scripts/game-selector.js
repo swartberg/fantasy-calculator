@@ -1,6 +1,6 @@
-import { fetchAndUpdate } from "./api-stats.js?v=8";
-import { TEAM_ABB } from "./teams.js?v=8";
-import { findCurrentRound } from "./season-games.js?v=8";
+import { fetchAndUpdate } from "./api-stats.js?v=9";
+import { TEAM_ABB } from "./teams.js?v=9";
+import { findCurrentRound } from "./season-games.js?v=9";
 
 export function gameSelect(loadGame) {
     const roundSelector = document.querySelector(".js-select-round");
