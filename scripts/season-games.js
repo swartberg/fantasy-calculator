@@ -3,7 +3,7 @@ import {
     SEASON_CODE,
     ROUNDS_PER_SEASON,
     SCORING_VERSION
-} from "./api-stats.js?v=18";
+} from "./api-stats.js?v=20";
 
 // Includes the scoring version, so a rules change recalculates cached games
 const CACHE_PREFIX = `fantasyGame_s${SCORING_VERSION}_`;
@@ -152,7 +152,7 @@ export async function findCurrentRound() {
 async function stepToLastPlayedRound(start) {
     let round = Math.min(Math.max(start, 1), ROUNDS_PER_SEASON);
 
-    if (!(await getRoundState(round)).played) {
+    if (!(await isRoundPlayed(round))) {
         // Season hadn't started last time and still hasn't
         if (start < 1) return 0;
 
@@ -162,7 +162,7 @@ async function stepToLastPlayedRound(start) {
 
     while (
         round < ROUNDS_PER_SEASON &&
-        (await getRoundState(round + 1)).played
+        (await isRoundPlayed(round + 1))
     ) {
         round++;
     }
@@ -180,7 +180,7 @@ async function searchLastPlayedRound() {
     while (low <= high) {
         const middle = Math.floor((low + high) / 2);
 
-        if ((await getRoundState(middle)).played) {
+        if (await isRoundPlayed(middle)) {
             found = middle;
             low = middle + 1;
         }
@@ -190,6 +190,23 @@ async function searchLastPlayedRound() {
     }
 
     return found;
+}
+
+
+/*
+    Quick check whether a round has started. Game codes
+    follow the schedule, so a started round has its
+    first games played. Checks up to 3 games instead of
+    loading all 10 of every round searched.
+*/
+async function isRoundPlayed(round) {
+    const games = getRoundGames(round);
+
+    for (const game of [games[0], games[1], games[9]]) {
+        if (await getGameSummary(game.gameCode)) return true;
+    }
+
+    return false;
 }
 
 

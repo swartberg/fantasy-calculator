@@ -1,18 +1,18 @@
-import { fetchAndUpdate } from "./api-stats.js?v=18";
+import { fetchAndUpdate } from "./api-stats.js?v=20";
 
-import { TEAM_NAMES } from "./teams.js?v=18";
+import { TEAM_NAMES } from "./teams.js?v=20";
 
-import { gameSelect } from "./game-selector.js?v=18";
+import { gameSelect } from "./game-selector.js?v=20";
 
-import { setupPlayerSearch } from "./player-search.js?v=18";
+import { setupPlayerSearch } from "./player-search.js?v=20";
 
-import { setupPlayerProfile } from "./player-profile.js?v=18";
+import { setupPlayerProfile } from "./player-profile.js?v=20";
 
-import { setupTopPlayers } from "./top-players.js?v=18";
+import { setupTopPlayers } from "./top-players.js?v=20";
 
-import { setupSeasonOverview } from "./season-overview.js?v=18";
+import { setupSeasonOverview } from "./season-overview.js?v=20";
 
-import { setupBackup } from "./backup.js?v=18";
+import { setupBackup } from "./backup.js?v=20";
 
 
 
@@ -50,7 +50,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=18";
+} from "./my-team.js?v=20";
 
 
 

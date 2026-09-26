@@ -1,5 +1,5 @@
-import { TEAM_ABB } from "./teams.js?v=18";
-import { findCurrentRound, getGameSummary } from "./season-games.js?v=18";
+import { TEAM_ABB } from "./teams.js?v=20";
+import { findCurrentRound, getGameSummary } from "./season-games.js?v=20";
 
 const ROUND_COUNT = 38;
 
@@ -324,8 +324,9 @@ async function getRoundGames(round, wrapper, loadGame) {
             </div>
         `);
 
+        // Same path as picking the round, so the status line resets too
         wrapper.querySelector(".retry-button").addEventListener("click", () => {
-            getRoundGames(round, wrapper, loadGame);
+            document.querySelector(".js-select-round")?.dispatchEvent(new Event("change"));
         });
     }
     else {

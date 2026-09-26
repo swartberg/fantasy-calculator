@@ -48,15 +48,31 @@ function reportUnscoredPlayType(action) {
 ========================= */
 
 /*
-    The live feed rate-limits bursts, and a blocked
-    request can show up as a plain network error. So
-    requests are queued (a few at a time) and failures
-    are retried before giving up.
+    The live feed rate-limits (HTTP 429), and its 429
+    replies lack CORS headers, so the browser reports
+    them as blocked network errors. To stay under the
+    limit, requests go through one paced queue: a
+    couple at a time, a short gap between starts, and
+    a pause for everyone after the feed pushes back.
 */
-const MAX_PARALLEL_REQUESTS = 4;
-const RETRY_DELAYS = [700, 2000];
+const MAX_PARALLEL_REQUESTS = 2;
+const RATE_LIMIT_PAUSE = 2000;
+const RETRY_DELAYS = [1500, 4000, 8000];
+
+/*
+    Gap between request starts. Starts at the pace the
+    open-source EuroLeague client uses, widens when the
+    feed pushes back and narrows again on success.
+*/
+const START_REQUEST_GAP = 250;
+const MIN_REQUEST_GAP = 150;
+const MAX_REQUEST_GAP = 1500;
+
+let requestGap = START_REQUEST_GAP;
 
 let activeRequests = 0;
+let nextRequestAt = 0;
+let queueTimer = null;
 const requestQueue = [];
 
 
@@ -70,10 +86,27 @@ function queueRequest(task) {
 
 
 function runQueue() {
+    if (queueTimer) return;
+
     while (activeRequests < MAX_PARALLEL_REQUESTS && requestQueue.length) {
+        const delay = nextRequestAt - Date.now();
+
+        // Too soon after the last start (or during a pause): come back later
+        if (delay > 0) {
+            queueTimer = setTimeout(() => {
+                queueTimer = null;
+
+                runQueue();
+            }, delay);
+
+            return;
+        }
+
         const { task, resolve, reject } = requestQueue.shift();
 
         activeRequests++;
+
+        nextRequestAt = Date.now() + requestGap;
 
         task()
             .then(resolve, reject)
@@ -83,6 +116,20 @@ function runQueue() {
                 runQueue();
             });
     }
+}
+
+
+// Hold every queued request for a while after the feed pushes back, and slow down
+function pauseRequests() {
+    requestGap = Math.min(requestGap * 2, MAX_REQUEST_GAP);
+
+    nextRequestAt = Math.max(nextRequestAt, Date.now() + RATE_LIMIT_PAUSE);
+}
+
+
+// Speed back up gradually while requests succeed
+function requestSucceeded() {
+    requestGap = Math.max(MIN_REQUEST_GAP, requestGap * 0.95);
 }
 
 
@@ -108,8 +155,12 @@ async function fetchPlayByPlay(gameCode, seasonCode) {
 
             // Rate limited or server trouble: try again
             if (response.status === 429 || response.status >= 500) {
+                pauseRequests();
+
                 continue;
             }
+
+            requestSucceeded();
 
             if (!response.ok) {
                 // Other non-OK responses (e.g. an invalid/unplayed game
@@ -128,7 +179,9 @@ async function fetchPlayByPlay(gameCode, seasonCode) {
             return { ok: true, data: JSON.parse(text) };
         }
         catch (error) {
-            // Network error (or a blocked request): try again
+            // Network error, usually a 429 hidden by CORS: try again
+            pauseRequests();
+
             if (attempt === RETRY_DELAYS.length) {
                 console.error(`Error fetching game ${gameCode} (${seasonCode}):`, error);
             }
@@ -148,7 +201,60 @@ async function fetchPlayByPlay(gameCode, seasonCode) {
     { ok: true, result }  — result is null when the game has no data yet
     { ok: false }         — loading failed
 */
-export async function fetchGameResult(gameCode, seasonCode = SEASON_CODE) {
+/*
+    Several parts of the app ask for the same games at
+    once (game cards, My Team, season overview, top
+    players). They share one request, and a recent
+    answer is reused for a while:
+    - live games: a few seconds (refreshes stay current)
+    - games with no data yet: 20 seconds (a tip-off shows up quickly)
+    - finished games: ten minutes
+*/
+const RESULT_TTL = {
+    live: 8000,
+    empty: 20000,
+    finished: 600000
+};
+
+const recentResults = new Map();
+
+
+export function fetchGameResult(gameCode, seasonCode = SEASON_CODE) {
+    const key = `${seasonCode}_${gameCode}`;
+
+    const recent = recentResults.get(key);
+
+    if (recent && recent.expires > Date.now()) {
+        return recent.promise;
+    }
+
+    const promise = loadGameResult(gameCode, seasonCode);
+
+    // Share the request while it runs
+    recentResults.set(key, { promise, expires: Infinity });
+
+    promise.then(({ ok, result }) => {
+        if (!ok) {
+            // Failures aren't kept: the next ask tries again
+            recentResults.delete(key);
+
+            return;
+        }
+
+        const ttl = !result
+            ? RESULT_TTL.empty
+            : result.Live
+                ? RESULT_TTL.live
+                : RESULT_TTL.finished;
+
+        recentResults.set(key, { promise, expires: Date.now() + ttl });
+    });
+
+    return promise;
+}
+
+
+async function loadGameResult(gameCode, seasonCode) {
     const { ok, data } = await fetchPlayByPlay(gameCode, seasonCode);
 
     if (!ok) return { ok: false, result: null };
