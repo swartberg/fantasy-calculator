@@ -3886,3 +3886,75 @@ body.has-player-profile {
 .my-team-player.js-open-profile .my-team-drag-handle {
     cursor: grab;
 }
+
+
+/* =========================
+   PLAYER NAMES (MY TEAM)
+   Rows: "F. Lastname"
+   Court cards: first name small, last name larger below
+========================= */
+
+.my-team-player-name .name-first,
+.my-team-player-name .name-last {
+    display: none;
+}
+
+
+.my-team-starters-court .my-team-player-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    gap: 1px;
+}
+
+
+.my-team-starters-court .my-team-player-name .name-short {
+    display: none;
+}
+
+
+.my-team-starters-court .my-team-player-name .name-first,
+.my-team-starters-court .my-team-player-name .name-last {
+    display: block;
+
+    max-width: 100%;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+.my-team-starters-court .my-team-player-name .name-first {
+    color: var(--text-muted);
+
+    font-size: 9px;
+    font-weight: 400;
+}
+
+
+.my-team-starters-court .my-team-player-name .name-last {
+    color: var(--text);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+
+    .my-team-starters-court .my-team-player-name .name-first {
+        font-size: 8px;
+    }
+
+
+    .my-team-starters-court .my-team-player-name .name-last {
+        font-size: 11px;
+    }
+
+}

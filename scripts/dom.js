@@ -1,20 +1,20 @@
-import { fetchAndUpdate } from "./api-stats.js?v=23";
+import { fetchAndUpdate } from "./api-stats.js?v=24";
 
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=23";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=24";
 
-import { gameSelect } from "./game-selector.js?v=23";
+import { gameSelect } from "./game-selector.js?v=24";
 
-import { setupPlayerSearch } from "./player-search.js?v=23";
+import { setupPlayerSearch } from "./player-search.js?v=24";
 
-import { setupPlayerProfile } from "./player-profile.js?v=23";
+import { setupPlayerProfile } from "./player-profile.js?v=24";
 
-import { setupTopPlayers } from "./top-players.js?v=23";
+import { setupTopPlayers } from "./top-players.js?v=24";
 
-import { setupSeasonOverview } from "./season-overview.js?v=23";
+import { setupSeasonOverview } from "./season-overview.js?v=24";
 
-import { setupBackup } from "./backup.js?v=23";
+import { setupBackup } from "./backup.js?v=24";
 
-import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=23";
+import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=24";
 
 
 
@@ -52,7 +52,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=23";
+} from "./my-team.js?v=24";
 
 
 
@@ -2013,7 +2013,7 @@ function createMyTeamPlayer(
 
                 ${!locked ? `<span class="my-team-drag-handle" title="Drag to swap">⋮⋮</span>` : ""}
 
-                <span class="my-team-player-name">${formatPlayerName(player.name)}</span>
+                <span class="my-team-player-name">${renderPlayerName(player.name)}</span>
 
                 <span class="my-team-player-team">${TEAM_ABB[player.team] || player.team}</span>
 
@@ -4018,57 +4018,48 @@ function isElementVisible(
 
 /* =========================
 
-   FORMAT PLAYER NAME
+   PLAYER NAME
 
 ========================= */
 
+/*
+    Both name styles, so a card can move between the
+    court and the bench without re-rendering; CSS shows
+    the right one:
+    - court cards: first name (small) above last name
+    - 6th man / bench rows: "F. Lastname"
+*/
 
+function renderPlayerName(name) {
 
-function formatPlayerName(
+    const [last, first = ""] = name
+        .split(",")
+        .map(part => toNameCase(part.trim()));
 
-    name
-
-) {
-
-
-
-    const parts =
-
-        name.split(",");
-
-
-
-
-
-    if (
-
-        parts.length < 2
-
-    ) {
-
-
-
-        return name;
-
-
-
-    }
-
-
-
-
+    const initial = first ? `${first[0]}.` : "";
 
     return `
-
-        ${parts[1]?.trim()?.[0] || ""}
-
-        ${parts[0].trim()}
-
+        <span class="name-first">${first}</span>
+        <span class="name-short">${initial ? `${initial} ` : ""}${last}</span>
+        <span class="name-last">${last}</span>
     `;
 
+}
 
+
+// "WILLIAMS-GOSS" → "Williams-Goss", "WRIGHT IV" → "Wright IV", "MCKINLEY" → "McKinley"
+function toNameCase(text) {
+
+    return text
+        .toLowerCase()
+        .replace(/(^|[\s\-'’])(\p{L})/gu, (match, separator, letter) => separator + letter.toUpperCase())
+        .replace(/\b(Ii|Iii|Iv|Vi)\b/g, numeral => numeral.toUpperCase())
+        .replace(/\bMc(\p{Ll})/gu, (match, letter) => `Mc${letter.toUpperCase()}`);
 
 }
+
+
+
 
 
 
