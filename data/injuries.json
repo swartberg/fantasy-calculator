@@ -255,7 +255,7 @@
       "comment": "Left shoulder injury"
     },
     {
-      "name": "A. Kone",
+      "name": "Abdu Kone",
       "teamName": "FC Barcelona",
       "team": "BAR",
       "status": "doubtful",
@@ -303,10 +303,10 @@
       "name": "Oz Blayzer",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1, played in the domestic cup (09.26)"
     },
     {
       "name": "Tamir Blatt",
@@ -321,19 +321,19 @@
       "name": "Frederic Bourdillon",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1, played in the domestic cup (09.26)"
     },
     {
       "name": "Khadeen Carrington",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1, played in the domestic cup (09.26)"
     },
     {
       "name": "Amir Coffey",
@@ -366,28 +366,28 @@
       "name": "Max Heidegger",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1, played in the domestic cup (09.26)"
     },
     {
       "name": "Guy Palatin",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1, played in the domestic cup (09.26)"
     },
     {
       "name": "Itay Segev",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1, played in the domestic cup (09.26)"
     },
     {
       "name": "Yiftach Ziv",
@@ -486,7 +486,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision). Played in the domestic league (09.26)"
+      "comment": "DNP in Round 1 (coach's decision). Played in Super Cup 1/2 (09.26)"
     },
     {
       "name": "Omiros Netzipoglou",
@@ -495,7 +495,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision). Played in the domestic league (09.26)"
+      "comment": "DNP in Round 1 (coach's decision). Played in Super Cup 1/2 (09.26)"
     },
     {
       "name": "Nikolaos Plotas",
@@ -504,7 +504,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision).Played in the domestic league (09.26)"
+      "comment": "DNP in Round 1 (coach's decision).Played in Super Cup 1/2 (09.26)"
     },
     {
       "name": "Moustapha Fall",
@@ -523,6 +523,15 @@
       "label": "Out",
       "round": "Round 2-4",
       "comment": "Fractured fourth metacarpal in his left hand"
+    },
+    {
+      "name": "Juan Hernangomez",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 2",
+      "comment": "Discomfort in his groin suffered during Greek SuperCup semifinal"
     },
     {
       "name": "Ioannis Kouzeloglou",
@@ -768,5 +777,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-09-26T19:14:32.654Z"
+  "updatedAt": "2026-09-27T05:23:42.490Z"
 }
