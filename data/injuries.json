@@ -510,8 +510,8 @@
       "name": "Moustapha Fall",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 2",
       "comment": "DNP in Round 1 (hamstring injury)"
     },
@@ -531,7 +531,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 2",
-      "comment": "Discomfort in his groin suffered during Greek SuperCup semifinal"
+      "comment": "Discomfort in his groin (muscle spasm) suffered during Greek SuperCup semifinal"
     },
     {
       "name": "Ioannis Kouzeloglou",
@@ -777,5 +777,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-09-27T05:23:42.490Z"
+  "updatedAt": "2026-09-27T12:09:16.332Z"
 }
