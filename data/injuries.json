@@ -744,28 +744,28 @@
       "name": "Kaodirichi Akobundu-Ehiogu",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1 (coach's decision),played in the domestic league"
     },
     {
       "name": "Saben Lee",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "expected",
-      "label": "Expected",
+      "status": "questionable",
+      "label": "Game-time",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (hamstring strain)"
+      "comment": "DNP in Round 1+DNP in the domestic league (hamstring strain)"
     },
     {
       "name": "Deividas Sirvydis",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1 (coach's decision), played in the domestic league"
     },
     {
       "name": "Nigel Williams-Goss",
@@ -777,5 +777,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-09-27T12:09:16.332Z"
+  "updatedAt": "2026-09-27T17:01:35.893Z"
 }
