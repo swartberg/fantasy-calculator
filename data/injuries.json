@@ -420,10 +420,10 @@
       "name": "Edwin Jackson",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1 (coach's decision). Played in the domestic league"
     },
     {
       "name": "TyTy Washington Jr.",
@@ -438,10 +438,10 @@
       "name": "Amit Ebo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1 (coach's decision).Played in the domestic cup (09.27)"
     },
     {
       "name": "Shane Hunter",
@@ -465,10 +465,10 @@
       "name": "T.J. Leaf",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (undisclosed)"
+      "comment": "DNP in Round 1. Played in the domestic cup (09.27)"
     },
     {
       "name": "Georgios Bourneles",
@@ -495,7 +495,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision). Played in Super Cup 1/2 (09.26)"
+      "comment": "DNP in Round 1 (coach's decision). Played in Super Cup final (09.27)"
     },
     {
       "name": "Nikolaos Plotas",
@@ -573,10 +573,10 @@
       "name": "Joel Ayayi",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (undisclosed)"
+      "comment": "DNP in Round 1. Played in the domestic league"
     },
     {
       "name": "Nobel Boungou-Colo",
@@ -600,10 +600,10 @@
       "name": "Frank Ntilikina",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (undisclosed)"
+      "comment": "DNP in Round 1. Played in the domestic league"
     },
     {
       "name": "Maozinha Pereira",
@@ -672,46 +672,46 @@
       "name": "Sergio Llull",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1"
+      "comment": "DNP in Round 1. Played in the domestic league"
     },
     {
       "name": "Chuma Okeke",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1"
+      "comment": "DNP in Round 1.Played in the domestic league"
     },
     {
       "name": "Max Shulga",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1"
+      "comment": "DNP in Round 1. Played in the domestic league"
     },
     {
       "name": "Nick Smith Jr.",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "expected",
-      "label": "Expected",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (not injured)"
+      "comment": "DNP in Round 1 (not injured). DNP in the domestic league (09.27)"
     },
     {
       "name": "Gonzalo Corbalan",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "Didn't travel with the team in Round 1"
+      "comment": "Didn't travel with the team in Round 1. Played in the domestic league."
     },
     {
       "name": "Lucas Mari",
@@ -777,5 +777,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-09-27T17:01:35.893Z"
+  "updatedAt": "2026-09-28T00:50:27.327Z"
 }
