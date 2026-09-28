@@ -19,6 +19,7 @@ export const TEAM_NAMES = {
     VIR: "Virtus Bologna",
     ASV: "ASVEL Villeurbanne",
     PAR: "Partizan Belgrade",
+    BES: "Besiktas Istanbul"
 }
 
 
@@ -43,4 +44,5 @@ export const TEAM_ABB = {
     VIR: "VIR",
     ASV: "ASV",
     PAR: "PAR",
+    BES: "BES"
 }
