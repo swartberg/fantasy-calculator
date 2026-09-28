@@ -15,19 +15,19 @@
       "name": "Burak Can Yildizli",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1 (coach's decision). Played in the domestic league"
     },
     {
       "name": "David Mutaf",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "DNP in Round 1 (coach's decision). Played in the domestic league"
     },
     {
       "name": "Georgios Papagiannis",
@@ -480,6 +480,15 @@
       "comment": "DNP in Round 1 (coach's decision)"
     },
     {
+      "name": "Bryant Dunston",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Game-time",
+      "round": "Round 2",
+      "comment": "Traveled with the team to Kaunas"
+    },
+    {
       "name": "Antonios Karagiannidis",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
@@ -489,6 +498,15 @@
       "comment": "DNP in Round 1 (coach's decision). Played in Super Cup 1/2 (09.26)"
     },
     {
+      "name": "Nikola Milutinov",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2-3",
+      "comment": "Tendinitis"
+    },
+    {
       "name": "Omiros Netzipoglou",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
@@ -496,6 +514,15 @@
       "label": "Ready",
       "round": "Round 2",
       "comment": "DNP in Round 1 (coach's decision). Played in Super Cup final (09.27)"
+    },
+    {
+      "name": "George Papas",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 2",
+      "comment": "Not expected to play in Round 2 (coach's decision)"
     },
     {
       "name": "Nikolaos Plotas",
@@ -777,5 +804,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-09-28T00:50:27.327Z"
+  "updatedAt": "2026-09-28T08:44:59.205Z"
 }
