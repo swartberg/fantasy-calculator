@@ -366,10 +366,10 @@
       "name": "Tomer Ginat",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (undisclosed)"
+      "comment": "DNP in Round 1 (knee injury)"
     },
     {
       "name": "Max Heidegger",
@@ -687,6 +687,15 @@
       "comment": "Out of the squad"
     },
     {
+      "name": "Bandja Sy",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 2",
+      "comment": "New signing, travels with team to Paris"
+    },
+    {
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
@@ -831,5 +840,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-09-28T18:11:13.800Z"
+  "updatedAt": "2026-09-29T05:49:05.879Z"
 }
