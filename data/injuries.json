@@ -72,7 +72,7 @@
       "status": "questionable",
       "label": "Game-time",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (minor injury)"
+      "comment": "DNP in Round 1 (back injury)"
     },
     {
       "name": "Jovan Bikic",
@@ -159,10 +159,10 @@
       "name": "Justin Anderson",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2-4",
+      "comment": "Hamstring injury"
     },
     {
       "name": "Nemanja Dangubic",
@@ -195,19 +195,19 @@
       "name": "Dzanan Musa",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 2",
-      "comment": "DNP in Round 1 (knee injury)"
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2-4",
+      "comment": "Knee injury"
     },
     {
       "name": "Klemen Prepelic",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision)"
+      "comment": "Undisclosed"
     },
     {
       "name": "Tomislav Vuckovic",
@@ -222,10 +222,10 @@
       "name": "Kamar Baldwin",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "ready",
-      "label": "Ready",
+      "status": "out",
+      "label": "Out",
       "round": "Round 2",
-      "comment": "DNP in Round 1. Played in the domestic league (09.26)"
+      "comment": "Played in the domestic league during the weekend after a DNP in Round 1, but didn't travel to Istanbul for Round 2, per official injury report"
     },
     {
       "name": "Kilian Fischer",
@@ -240,10 +240,19 @@
       "name": "Niels Giffey",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "ready",
-      "label": "Ready",
+      "status": "out",
+      "label": "Out",
       "round": "Round 2",
-      "comment": "DNP in Round 1. Played in the domestic league (09.26)"
+      "comment": "Played in the domestic league during the weekend after a DNP in Round 1, but didn't travel to Istanbul for Round 2, per official injury report"
+    },
+    {
+      "name": "Tobias Jensen",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2",
+      "comment": "Didn't travel to Istanbul for Round 2, per official injury report"
     },
     {
       "name": "Duane Washington Jr.",
@@ -408,6 +417,15 @@
       "comment": "DNP in Round 1 (coach's decision)"
     },
     {
+      "name": "Marcio Santos",
+      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "team": "BAS",
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 2",
+      "comment": "Was announced as a new signing on 09.29, but hasn't been registered yet."
+    },
+    {
       "name": "Pedro Souza",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
@@ -564,9 +582,9 @@
       "name": "Juan Hernangomez",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 2",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2-3",
       "comment": "Discomfort in his groin (muscle spasm) suffered during Greek SuperCup semifinal"
     },
     {
@@ -726,10 +744,10 @@
       "name": "Sergio Llull",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "ready",
-      "label": "Ready",
+      "status": "out",
+      "label": "Out",
       "round": "Round 2",
-      "comment": "DNP in Round 1. Played in the domestic league"
+      "comment": "Played in the domestic league, but didn't travel with the team for Round 2 to Istanbul after a DNP in Round 1."
     },
     {
       "name": "Chuma Okeke",
@@ -738,7 +756,16 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 2",
-      "comment": "DNP in Round 1.Played in the domestic league"
+      "comment": "DNP in Round 1. Played in the domestic league"
+    },
+    {
+      "name": "Gabriele Procida",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 2",
+      "comment": "Didn't travel with the team to Istanbul (undisclosed)"
     },
     {
       "name": "Max Shulga",
@@ -753,10 +780,10 @@
       "name": "Nick Smith Jr.",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "out",
-      "label": "Out",
+      "status": "questionable",
+      "label": "Game-time",
       "round": "Round 2",
-      "comment": "DNP in Round 1 and domestic league, not registered yet (not injured)."
+      "comment": "Has been registered for Round 2 and traveled with the team to Istanbul after DNP in Round 1 and domestic league (not injured)."
     },
     {
       "name": "Gonzalo Corbalan",
@@ -840,5 +867,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-09-29T05:49:05.879Z"
+  "updatedAt": "2026-09-29T13:00:10.894Z"
 }
