@@ -30,6 +30,15 @@
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
     {
+      "name": "Mike James",
+      "teamName": "Anadolu Efes Istanbul",
+      "team": "IST",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Suffered a concerning non-contact injury in Round 3"
+    },
+    {
       "name": "D. Karutasu",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
@@ -930,5 +939,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-01T19:35:29.659Z"
+  "updatedAt": "2026-10-01T23:56:09.144Z"
 }
