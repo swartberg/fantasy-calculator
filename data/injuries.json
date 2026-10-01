@@ -15,8 +15,8 @@
       "name": "Ruzgar Fenemen",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -24,8 +24,8 @@
       "name": "Burak Can Yildizli",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -33,8 +33,8 @@
       "name": "D. Karutasu",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -42,8 +42,8 @@
       "name": "David Mutaf",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -114,8 +114,8 @@
       "name": "Jovan Bikic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -123,8 +123,8 @@
       "name": "Andrej Bjelic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -132,8 +132,8 @@
       "name": "Dejan Davidovac",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -150,8 +150,8 @@
       "name": "Vojin Medarevic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -168,8 +168,8 @@
       "name": "Ognjen Simjanovski",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -188,7 +188,7 @@
       "team": "DUB",
       "status": "out",
       "label": "Out",
-      "round": "Round 2-4",
+      "round": "Round 1-6",
       "comment": "Hamstring injury"
     },
     {
@@ -340,7 +340,7 @@
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (Undisclosed injury)"
     },
@@ -357,10 +357,10 @@
       "name": "Oz Blayzer",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 1-2 (coach's decision)"
+      "comment": "Not included in 12-man squad after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Tamir Blatt",
@@ -375,10 +375,10 @@
       "name": "Frederic Bourdillon",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 1-2 (coach's decision)"
+      "comment": "Not included in 12-man squad after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Amir Coffey",
@@ -402,8 +402,8 @@
       "name": "Tomer Ginat",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 2 (knee injury)"
     },
@@ -411,46 +411,55 @@
       "name": "Max Heidegger",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 1-2 (coach's decision)"
+      "comment": "Not included in 12-man squad after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Guy Palatin",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 1-2 (coach's decision)"
+      "comment": "Not included in 12-man squad after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Itay Segev",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 1-2 (coach's decision)"
+      "comment": "Not included in 12-man squad after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Jacob Toppin",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 1-2 (coach's decision)"
+      "comment": "Not included in 12-man squad after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Yiftach Ziv",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 1-2 (coach's decision)"
+      "comment": "Not included in 12-man squad after a DNP in Round 1-2 (coach's decision)"
+    },
+    {
+      "name": "Marcio Santos",
+      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "team": "BAS",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 3",
+      "comment": "Practiced ahead of Round 3, expected to be available (new signing, not injured)"
     },
     {
       "name": "Pedro Souza",
@@ -525,11 +534,20 @@
       "comment": "Not included in 12-man roster in Rounds 1-2 (undisclosed injury)"
     },
     {
+      "name": "Daniel Theis",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Questionable",
+      "round": "Round 3",
+      "comment": "Ankle problem"
+    },
+    {
       "name": "Georgios Bourneles",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -537,8 +555,8 @@
       "name": "Bryant Dunston",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 3",
       "comment": "Was included in 12-man roster in Round 2 but didn't play."
     },
@@ -546,8 +564,8 @@
       "name": "Cory Joseph",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 3",
       "comment": "DNP in Round 2 (Back discomfort)"
     },
@@ -555,8 +573,8 @@
       "name": "Antonios Karagiannidis",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -573,8 +591,8 @@
       "name": "Omiros Netzipoglou",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -582,8 +600,8 @@
       "name": "George Papas",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -591,8 +609,8 @@
       "name": "Nikolaos Plotas",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "Was included in 12-man roster in Round 2 but didn't play."
     },
@@ -629,7 +647,7 @@
       "team": "PAN",
       "status": "out",
       "label": "Out",
-      "round": "Round 3",
+      "round": "Indefinitely",
       "comment": "Not included in official Euroleague roster"
     },
     {
@@ -654,17 +672,17 @@
       "name": "Iason Varvaritis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "Not included in 12-man roster in Rounds 1-2 (coach's decision)"
+      "comment": "Confirmed as out for Round 3 after not being included in 12-man roster in Rounds 1-2 (coach's decision)"
     },
     {
       "name": "Joel Ayayi",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 3",
       "comment": "Not included in 12-man roster in Round 2 (coach's decision)"
     },
@@ -672,8 +690,8 @@
       "name": "Nobel Boungou-Colo",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "Not included in 12-man roster in Round 2 (coach's decision)"
     },
@@ -681,8 +699,8 @@
       "name": "Alize Johnson",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 3",
       "comment": "Not included in 12-man roster in Round 2 (coach's decision)"
     },
@@ -690,17 +708,26 @@
       "name": "Amath M'Baye",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "Not included in 12-man roster in Round 2 (coach's decision)"
+    },
+    {
+      "name": "Frank Ntilikina",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 3",
+      "comment": "Undisclosed"
     },
     {
       "name": "Maozinha Pereira",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "Not included in 12-man roster in Round 2 (coach's decision)"
     },
@@ -708,10 +735,19 @@
       "name": "Enzo Shahrvin",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "Not included in 12-man roster in Round 2 (coach's decision)"
+    },
+    {
+      "name": "Terry Tarpey",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 3",
+      "comment": "Undisclosed"
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -735,10 +771,10 @@
       "name": "Joffrey Lauvergne",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 3",
-      "comment": "Undisclosed injury, could return for Round 3."
+      "comment": "Expected to return, per official injury report (undisclosed injury)"
     },
     {
       "name": "Vanja Marinkovic",
@@ -757,6 +793,15 @@
       "label": "Out",
       "round": "Indefinitely",
       "comment": "Out of the squad"
+    },
+    {
+      "name": "Lamar Stevens",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "questionable",
+      "label": "Game-time",
+      "round": "Round 3",
+      "comment": "Finger injury"
     },
     {
       "name": "Derek Willis",
@@ -780,37 +825,37 @@
       "name": "Sergio Llull",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 2 (coach's decision)"
+      "comment": "Not included in 12-man squad after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Gabriele Procida",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 2 (undisclosed)"
+      "comment": "Not included in 12-man squad after a DNP in 2 (coach's decision)"
     },
     {
       "name": "Olivier Sarr",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 1-2 (coach's decision)"
+      "comment": "Not included in 12-man squad after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Max Shulga",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
-      "comment": "DNP in Round 1-2 (coach's decision)"
+      "comment": "Not included in 12-man squad after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Lucas Mari",
@@ -834,8 +879,8 @@
       "name": "Matteo Baiocchi",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -843,8 +888,8 @@
       "name": "Davide Casarin",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 3",
       "comment": "DNP in Round 1-2 (coach's decision)"
     },
@@ -855,7 +900,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 3",
-      "comment": "Tear right thigh biceps."
+      "comment": "Tear right thigh biceps"
     },
     {
       "name": "Kaodirichi Akobundu-Ehiogu",
@@ -885,5 +930,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-01T13:25:46.717Z"
+  "updatedAt": "2026-10-01T19:35:29.659Z"
 }
