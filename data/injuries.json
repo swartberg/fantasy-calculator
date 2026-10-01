@@ -87,19 +87,10 @@
       "name": "Yagiz Aksu",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 2",
-      "comment": "Not included in 12-man roster after a DNP in Round 1 (coach's decision)"
-    },
-    {
-      "name": "Vitto Brown",
-      "teamName": "Besiktas Istanbul",
-      "team": "BES",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 2",
-      "comment": "Not included in 12-man roster (undisclosed)"
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 3",
+      "comment": "Not included in 12-man roster in Rounds 1-2 (coach's decision)"
     },
     {
       "name": "DaQuan Jeffries",
@@ -483,37 +474,37 @@
       "name": "Edwin Jackson",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 2",
-      "comment": "DNP in Round 1 (coach's decision). Played in the domestic league"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 3",
+      "comment": "DNP in Rounds 1-2 (coach's decision). Played in the domestic league"
     },
     {
       "name": "TyTy Washington Jr.",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 2",
-      "comment": "DNP in Round 1 (ankle injury)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 3",
+      "comment": "DNP in Rounds 1-2 (ankle injury)"
     },
     {
       "name": "John Dibartolomeo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 2",
-      "comment": "Personal reasons"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 3",
+      "comment": "Did not travel with the team for Round 2 (personal reasons)"
     },
     {
       "name": "Amit Ebo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 2",
-      "comment": "Not included in 12-man roster after a DNP in Round 1 (coach's decision)"
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 3",
+      "comment": "Not included in 12-man roster in Rounds 1-2 (coach's decision)"
     },
     {
       "name": "Shane Hunter",
@@ -521,26 +512,17 @@
       "team": "TEL",
       "status": "out",
       "label": "Out",
-      "round": "Round 2",
-      "comment": "Undisclosed"
+      "round": "Round 3",
+      "comment": "Not included in official Euroleague roster"
     },
     {
       "name": "Gur Lavi",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 2",
-      "comment": "Undisclosed injury (DNP in Round 1)"
-    },
-    {
-      "name": "T.J. Leaf",
-      "teamName": "Maccabi Rapyd Tel Aviv",
-      "team": "TEL",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 2",
-      "comment": "Cleared to play after a DNP in Round 1."
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 3",
+      "comment": "Not included in 12-man roster in Rounds 1-2 (undisclosed injury)"
     },
     {
       "name": "Georgios Bourneles",
@@ -647,8 +629,8 @@
       "team": "PAN",
       "status": "out",
       "label": "Out",
-      "round": "Round 2",
-      "comment": "Not included in 12-man roster after a DNP in Round 1 (coach's decision)"
+      "round": "Round 3",
+      "comment": "Not included in official Euroleague roster"
     },
     {
       "name": "Kendrick Nunn",
@@ -672,10 +654,10 @@
       "name": "Iason Varvaritis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 2",
-      "comment": "Not included in 12-man roster after a DNP in Round 1 (coach's decision)"
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 3",
+      "comment": "Not included in 12-man roster in Rounds 1-2 (coach's decision)"
     },
     {
       "name": "Joel Ayayi",
@@ -903,5 +885,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-09-30T19:26:14.871Z"
+  "updatedAt": "2026-10-01T06:03:34.146Z"
 }
