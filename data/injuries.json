@@ -69,37 +69,28 @@
       "name": "Nicola Akele",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 3",
-      "comment": "Not included in 12-man roster in Round 2 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 4",
+      "comment": "Not included in 12-man roster in Rounds 2-3 (coach's decision)"
     },
     {
       "name": "Ousmane Diop",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 3",
-      "comment": "Not included in 12-man roster in Round 2 (coach's decision)"
-    },
-    {
-      "name": "Diego Flaccadori",
-      "teamName": "Armani Olimpia Milan",
-      "team": "MIL",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 3",
-      "comment": "Not included in 12-man roster in Round 2 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 4",
+      "comment": "Not included in 12-man roster in Rounds 2-3 (coach's decision)"
     },
     {
       "name": "Marko Guduric",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 3",
-      "comment": "Personal reasons (birth of his daughter)"
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 4",
+      "comment": "DNP in Round 3 by personal reasons (birth of his daughter)"
     },
     {
       "name": "Yagiz Aksu",
@@ -225,7 +216,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 3",
-      "comment": "DNP in Round 1-2 (coach's decision)"
+      "comment": "Included in 12-man roster after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Mouhammadou Jaiteh",
@@ -279,7 +270,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 3",
-      "comment": "Played in the domestic league during the weekend after a DNP in Round 1, but didn't travel to Istanbul for Round 2, per official injury report"
+      "comment": "Included in 12-man roster after a DNP in Round 2 (coach's decision)"
     },
     {
       "name": "MarJon Beauchamp",
@@ -315,7 +306,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 3",
-      "comment": "Played in the domestic league during the weekend after a DNP in Round 1, but didn't travel to Istanbul for Round 2, per official injury report"
+      "comment": "Included in 12-man roster after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Tobias Jensen",
@@ -324,7 +315,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 3",
-      "comment": "Didn't travel to Istanbul for Round 2, per official injury report"
+      "comment": "Included in 12-man roster after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Tosan Evbuomwan",
@@ -498,13 +489,22 @@
       "comment": "Not included in official Euroleague roster"
     },
     {
+      "name": "Clement Frisch",
+      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "team": "BAS",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 3",
+      "comment": "Not included in 12-man roster in Round 2 (coach's decision)"
+    },
+    {
       "name": "Marcio Santos",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
       "status": "ready",
       "label": "Ready",
       "round": "Round 3",
-      "comment": "Practiced ahead of Round 3, expected to be available (new signing, not injured)"
+      "comment": "Cleared to make his debut"
     },
     {
       "name": "Pedro Souza",
@@ -558,7 +558,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 3",
-      "comment": "Not included in 12-man roster in Rounds 1-2 (coach's decision)"
+      "comment": "Included in 12-man roster after a DNP in Round 1-2 (coach's decision)"
     },
     {
       "name": "Shane Hunter",
@@ -657,7 +657,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 3",
-      "comment": "Fractured fourth metacarpal in his left hand"
+      "comment": "Cleared to play (Fractured fourth metacarpal in his left hand)"
     },
     {
       "name": "Juan Hernangomez",
@@ -774,7 +774,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 3",
-      "comment": "Listed as available per official injury report (calf injury). DNP in Rounds 1-2"
+      "comment": "Cleared to play after a DNP in Rounds 1-2 (calf injury)"
     },
     {
       "name": "Vanja Marinkovic",
@@ -948,5 +948,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-02T19:22:16.829Z"
+  "updatedAt": "2026-10-02T23:49:53.569Z"
 }
