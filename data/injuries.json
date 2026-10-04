@@ -339,10 +339,10 @@
       "name": "Shane Larkin",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 4",
-      "comment": "DNP in Rounds 1-3 (undisclosed injury)"
+      "comment": "Played in domestic league on Sunday"
     },
     {
       "name": "Melih Mahmutoglu",
@@ -579,6 +579,15 @@
       "comment": "DNP in Round 2-3 (tendinitis)"
     },
     {
+      "name": "Jean Montero",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 4",
+      "comment": "Skips Sunday's domestic league game due to a virus"
+    },
+    {
       "name": "Omiros Netzipoglou",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
@@ -640,6 +649,15 @@
       "label": "Out",
       "round": "Round 2-4",
       "comment": "Medial right meniscus tear"
+    },
+    {
+      "name": "Nikos Rogkavopoulos",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 4",
+      "comment": "Back pain, DNP in Round 3 and Greek League (10-04)"
     },
     {
       "name": "Kostas Sloukas",
@@ -870,8 +888,8 @@
       "name": "Kaodirichi Akobundu-Ehiogu",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 4",
       "comment": "DNP in Round 1-3 (coach's decision)"
     },
@@ -879,10 +897,19 @@
       "name": "Saben Lee",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
       "comment": "DNP in Round 1-3 (hamstring strain)"
+    },
+    {
+      "name": "Ąžuolas Tubelis",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "out",
+      "label": "Out",
+      "round": "",
+      "comment": ""
     },
     {
       "name": "Nigel Williams-Goss",
@@ -894,5 +921,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-03T05:23:48.758Z"
+  "updatedAt": "2026-10-04T15:24:06.957Z"
 }
