@@ -465,10 +465,10 @@
       "name": "Tadas Sedekerskis",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 4",
-      "comment": "Played only 5 minutes in the first quarter of Round 3"
+      "comment": "Played only 5 minutes in the first quarter of Round 3. Played in the domestic league (10.04)"
     },
     {
       "name": "Pedro Souza",
@@ -921,5 +921,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-04T19:41:01.985Z"
+  "updatedAt": "2026-10-05T05:48:45.199Z"
 }
