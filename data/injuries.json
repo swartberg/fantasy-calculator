@@ -93,6 +93,15 @@
       "comment": "DNP in Round 3 by personal reasons (birth of his daughter)"
     },
     {
+      "name": "Stefano Tonut",
+      "teamName": "Armani Olimpia Milan",
+      "team": "MIL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 4",
+      "comment": "DNP in domestic league game on Monday (left hand contusion), requires a few days of rest"
+    },
+    {
       "name": "Yagiz Aksu",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
@@ -921,5 +930,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-05T14:49:45.044Z"
+  "updatedAt": "2026-10-05T22:43:00.982Z"
 }
