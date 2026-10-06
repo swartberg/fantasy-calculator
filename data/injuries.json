@@ -87,10 +87,10 @@
       "name": "Marko Guduric",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 4",
-      "comment": "DNP in Round 3 by personal reasons (birth of his daughter)"
+      "comment": "DNP in Round 3 by personal reasons.Played in the domestic league (10.05)"
     },
     {
       "name": "Stefano Tonut",
@@ -627,10 +627,10 @@
       "name": "Moustapha Fall",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "DNP in Round 1-3 (hamstring injury)"
+      "comment": "DNP in Round 1-3 (hamstring injury), started practising with team"
     },
     {
       "name": "Juan Hernangomez",
@@ -774,7 +774,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 4",
-      "comment": "DNP in Round 3 (hand injury)"
+      "comment": "DNP in Round 3 and in domestic league (10.05) (hand injury)"
     },
     {
       "name": "Derek Willis",
@@ -900,7 +900,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 4",
-      "comment": "DNP in Round 1-3 (right thigh biceps tear)"
+      "comment": "DNP in Round 1-3 and in the domestic league (10.04) (right thigh biceps tear)"
     },
     {
       "name": "Kaodirichi Akobundu-Ehiogu",
@@ -930,5 +930,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-05T22:43:00.982Z"
+  "updatedAt": "2026-10-06T06:27:54.083Z"
 }
