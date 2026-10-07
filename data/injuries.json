@@ -375,10 +375,10 @@
       "name": "Shane Larkin",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "ready",
-      "label": "Ready",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
-      "comment": "Played in domestic league on Sunday"
+      "comment": "Played in domestic league (10.04), but will miss Round 4 to continue working on his physical form"
     },
     {
       "name": "Melih Mahmutoglu",
@@ -516,6 +516,15 @@
       "comment": "Not included in 12-man roster in Rounds 2-3 (coach's decision)"
     },
     {
+      "name": "Juhann Begarin",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 4",
+      "comment": "New signing (not injured)"
+    },
+    {
       "name": "Mathis Dossou-Yovo",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
@@ -528,19 +537,19 @@
       "name": "Edwin Jackson",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
-      "comment": "DNP in Rounds 1-3 (coach's decision). Played in the domestic league (10.04)"
+      "comment": "Not included in 12-man roster after a DNP in Rounds 1-3 (coach's decision)"
     },
     {
       "name": "TyTy Washington Jr.",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
-      "comment": "DNP in Rounds 1-3 and in the domestic league (10.04) (ankle injury)"
+      "comment": "Still out with an ankle injury after a DNP in Rounds 1-3"
     },
     {
       "name": "John Dibartolomeo",
@@ -735,19 +744,28 @@
       "name": "Frank Ntilikina",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "ready",
-      "label": "Ready",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
-      "comment": "DNP in Round 3 (undisclosed). Played in the domestic league (10.04)"
+      "comment": "Not on the 12-man roster after playing in the domestic league over the weekend and a DNP in Round 3 (undisclosed)."
     },
     {
       "name": "Maozinha Pereira",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
-      "comment": "DNP in Round 1-3 (coach's decision)"
+      "comment": "Not included in 12-man roster after a DNP in Rounds 1-3 (coach's decision)"
+    },
+    {
+      "name": "Jared Rhoden",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 4",
+      "comment": "Not included in 12-man roster (undisclosed)"
     },
     {
       "name": "Terry Tarpey",
@@ -756,7 +774,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 4",
-      "comment": "DNP in Round 3 (undisclosed).Played in the domestic league (10.04)"
+      "comment": "Included in 12-man roster"
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -975,5 +993,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-07T17:27:04.501Z"
+  "updatedAt": "2026-10-07T23:09:02.161Z"
 }
