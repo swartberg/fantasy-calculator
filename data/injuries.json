@@ -105,10 +105,10 @@
       "name": "Stefano Tonut",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
-      "comment": "DNP in domestic league game on Monday (left hand contusion), requires a few days of rest"
+      "comment": "Left hand contusion"
     },
     {
       "name": "Yagiz Aksu",
@@ -133,9 +133,9 @@
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 4",
-      "comment": "DNP in Round 1-3 (back injury)"
+      "comment": "Traveled with the team for Round 4 after DNPs in Round 1-3 (back injury)"
     },
     {
       "name": "Jovan Bikic",
@@ -159,19 +159,28 @@
       "name": "Dejan Davidovac",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "DNP in Round 1-3 (coach's decision).Played in the domestic league (10.04)"
+      "comment": "Traveled with the team for Round 4 after playing in the domestic league during the weekend, after a DNP in Rounds 1-3"
     },
     {
       "name": "Nikola Djurisic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "DNP in Round 2-3 (quad injury).Played in the domestic league (10.04)"
+      "comment": "Traveled with the team for Round 4 after playing in the domestic league during the weekend after a DNP in Rounds 2-3 (quad injury)"
+    },
+    {
+      "name": "Ognjen Dobric",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Game-time",
+      "round": "Round 4",
+      "comment": "Suffered a problem during practice (undisclosed injury)"
     },
     {
       "name": "Vojin Medarevic",
@@ -183,13 +192,22 @@
       "comment": "Not included in official Euroleague roster"
     },
     {
+      "name": "Stefan Miljenovic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 4",
+      "comment": "Didn't travel with the team for Round 4 (coach's decision)"
+    },
+    {
       "name": "Johnathan Motley",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 4",
-      "comment": "Suffered a groin injury in Round 3. DNP in the domestic league (10.04)"
+      "status": "out",
+      "label": "Out",
+      "round": "Round 4-8",
+      "comment": "Groin injury"
     },
     {
       "name": "Aleksej Nedeljkovic",
@@ -349,9 +367,9 @@
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 4",
-      "comment": "DNP in Rounds 1-3 (coach's decision). Played in the domestic league (10.04)"
+      "comment": "DNP in Rounds 1-3 (coach's decision). Suffered injury in the domestic league (10.04)"
     },
     {
       "name": "Shane Larkin",
@@ -402,10 +420,10 @@
       "name": "Amir Coffey",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "DNP in Rounds 1-3 (undisclosed injury)"
+      "comment": "Practiced with the team and is expected to return after DNPs in Rounds 1-3 (undisclosed injury)"
     },
     {
       "name": "Tyler Ennis",
@@ -456,10 +474,10 @@
       "name": "Jacob Toppin",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "DNP in Rounds 2-3 (coach's decision)"
+      "comment": "Practiced with the team and is expected to return after DNPs in Rounds 2-3 (undisclosed injury)"
     },
     {
       "name": "Yiftach Ziv",
@@ -528,8 +546,8 @@
       "name": "John Dibartolomeo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 4",
       "comment": "DNP in Rounds 2-3 (personal reasons)"
     },
@@ -627,28 +645,28 @@
       "name": "Nikolaos Plotas",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 4",
-      "comment": "DNP in Round 1-3 (coach's decision)"
+      "status": "out",
+      "label": "Out",
+      "round": "Round 4-12",
+      "comment": "Left elbow injury in domestic league game (out for six weeks)"
     },
     {
       "name": "Moustapha Fall",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "ready",
-      "label": "Ready",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "DNP in Round 1-3 (hamstring injury), started practising with team"
+      "comment": "Practiced with the team, should be fit for Round 4 after DNPs in Round 1-3 (hamstring injury)"
     },
     {
       "name": "Juan Hernangomez",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
-      "comment": "Discomfort in his groin (muscle spasm) suffered during Greek SuperCup semifinal, DNP in Round 2-3"
+      "comment": "Ruled out for Round 4 (discomfort in his groin, muscle spasm)"
     },
     {
       "name": "Ioannis Kouzeloglou",
@@ -672,10 +690,10 @@
       "name": "Nikos Rogkavopoulos",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "ready",
-      "label": "Ready",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "Back pain, DNP in Round 3 and Greek League (10-04)"
+      "comment": "Practiced with the team, should be fit for Round 4 after a DNP in Round 3"
     },
     {
       "name": "Kostas Sloukas",
@@ -780,10 +798,10 @@
       "name": "Lamar Stevens",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
-      "comment": "DNP in Round 3 and in domestic league (10.05) (hand injury)"
+      "comment": "Didn't travel for Round 4 after a DNP in Round 3 (hand injury)"
     },
     {
       "name": "Derek Willis",
@@ -793,6 +811,15 @@
       "label": "Out",
       "round": "Round 2-6",
       "comment": "The club announced that Willis will be sidelined for several weeks with an ankle injury suffered in Round 1. His status will be reassessed in three to four week"
+    },
+    {
+      "name": "Gabriel Deck",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 4",
+      "comment": "Left shoulder injury"
     },
     {
       "name": "Usman Garuba",
@@ -870,10 +897,19 @@
       "name": "Dylan Osetkowski",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "Didn't play in domestic league on Sunday due to unspecified illness"
+      "comment": "Not included in team's injury report after a DNP in domestic league on Sunday (illness)"
+    },
+    {
+      "name": "Mario Saint-Supery",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "questionable",
+      "label": "Game-time",
+      "round": "Round 4",
+      "comment": "Illness"
     },
     {
       "name": "Yankuba Sima",
@@ -906,10 +942,10 @@
       "name": "Kevin Kokila",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "DNP in Round 1-3 and in the domestic league (10.04) (right thigh biceps tear)"
+      "comment": "Not included in the team's injury report after a DNP in Rounds 1-3 (right thigh biceps tear)"
     },
     {
       "name": "Kaodirichi Akobundu-Ehiogu",
@@ -939,5 +975,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-06T21:01:33.255Z"
+  "updatedAt": "2026-10-07T17:27:04.501Z"
 }
