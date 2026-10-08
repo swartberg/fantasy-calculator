@@ -330,10 +330,10 @@
       "name": "Tosan Evbuomwan",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Indefinitely",
-      "comment": "Left shoulder injury"
+      "status": "questionable",
+      "label": "Game-time",
+      "round": "Round 4",
+      "comment": "Joined the team practices (left shoulder injury)"
     },
     {
       "name": "Abdu Kone",
@@ -354,13 +354,22 @@
       "comment": "Left knee injury"
     },
     {
-      "name": "Josh Nebo",
+      "name": "Justin Minaya",
       "teamName": "FC Barcelona",
       "team": "BAR",
       "status": "out",
       "label": "Out",
-      "round": "Round 1-5",
-      "comment": "Right calf injury"
+      "round": "Round 4-6",
+      "comment": "Right thigh adductor muscle injury"
+    },
+    {
+      "name": "Josh Nebo",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "questionable",
+      "label": "Game-time",
+      "round": "Round 4",
+      "comment": "Joined the team practices (right calf injury)"
     },
     {
       "name": "Onuralp Bitim",
@@ -592,9 +601,9 @@
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 4",
-      "comment": "DNP In Round 3 and in the domestic cup (10.04) (ankle problem)"
+      "comment": "Completed two full training sessions but still feeling discomfort in his ankle"
     },
     {
       "name": "Georgios Bourneles",
@@ -609,10 +618,10 @@
       "name": "Donta Hall",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Questionable",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "Left for the United States due to personal reasons, his return is scheduled for Thursday"
+      "comment": "Expected to be available, as Bartzokas confirmed there are no injured players (left for the US due to personal reasons, his return is scheduled for Thursday)"
     },
     {
       "name": "Antonios Karagiannidis",
@@ -636,10 +645,10 @@
       "name": "Jean Montero",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 4",
-      "comment": "Skips Sunday's domestic league game due to a virus"
+      "comment": "Expected to be available, as Bartzokas confirmed there are no injured players (DNP in domestic league on Sunday due to illness)"
     },
     {
       "name": "Omiros Netzipoglou",
@@ -969,17 +978,17 @@
       "name": "Kaodirichi Akobundu-Ehiogu",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
-      "comment": "DNP in Round 1-3 (coach's decision)"
+      "comment": "DNP in Round 1-3 (coach's decision), does not travel to Barcelona"
     },
     {
       "name": "Saben Lee",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 4",
       "comment": "DNP in Round 1-3 (hamstring strain)"
     },
@@ -989,9 +998,9 @@
       "team": "ZAL",
       "status": "out",
       "label": "Out",
-      "round": "Rounds 2-4",
+      "round": "Round 4",
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-08T06:12:27.864Z"
+  "updatedAt": "2026-10-08T13:37:54.204Z"
 }
