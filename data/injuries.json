@@ -582,8 +582,8 @@
       "name": "Georgios Bourneles",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
       "comment": "DNP in Round 1-3 (coach's decision)"
     },
@@ -591,17 +591,17 @@
       "name": "Donta Hall",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "expected",
-      "label": "Expected",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
-      "comment": "Expected to be available, as Bartzokas confirmed there are no injured players (left for the US due to personal reasons, his return is scheduled for Thursday)"
+      "comment": "Left for the US due to personal reasons, returned on Thursday, but coach Bartzokas did not want to risk him"
     },
     {
       "name": "Antonios Karagiannidis",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
       "comment": "DNP in Round 1-3 (coach's decision)"
     },
@@ -609,8 +609,8 @@
       "name": "Nikola Milutinov",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 4",
       "comment": "Played in domestic league on Sunday after DNP in Round 2-3 (tendinitis)"
     },
@@ -618,8 +618,8 @@
       "name": "Jean Montero",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 4",
       "comment": "Expected to be available, as Bartzokas confirmed there are no injured players (DNP in domestic league on Sunday due to illness)"
     },
@@ -627,8 +627,8 @@
       "name": "Omiros Netzipoglou",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
       "comment": "DNP in Round 1-3 (coach's decision)"
     },
@@ -636,8 +636,8 @@
       "name": "George Papas",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 4",
       "comment": "DNP in Round 1-3 (coach's decision)"
     },
@@ -930,5 +930,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-09T09:11:14.050Z"
+  "updatedAt": "2026-10-09T17:01:18.779Z"
 }
