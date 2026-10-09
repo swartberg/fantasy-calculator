@@ -1,5 +1,5 @@
-import { TEAM_ABB } from "./teams.js?v=28";
-import { findCurrentRound, getGameSummary } from "./season-games.js?v=28";
+import { TEAM_ABB } from "./teams.js?v=29";
+import { findCurrentRound, getGameSummary } from "./season-games.js?v=29";
 
 const ROUND_COUNT = 38;
 
@@ -9,13 +9,6 @@ const ROUND_COUNT = 38;
     status line can show the round's state.
 */
 let onRoundGames = null;
-
-// The round the season is on, once found (null until then or if it failed)
-let seasonRound = null;
-
-export function getSeasonRound() {
-    return seasonRound;
-}
 
 
 export function gameSelect(loadGame) {
@@ -260,8 +253,6 @@ export function gameSelect(loadGame) {
         }
 
         currentRound = round;
-
-        seasonRound = round;
 
         if (userPickedRound) {
             // Still fill in the other rounds' dots

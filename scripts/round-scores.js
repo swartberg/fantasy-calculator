@@ -1,5 +1,5 @@
-import { getGameSummaries, getRoundGames } from "./season-games.js?v=28";
-import { getMyTeam, getPointsMultiplier } from "./my-team.js?v=28";
+import { getGameSummaries, getRoundGames } from "./season-games.js?v=29";
+import { getMyTeam, getPointsMultiplier } from "./my-team.js?v=29";
 
 // Best lineup shape: captain + 4 starters, 6th man, 4 bench
 const LINEUP = [

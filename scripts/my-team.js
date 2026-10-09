@@ -630,9 +630,6 @@ export function finalizeRound(round) {
 
     teams[round].finalized = true;
 
-    // Saved: no longer just a copy
-    delete teams[round].copiedFrom;
-
     saveAllTeams(teams);
 
     return true;
@@ -672,45 +669,6 @@ export function isRoundFinalized(round) {
     const team = getMyTeam(round);
 
     return team.finalized === true;
-}
-
-
-/* =========================
-   COPY PREVIOUS TEAM
-========================= */
-
-/*
-    Fills an empty round with the latest earlier team
-    (same players, roles and captain), so it doesn't have
-    to be rebuilt every round. The copy starts unlocked
-    and remembers where it came from. Games differ per
-    round, so each player's game is found again.
-    Returns the round copied from, or null.
-*/
-export function copyPreviousTeam(round) {
-    const teams = getAllTeams();
-
-    if (teams[round]?.players?.length) return null;
-
-    const previousRound = Object.keys(teams)
-        .map(Number)
-        .filter(saved => saved < round && teams[saved]?.players?.length)
-        .sort((a, b) => b - a)[0];
-
-    if (!previousRound) return null;
-
-    teams[round] = {
-        finalized: false,
-        copiedFrom: previousRound,
-        players: teams[previousRound].players.map(player => ({
-            ...player,
-            gameCode: null
-        }))
-    };
-
-    saveAllTeams(teams);
-
-    return previousRound;
 }
 
 

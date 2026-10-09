@@ -1,22 +1,22 @@
-import { fetchAndUpdate } from "./api-stats.js?v=28";
+import { fetchAndUpdate } from "./api-stats.js?v=29";
 
-import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=28";
+import { TEAM_NAMES, TEAM_ABB } from "./teams.js?v=29";
 
-import { gameSelect, getSeasonRound } from "./game-selector.js?v=28";
+import { gameSelect } from "./game-selector.js?v=29";
 
-import { setupPlayerSearch } from "./player-search.js?v=28";
+import { setupPlayerSearch } from "./player-search.js?v=29";
 
-import { setupPlayerProfile } from "./player-profile.js?v=28";
+import { setupPlayerProfile } from "./player-profile.js?v=29";
 
-import { setupTopPlayers } from "./top-players.js?v=28";
+import { setupTopPlayers } from "./top-players.js?v=29";
 
-import { setupSeasonOverview } from "./season-overview.js?v=28";
+import { setupSeasonOverview } from "./season-overview.js?v=29";
 
-import { setupBackup } from "./backup.js?v=28";
+import { setupBackup } from "./backup.js?v=29";
 
-import { setupInjuries } from "./injuries.js?v=28";
+import { setupInjuries } from "./injuries.js?v=29";
 
-import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=28";
+import { loadPlayerPhoto, PHOTO_PLACEHOLDER } from "./player-photo.js?v=29";
 
 
 
@@ -40,10 +40,6 @@ import {
 
     unlockRound,
 
-    copyPreviousTeam,
-
-    getSavedRounds,
-
     getTeamCounts,
 
     setCaptain,
@@ -58,7 +54,7 @@ import {
 
     MAX_BENCH
 
-} from "./my-team.js?v=28";
+} from "./my-team.js?v=29";
 
 
 
@@ -1342,42 +1338,6 @@ function getCurrentRound() {
 
 /* =========================
 
-   PRELOAD PREVIOUS TEAM
-
-========================= */
-
-/*
-    Copies the latest earlier team into an empty round,
-    but only for the round the season is on (or, if that
-    isn't known, the round right after the last saved
-    team), so browsing future rounds doesn't fill them.
-*/
-
-function preloadPreviousTeam(round) {
-
-    if (getMyTeam(round).players?.length) return;
-
-    const seasonRound = getSeasonRound();
-
-    const lastSaved = Math.max(0, ...getSavedRounds());
-
-    // Past rounds are over: a copy there would be made up
-    const isPlayableRound = seasonRound !== null
-        ? round === seasonRound
-        : round === lastSaved + 1;
-
-    if (!isPlayableRound) return;
-
-    copyPreviousTeam(round);
-
-}
-
-
-
-
-
-/* =========================
-
    RENDER MY TEAM
 
 ========================= */
@@ -1415,11 +1375,6 @@ async function renderMyTeam() {
         getCurrentRound();
 
 
-
-
-
-    // An empty round for the season's current round starts as a copy of the last team
-    preloadPreviousTeam(round);
 
 
 
@@ -1782,10 +1737,6 @@ function renderMyTeamHTML(
 
 
         ${locked ? `<div class="my-team-locked-banner">TEAM LOCKED</div>` : ""}
-
-        ${!locked && getMyTeam(round).copiedFrom
-            ? `<div class="my-team-copied-note">Copied your round ${getMyTeam(round).copiedFrom} team. Make any changes, then save.</div>`
-            : ""}
 
 
 

@@ -4127,21 +4127,3 @@ body.has-player-profile {
     }
 
 }
-
-
-/* Team carried over from the previous round, until saved */
-.my-team-copied-note {
-    margin-bottom: 15px;
-    padding: 10px 12px;
-
-    border: .5px solid var(--border);
-    border-radius: 7px;
-
-    background-color: var(--surface);
-
-    color: var(--text-muted);
-
-    font-size: 9px;
-
-    line-height: 1.5;
-}

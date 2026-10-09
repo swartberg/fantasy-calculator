@@ -3,7 +3,7 @@ import {
     SEASON_CODE,
     ROUNDS_PER_SEASON,
     SCORING_VERSION
-} from "./api-stats.js?v=28";
+} from "./api-stats.js?v=29";
 
 // Includes the scoring version, so a rules change recalculates cached games
 const CACHE_PREFIX = `fantasyGame_s${SCORING_VERSION}_`;
