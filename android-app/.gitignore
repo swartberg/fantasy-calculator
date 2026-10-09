@@ -1,0 +1,5 @@
+# Generated on each build by .github/workflows/android-app.yml
+node_modules/
+www/
+android/
+assets/

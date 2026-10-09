@@ -1,0 +1,13 @@
+{
+    "appId": "io.github.swartberg.elfantasy",
+    "appName": "EL Fantasy",
+    "webDir": "www",
+    "android": {
+        "backgroundColor": "#150b05"
+    },
+    "plugins": {
+        "CapacitorHttp": {
+            "enabled": true
+        }
+    }
+}

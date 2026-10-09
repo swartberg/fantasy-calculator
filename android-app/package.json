@@ -1,0 +1,14 @@
+{
+    "name": "el-fantasy-calculator-android",
+    "private": true,
+    "description": "Android app wrapper for the EuroLeague fantasy calculator, built by .github/workflows/android-app.yml",
+    "dependencies": {
+        "@capacitor/android": "6.2.0",
+        "@capacitor/core": "6.2.0"
+    },
+    "devDependencies": {
+        "@capacitor/assets": "3.0.5",
+        "@capacitor/cli": "6.2.0",
+        "sharp": "0.33.5"
+    }
+}
