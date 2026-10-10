@@ -264,6 +264,24 @@
       "comment": "DNP in Rounds 2-4 (coach's decision)"
     },
     {
+      "name": "Rokas Jokubaitis",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 5",
+      "comment": "DNP in domestic league on Saturday (Undisclosed)"
+    },
+    {
+      "name": "Vladimir Lucic",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 5",
+      "comment": "DNP in domestic league on Saturday (Undisclosed)"
+    },
+    {
       "name": "Miles Norris",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
@@ -271,6 +289,15 @@
       "label": "Uncertain",
       "round": "Round 5",
       "comment": "DNP in Round 4 (dental surgery)"
+    },
+    {
+      "name": "Johannes Thiemann",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 5",
+      "comment": "DNP in domestic league on Saturday (Undisclosed)"
     },
     {
       "name": "Abdu Kone",
@@ -555,10 +582,10 @@
       "name": "Juan Hernangomez",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 5",
-      "comment": "DNP in Round 2-4 (discomfort in his groin, muscle spasm)"
+      "comment": "Played in domestic league on Saturday (discomfort in his groin, muscle spasm)"
     },
     {
       "name": "Ioannis Kouzeloglou",
@@ -822,5 +849,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-09T22:42:46.646Z"
+  "updatedAt": "2026-10-10T18:40:33.618Z"
 }
