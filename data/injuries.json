@@ -342,7 +342,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Round 1-4 (fitness)"
+      "comment": "DNP in Round 1-4 (fitness), played in domestic league on Saturday"
     },
     {
       "name": "Melih Mahmutoglu",
@@ -849,5 +849,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-10T18:40:33.618Z"
+  "updatedAt": "2026-10-10T23:36:48.680Z"
 }
