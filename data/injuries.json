@@ -132,10 +132,10 @@
       "name": "Dejan Davidovac",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4"
+      "comment": "Played in Round 4. Played in the domestic league (10.10)"
     },
     {
       "name": "Nikola Djurisic",
@@ -144,7 +144,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Rounds 2-4 (quad injury)"
+      "comment": "DNP in Rounds 2-4 (quad injury). Played in the domestic league (10.10)"
     },
     {
       "name": "Vojin Medarevic",
@@ -162,7 +162,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Round 4 (coach's decision)"
+      "comment": "DNP in Round 4 (coach's decision). Played in the domestic league (10.10)"
     },
     {
       "name": "Johnathan Motley",
@@ -285,10 +285,10 @@
       "name": "Miles Norris",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 5",
-      "comment": "DNP in Round 4 (dental surgery)"
+      "comment": "DNP in Round 4 (dental surgery). Played in the domestic league (10.10)"
     },
     {
       "name": "Johannes Thiemann",
@@ -333,14 +333,14 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.10)"
     },
     {
       "name": "Shane Larkin",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 5",
       "comment": "DNP in Round 1-4 (fitness), played in domestic league on Saturday"
     },
@@ -351,7 +351,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.10)"
     },
     {
       "name": "Oz Blayzer",
@@ -492,10 +492,10 @@
       "name": "John Dibartolomeo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 5",
-      "comment": "DNP in Round 4 (coach's decision)"
+      "comment": "Plaeyd in the domestic league (10.10)"
     },
     {
       "name": "Amit Ebo",
@@ -504,7 +504,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Round 4 (coach's decision)"
+      "comment": "DNP in Round 4 (coach's decision). Played in the domestic league (10.10)"
     },
     {
       "name": "Shane Hunter",
@@ -849,5 +849,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-10T23:36:48.680Z"
+  "updatedAt": "2026-10-11T05:54:38.889Z"
 }
