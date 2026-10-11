@@ -54,7 +54,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.04)"
+      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
     },
     {
       "name": "Georgios Papagiannis",
@@ -72,7 +72,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "Not included in 12-man roster in Rounds 2-4 (coach's decision)"
+      "comment": "Not included in 12-man roster in Rounds 2-4 (coach's decision). Played in the domestic league (10.11)"
     },
     {
       "name": "Diego Flaccadori",
@@ -81,16 +81,16 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "Not included in 12-man roster (coach's decision)"
+      "comment": "Not included in 12-man roster (coach's decision). Played in the domestic league (10.11)"
     },
     {
       "name": "Stefano Tonut",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 5",
-      "comment": "Left hand contusion"
+      "comment": "Played in the domestic league (10.11)"
     },
     {
       "name": "Yagiz Aksu",
@@ -537,10 +537,10 @@
       "name": "Donta Hall",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 5",
-      "comment": "Left for the US due to personal reasons, returned on Thursday, but coach Bartzokas did not want to risk him in Round 4"
+      "comment": "Played in the domestic league (10.11)"
     },
     {
       "name": "Antonios Karagiannidis",
@@ -558,7 +558,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
     },
     {
       "name": "George Papas",
@@ -567,7 +567,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
     },
     {
       "name": "Nikolaos Plotas",
@@ -654,10 +654,10 @@
       "name": "Jared Rhoden",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 5",
-      "comment": "DNP in Round 4 (undisclosed)"
+      "comment": "Played in the domestic league (10.11)"
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -699,10 +699,10 @@
       "name": "Lamar Stevens",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 5",
-      "comment": "DNP in Rounds 3-4 (hand injury)"
+      "comment": "DNP in Rounds 3-4 (hand injury). Played in the domestic league (10.11)"
     },
     {
       "name": "Derek Willis",
@@ -720,7 +720,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Round 4 (left shoulder injury)"
+      "comment": "DNP in Round 4 and in domestic league (10.11) (left shoulder injury)"
     },
     {
       "name": "Usman Garuba",
@@ -738,7 +738,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
     },
     {
       "name": "Gabriele Procida",
@@ -747,7 +747,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Round 2-4 (coach's decision)"
+      "comment": "DNP in Round 2-4 (coach's decision). Played in the domestic league (10.11)"
     },
     {
       "name": "Olivier Sarr",
@@ -756,7 +756,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
     },
     {
       "name": "Max Shulga",
@@ -789,10 +789,10 @@
       "name": "Mario Saint-Supery",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 5",
-      "comment": "DNP in Round 4 (illness)"
+      "comment": "DNP in Round 4 (illness). Played in the domestic league (10.11)"
     },
     {
       "name": "Yankuba Sima",
@@ -819,7 +819,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
     },
     {
       "name": "Kaodirichi Akobundu-Ehiogu",
@@ -849,5 +849,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-11T05:54:38.889Z"
+  "updatedAt": "2026-10-11T23:42:57.698Z"
 }
