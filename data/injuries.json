@@ -384,10 +384,10 @@
       "name": "Tomer Ginat",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "out",
-      "label": "Out",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 5-6",
-      "comment": "Traveled with the team, but won't play in double-round week after DNP in Rounds 1-4 (knee injury)"
+      "comment": "Traveled with the team and participated in full practices after missing Round 1-4 (knee injury)"
     },
     {
       "name": "Guy Palatin",
@@ -405,7 +405,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 5-6",
-      "comment": "Didn't travel with the team for double-round week (coach's decision)"
+      "comment": "Didn't travel with the team for double-round week, set to undergo tests (undisclosed sickness)"
     },
     {
       "name": "Markus Howard",
@@ -424,6 +424,15 @@
       "label": "Uncertain",
       "round": "Round 5",
       "comment": "Not included in 12-man roster in Rounds 2-4 (coach's decision)"
+    },
+    {
+      "name": "Juhann Begarin",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 5",
+      "comment": "DNP in Round 5 (new signing). Played in the domestic league"
     },
     {
       "name": "Mathis Dossou-Yovo",
@@ -675,7 +684,7 @@
       "status": "out",
       "label": "Out",
       "round": "Long-term",
-      "comment": "Suffered an injury at the beginning of October, expected to be out for 4-5 months (left shoulder injury)"
+      "comment": "Suffered an injury at the beginning of October, set to undergo surgery, expected to be out for 4-5 months (left shoulder injury)"
     },
     {
       "name": "Usman Garuba",
@@ -813,5 +822,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-12T15:36:19.189Z"
+  "updatedAt": "2026-10-12T23:02:12.369Z"
 }
