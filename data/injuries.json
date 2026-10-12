@@ -21,15 +21,6 @@
       "comment": "DNP in Rounds 1-4 (coach's decision)"
     },
     {
-      "name": "Burak Can Yildizli",
-      "teamName": "Anadolu Efes Istanbul",
-      "team": "IST",
-      "status": "out",
-      "label": "Out",
-      "round": "Indefinitely",
-      "comment": "Not included in official Euroleague roster"
-    },
-    {
       "name": "Mike James",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
@@ -90,7 +81,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 5",
-      "comment": "Played in the domestic league (10.11)"
+      "comment": "Played in the domestic league (10.11) after a DNP in Round 4 (left hand contusion)"
     },
     {
       "name": "Yagiz Aksu",
@@ -145,6 +136,15 @@
       "label": "Uncertain",
       "round": "Round 5",
       "comment": "DNP in Rounds 2-4 (quad injury). Played in the domestic league (10.10)"
+    },
+    {
+      "name": "Ebuka Izundu",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 5",
+      "comment": "Didn't travel with the team (undisclosed injury)"
     },
     {
       "name": "Vojin Medarevic",
@@ -363,31 +363,13 @@
       "comment": "Not included in official Euroleague roster"
     },
     {
-      "name": "Tamir Blatt",
-      "teamName": "Hapoel IBI Tel Aviv",
-      "team": "HTA",
-      "status": "out",
-      "label": "Out",
-      "round": "Indefinitely",
-      "comment": "Out of the squad"
-    },
-    {
-      "name": "Frederic Bourdillon",
-      "teamName": "Hapoel IBI Tel Aviv",
-      "team": "HTA",
-      "status": "out",
-      "label": "Out",
-      "round": "Indefinitely",
-      "comment": "Not included in official Euroleague roster"
-    },
-    {
       "name": "Amir Coffey",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (undisclosed injury)"
+      "comment": "Traveled with the team to Sofia after DNP in Rounds 1-4 (undisclosed injury)"
     },
     {
       "name": "Tyler Ennis",
@@ -402,19 +384,10 @@
       "name": "Tomer Ginat",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (knee injury)"
-    },
-    {
-      "name": "Max Heidegger",
-      "teamName": "Hapoel IBI Tel Aviv",
-      "team": "HTA",
       "status": "out",
       "label": "Out",
-      "round": "Indefinitely",
-      "comment": "Not included in official Euroleague roster"
+      "round": "Round 5-6",
+      "comment": "Traveled with the team, but won't play in double-round week after DNP in Rounds 1-4 (knee injury)"
     },
     {
       "name": "Guy Palatin",
@@ -426,22 +399,22 @@
       "comment": "Not included in official Euroleague roster"
     },
     {
-      "name": "Itay Segev",
+      "name": "Bar Timor",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
       "status": "out",
       "label": "Out",
-      "round": "Indefinitely",
-      "comment": "Not included in official Euroleague roster"
+      "round": "Round 5-6",
+      "comment": "Didn't travel with the team for double-round week (coach's decision)"
     },
     {
-      "name": "Yiftach Ziv",
-      "teamName": "Hapoel IBI Tel Aviv",
-      "team": "HTA",
+      "name": "Markus Howard",
+      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "team": "BAS",
       "status": "out",
       "label": "Out",
       "round": "Indefinitely",
-      "comment": "Not included in official Euroleague roster"
+      "comment": "Expected to leave the team"
     },
     {
       "name": "Pedro Souza",
@@ -451,15 +424,6 @@
       "label": "Uncertain",
       "round": "Round 5",
       "comment": "Not included in 12-man roster in Rounds 2-4 (coach's decision)"
-    },
-    {
-      "name": "Juhann Begarin",
-      "teamName": "LDLC ASVEL Villeurbanne",
-      "team": "ASV",
-      "status": "expected",
-      "label": "Expected",
-      "round": "Round 5",
-      "comment": "DNP in Round 5 (new signing, not injured)"
     },
     {
       "name": "Mathis Dossou-Yovo",
@@ -495,7 +459,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 5",
-      "comment": "Plaeyd in the domestic league (10.10)"
+      "comment": "Played in the domestic league (10.10)"
     },
     {
       "name": "Amit Ebo",
@@ -505,15 +469,6 @@
       "label": "Uncertain",
       "round": "Round 5",
       "comment": "DNP in Round 4 (coach's decision). Played in the domestic league (10.10)"
-    },
-    {
-      "name": "Shane Hunter",
-      "teamName": "Maccabi Rapyd Tel Aviv",
-      "team": "TEL",
-      "status": "out",
-      "label": "Out",
-      "round": "Indefinitely",
-      "comment": "Not included in official Euroleague roster"
     },
     {
       "name": "Gur Lavi",
@@ -528,10 +483,10 @@
       "name": "Georgios Bourneles",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "status": "out",
+      "label": "Out",
+      "round": "Round 5-6",
+      "comment": "Didn't travel with the team to Spain after DNP in Rounds 1-4 (coach's decision)"
     },
     {
       "name": "Donta Hall",
@@ -600,8 +555,8 @@
       "name": "Kendrick Nunn",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 5",
       "comment": "DNP in Rounds 1-4 (medial right meniscus tear)"
     },
@@ -609,8 +564,8 @@
       "name": "Kostas Sloukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 5",
       "comment": "DNP in Rounds 1-4 (rehab after leg injury)"
     },
@@ -699,8 +654,8 @@
       "name": "Lamar Stevens",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "ready",
-      "label": "Ready",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 5",
       "comment": "DNP in Rounds 3-4 (hand injury). Played in the domestic league (10.11)"
     },
@@ -717,10 +672,10 @@
       "name": "Gabriel Deck",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 5",
-      "comment": "DNP in Round 4 and in domestic league (10.11) (left shoulder injury)"
+      "status": "out",
+      "label": "Out",
+      "round": "Long-term",
+      "comment": "Suffered an injury at the beginning of October, expected to be out for 4-5 months (left shoulder injury)"
     },
     {
       "name": "Usman Garuba",
@@ -825,10 +780,10 @@
       "name": "Kaodirichi Akobundu-Ehiogu",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "comment": "Doesn't travel with the team for Round 5 after DNP in Rounds 1-4 (coach's decision)"
     },
     {
       "name": "Deividas Sirvydis",
@@ -840,14 +795,23 @@
       "comment": "DNP in Round 4 (coach's decision)"
     },
     {
+      "name": "Ąžuolas Tubelis",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 5",
+      "comment": "Will travel with the team, expected to be ready (knee)"
+    },
+    {
       "name": "Nigel Williams-Goss",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 5",
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-11T23:42:57.698Z"
+  "updatedAt": "2026-10-12T15:36:19.189Z"
 }
