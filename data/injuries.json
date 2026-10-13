@@ -159,10 +159,10 @@
       "name": "Stefan Miljenovic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 5",
-      "comment": "DNP in Round 4 (coach's decision). Played in the domestic league (10.10)"
+      "comment": "Ruled out for Round 5 after a DNP in Round 4 (coach's decision)"
     },
     {
       "name": "Johnathan Motley",
@@ -339,8 +339,8 @@
       "name": "Shane Larkin",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 5",
       "comment": "DNP in Round 1-4 (fitness), played in domestic league on Saturday"
     },
@@ -384,9 +384,9 @@
       "name": "Tomer Ginat",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 5-6",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 5",
       "comment": "Traveled with the team and participated in full practices after missing Round 1-4 (knee injury)"
     },
     {
@@ -822,5 +822,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-12T23:02:12.369Z"
+  "updatedAt": "2026-10-13T06:51:03.338Z"
 }
