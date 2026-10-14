@@ -642,6 +642,15 @@
       "comment": "Out of the squad"
     },
     {
+      "name": "Lamar Stevens",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "questionable",
+      "label": "Game-time",
+      "round": "Round 6",
+      "comment": "Stomach problems"
+    },
+    {
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
@@ -768,5 +777,5 @@
       "comment": "DNP in Rounds 2-5 (hamstring injury in Round 1)"
     }
   ],
-  "updatedAt": "2026-10-14T07:42:59.525Z"
+  "updatedAt": "2026-10-14T13:47:07.949Z"
 }
