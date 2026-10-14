@@ -60,28 +60,19 @@
       "name": "Nicola Akele",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster in Rounds 2-4 (coach's decision). Played in the domestic league (10.11)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 2-5 (coach's decision)"
     },
     {
       "name": "Diego Flaccadori",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster (coach's decision). Played in the domestic league (10.11)"
-    },
-    {
-      "name": "Stefano Tonut",
-      "teamName": "Armani Olimpia Milan",
-      "team": "MIL",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "Played in the domestic league (10.11) after a DNP in Round 4 (left hand contusion)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 2-5 (coach's decision)"
     },
     {
       "name": "Yagiz Aksu",
@@ -114,28 +105,19 @@
       "name": "Andrej Bjelic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster after DNP in Rounds 1-4 (coach's decision)"
-    },
-    {
-      "name": "Nikola Djurisic",
-      "teamName": "Crvena Zvezda Meridianbet Belgrade",
-      "team": "RED",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 2-4 (quad injury). Played in the domestic league (10.10)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Ebuka Izundu",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Didn't travel with the team (ankle injury)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Round 5 (ankle injury)"
     },
     {
       "name": "Vojin Medarevic",
@@ -150,10 +132,10 @@
       "name": "Stefan Miljenovic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Ruled out for Round 5 after a DNP in Round 4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 4-5 (coach's decision)"
     },
     {
       "name": "Johnathan Motley",
@@ -224,7 +206,7 @@
       "team": "DUB",
       "status": "out",
       "label": "Out",
-      "round": "Round 5-6",
+      "round": "Round 6",
       "comment": "Expected to return to the court for individual work next week (knee injury)"
     },
     {
@@ -233,8 +215,8 @@
       "team": "DUB",
       "status": "out",
       "label": "Out",
-      "round": "Round 5-6",
-      "comment": "DNP in Rounds 1-4 (back injury)"
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (back injury)"
     },
     {
       "name": "Tomislav Vuckovic",
@@ -294,10 +276,10 @@
       "name": "Abdu Kone",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Yoan Makoundou",
@@ -321,37 +303,28 @@
       "name": "Onuralp Bitim",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster after DNPs in Rounds 1-4 (coach's decision)"
-    },
-    {
-      "name": "Shane Larkin",
-      "teamName": "Fenerbahce Beko Istanbul",
-      "team": "ULK",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "Cleared to play and included in 12-man roster"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Melih Mahmutoglu",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster after DNPs in Rounds 1-4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Chris Silva",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Round 5 (coach's decision)"
     },
     {
       "name": "Oz Blayzer",
@@ -420,19 +393,19 @@
       "name": "Pedro Souza",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster in Rounds 2-4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 2-5 (coach's decision)"
     },
     {
       "name": "Juhann Begarin",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not in 12-man roster after (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Round 5 (coach's decision)"
     },
     {
       "name": "Mathis Dossou-Yovo",
@@ -447,55 +420,46 @@
       "name": "Marc-Owen Fodzo Dada",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Round 5 (coach's decision)"
     },
     {
       "name": "Edwin Jackson",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not in 12-man roster after DNP in Rounds 1-4 (coach's decision)"
-    },
-    {
-      "name": "TyTy Washington Jr.",
-      "teamName": "LDLC ASVEL Villeurbanne",
-      "team": "ASV",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "Cleared to play after DNP in Rounds 1-4 (ankle injury)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "John Dibartolomeo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Played in the domestic league (10.10), not in 12-man lineup for Round 5"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Round 5 (coach's decision)"
     },
     {
       "name": "Amit Ebo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Round 4 (coach's decision). Played in the domestic league (10.10)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 4-5 (coach's decision)"
     },
     {
       "name": "Gur Lavi",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Round 1-4 (undisclosed injury)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (undisclosed injury)"
     },
     {
       "name": "Georgios Bourneles",
@@ -503,44 +467,35 @@
       "team": "OLY",
       "status": "out",
       "label": "Out",
-      "round": "Round 5-6",
-      "comment": "Didn't travel with the team to Spain after DNP in Rounds 1-4 (coach's decision)"
-    },
-    {
-      "name": "Donta Hall",
-      "teamName": "Olympiacos Piraeus",
-      "team": "OLY",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "Played in the domestic league (10.11)"
+      "round": "Round 6",
+      "comment": "Didn't travel with the team to Spain after DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Antonios Karagiannidis",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Round 1-4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Omiros Netzipoglou",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "George Papas",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Nikolaos Plotas",
@@ -555,19 +510,10 @@
       "name": "Isaac Bonga",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Wrist injury"
-    },
-    {
-      "name": "Juan Hernangomez",
-      "teamName": "Panathinaikos AKTOR Athens",
-      "team": "PAN",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "Cleared to play, included in 12-man roster"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Round 5 (wrist injury)"
     },
     {
       "name": "Ioannis Kouzeloglou",
@@ -582,37 +528,37 @@
       "name": "Dimitris Moraitis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 4-5 (coach's decision)"
     },
     {
       "name": "Kendrick Nunn",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
       "comment": "DNP in Rounds 1-4 (medial right meniscus tear)"
     },
     {
       "name": "Kostas Sloukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
       "comment": "DNP in Rounds 1-4 (rehab after leg injury)"
     },
     {
       "name": "Iason Varvaritis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster after DNP in Rounds 1-4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Nobel Boungou-Colo",
@@ -645,10 +591,10 @@
       "name": "Jared Rhoden",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "ready",
-      "label": "Ready",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 5",
-      "comment": "Played in the domestic league (10.11)"
+      "comment": "Played in the domestic league (10.11) after DNP in Round 4"
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -663,10 +609,10 @@
       "name": "Uros Danilovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster after DNP in Rounds 2-4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 2-5 (coach's decision)"
     },
     {
       "name": "Vanja Marinkovic",
@@ -681,10 +627,10 @@
       "name": "Mario Nakic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Undisclosed"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Round 5 (undisclosed)"
     },
     {
       "name": "Jabari Parker",
@@ -694,15 +640,6 @@
       "label": "Out",
       "round": "Indefinitely",
       "comment": "Out of the squad"
-    },
-    {
-      "name": "Lamar Stevens",
-      "teamName": "Partizan Mozzart Bet Belgrade",
-      "team": "PAR",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "Included in 12-man roster after DNP in Rounds 3-4 (hand injury)."
     },
     {
       "name": "Derek Willis",
@@ -735,73 +672,55 @@
       "name": "Sergio Llull",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
-    },
-    {
-      "name": "Gabriele Procida",
-      "teamName": "Real Madrid",
-      "team": "MAD",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "DNP in Round 2-4 (coach's decision). Played in the domestic league (10.11)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Olivier Sarr",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Max Shulga",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Round 1-4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Mouhamadou Gueye",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 2-4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 2-5 (coach's decision)"
     },
     {
       "name": "Lucas Mari",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 2-4 (coach's decision)"
-    },
-    {
-      "name": "Mario Saint-Supery",
-      "teamName": "Valencia Basket",
-      "team": "PAM",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "DNP in Round 4 (illness). Played in the domestic league (10.11)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 2-5 (coach's decision)"
     },
     {
       "name": "Yankuba Sima",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "DNP in Rounds 2-4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 2-5 (coach's decision)"
     },
     {
       "name": "Matteo Baiocchi",
@@ -825,47 +744,29 @@
       "name": "Kaodirichi Akobundu-Ehiogu",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Doesn't travel with the team for Round 5 after DNP in Rounds 1-4 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Dovydas Giedraitis",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Not included in 12-man roster (coach's decision)"
-    },
-    {
-      "name": "Deividas Sirvydis",
-      "teamName": "Zalgiris Kaunas",
-      "team": "ZAL",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "Included in 12-man roster after a DNP in Round 4 (coach's decision)"
-    },
-    {
-      "name": "Ąžuolas Tubelis",
-      "teamName": "Zalgiris Kaunas",
-      "team": "ZAL",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 5",
-      "comment": "Will travel with the team, expected to be ready (knee)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Round 5 (coach's decision)"
     },
     {
       "name": "Nigel Williams-Goss",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 5",
-      "comment": "Suffered hamstring injury in Round 1 game"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 6",
+      "comment": "DNP in Rounds 2-5 (hamstring injury in Round 1)"
     }
   ],
-  "updatedAt": "2026-10-14T01:16:05.831Z"
+  "updatedAt": "2026-10-14T07:42:59.525Z"
 }
