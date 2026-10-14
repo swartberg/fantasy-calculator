@@ -618,8 +618,8 @@
       "name": "Nadir Hifi",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "out",
+      "label": "Out",
       "round": "Round 5",
       "comment": "Suffered ankle injury in domestic league against Strasbourg"
     },
@@ -636,17 +636,17 @@
       "name": "Maozinha Pereira",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 5",
-      "comment": "DNP in Rounds 1-4 (coach's decision)"
+      "comment": "Included in 12-man roster after DNP in Rounds 1-4 (coach's decision)"
     },
     {
       "name": "Jared Rhoden",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 5",
       "comment": "Played in the domestic league (10.11) after DNP in Round 4"
     },
@@ -849,5 +849,5 @@
       "comment": "DNP in Rounds 2-5 (hamstring injury in Round 1)"
     }
   ],
-  "updatedAt": "2026-10-14T18:40:40.478Z"
+  "updatedAt": "2026-10-14T23:16:56.384Z"
 }
