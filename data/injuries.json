@@ -744,8 +744,8 @@
       "name": "Gabriele Procida",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "out",
-      "label": "Out",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 5",
       "comment": "DNP in Round 2-4 (coach's decision). Played in the domestic league (10.11)"
     },
@@ -867,5 +867,5 @@
       "comment": "Suffered hamstring injury in Round 1 game"
     }
   ],
-  "updatedAt": "2026-10-13T21:18:57.381Z"
+  "updatedAt": "2026-10-14T01:16:05.831Z"
 }
