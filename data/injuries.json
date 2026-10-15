@@ -18,7 +18,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 6",
-      "comment": "Not included in 12-man roster in Round 5 after DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Mike James",
@@ -36,7 +36,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 6",
-      "comment": "Not included in 12-man roster in Round 5 after DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "David Mutaf",
@@ -45,7 +45,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 6",
-      "comment": "Not included in 12-man roster in Round 5 after DNP in Rounds 1-4 (coach's decision). Played in the domestic league (10.11)"
+      "comment": "DNP in Rounds 1-5 (coach's decision). Played in the domestic league (10.11)"
     },
     {
       "name": "Georgios Papagiannis",
@@ -62,8 +62,8 @@
       "team": "MIL",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 2-5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 2-6 (coach's decision)"
     },
     {
       "name": "Diego Flaccadori",
@@ -71,8 +71,8 @@
       "team": "MIL",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 2-5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 2-6 (coach's decision)"
     },
     {
       "name": "Yagiz Aksu",
@@ -81,7 +81,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 6",
-      "comment": "Not included in 12-man roster in Round 5 after DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "DaQuan Jeffries",
@@ -186,10 +186,10 @@
       "name": "Justin Anderson",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 1-6",
-      "comment": "Hamstring injury"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (hamstring injury)"
     },
     {
       "name": "Mouhammadou Jaiteh",
@@ -215,7 +215,7 @@
       "team": "DUB",
       "status": "out",
       "label": "Out",
-      "round": "Round 6",
+      "round": "Round 7",
       "comment": "Expected to return to the court for individual work next week (knee injury)"
     },
     {
@@ -224,8 +224,8 @@
       "team": "DUB",
       "status": "out",
       "label": "Out",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 1-5 (back injury)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (back injury)"
     },
     {
       "name": "Tomislav Vuckovic",
@@ -303,28 +303,28 @@
       "name": "Onuralp Bitim",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 6",
-      "comment": "Not included in 12-man roster after DNP in Rounds 1-5 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Melih Mahmutoglu",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 6",
-      "comment": "Not included in 12-man roster after DNP in Rounds 1-5 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Chris Silva",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 6",
-      "comment": "Not included in 12-man roster after DNP in Round 5 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 7",
+      "comment": "DNP in Rounds 5-6 (coach's decision)"
     },
     {
       "name": "Oz Blayzer",
@@ -395,8 +395,17 @@
       "team": "ASV",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Round 5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 5-6 (coach's decision)"
+    },
+    {
+      "name": "Jae Crowder",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 7",
+      "comment": "DNP in Round 6 (undisclosed)"
     },
     {
       "name": "Mathis Dossou-Yovo",
@@ -408,40 +417,13 @@
       "comment": "Adductor muscle injury (out until November)"
     },
     {
-      "name": "Marc-Owen Fodzo Dada",
-      "teamName": "LDLC ASVEL Villeurbanne",
-      "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Round 5 (coach's decision)"
-    },
-    {
-      "name": "Edwin Jackson",
-      "teamName": "LDLC ASVEL Villeurbanne",
-      "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 1-5 (coach's decision)"
-    },
-    {
-      "name": "John Dibartolomeo",
-      "teamName": "Maccabi Rapyd Tel Aviv",
-      "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Round 5 (coach's decision)"
-    },
-    {
       "name": "Amit Ebo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 4-5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 4-6 (coach's decision)"
     },
     {
       "name": "Gur Lavi",
@@ -449,17 +431,8 @@
       "team": "TEL",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 1-5 (undisclosed injury)"
-    },
-    {
-      "name": "Yam Madar",
-      "teamName": "Maccabi Rapyd Tel Aviv",
-      "team": "TEL",
-      "status": "questionable",
-      "label": "Game-time",
-      "round": "Round 6",
-      "comment": "Practiced ahead of the game, but only partially (tailbone bruise)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (undisclosed injury)"
     },
     {
       "name": "Georgios Bourneles",
@@ -549,7 +522,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 6",
-      "comment": "DNP in Rounds 1-4 (medial right meniscus tear)"
+      "comment": "DNP in Rounds 1-5 (medial right meniscus tear), to return on Sunday in domestic game"
     },
     {
       "name": "Nikos Rogkavopoulos",
@@ -567,7 +540,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 6",
-      "comment": "DNP in Rounds 1-4 (rehab after leg injury)"
+      "comment": "DNP in Rounds 1-5 (rehab after leg injury)"
     },
     {
       "name": "Iason Varvaritis",
@@ -629,8 +602,8 @@
       "team": "PAR",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 2-5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 2-6 (coach's decision)"
     },
     {
       "name": "Vanja Marinkovic",
@@ -647,8 +620,8 @@
       "team": "PAR",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Round 5 (undisclosed)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 5-6 (undisclosed)"
     },
     {
       "name": "Jabari Parker",
@@ -660,22 +633,13 @@
       "comment": "Out of the squad"
     },
     {
-      "name": "Lamar Stevens",
-      "teamName": "Partizan Mozzart Bet Belgrade",
-      "team": "PAR",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 6",
-      "comment": "Traveled to Istanbul, cleared to play (illness, stomach bug)"
-    },
-    {
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 2-6",
-      "comment": "The club announced that Willis will be sidelined for several weeks with an ankle injury suffered in Round 1. His status will be reassessed in three to four week"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 7",
+      "comment": "Ankle injury suffered in Round 1"
     },
     {
       "name": "Gabriel Deck",
@@ -701,8 +665,8 @@
       "team": "MAD",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 1-5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Olivier Sarr",
@@ -710,8 +674,8 @@
       "team": "MAD",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 1-5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Max Shulga",
@@ -719,8 +683,8 @@
       "team": "MAD",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 1-5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Mouhamadou Gueye",
@@ -728,8 +692,8 @@
       "team": "PAM",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 2-5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Lucas Mari",
@@ -737,8 +701,8 @@
       "team": "PAM",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 2-5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Yankuba Sima",
@@ -746,8 +710,8 @@
       "team": "PAM",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Rounds 2-5 (coach's decision)"
+      "round": "Round 7",
+      "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Matteo Baiocchi",
@@ -756,7 +720,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 6",
-      "comment": "Not included in 12-man roster in Round 5 after DNP in Rounds 1-4 (coach's decision)"
+      "comment": "DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Francesco Ferrari",
@@ -804,5 +768,5 @@
       "comment": "Will practice ahead of Round 6 after DNP in Rounds 2-5 (hamstring injury in Round 1)"
     }
   ],
-  "updatedAt": "2026-10-15T17:06:38.209Z"
+  "updatedAt": "2026-10-15T21:28:35.341Z"
 }
