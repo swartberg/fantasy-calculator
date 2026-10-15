@@ -124,9 +124,9 @@
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 6",
-      "comment": "DNP in Round 5 (ankle injury)"
+      "comment": "Partially practiced after DNP in Round 5 (ankle injury)"
     },
     {
       "name": "Vojin Medarevic",
@@ -141,10 +141,10 @@
       "name": "Stefan Miljenovic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "doubtful",
+      "label": "Doubtful",
       "round": "Round 6",
-      "comment": "DNP in Rounds 4-5 (coach's decision)"
+      "comment": "Didn't practice ahead of Round 6 after DNP in Rounds 4-5 (coach's decision)"
     },
     {
       "name": "Johnathan Motley",
@@ -303,28 +303,28 @@
       "name": "Onuralp Bitim",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 6",
-      "comment": "DNP in Rounds 1-5 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Melih Mahmutoglu",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 6",
-      "comment": "DNP in Rounds 1-5 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Chris Silva",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 6",
-      "comment": "DNP in Round 5 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Round 5 (coach's decision)"
     },
     {
       "name": "Oz Blayzer",
@@ -359,7 +359,7 @@
       "team": "HTA",
       "status": "out",
       "label": "Out",
-      "round": "Round 5-6",
+      "round": "Round 6",
       "comment": "Traveled with the team to Sofia but is ruled out for Rounds 5-6 after missing Rounds 1-4 (knee injury)"
     },
     {
@@ -377,7 +377,7 @@
       "team": "HTA",
       "status": "out",
       "label": "Out",
-      "round": "Round 5-6",
+      "round": "Round 6",
       "comment": "Didn't travel with the team for double-round week, set to undergo tests (illness)"
     },
     {
@@ -520,9 +520,9 @@
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 6",
-      "comment": "DNP in Round 5 (wrist injury)"
+      "comment": "Obradovic confirmed Bonga will be a game-time decision after DNP in Round 5 (wrist injury)"
     },
     {
       "name": "Ioannis Kouzeloglou",
@@ -546,8 +546,8 @@
       "name": "Kendrick Nunn",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 6",
       "comment": "DNP in Rounds 1-4 (medial right meniscus tear)"
     },
@@ -564,8 +564,8 @@
       "name": "Kostas Sloukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 6",
       "comment": "DNP in Rounds 1-4 (rehab after leg injury)"
     },
@@ -663,10 +663,10 @@
       "name": "Lamar Stevens",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 6",
-      "comment": "Traveled to Istanbul, will be a game-time decision (illness, stomach bug)"
+      "comment": "Traveled to Istanbul, cleared to play (illness, stomach bug)"
     },
     {
       "name": "Derek Willis",
@@ -799,10 +799,10 @@
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 6",
-      "comment": "DNP in Rounds 2-5 (hamstring injury in Round 1)"
+      "comment": "Will practice ahead of Round 6 after DNP in Rounds 2-5 (hamstring injury in Round 1)"
     }
   ],
-  "updatedAt": "2026-10-15T11:37:11.572Z"
+  "updatedAt": "2026-10-15T17:06:38.209Z"
 }
