@@ -93,15 +93,6 @@
       "comment": "Suffered left wrist fracture in Round 1 vs. Valencia"
     },
     {
-      "name": "Lonnie Walker IV",
-      "teamName": "Besiktas Istanbul",
-      "team": "BES",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "New signing"
-    },
-    {
       "name": "Jovan Bikic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
@@ -415,6 +406,15 @@
       "label": "Out",
       "round": "Round 1-9",
       "comment": "Adductor muscle injury (out until November)"
+    },
+    {
+      "name": "Patrick Mills",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 7",
+      "comment": "DNP in Round 6 (undisclosed)"
     },
     {
       "name": "Amit Ebo",
@@ -768,5 +768,5 @@
       "comment": "Will practice ahead of Round 6 after DNP in Rounds 2-5 (hamstring injury in Round 1)"
     }
   ],
-  "updatedAt": "2026-10-15T21:28:35.341Z"
+  "updatedAt": "2026-10-16T07:16:02.230Z"
 }
