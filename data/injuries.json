@@ -294,10 +294,10 @@
       "name": "Abdu Kone",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 6",
-      "comment": "DNP in Rounds 1-5 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-5 (coach's decision)"
     },
     {
       "name": "Yoan Makoundou",
@@ -316,6 +316,15 @@
       "label": "Out",
       "round": "Round 4-6",
       "comment": "Right thigh adductor muscle injury"
+    },
+    {
+      "name": "Joel Parra",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 6",
+      "comment": "Not included in 12-man roster (coach's decision)"
     },
     {
       "name": "Onuralp Bitim",
@@ -399,13 +408,22 @@
       "comment": "Didn't travel with the team for double-round week, set to undergo tests (illness)"
     },
     {
+      "name": "Markus Howard",
+      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "team": "BAS",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Expected to leave the team"
+    },
+    {
       "name": "Pedro Souza",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 6",
-      "comment": "DNP in Rounds 2-5 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 2-5 (coach's decision)"
     },
     {
       "name": "Juhann Begarin",
@@ -840,5 +858,5 @@
       "comment": "Included in 12-man roster for Round 6 (hamstring injury in Round 1)"
     }
   ],
-  "updatedAt": "2026-10-16T18:07:36.245Z"
+  "updatedAt": "2026-10-16T21:16:47.426Z"
 }
