@@ -606,6 +606,15 @@
       "comment": "DNP in Rounds 2-6 (coach's decision)"
     },
     {
+      "name": "Tonye Jekiri",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 7",
+      "comment": "Injury in Round 6"
+    },
+    {
       "name": "Vanja Marinkovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
@@ -705,15 +714,6 @@
       "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
-      "name": "Yankuba Sima",
-      "teamName": "Valencia Basket",
-      "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
-    },
-    {
       "name": "Matteo Baiocchi",
       "teamName": "Virtus Bologna",
       "team": "VIR",
@@ -768,5 +768,5 @@
       "comment": "Will practice ahead of Round 6 after DNP in Rounds 2-5 (hamstring injury in Round 1)"
     }
   ],
-  "updatedAt": "2026-10-16T07:16:02.230Z"
+  "updatedAt": "2026-10-16T13:18:10.123Z"
 }
