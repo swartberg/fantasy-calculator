@@ -394,18 +394,18 @@
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (coach's decision)"
+      "comment": "DNP in Rounds 5-6 (coach's decision). Played in the domestic league (10.17)"
     },
     {
       "name": "Jae Crowder",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (undisclosed)"
+      "comment": "DNP in Round 6. Played in the domestic league (10.17)"
     },
     {
       "name": "Mathis Dossou-Yovo",
@@ -420,19 +420,19 @@
       "name": "Patrick Mills",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (undisclosed)"
+      "comment": "DNP in Round 6. Played in the domestic league (10.17)"
     },
     {
       "name": "Tremont Waters",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (undisclosed)"
+      "comment": "DNP in Round 6. Played in the domestic league (10.17)"
     },
     {
       "name": "Amit Ebo",
@@ -549,7 +549,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 7",
-      "comment": "Expected to return after DNP in Rounds 1-6 (medial right meniscus tear)"
+      "comment": "Played in domestic league after DNP in Rounds 1-6 (medial right meniscus tear)"
     },
     {
       "name": "Nikos Rogkavopoulos",
@@ -564,10 +564,10 @@
       "name": "Kostas Sloukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (rehab after leg injury)"
+      "comment": "Played in domestic league DNP in Rounds 1-6 (rehab after leg injury)"
     },
     {
       "name": "Iason Varvaritis",
@@ -813,5 +813,5 @@
       "comment": "Made his return after hamstring injury in Round 6, but might have picked up another injury"
     }
   ],
-  "updatedAt": "2026-10-17T22:24:18.293Z"
+  "updatedAt": "2026-10-18T15:55:32.058Z"
 }
