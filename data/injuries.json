@@ -72,7 +72,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 2-6 (coach's decision)"
+      "comment": "DNP in Rounds 2-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Diego Flaccadori",
@@ -102,6 +102,15 @@
       "comment": "Suffered left wrist fracture in Round 1 vs. Valencia"
     },
     {
+      "name": "Lonnie Walker IV",
+      "teamName": "Besiktas Istanbul",
+      "team": "BES",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 7",
+      "comment": "DNP in Round 6 (coach's decision). DNP in the domestic league (10.18)"
+    },
+    {
       "name": "Jovan Bikic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
@@ -123,10 +132,10 @@
       "name": "Ebuka Izundu",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (ankle injury)"
+      "comment": "DNP in Rounds 5-6 (ankle injury). Played in the domestic league (10.18)"
     },
     {
       "name": "Vojin Medarevic",
@@ -252,25 +261,25 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (coach's decision)"
+      "comment": "DNP in Rounds 5-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Rokas Jokubaitis",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (rest)"
+      "comment": "DNP in Round 6 (rest). Played in the domestic league (10.18)"
     },
     {
       "name": "Johannes Voigtmann",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (undisclosed)"
+      "comment": "DNP in Round 6 (undisclosed). Played in the domestic league (10.18)"
     },
     {
       "name": "Dario Brizuela",
@@ -315,7 +324,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Melih Mahmutoglu",
@@ -324,7 +333,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Chris Silva",
@@ -333,7 +342,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (coach's decision)"
+      "comment": "DNP in Rounds 5-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Oz Blayzer",
@@ -351,7 +360,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (coach's decision)"
+      "comment": "DNP in Rounds 5-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Tyler Ennis",
@@ -369,7 +378,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "Traveled with the team for Rounds 5-6 but didn't play after missing Rounds 1-4 (knee injury)"
+      "comment": "Traveled with the team for Rounds 5-6 but didn't play after missing Rounds 1-4 (knee injury). Played in the domestic league (10.18)"
     },
     {
       "name": "Guy Palatin",
@@ -387,7 +396,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (illness)"
+      "comment": "DNP in Rounds 5-6 (illness). Played in the domestic league (10.18)"
     },
     {
       "name": "Pedro Souza",
@@ -450,7 +459,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 4-6 (coach's decision)"
+      "comment": "DNP in Rounds 4-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Gur Lavi",
@@ -465,10 +474,10 @@
       "name": "Georgios Bourneles",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "out",
-      "label": "Out",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Tyler Dorsey",
@@ -477,7 +486,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (club's decision)"
+      "comment": "DNP in Round 6 (club's decision). DNP in the domestic league (10.18)"
     },
     {
       "name": "Bryant Dunston",
@@ -513,7 +522,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Nikolaos Plotas",
@@ -546,10 +555,10 @@
       "name": "Konstantinos Mitoglou",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "Left Round 6 game (leg injury)"
+      "comment": "Left Round 6 game (leg injury). Played in the domestic league (10.18)"
     },
     {
       "name": "Kendrick Nunn",
@@ -603,7 +612,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (ankle injury)"
+      "comment": "DNP in Rounds 5-6 (ankle injury). DNP in the domestic league (10.18)"
     },
     {
       "name": "Frank Ntilikina",
@@ -621,7 +630,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (undisclosed)"
+      "comment": "DNP in Round 6 (undisclosed). DNP in the domestic league (10.18)"
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -663,10 +672,10 @@
       "name": "Mario Nakic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (undisclosed)"
+      "comment": "DNP in Rounds 5-6 (undisclosed). Played in the domestic league (10.18)"
     },
     {
       "name": "Jabari Parker",
@@ -711,7 +720,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Olivier Sarr",
@@ -720,7 +729,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Max Shulga",
@@ -750,31 +759,22 @@
       "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
-      "name": "Yankuba Sima",
-      "teamName": "Valencia Basket",
-      "team": "PAM",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
-    },
-    {
       "name": "Matteo Baiocchi",
       "teamName": "Virtus Bologna",
       "team": "VIR",
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Tommaso Baldasso",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 6",
-      "comment": "DNP in Round 6 (coach's decision)"
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 7",
+      "comment": "DNP in Round 6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Davide Casarin",
@@ -783,7 +783,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (coach's decision)"
+      "comment": "DNP in Round 6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Kaodirichi Akobundu-Ehiogu",
@@ -810,7 +810,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (coach's decision)"
+      "comment": "DNP in Round 6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Nigel Williams-Goss",
@@ -819,8 +819,8 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 7",
-      "comment": "Made his return after hamstring injury in Round 6, but might have picked up another injury"
+      "comment": "Made his return after hamstring injury in Round 6, but might have picked up another injury. DNP in domestic league (10.18)"
     }
   ],
-  "updatedAt": "2026-10-18T18:40:08.644Z"
+  "updatedAt": "2026-10-18T22:27:25.038Z"
 }
