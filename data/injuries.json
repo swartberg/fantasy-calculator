@@ -93,6 +93,15 @@
       "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
     {
+      "name": "Devon Dotson",
+      "teamName": "Besiktas Istanbul",
+      "team": "BES",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 7",
+      "comment": "Dislocated his finger during last domestic league game"
+    },
+    {
       "name": "DaQuan Jeffries",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
@@ -822,5 +831,5 @@
       "comment": "Made his return after hamstring injury in Round 6, but might have picked up another injury. DNP in domestic league (10.18)"
     }
   ],
-  "updatedAt": "2026-10-19T04:48:53.136Z"
+  "updatedAt": "2026-10-19T13:27:41.603Z"
 }
