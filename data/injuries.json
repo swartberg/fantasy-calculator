@@ -480,6 +480,15 @@
       "comment": "DNP in Rounds 1-6 (undisclosed injury)"
     },
     {
+      "name": "Gabriel Lundberg",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 7-12",
+      "comment": "Expected to miss 6-8 weeks after suffering a partial tear of his quadriceps tendon during a team practice (10.20)"
+    },
+    {
       "name": "Georgios Bourneles",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
@@ -507,6 +516,15 @@
       "comment": "DNP in Round 6 (coach's decision)"
     },
     {
+      "name": "Evan Fournier",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 7",
+      "comment": "To miss approximately three weeks due to shoulder and knee injuries (10.20)"
+    },
+    {
       "name": "Antonios Karagiannidis",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
@@ -514,6 +532,15 @@
       "label": "Uncertain",
       "round": "Round 7",
       "comment": "DNP in Rounds 1-6 (coach's decision)"
+    },
+    {
+      "name": "Jean Montero",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 7",
+      "comment": "Dealing with ankle and knee injuries"
     },
     {
       "name": "Omiros Netzipoglou",
@@ -831,6 +858,15 @@
       "comment": "DNP in Round 6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
+      "name": "Ąžuolas Tubelis",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 7",
+      "comment": "Suffered face injury in last domestic league game"
+    },
+    {
       "name": "Nigel Williams-Goss",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
@@ -840,5 +876,5 @@
       "comment": "Made his return after hamstring injury in Round 6, but might have picked up another injury. DNP in domestic league (10.18)"
     }
   ],
-  "updatedAt": "2026-10-20T11:45:53.589Z"
+  "updatedAt": "2026-10-20T17:15:12.273Z"
 }
