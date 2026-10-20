@@ -141,8 +141,8 @@
       "name": "Christian Koloko",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "New signing (10.18)"
     },
@@ -561,6 +561,15 @@
       "comment": "Not included in official Euroleague roster"
     },
     {
+      "name": "Mathias Lessort",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 7",
+      "comment": "Small bone swelling, underwent MRI after Round 6 on his knee"
+    },
+    {
       "name": "Konstantinos Mitoglou",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
@@ -675,7 +684,7 @@
       "status": "out",
       "label": "Out",
       "round": "Indefinitely",
-      "comment": "Working back from Achilles surgery"
+      "comment": "Cleared to return to team practices, aiming to return in November (working back from Achilles surgery)"
     },
     {
       "name": "Mario Nakic",
@@ -831,5 +840,5 @@
       "comment": "Made his return after hamstring injury in Round 6, but might have picked up another injury. DNP in domestic league (10.18)"
     }
   ],
-  "updatedAt": "2026-10-19T23:45:33.240Z"
+  "updatedAt": "2026-10-20T11:45:53.589Z"
 }
