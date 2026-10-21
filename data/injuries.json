@@ -111,6 +111,15 @@
       "comment": "Expected to rejoin the team in around 2-3 weeks (10.20)"
     },
     {
+      "name": "Mady Sissoko",
+      "teamName": "Besiktas Istanbul",
+      "team": "BES",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Began individual strength training after an injury"
+    },
+    {
       "name": "Lonnie Walker IV",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
@@ -876,5 +885,5 @@
       "comment": "Made his return after hamstring injury in Round 6, but might have picked up another injury. DNP in domestic league (10.18)"
     }
   ],
-  "updatedAt": "2026-10-20T21:41:16.990Z"
+  "updatedAt": "2026-10-21T07:44:21.385Z"
 }
