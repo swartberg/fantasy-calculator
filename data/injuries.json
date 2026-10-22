@@ -24,8 +24,8 @@
       "name": "Ruzgar Fenemen",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
@@ -42,8 +42,8 @@
       "name": "D. Karutasu",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
@@ -51,8 +51,8 @@
       "name": "David Mutaf",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
       "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.19)"
     },
@@ -87,8 +87,8 @@
       "name": "Yagiz Aksu",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
@@ -96,8 +96,8 @@
       "name": "Devon Dotson",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
       "comment": "Dislocated his finger during last domestic league game"
     },
@@ -123,8 +123,8 @@
       "name": "Lonnie Walker IV",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
       "comment": "Listed as available per official injury report (new signing)"
     },
@@ -249,10 +249,19 @@
       "name": "Klemen Prepelic",
       "teamName": "Dubai Basketball",
       "team": "DUB",
+      "status": "ready",
+      "label": "Ready",
+      "round": "Round 7",
+      "comment": "Included in 12-man roster after DNP in Rounds 1-6, but might not enter the court (back injury)"
+    },
+    {
+      "name": "Tornike Shengelia",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
       "status": "out",
       "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (back injury)"
+      "comment": "Undisclosed"
     },
     {
       "name": "Tomislav Vuckovic",
@@ -262,6 +271,15 @@
       "label": "Out",
       "round": "Indefinitely",
       "comment": "Not included in official Euroleague roster"
+    },
+    {
+      "name": "Thomas Walkup",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 7",
+      "comment": "Back discomfort"
     },
     {
       "name": "Kilian Fischer",
@@ -537,10 +555,10 @@
       "name": "Tyler Dorsey",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 7",
-      "comment": "DNP in Round 6 (club's decision). DNP in the domestic league (10.18)"
+      "status": "out",
+      "label": "Out",
+      "round": "Round 7-13",
+      "comment": "Received one-month suspension by the club (10.22)"
     },
     {
       "name": "Bryant Dunston",
@@ -627,10 +645,10 @@
       "name": "Mathias Lessort",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "Small bone swelling, underwent MRI after Round 6 on his knee"
+      "comment": "Included in 12-man roster (small bone swelling)"
     },
     {
       "name": "Eleftherios Mantzoukas",
@@ -648,7 +666,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 7",
-      "comment": "Left Round 6 game (leg injury). Played in the domestic league (10.18)"
+      "comment": "Included in 12-man roster after leaving Round 6 game (leg injury)."
     },
     {
       "name": "Kendrick Nunn",
@@ -657,7 +675,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 7",
-      "comment": "Played in domestic league after DNP in Rounds 1-6 (medial right meniscus tear)"
+      "comment": "Included in 12-man roster after DNP in Rounds 1-6 (medial right meniscus tear)"
     },
     {
       "name": "Nikos Rogkavopoulos",
@@ -672,19 +690,19 @@
       "name": "Kostas Sloukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "ready",
-      "label": "Ready",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "Played in domestic league DNP in Rounds 1-6 (rehab after leg injury)"
+      "comment": "Not included in 12-man roster after returning to action in domestic league (coach's decision)"
     },
     {
       "name": "Iason Varvaritis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Nobel Boungou-Colo",
@@ -921,5 +939,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-22T11:59:58.045Z"
+  "updatedAt": "2026-10-22T17:15:35.594Z"
 }
