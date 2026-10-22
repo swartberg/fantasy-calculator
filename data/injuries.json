@@ -69,8 +69,8 @@
       "name": "Nicola Akele",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 2-6 (coach's decision). Played in the domestic league (10.18)"
     },
@@ -78,10 +78,19 @@
       "name": "Diego Flaccadori",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 2-6 (coach's decision)"
+    },
+    {
+      "name": "Stefano Tonut",
+      "teamName": "Armani Olimpia Milan",
+      "team": "MIL",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 7",
+      "comment": "Coach's decision"
     },
     {
       "name": "Yagiz Aksu",
@@ -141,8 +150,8 @@
       "name": "Ebuka Izundu",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
       "comment": "DNP in Rounds 5-6 (ankle injury). Played in the domestic league (10.18)"
     },
@@ -168,8 +177,8 @@
       "name": "Stefan Miljenovic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 4-6 (ankle injury)"
     },
@@ -177,8 +186,8 @@
       "name": "Johnathan Motley",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "Groin injury"
     },
@@ -285,8 +294,8 @@
       "name": "Kilian Fischer",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 2-6 (coach's decision)"
     },
@@ -294,8 +303,8 @@
       "name": "Tobias Jensen",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 5-6 (coach's decision). Played in the domestic cup (10.18)"
     },
@@ -303,17 +312,26 @@
       "name": "Rokas Jokubaitis",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
       "comment": "DNP in Round 6 (rest). Played in the domestic cup (10.18)"
+    },
+    {
+      "name": "Miles Norris",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 7",
+      "comment": "Coach's decision"
     },
     {
       "name": "Johannes Voigtmann",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
       "comment": "DNP in Round 6 (undisclosed). Played in the domestic cup (10.18)"
     },
@@ -465,8 +483,8 @@
       "name": "Pedro Souza",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 2-6 (coach's decision)"
     },
@@ -519,8 +537,8 @@
       "name": "Amit Ebo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 4-6 (coach's decision). Played in the domestic league (10.18)"
     },
@@ -528,8 +546,8 @@
       "name": "Gur Lavi",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 1-6 (undisclosed injury)"
     },
@@ -753,8 +771,8 @@
       "name": "Uros Danilovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 2-6 (coach's decision)"
     },
@@ -780,8 +798,8 @@
       "name": "Mario Nakic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
       "comment": "DNP in Rounds 5-6 (undisclosed). Played in the domestic league (10.18)"
     },
@@ -825,8 +843,8 @@
       "name": "Sergio Llull",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
@@ -834,8 +852,8 @@
       "name": "Olivier Sarr",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
@@ -843,8 +861,8 @@
       "name": "Max Shulga",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
       "comment": "DNP in Rounds 1-6 (coach's decision)"
     },
@@ -939,5 +957,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-22T17:15:35.594Z"
+  "updatedAt": "2026-10-22T21:41:39.637Z"
 }
