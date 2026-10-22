@@ -123,10 +123,10 @@
       "name": "Lonnie Walker IV",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 7",
-      "comment": "Has been registered to EuroLeague's roster after a DNP in Round 6 (new signing)"
+      "comment": "Listed as available per official injury report (new signing)"
     },
     {
       "name": "Jovan Bikic",
@@ -384,10 +384,10 @@
       "name": "Khadeen Carrington",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 7",
-      "comment": "Not included in 12-man roster after DNP in Rounds 5-6 (coach's decision)."
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "DNP in Rounds 5-7 (coach's decision)."
     },
     {
       "name": "Tyler Ennis",
@@ -402,10 +402,10 @@
       "name": "Tomer Ginat",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 7",
-      "comment": "Not included in 12-man roster (coach's decision) after DNP in Rounds 1-6 (knee injury). Played in the domestic league (10.18)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "DNP in Round 7 after returning from a knee injury (coach's decision)"
     },
     {
       "name": "Guy Palatin",
@@ -420,10 +420,10 @@
       "name": "Bar Timor",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 7",
-      "comment": "Not included in 12-man roster (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "DNP in Round 7 (coach's decision)"
     },
     {
       "name": "Chris Duarte",
@@ -521,7 +521,7 @@
       "team": "TEL",
       "status": "out",
       "label": "Out",
-      "round": "Round 7-12",
+      "round": "Round 7-14",
       "comment": "Expected to miss 6-8 weeks after suffering a partial tear of his quadriceps tendon during a team practice (10.20)"
     },
     {
@@ -639,7 +639,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 7",
-      "comment": "Virus"
+      "comment": "Illness"
     },
     {
       "name": "Konstantinos Mitoglou",
@@ -852,37 +852,28 @@
       "name": "Matteo Baiocchi",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 7",
-      "comment": "Not included in 12-man roster after DNP in Rounds 1-6 (coach's decision)."
-    },
-    {
-      "name": "Tommaso Baldasso",
-      "teamName": "Virtus Bologna",
-      "team": "VIR",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 7",
-      "comment": "Included in 12-man roster after DNP in Round 6 (coach's decision)."
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "DNP in Rounds 1-7 (coach's decision)"
     },
     {
       "name": "Davide Casarin",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 7",
-      "comment": "Not included in 12-man roster after DNP in Round 6 (coach's decision)."
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "DNP in Rounds 6-7 (coach's decision)"
     },
     {
       "name": "Francesco Ferrari",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 7",
-      "comment": "Not included in 12-man roster (coach's decision)."
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "DNP in Round 7 (coach's decision)"
     },
     {
       "name": "Kaodirichi Akobundu-Ehiogu",
@@ -930,5 +921,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-21T23:24:46.596Z"
+  "updatedAt": "2026-10-22T11:59:58.045Z"
 }
