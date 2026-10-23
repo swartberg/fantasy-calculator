@@ -471,6 +471,15 @@
       "comment": "Muscle injury"
     },
     {
+      "name": "Tadas Sedekerskis",
+      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "team": "BAS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "Left Round 7 game with injury"
+    },
+    {
       "name": "Kobi Simmons",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
@@ -957,5 +966,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-22T21:41:39.637Z"
+  "updatedAt": "2026-10-23T00:42:30.584Z"
 }
