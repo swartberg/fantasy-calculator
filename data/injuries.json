@@ -654,28 +654,28 @@
       "name": "Nadir Hifi",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (ankle injury). DNP in the domestic league (10.18)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 5-6 (ankle injury). DNP in the domestic league (10.18)"
     },
     {
       "name": "Frank Ntilikina",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (muscle pain)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 5-6 (muscle pain)"
     },
     {
       "name": "T.J. Warren",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (undisclosed). DNP in the domestic league (10.18)"
+      "comment": "Not included in 12-man roster after DNP in Round 6 (undisclosed). DNP in the domestic league (10.18)"
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -894,5 +894,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-23T18:24:55.461Z"
+  "updatedAt": "2026-10-23T23:11:41.834Z"
 }
