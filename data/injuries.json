@@ -312,28 +312,37 @@
       "name": "Onuralp Bitim",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
+    },
+    {
+      "name": "Johnny Juzang",
+      "teamName": "Fenerbahce Beko Istanbul",
+      "team": "ULK",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 7",
+      "comment": "Not included in 12-man roster (coach's decision)"
     },
     {
       "name": "Melih Mahmutoglu",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Chris Silva",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (coach's decision). Played in the domestic league (10.18)"
+      "comment": "Included in 12-man roster after DNP in Rounds 5-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Oz Blayzer",
@@ -438,19 +447,19 @@
       "name": "Juhann Begarin",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (coach's decision). Played in the domestic league (10.17)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 5-6 (coach's decision)"
     },
     {
       "name": "Jae Crowder",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "DNP in Round 6. Played in the domestic league (10.17)"
+      "comment": "Included in 12-man roster after DNP in Round 6."
     },
     {
       "name": "Mathis Dossou-Yovo",
@@ -465,19 +474,19 @@
       "name": "Patrick Mills",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "DNP in Round 6. Played in the domestic league (10.17)"
+      "comment": "Included in 12-man roster after DNP in Round 6."
     },
     {
       "name": "Tremont Waters",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "DNP in Round 6. Played in the domestic league (10.17)"
+      "comment": "Included in 12-man roster after DNP in Round 6."
     },
     {
       "name": "Amit Ebo",
@@ -510,10 +519,10 @@
       "name": "Georgios Bourneles",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
+      "comment": "Included in 12-man roster after DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Tyler Dorsey",
@@ -528,10 +537,10 @@
       "name": "Bryant Dunston",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (coach's decision)"
+      "comment": "Included in 12-man roster after DNP in Round 6 (coach's decision)"
     },
     {
       "name": "Evan Fournier",
@@ -546,37 +555,37 @@
       "name": "Antonios Karagiannidis",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Jean Montero",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "Dealing with ankle and knee injuries"
+      "comment": "Not included in 12-man roster. Dealing with ankle and knee injuries."
     },
     {
       "name": "Omiros Netzipoglou",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "Was included in 12-man roster for Round 6, but didn't play after DNP in Rounds 1-5 (coach's decision)"
+      "comment": "Included in 12-man roster after DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "George Papas",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.18)"
     },
     {
       "name": "Nikolaos Plotas",
@@ -771,19 +780,28 @@
       "name": "Mouhamadou Gueye",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-6 (coach's decision)"
     },
     {
       "name": "Lucas Mari",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-6 (coach's decision)"
+    },
+    {
+      "name": "Omari Moore",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 7",
+      "comment": "Not included in 12-man roster (coach's decision)"
     },
     {
       "name": "Matteo Baiocchi",
@@ -816,37 +834,55 @@
       "name": "Kaodirichi Akobundu-Ehiogu",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 7",
-      "comment": "DNP in Rounds 1-6 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-6 (coach's decision)"
+    },
+    {
+      "name": "Keenan Evans",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 7",
+      "comment": "New signing"
     },
     {
       "name": "Dovydas Giedraitis",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "DNP in Rounds 5-6 (coach's decision)"
+      "comment": "Included in 12-man roster after DNP in Rounds 5-6 (coach's decision)"
     },
     {
       "name": "Maodo Lo",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "DNP in Round 6 (coach's decision). Played in the domestic league (10.18)"
+      "comment": "Included in 12-man roster after DNP in Round 6"
+    },
+    {
+      "name": "Deividas Sirvydis",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 7",
+      "comment": "Not included in 12-man roster (coach's decision)"
     },
     {
       "name": "Ąžuolas Tubelis",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 7",
-      "comment": "Suffered face injury in last domestic league game"
+      "comment": "Cleared to play after suffering face injury in last domestic league game"
     },
     {
       "name": "Nigel Williams-Goss",
@@ -858,5 +894,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-23T07:37:26.409Z"
+  "updatedAt": "2026-10-23T18:24:55.461Z"
 }
