@@ -534,6 +534,15 @@
       "comment": "Not included in 12-man roster in Round 7 after DNP in Rounds 1-6 (coach's decision)"
     },
     {
+      "name": "John Konchar",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "New signing (10.22)"
+    },
+    {
       "name": "Jean Montero",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
@@ -685,15 +694,6 @@
       "label": "Out",
       "round": "Indefinitely",
       "comment": "Cleared to return to team practices, aiming to return in November (working back from Achilles surgery)"
-    },
-    {
-      "name": "Jabari Parker",
-      "teamName": "Partizan Mozzart Bet Belgrade",
-      "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Indefinitely",
-      "comment": "Out of the squad"
     },
     {
       "name": "Antonio Reeves",
@@ -849,5 +849,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-24T04:43:44.811Z"
+  "updatedAt": "2026-10-24T16:01:05.758Z"
 }
