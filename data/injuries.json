@@ -111,6 +111,15 @@
       "comment": "Began individual strength training after an injury"
     },
     {
+      "name": "Lonnie Walker IV",
+      "teamName": "Besiktas Istanbul",
+      "team": "BES",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 8",
+      "comment": "Played in Round 7. Left domestic game limping in 4q. (10.24)"
+    },
+    {
       "name": "Jovan Bikic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
@@ -126,7 +135,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "New signing (10.18)"
+      "comment": "New signing (10.18). DNP in the domestic league (10.24)"
     },
     {
       "name": "Vojin Medarevic",
@@ -150,10 +159,10 @@
       "name": "Johnathan Motley",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 8",
-      "comment": "DNP in Round 8 (Groin injury)"
+      "comment": "DNP in Round 7 (Groin injury). Played in the domestic league (10.24)"
     },
     {
       "name": "Aleksej Nedeljkovic",
@@ -213,10 +222,10 @@
       "name": "Dzanan Musa",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 8",
-      "comment": "Expected to return to the court for individual work next week (knee injury)"
+      "comment": "Expected to return to the court (knee injury). Played in the domestic league (10.24)"
     },
     {
       "name": "Klemen Prepelic",
@@ -234,7 +243,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Round 7 (Undisclosed)"
+      "comment": "DNP in Round 7 and in domestic league (10.24)"
     },
     {
       "name": "Tomislav Vuckovic",
@@ -252,7 +261,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Round 7 Back discomfort"
+      "comment": "DNP in Round 7 and in domestic league (back discomfort)"
     },
     {
       "name": "Kilian Fischer",
@@ -285,10 +294,10 @@
       "name": "Dario Brizuela",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 8",
-      "comment": "DNP in Round 7 (Physical discomfort)"
+      "comment": "DNP in Round 7 (physical discomfort).Played in the domestic league (10.24)"
     },
     {
       "name": "Abdu Kone",
@@ -585,7 +594,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Round 7 (Illness)"
+      "comment": "DNP in Round 7 and in domestic league (Illness)"
     },
     {
       "name": "Nikos Rogkavopoulos",
@@ -594,16 +603,16 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Round 7 (hamstring discomfort)"
+      "comment": "DNP in Round 7 and in domestic league (hamstring discomfort)."
     },
     {
       "name": "Kostas Sloukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 8",
-      "comment": "Not included in 12-man roster after returning to action in domestic league (coach's decision)"
+      "comment": "Not included in 12-man roster in Round 7 (coach's decision). Played in the domestic league (10.18-10.24)"
     },
     {
       "name": "Iason Varvaritis",
@@ -675,7 +684,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "New signning (10.23)"
+      "comment": "New signning (10.23). DNP in the domestic league (10.24)"
     },
     {
       "name": "Tonye Jekiri",
@@ -699,10 +708,10 @@
       "name": "Antonio Reeves",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 8",
-      "comment": "New signing (10.21)"
+      "comment": "New signing. Played in the domestic league (10.24)"
     },
     {
       "name": "Derek Willis",
@@ -825,8 +834,8 @@
       "name": "Keenan Evans",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 8",
       "comment": "New signing (10.23)"
     },
@@ -849,5 +858,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-24T16:01:05.758Z"
+  "updatedAt": "2026-10-25T04:49:58.509Z"
 }
