@@ -843,19 +843,10 @@
       "name": "Kaodirichi Akobundu-Ehiogu",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "ready",
-      "label": "Ready",
+      "status": "doubtful",
+      "label": "Doubtful",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7 after DNP in Rounds 1-6 (coach's decision)"
-    },
-    {
-      "name": "Sterling Brown",
-      "teamName": "Zalgiris Kaunas",
-      "team": "ZAL",
-      "status": "out",
-      "label": "Out",
-      "round": "",
-      "comment": ""
     },
     {
       "name": "Keenan Evans",
@@ -864,34 +855,16 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 8",
-      "comment": "New signing (10.23)"
+      "comment": "New signing . Palyed in the domestic league (10.25)"
     },
     {
       "name": "Deividas Sirvydis",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "ready",
-      "label": "Ready",
+      "status": "doubtful",
+      "label": "Doubtful",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7 (coach's decision)"
-    },
-    {
-      "name": "Ąžuolas Tubelis",
-      "teamName": "Zalgiris Kaunas",
-      "team": "ZAL",
-      "status": "out",
-      "label": "Out",
-      "round": "",
-      "comment": ""
-    },
-    {
-      "name": "Jonas Valančiūnas",
-      "teamName": "Zalgiris Kaunas",
-      "team": "ZAL",
-      "status": "out",
-      "label": "Out",
-      "round": "",
-      "comment": ""
     },
     {
       "name": "Nigel Williams-Goss",
@@ -903,5 +876,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-25T16:29:16.996Z"
+  "updatedAt": "2026-10-25T20:55:29.620Z"
 }
