@@ -75,6 +75,15 @@
       "comment": "DNP in Rounds 2-7 (coach's decision)"
     },
     {
+      "name": "Garrison Mathews",
+      "teamName": "Armani Olimpia Milan",
+      "team": "MIL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "Missed domestic league game (10.25) due to tendon discomfort"
+    },
+    {
       "name": "Stefano Tonut",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
@@ -429,10 +438,10 @@
       "name": "Tadas Sedekerskis",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
-      "comment": "Left Round 7 game with injury"
+      "comment": "Suffered a right thigh muscle injury in Round 7 (out indefinitely)"
     },
     {
       "name": "Kobi Simmons",
@@ -795,6 +804,15 @@
       "comment": "Not included in 12-man roster in Round 7 (coach's decision)"
     },
     {
+      "name": "Nate Reuvers",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Suffered foot bone injury ahead of domestic league game (10.25), out indefinitely"
+    },
+    {
       "name": "Matteo Baiocchi",
       "teamName": "Virtus Bologna",
       "team": "VIR",
@@ -825,10 +843,19 @@
       "name": "Kaodirichi Akobundu-Ehiogu",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7 after DNP in Rounds 1-6 (coach's decision)"
+    },
+    {
+      "name": "Sterling Brown",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "out",
+      "label": "Out",
+      "round": "",
+      "comment": ""
     },
     {
       "name": "Keenan Evans",
@@ -843,10 +870,28 @@
       "name": "Deividas Sirvydis",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7 (coach's decision)"
+    },
+    {
+      "name": "Ąžuolas Tubelis",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "out",
+      "label": "Out",
+      "round": "",
+      "comment": ""
+    },
+    {
+      "name": "Jonas Valančiūnas",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "out",
+      "label": "Out",
+      "round": "",
+      "comment": ""
     },
     {
       "name": "Nigel Williams-Goss",
@@ -858,5 +903,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-25T11:39:32.369Z"
+  "updatedAt": "2026-10-25T16:29:16.996Z"
 }
