@@ -327,6 +327,15 @@
       "comment": "Left knee injury"
     },
     {
+      "name": "Joel Parra",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Didn't fly with the team to Munich (illness)"
+    },
+    {
       "name": "Onuralp Bitim",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
@@ -786,6 +795,15 @@
       "comment": "DNP in Rounds 1-7 (coach's decision)"
     },
     {
+      "name": "Nick Smith Jr.",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Felt discomfort in the sole of his right foot in domestic league game (10.25)"
+    },
+    {
       "name": "Mouhamadou Gueye",
       "teamName": "Valencia Basket",
       "team": "PAM",
@@ -882,8 +900,8 @@
       "status": "out",
       "label": "Out",
       "round": "Round 7-14",
-      "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
+      "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-26T15:14:54.954Z"
+  "updatedAt": "2026-10-26T21:03:09.791Z"
 }
