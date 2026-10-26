@@ -609,17 +609,17 @@
       "name": "Eleftherios Mantzoukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 8",
-      "comment": "DNP in Round 7 and in domestic league (Illness)"
+      "comment": "DNP in Round 7 and in domestic league (Illness), participated in team's practice on Monday"
     },
     {
       "name": "Nikos Rogkavopoulos",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "doubtful",
+      "label": "Doubtful",
       "round": "Round 8",
       "comment": "DNP in Round 7 and in domestic league (hamstring discomfort)."
     },
@@ -885,5 +885,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-26T07:52:03.838Z"
+  "updatedAt": "2026-10-26T15:14:54.954Z"
 }
