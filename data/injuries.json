@@ -63,7 +63,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Rounds 2-7 (coach's decision). Played in the domestic league (10.18)"
+      "comment": "DNP in Rounds 2-7 (coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Diego Flaccadori",
@@ -90,7 +90,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Round 7 (Coach's decision)"
+      "comment": "DNP in Round 7 (Coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Yagiz Aksu",
@@ -288,16 +288,16 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Rounds 5-7 (coach's decision). Played in the domestic cup (10.18)"
+      "comment": "DNP in Rounds 5-7 (coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Miles Norris",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 8",
-      "comment": "DNP in Round 7 (Coach's decision)"
+      "comment": "DNP in Round 7 (Coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Dario Brizuela",
@@ -375,10 +375,10 @@
       "name": "Tamir Blatt",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "out",
-      "label": "Out",
-      "round": "Indefinitely",
-      "comment": "Out of the squad but expected to return to action next week"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "Out of the squad but expected to return to action this week"
     },
     {
       "name": "Khadeen Carrington",
@@ -387,7 +387,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Rounds 5-7 (coach's decision)."
+      "comment": "DNP in Rounds 5-7 (coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Tyler Ennis",
@@ -405,7 +405,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Round 7 after returning from a knee injury (coach's decision)"
+      "comment": "DNP in Round 7 after returning from a knee injury (coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Guy Palatin",
@@ -423,7 +423,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Round 7 (coach's decision)"
+      "comment": "DNP in Round 7 (coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Chris Duarte",
@@ -432,7 +432,16 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Round 7 (Muscle injury)"
+      "comment": "DNP in Round 7 (Muscle injury). DNP in the domestic league (10.25)"
+    },
+    {
+      "name": "Rodions Kurucs",
+      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "team": "BAS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 8",
+      "comment": "DNP in the domestic league (10.25)"
     },
     {
       "name": "Tadas Sedekerskis",
@@ -450,7 +459,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Round 7 (Head injury)"
+      "comment": "DNP in Round 7 (Head injury). DNP in the domestic league (10.25)"
     },
     {
       "name": "Pedro Souza",
@@ -648,14 +657,14 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "Not included in 12-man roster in Round 7 after DNP in Rounds 5-6 (ankle injury). DNP in the domestic league (10.18)"
+      "comment": "Not included in 12-man roster in Round 7 after DNP in Rounds 5-6 (ankle injury). DNP in the domestic league (10.25)"
     },
     {
       "name": "Frank Ntilikina",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "doubtful",
+      "label": "Doubtful",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7 after DNP in Rounds 5-6 (muscle pain)"
     },
@@ -666,7 +675,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "Not included in 12-man roster in Round 7 after DNP in Round 6 (undisclosed). DNP in the domestic league (10.18)"
+      "comment": "Not included in 12-man roster in Round 7 after DNP in Round 6 (undisclosed). DNP in the domestic league (10.25)"
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -756,7 +765,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Rounds 1-7 (coach's decision). Played in the domestic league (10.18)"
+      "comment": "DNP in Rounds 1-7 (coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Olivier Sarr",
@@ -765,7 +774,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Rounds 1-7 (coach's decision). Played in the domestic league (10.18)"
+      "comment": "DNP in Rounds 1-7 (coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Max Shulga",
@@ -780,10 +789,10 @@
       "name": "Mouhamadou Gueye",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 8",
-      "comment": "Not included in 12-man roster in Round 7 after DNP in Rounds 1-6 (coach's decision)"
+      "comment": "DNP in Rounds 1-7 (coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Lucas Mari",
@@ -801,7 +810,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "Not included in 12-man roster in Round 7 (coach's decision)"
+      "comment": "Not included in 12-man roster in Round 7 (coach's decision). DNP in the domestic league (10.25)"
     },
     {
       "name": "Nate Reuvers",
@@ -828,7 +837,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Rounds 6-7 (coach's decision)"
+      "comment": "DNP in Rounds 6-7 (coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Francesco Ferrari",
@@ -837,7 +846,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 8",
-      "comment": "DNP in Round 7 (coach's decision)"
+      "comment": "DNP in Round 7 (coach's decision). Played in the domestic league (10.25)"
     },
     {
       "name": "Kaodirichi Akobundu-Ehiogu",
@@ -855,7 +864,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 8",
-      "comment": "New signing . Palyed in the domestic league (10.25)"
+      "comment": "New signing . Played in the domestic league (10.25)"
     },
     {
       "name": "Deividas Sirvydis",
@@ -876,5 +885,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks."
     }
   ],
-  "updatedAt": "2026-10-26T00:26:07.869Z"
+  "updatedAt": "2026-10-26T07:52:03.838Z"
 }
