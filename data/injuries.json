@@ -60,8 +60,8 @@
       "name": "Nicola Akele",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 2-7 (coach's decision). Played in the domestic league (10.25)"
     },
@@ -69,8 +69,8 @@
       "name": "Diego Flaccadori",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 2-7 (coach's decision)"
     },
@@ -78,8 +78,8 @@
       "name": "Garrison Mathews",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "Missed domestic league game (10.25) due to tendon discomfort, but listed availabe in EL report"
     },
@@ -96,8 +96,8 @@
       "name": "Stefano Tonut",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "DNP in Round 7 (Coach's decision). Played in the domestic league (10.25)"
     },
@@ -150,8 +150,8 @@
       "name": "Christian Koloko",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "Registered to the EuroLeague roster, DNP in the domestic league on Saturday (new signing)"
     },
@@ -168,8 +168,8 @@
       "name": "Stefan Miljenovic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 4-7 (ankle injury)"
     },
@@ -177,8 +177,8 @@
       "name": "Johnathan Motley",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "expected",
-      "label": "Expected",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Round 7 (Groin injury). Played in the domestic league (10.24)"
     },
@@ -240,8 +240,8 @@
       "name": "Dzanan Musa",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "Expected to return to the court (knee injury). Played in the domestic league (10.24)"
     },
@@ -249,8 +249,8 @@
       "name": "Klemen Prepelic",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "expected",
-      "label": "Expected",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 1-7 (back injury)"
     },
@@ -258,8 +258,8 @@
       "name": "Tornike Shengelia",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "Expected to return after DNP in Round 7 and in domestic league (10.24)"
     },
@@ -282,20 +282,38 @@
       "comment": "DNP in Round 7 and in domestic league (back discomfort)"
     },
     {
+      "name": "Kamar Baldwin",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Undisclosed"
+    },
+    {
       "name": "Kilian Fischer",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 2-7 (coach's decision)"
+    },
+    {
+      "name": "Niels Giffey",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Undisclosed"
     },
     {
       "name": "Tobias Jensen",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 5-7 (coach's decision). Played in the domestic league (10.25)"
     },
@@ -303,8 +321,8 @@
       "name": "Miles Norris",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "DNP in Round 7 (Coach's decision). Played in the domestic league (10.25)"
     },
@@ -312,8 +330,8 @@
       "name": "Dario Brizuela",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "DNP in Round 7 (physical discomfort).Played in the domestic league (10.24)"
     },
@@ -321,8 +339,8 @@
       "name": "Abdu Kone",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 1-7 (coach's decision)"
     },
@@ -348,8 +366,8 @@
       "name": "Onuralp Bitim",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7 after DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.25)"
     },
@@ -357,8 +375,8 @@
       "name": "Johnny Juzang",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7(coach's decision). DNP in the domestic league (10.25)"
     },
@@ -366,8 +384,8 @@
       "name": "Melih Mahmutoglu",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7 after DNP in Rounds 1-6 (coach's decision). Played in the domestic league (10.25)"
     },
@@ -375,8 +393,8 @@
       "name": "Chris Silva",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "Included in 12-man roster in Round 7 after DNP in Rounds 5-6 (coach's decision). Played in the domestic league (10.25)"
     },
@@ -474,8 +492,8 @@
       "name": "Kobi Simmons",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "DNP in Round 7 and domestic league on Sunday (concussion)"
     },
@@ -483,8 +501,8 @@
       "name": "Pedro Souza",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 2-7 (coach's decision)"
     },
@@ -510,8 +528,8 @@
       "name": "Amit Ebo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 4-7 (coach's decision). Played in the domestic league (10.18)"
     },
@@ -519,8 +537,8 @@
       "name": "Gur Lavi",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 1-7 (undisclosed injury)"
     },
@@ -588,11 +606,20 @@
       "comment": "New signing (10.22). DNP in the domestic league (10.25)"
     },
     {
+      "name": "Nikola Milutinov",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Toe injury"
+    },
+    {
       "name": "Jean Montero",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7, DNP in domestic league. Dealing with ankle and knee injuries"
     },
@@ -627,10 +654,28 @@
       "name": "Eleftherios Mantzoukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "expected",
-      "label": "Expected",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Round 7 and in domestic league (Illness), participated in team's practice on Monday"
+    },
+    {
+      "name": "Konstantinos Mitoglou",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Not Included in 12-man roster."
+    },
+    {
+      "name": "Dimitris Moraitis",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Not Included in 12-man roster."
     },
     {
       "name": "Nikos Rogkavopoulos",
@@ -645,8 +690,8 @@
       "name": "Kostas Sloukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7 (coach's decision). Played in the domestic league (10.18-10.24)"
     },
@@ -654,8 +699,8 @@
       "name": "Iason Varvaritis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "Not included in 12-man roster after DNP in Rounds 1-7 (coach's decision)"
     },
@@ -669,11 +714,20 @@
       "comment": "Not included in official Euroleague roster"
     },
     {
+      "name": "Tyson Etienne",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Undisclosed"
+    },
+    {
       "name": "Nadir Hifi",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "Traveled with the squad for Round 8 after DNP in Rounds 5-7 and in the domestic league on Sunday (ankle injury)"
     },
@@ -681,8 +735,8 @@
       "name": "Frank Ntilikina",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "Traveled with the squad for Round 8 after DNP in Rounds 5-7 and in the domestic league on Sunday (muscle pain)"
     },
@@ -690,8 +744,8 @@
       "name": "T.J. Warren",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7 after DNP in Round 6 (undisclosed). DNP in the domestic league (10.25)"
     },
@@ -780,8 +834,8 @@
       "name": "Sergio Llull",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 1-7 (coach's decision). Played in the domestic league (10.25)"
     },
@@ -789,8 +843,8 @@
       "name": "Olivier Sarr",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "DNP in Rounds 1-7 (coach's decision). Played in the domestic league (10.25)"
     },
@@ -798,8 +852,8 @@
       "name": "Max Shulga",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "DNP in Rounds 1-7 (coach's decision)"
     },
@@ -816,8 +870,8 @@
       "name": "Mouhamadou Gueye",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "DNP in Rounds 1-7 (coach's decision). Played in the domestic league (10.25)"
     },
@@ -825,8 +879,8 @@
       "name": "Lucas Mari",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 8",
       "comment": "Not included in 12-man roster after in Round 7. DNP in Rounds 1-6 (coach's decision)"
     },
@@ -834,8 +888,8 @@
       "name": "Omari Moore",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 8",
       "comment": "Not included in 12-man roster in Round 7 (coach's decision). DNP in the domestic league (10.25)"
     },
@@ -849,6 +903,15 @@
       "comment": "Suffered foot bone injury ahead of domestic league game (10.25)"
     },
     {
+      "name": "Mario Saint-Supery",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Coach's decision"
+    },
+    {
       "name": "Matteo Baiocchi",
       "teamName": "Virtus Bologna",
       "team": "VIR",
@@ -856,6 +919,15 @@
       "label": "Doubtful",
       "round": "Round 8",
       "comment": "DNP in Rounds 1-7 (coach's decision)"
+    },
+    {
+      "name": "Tommaso Baldasso",
+      "teamName": "Virtus Bologna",
+      "team": "VIR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 8",
+      "comment": "Contusion his leg in the domestic game"
     },
     {
       "name": "Davide Casarin",
@@ -930,5 +1002,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-27T14:35:24.829Z"
+  "updatedAt": "2026-10-27T20:44:42.556Z"
 }
