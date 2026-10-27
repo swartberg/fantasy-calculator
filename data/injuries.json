@@ -78,10 +78,10 @@
       "name": "Garrison Mathews",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 8",
-      "comment": "Missed domestic league game (10.25) due to tendon discomfort"
+      "comment": "Missed domestic league game (10.25) due to tendon discomfort, but listed availabe in EL report"
     },
     {
       "name": "Stefano Tonut",
@@ -903,5 +903,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-26T21:03:09.791Z"
+  "updatedAt": "2026-10-27T01:30:30.335Z"
 }
