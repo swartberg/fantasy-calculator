@@ -759,6 +759,15 @@
       "comment": "Included in 12-man roster after DNP in Rounds 5-7 (muscle pain)"
     },
     {
+      "name": "Jared Rhoden",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 9",
+      "comment": "Not included in 12-man roster (coach's decision)"
+    },
+    {
       "name": "T.J. Warren",
       "teamName": "Paris Basketball",
       "team": "PRS",
@@ -849,22 +858,40 @@
       "comment": "Torn ACL"
     },
     {
-      "name": "Sergio Llull",
+      "name": "Mikael Jantunen",
       "teamName": "Real Madrid",
       "team": "MAD",
       "status": "questionable",
       "label": "Uncertain",
+      "round": "Round 10",
+      "comment": "Injured in Round 9"
+    },
+    {
+      "name": "Sergio Llull",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 9",
-      "comment": "DNP in Rounds 1-8 (coach's decision)"
+      "comment": "Included in 12-man roster for Round 9 after DNP in Rounds 1-8 (coach's decision)"
     },
     {
       "name": "Olivier Sarr",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
       "comment": "DNP in Rounds 1-8 (coach's decision)"
+    },
+    {
+      "name": "Max Shulga",
+      "teamName": "Real Madrid",
+      "team": "MAD",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 9",
+      "comment": "Not included in 12-man roster (coach's decision)"
     },
     {
       "name": "Nick Smith Jr.",
@@ -993,5 +1020,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-29T19:41:35.564Z"
+  "updatedAt": "2026-10-29T23:58:21.427Z"
 }
