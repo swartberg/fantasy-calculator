@@ -79,7 +79,7 @@
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 9",
       "comment": "DNP in Round 8 (left knee contusion)"
     },
@@ -138,6 +138,15 @@
       "comment": "Not included in 12-man roster in Round 8 (leg injury)"
     },
     {
+      "name": "Patrick Baldwin Jr.",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 9",
+      "comment": "Not included in 12-man roster (coach's decision)"
+    },
+    {
       "name": "Jovan Bikic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
@@ -145,6 +154,24 @@
       "label": "Out",
       "round": "Indefinitely",
       "comment": "Not included in official Euroleague roster"
+    },
+    {
+      "name": "Nikola Djurisic",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 9",
+      "comment": "Not included in 12-man roster (coach's decision)"
+    },
+    {
+      "name": "Ebuka Izundu",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 9",
+      "comment": "Not included in 12-man roster (coach's decision)"
     },
     {
       "name": "Vojin Medarevic",
@@ -159,19 +186,19 @@
       "name": "Stefan Miljenovic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
-      "comment": "DNP in Rounds 4-8 (ankle injury)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 4-8 (ankle injury)"
     },
     {
       "name": "Johnathan Motley",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 9",
-      "comment": "DNP in Round 8 (coach's decision)"
+      "comment": "Included in 12-man roster after DNP in Round 8 (coach's decision)"
     },
     {
       "name": "Aleksej Nedeljkovic",
@@ -258,37 +285,46 @@
       "name": "Kamar Baldwin",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
-      "comment": "DNP in Round 8 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Round 8 (coach's decision)"
+    },
+    {
+      "name": "MarJon Beauchamp",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 9",
+      "comment": "Not included in 12-man roster (coach's decision)"
     },
     {
       "name": "Kilian Fischer",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
-      "comment": "DNP in Rounds 2-8 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 2-8 (coach's decision)"
     },
     {
       "name": "Niels Giffey",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 9",
-      "comment": "DNP in Round 8 (coach's decision)"
+      "comment": "Included in 12-man roster after DNP in Round 8 (coach's decision)"
     },
     {
       "name": "Tobias Jensen",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 9",
-      "comment": "DNP in Rounds 5-8 (coach's decision)"
+      "comment": "Included in 12-man roster after DNP in Rounds 5-8 (coach's decision)"
     },
     {
       "name": "Umoja Gibson",
@@ -324,14 +360,14 @@
       "status": "out",
       "label": "Out",
       "round": "Round 9",
-      "comment": "Right ankle sprain"
+      "comment": "Right ankle sprain, expected to miss around 10 days (10.29)"
     },
     {
       "name": "Joel Parra",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 9",
       "comment": "DNP in Round 8 (illness)"
     },
@@ -339,8 +375,8 @@
       "name": "Onuralp Bitim",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
       "comment": "DNP in Rounds 1-8 (coach's decision)"
     },
@@ -348,8 +384,8 @@
       "name": "Johnny Juzang",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
       "comment": "DNP in Rounds 7-8 (coach's decision)"
     },
@@ -357,8 +393,8 @@
       "name": "Melih Mahmutoglu",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
       "comment": "DNP in Rounds 1-8 (coach's decision)"
     },
@@ -402,8 +438,8 @@
       "name": "Vasilije Micic",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 9",
       "comment": "DNP in Round 8 (ankle discomfort)"
     },
@@ -438,8 +474,8 @@
       "name": "Chris Duarte",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
       "comment": "DNP in Rounds 7-8 (muscle injury)"
     },
@@ -501,19 +537,19 @@
       "name": "Amit Ebo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 9",
-      "comment": "DNP in Rounds 4-8 (coach's decision)"
+      "comment": "Included in 12-man roster for after DNP in Rounds 4-8 (coach's decision)"
     },
     {
       "name": "Gur Lavi",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
-      "comment": "DNP in Rounds 1-8 (undisclosed injury)"
+      "comment": "Out for Round 9 after DNP in Rounds 1-8 (undisclosed injury)"
     },
     {
       "name": "Gabriel Lundberg",
@@ -573,8 +609,8 @@
       "name": "John Konchar",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 9",
       "comment": "Not included in 12-man roster in Round 8 (new signing)"
     },
@@ -582,8 +618,8 @@
       "name": "Nikola Milutinov",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 9",
       "comment": "Not included in 12-man roster in Round 8 (toe injury)"
     },
@@ -591,8 +627,8 @@
       "name": "Jean Montero",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
       "comment": "Not included in 12-man roster in Round 8 (ankle and knee injuries)"
     },
@@ -654,10 +690,19 @@
       "name": "Nikos Rogkavopoulos",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
       "comment": "DNP in Round 7-8 (hamstring discomfort)."
+    },
+    {
+      "name": "Kostas Sloukas",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 9",
+      "comment": "Precaution"
     },
     {
       "name": "Iason Varvaritis",
@@ -681,37 +726,46 @@
       "name": "Tyson Etienne",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 9",
-      "comment": "DNP in Round 8 (undisclosed)"
+      "comment": "Included in 12-man roster after DNP in Round 8 (undisclosed)"
     },
     {
       "name": "Daulton Hommes",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
-      "comment": "Left Round 8 with a concussion"
+      "comment": "Not included in 12-man roster after leaving Round 8 with a concussion"
+    },
+    {
+      "name": "Amath M'Baye",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 9",
+      "comment": "Not included in 12-man roster (coach's decision)"
     },
     {
       "name": "Frank Ntilikina",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 9",
-      "comment": "Traveled with the squad for Round 8 but DNP after missing Rounds 5-7 (muscle pain)"
+      "comment": "Included in 12-man roster after DNP in Rounds 5-7 (muscle pain)"
     },
     {
       "name": "T.J. Warren",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
-      "comment": "DNP in Rounds 6-8 (undisclosed)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 6-8 (undisclosed)"
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -939,5 +993,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-29T13:10:43.379Z"
+  "updatedAt": "2026-10-29T19:41:35.564Z"
 }
