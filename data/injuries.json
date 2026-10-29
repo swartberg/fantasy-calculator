@@ -291,6 +291,15 @@
       "comment": "DNP in Rounds 5-8 (coach's decision)"
     },
     {
+      "name": "Umoja Gibson",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 9",
+      "comment": "Suffered hard hit to his knee in Round 8"
+    },
+    {
       "name": "Abdu Kone",
       "teamName": "FC Barcelona",
       "team": "BAR",
@@ -303,10 +312,19 @@
       "name": "Yoan Makoundou",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
       "comment": "Left knee injury"
+    },
+    {
+      "name": "Juan Nunez",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 9",
+      "comment": "Right ankle sprain"
     },
     {
       "name": "Joel Parra",
@@ -379,6 +397,15 @@
       "label": "Uncertain",
       "round": "Round 9",
       "comment": "DNP in Rounds 7-8. Played in the domestic league (10.25)"
+    },
+    {
+      "name": "Vasilije Micic",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 9",
+      "comment": "DNP in Round 8 (ankle discomfort)"
     },
     {
       "name": "Tai Odiase",
@@ -460,6 +487,15 @@
       "label": "Out",
       "round": "Round 1-9",
       "comment": "Adductor muscle injury (out until November)"
+    },
+    {
+      "name": "John Dibartolomeo",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 9",
+      "comment": "Personal"
     },
     {
       "name": "Amit Ebo",
@@ -651,6 +687,15 @@
       "comment": "DNP in Round 8 (undisclosed)"
     },
     {
+      "name": "Daulton Hommes",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 9",
+      "comment": "Left Round 8 with a concussion"
+    },
+    {
       "name": "Frank Ntilikina",
       "teamName": "Paris Basketball",
       "team": "PRS",
@@ -771,10 +816,10 @@
       "name": "Nick Smith Jr.",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
-      "comment": "DNP in Round 8 (right foot sole discomfort)"
+      "comment": "Right foot sole discomfort"
     },
     {
       "name": "Lucas Mari",
@@ -789,10 +834,10 @@
       "name": "Nikola Mirotic",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Questionable",
+      "status": "out",
+      "label": "Out",
       "round": "Round 9",
-      "comment": "\"Wanted to play after felt a tweak, but we chose to take him out\" said coach Xavi Albert after Round 8 game"
+      "comment": "Muscle injury (10.29)"
     },
     {
       "name": "Nate Reuvers",
@@ -843,8 +888,8 @@
       "name": "Kaodirichi Akobundu-Ehiogu",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
-      "status": "ready",
-      "label": "Ready",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 9",
       "comment": "Played in Round 8 after DNP in Rounds 1-7 (coach's decision)"
     },
@@ -894,5 +939,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-29T05:54:25.573Z"
+  "updatedAt": "2026-10-29T13:10:43.379Z"
 }
