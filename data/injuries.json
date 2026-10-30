@@ -849,15 +849,6 @@
       "comment": "Played in Round 8 (new signing)"
     },
     {
-      "name": "Bandja Sy",
-      "teamName": "Partizan Mozzart Bet Belgrade",
-      "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "",
-      "comment": "Left the team"
-    },
-    {
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
@@ -1065,5 +1056,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-30T19:26:35.631Z"
+  "updatedAt": "2026-10-30T23:52:27.833Z"
 }
