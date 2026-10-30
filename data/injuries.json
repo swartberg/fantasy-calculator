@@ -543,6 +543,15 @@
       "comment": "Included in 12-man roster for after DNP in Rounds 4-8 (coach's decision)"
     },
     {
+      "name": "Shane Hunter",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Not included in official Euroleague roster"
+    },
+    {
       "name": "Gur Lavi",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
@@ -1020,5 +1029,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-29T23:58:21.427Z"
+  "updatedAt": "2026-10-30T05:56:24.786Z"
 }
