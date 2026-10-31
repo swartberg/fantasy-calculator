@@ -768,6 +768,15 @@
       "comment": "Not included in 12-man roster in Round 9 (coach's decision)"
     },
     {
+      "name": "Bandja Sy",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "",
+      "comment": ""
+    },
+    {
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
@@ -957,5 +966,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-31T12:41:28.786Z"
+  "updatedAt": "2026-10-31T18:36:25.543Z"
 }
