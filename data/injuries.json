@@ -573,8 +573,8 @@
       "name": "Evan Fournier",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "out",
-      "label": "Out",
+      "status": "doubtful",
+      "label": "Doubtful",
       "round": "Round 10",
       "comment": "To miss approximately three weeks due to shoulder and knee injuries (10.20)"
     },
@@ -744,19 +744,19 @@
       "name": "Tonye Jekiri",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "Will miss two weeks (adductor injury in Round 6)"
+      "comment": "Adductor injury in Round 6, approximate estimated time until full recovery is about two weeks (as of Oct. 31)"
     },
     {
       "name": "Vanja Marinkovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Indefinitely",
-      "comment": "Cleared to return to team practices, aiming to return in November (working back from Achilles surgery)"
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 10",
+      "comment": "Fully rejoined training process, available for domestic game (working back from Achilles surgery)"
     },
     {
       "name": "Mario Nakic",
@@ -771,10 +771,10 @@
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "Ankle injury suffered in Round 1"
+      "comment": "Ankle injury suffered in Round 1, Willis will be able to rejoin the team during the second week of November"
     },
     {
       "name": "Gabriel Deck",
@@ -957,5 +957,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-31T05:52:42.708Z"
+  "updatedAt": "2026-10-31T12:41:28.786Z"
 }
