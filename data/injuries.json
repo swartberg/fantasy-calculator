@@ -582,8 +582,8 @@
       "name": "Evan Fournier",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 10",
       "comment": "To miss approximately three weeks due to shoulder and knee injuries (10.20)"
     },
@@ -975,5 +975,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-11-01T06:16:28.063Z"
+  "updatedAt": "2026-11-01T18:58:05.926Z"
 }
