@@ -144,7 +144,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (coach's decision)"
+      "comment": "DNP in Round 9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Jovan Bikic",
@@ -162,7 +162,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (coach's decision)"
+      "comment": "DNP in Round 9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Ebuka Izundu",
@@ -171,7 +171,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (coach's decision)"
+      "comment": "DNP in Round 9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Vojin Medarevic",
@@ -279,7 +279,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (coach's decision)"
+      "comment": "DNP in Round 9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "MarJon Beauchamp",
@@ -288,7 +288,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (coach's decision)"
+      "comment": "DNP in Round 9 (coach's decision). DNP in the domestic league (11.01)"
     },
     {
       "name": "Kilian Fischer",
@@ -297,7 +297,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 2-9 (coach's decision)"
+      "comment": "DNP in Rounds 2-9 (coach's decision).DNP in the domestic league (11.01)"
     },
     {
       "name": "Umoja Gibson",
@@ -306,7 +306,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Round 9 after hard hit to his knee in Round 8"
+      "comment": "DNP in Round 9 after hard hit to his knee in Round 8. DNP in the domestic league (11.01)"
     },
     {
       "name": "Abdu Kone",
@@ -333,7 +333,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 10",
-      "comment": "Right ankle sprain, expected to miss around 10 days (10.29)"
+      "comment": "Right ankle sprain, expected to miss around 10 days (10.29). DNP in the domestic league (11.01)"
     },
     {
       "name": "Onuralp Bitim",
@@ -342,7 +342,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (coach's decision)"
+      "comment": "DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Johnny Juzang",
@@ -351,7 +351,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 7-9 (coach's decision)"
+      "comment": "DNP in Rounds 7-9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Melih Mahmutoglu",
@@ -360,7 +360,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (coach's decision)"
+      "comment": "DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Dwight Powell",
@@ -369,7 +369,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "New signing (10.30)"
+      "comment": "New signing (10.30). DNP in the domestic league (11.01)"
     },
     {
       "name": "Oz Blayzer",
@@ -385,9 +385,9 @@
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (coach's decision)"
+      "comment": "DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Tyler Ennis",
@@ -405,7 +405,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 after DNP in Rounds 7-8 (coach's decision)"
+      "comment": "Not included in 12-man roster in Round 9 after DNP in Rounds 7-8 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Guy Palatin",
@@ -432,7 +432,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 after DNP in Rounds 7-8 (coach's decision)"
+      "comment": "Not included in 12-man roster in Round 9 after DNP in Rounds 7-8 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Chris Duarte",
@@ -441,7 +441,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 7-9 (muscle injury)"
+      "comment": "DNP in Rounds 7-9 (muscle injury). DNP in the domestic league (11.01)"
     },
     {
       "name": "Rodions Kurucs",
@@ -450,7 +450,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 8-9 (undisclosed injury)"
+      "comment": "DNP in Rounds 8-9 (undisclosed injury). DNP in the domestic league (11.01)"
     },
     {
       "name": "Tadas Sedekerskis",
@@ -468,7 +468,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 10",
-      "comment": "Included in 12-man roster but DNP in Round 9 after DNP in Rounds 2-8 (coach's decision)"
+      "comment": "Included in 12-man roster but DNP in Round 9 after DNP in Rounds 2-8 (coach's decision). DNP in the domestic league (11.01)"
     },
     {
       "name": "Juhann Begarin",
@@ -477,7 +477,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 10",
-      "comment": "DNP in Rounds 8-9 (undisclosed injury)"
+      "comment": "DNP in Rounds 8-9 (undisclosed injury). DNP in the domestic league (11.01)"
     },
     {
       "name": "Myles Cale",
@@ -486,7 +486,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 (coach's decision)"
+      "comment": "Not included in 12-man roster in Round 9 (coach's decision). DNP in the domestic league (11.01)"
     },
     {
       "name": "Mathis Dossou-Yovo",
@@ -495,7 +495,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Adductor muscle injury (out until November)"
+      "comment": "Adductor muscle injury (out until November). DNP in the domestic league (11.01)"
     },
     {
       "name": "Edwin Jackson",
@@ -504,7 +504,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 (coach's decision)"
+      "comment": "Not included in 12-man roster in Round 9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Lorenz Sanz",
@@ -513,7 +513,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 (coach's decision)"
+      "comment": "Not included in 12-man roster in Round 9 (coach's decision). DNP in the domestic league (11.01)"
     },
     {
       "name": "John Dibartolomeo",
@@ -522,7 +522,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (Personal)"
+      "comment": "DNP in Round 9 (personal reasons). Played in the domestic league (11.01)"
     },
     {
       "name": "Shane Hunter",
@@ -540,7 +540,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (undisclosed injury)"
+      "comment": "DNP in Rounds 1-9 (undisclosed injury). DNP in the domestic league (11.01)"
     },
     {
       "name": "Gabriel Lundberg",
@@ -576,7 +576,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 10",
-      "comment": "Included in 12-man roster but DNP in Round 9"
+      "comment": "Included in 12-man roster but DNP in Round 9. DNP in the domestic league (11.01)"
     },
     {
       "name": "Evan Fournier",
@@ -585,7 +585,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 10",
-      "comment": "To miss approximately three weeks due to shoulder and knee injuries (10.20)"
+      "comment": "To miss approximately three weeks due to shoulder and knee injuries (10.20). DNP in the domestic league (11.01)"
     },
     {
       "name": "Antonios Karagiannidis",
@@ -594,7 +594,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (coach's decision)"
+      "comment": "DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "John Konchar",
@@ -603,7 +603,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 10",
-      "comment": "Included in 12-man roster but DNP in Round 9 (new signing)"
+      "comment": "Included in 12-man roster but DNP in Round 9 (new signing). DNP in the domestic league (11.01)"
     },
     {
       "name": "Nikola Milutinov",
@@ -612,7 +612,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 10",
-      "comment": "Played only 5 minutes in Round 9"
+      "comment": "Played only 5 minutes in Round 9. Played in the domestic league (11.01)"
     },
     {
       "name": "Jean Montero",
@@ -630,7 +630,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (coach's decision)"
+      "comment": "DNP in Rounds 1-9 (coach's decision). DNP in the domestice leage (11.01)"
     },
     {
       "name": "Ioannis Kouzeloglou",
@@ -648,7 +648,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 (coach's decision)"
+      "comment": "Not included in 12-man roster in Round 9 (coach's decision). DNP in the domestic league (11.01)"
     },
     {
       "name": "Dimitris Moraitis",
@@ -657,7 +657,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 8-9 (coach's decision)"
+      "comment": "DNP in Rounds 8-9 (coach's decision). DNP in the domestic league (11.01)"
     },
     {
       "name": "Nikos Rogkavopoulos",
@@ -666,7 +666,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 7-9 (hamstring discomfort)."
+      "comment": "DNP in Rounds 7-9 (hamstring discomfort). DNP in the domestic league (11.01)"
     },
     {
       "name": "Kostas Sloukas",
@@ -675,7 +675,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 10",
-      "comment": "DNP in Round 9, after played in Round 8 (precaution)"
+      "comment": "DNP in Round 9, after played in Round 8 (precaution). Played in the domestic league (11.01)"
     },
     {
       "name": "Iason Varvaritis",
@@ -702,7 +702,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 after leaving Round 8 with a concussion"
+      "comment": "Not included in 12-man roster in Round 9 after leaving Round 8 with a concussion. DNP in the domestic league (11.01)"
     },
     {
       "name": "Amath M'Baye",
@@ -711,7 +711,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (coach's decision)"
+      "comment": "DNP in Round 9 (coach's decision). DNP in the domestic league (11.01)"
     },
     {
       "name": "Jared Rhoden",
@@ -720,7 +720,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 (undisclosed)"
+      "comment": "Not included in 12-man roster in Round 9 (undisclosed). DNP in the domestic league (11.01)"
     },
     {
       "name": "T.J. Warren",
@@ -729,7 +729,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster after DNP in Rounds 6-9 (undisclosed)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 6-9 (undisclosed). DNP in the domestic league (11.01)"
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -828,7 +828,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Was included in 12-man roster for Round 9 but DNP after DNP in Rounds 1-8 (coach's decision)"
+      "comment": "Was included in 12-man roster for Round 9 but DNP after DNP in Rounds 1-8 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Theo Maledon",
@@ -846,7 +846,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (coach's decision)"
+      "comment": "DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Max Shulga",
@@ -855,7 +855,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 (coach's decision)"
+      "comment": "Not included in 12-man roster in Round 9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Nick Smith Jr.",
@@ -864,16 +864,16 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Right foot sole discomfort"
+      "comment": "Right foot sole discomfort. DNP in the domestic league (11.01)"
     },
     {
       "name": "Lucas Mari",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (coach's decision)"
+      "comment": "DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.01)"
     },
     {
       "name": "Nikola Mirotic",
@@ -882,7 +882,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Muscle injury (10.29)"
+      "comment": "Muscle injury (10.29). DNP in the domestic league (11.01)"
     },
     {
       "name": "Nate Reuvers",
@@ -891,7 +891,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 10",
-      "comment": "Suffered foot bone injury ahead of domestic league game (10.25)"
+      "comment": "Suffered foot bone injury ahead of domestic league game (10.25). DNP in the domestic league (11.01)"
     },
     {
       "name": "Matteo Baiocchi",
@@ -975,5 +975,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-11-01T18:58:05.926Z"
+  "updatedAt": "2026-11-01T23:39:36.301Z"
 }
