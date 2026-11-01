@@ -363,6 +363,15 @@
       "comment": "DNP in Rounds 1-9 (coach's decision)"
     },
     {
+      "name": "Dwight Powell",
+      "teamName": "Fenerbahce Beko Istanbul",
+      "team": "ULK",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 10",
+      "comment": "New signing (10.30)"
+    },
+    {
       "name": "Oz Blayzer",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
@@ -768,6 +777,15 @@
       "comment": "Not included in 12-man roster in Round 9 (coach's decision)"
     },
     {
+      "name": "Bandja Sy",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "",
+      "comment": ""
+    },
+    {
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
@@ -957,5 +975,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-10-31T23:25:48.697Z"
+  "updatedAt": "2026-11-01T06:16:28.063Z"
 }
