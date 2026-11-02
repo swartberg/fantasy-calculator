@@ -75,6 +75,15 @@
       "comment": "DNP in Rounds 2-9 (coach's decision)"
     },
     {
+      "name": "Devin Booker",
+      "teamName": "Armani Olimpia Milan",
+      "team": "MIL",
+      "status": "out",
+      "label": "Out",
+      "round": "Indefinitely",
+      "comment": "Injury"
+    },
+    {
       "name": "Diego Flaccadori",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
@@ -1002,5 +1011,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Set to miss about 4 weeks. Will undergo further testing."
     }
   ],
-  "updatedAt": "2026-11-02T16:06:41.247Z"
+  "updatedAt": "2026-11-02T23:36:06.796Z"
 }
