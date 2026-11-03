@@ -810,7 +810,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 10",
-      "comment": "Ankle injury suffered in Round 1, Willis will be able to rejoin the team during the second week of November"
+      "comment": "Ankle injury suffered in Round 1, Willis will rejoin the team during the second week of November"
     },
     {
       "name": "Facundo Campazzo",
@@ -819,7 +819,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 10",
-      "comment": "Out indefinitely after suffering a leg muscle injury in domestic league game (11.01)"
+      "comment": "Out indefinitely after suffering a left hamstring injury in a domestic league game (11.01)"
     },
     {
       "name": "Gabriel Deck",
@@ -1002,5 +1002,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-03T16:18:26.772Z"
+  "updatedAt": "2026-11-03T21:48:28.517Z"
 }
