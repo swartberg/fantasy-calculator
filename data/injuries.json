@@ -330,10 +330,10 @@
       "name": "Umoja Gibson",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "Travels with the team, but doubtful about playing after DNP in Rounds 8-9 (knee soreness)"
+      "comment": "Didn't travel with the team (knee soreness)"
     },
     {
       "name": "Abdu Kone",
@@ -669,6 +669,15 @@
       "comment": "DNP in Rounds 1-9 (coach's decision). DNP in the domestice leage (11.01)"
     },
     {
+      "name": "Panagiotis Kalaitzakis",
+      "teamName": "Panathinaikos AKTOR Athens",
+      "team": "PAN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 10",
+      "comment": "Not included in 12-man roster (coach's decision)"
+    },
+    {
       "name": "Ioannis Kouzeloglou",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
@@ -708,10 +717,10 @@
       "name": "Kostas Sloukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Traveled for Round 10 after DNP in Round 9 (rest)"
+      "comment": "Included in 12-man roster after DNP in Round 9 (rest)"
     },
     {
       "name": "Iason Varvaritis",
@@ -852,10 +861,10 @@
       "name": "Sergio Llull",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Was included in 12-man roster for Round 9 but DNP after DNP in Rounds 1-8 (coach's decision). Played in the domestic league (11.01)"
+      "comment": "Included in 12-man roster after DNP in Rounds 1-9 (coach's decision)"
     },
     {
       "name": "Theo Maledon",
@@ -870,28 +879,37 @@
       "name": "Olivier Sarr",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.01)"
+      "comment": "Included in 12-man roster after DNP in Rounds 1-9 (coach's decision)"
     },
     {
       "name": "Max Shulga",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 (coach's decision). Played in the domestic league (11.01)"
+      "comment": "Included in 12-man roster after DNP in Round 9 (coach's decision)"
     },
     {
       "name": "Nick Smith Jr.",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Will travel for Round 10 after DNP in Rounds 8-9 (right foot sole discomfort)"
+      "comment": "Included in 12-man roster after DNP in Rounds 8-9 (right foot sole discomfort)"
+    },
+    {
+      "name": "Mouhamadou Gueye",
+      "teamName": "Valencia Basket",
+      "team": "PAM",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 10",
+      "comment": "Undisclosed"
     },
     {
       "name": "Lucas Mari",
@@ -906,10 +924,10 @@
       "name": "Nikola Mirotic",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "Muscle injury (10.29). DNP in the domestic league (11.01)"
+      "comment": "Ruled out for Round 10 after DNP in Round 9, but might be in contention to play in Round 11 (muscle injury)"
     },
     {
       "name": "Nate Reuvers",
@@ -918,7 +936,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 10",
-      "comment": "Suffered foot bone injury (10.25). DNP in Rounds 8-9 and in the domestic league (11.01)"
+      "comment": "Ruled out for Round 10 after DNP in Rounds 8-9 but might be in contention to play in Round 11 (foot bone injury)"
     },
     {
       "name": "Matteo Baiocchi",
@@ -1002,5 +1020,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-04T12:13:37.661Z"
+  "updatedAt": "2026-11-04T19:49:59.967Z"
 }
