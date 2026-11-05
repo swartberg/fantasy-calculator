@@ -15,10 +15,10 @@
       "name": "P.J. Dozier",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "Suffered lower back injury in Round 6 (out for 2-3 weeks). DNP in the domestic league (11.02)"
+      "comment": "Ruled out for Round 10 after a back injury in Round 6"
     },
     {
       "name": "Ruzgar Fenemen",
@@ -78,10 +78,10 @@
       "name": "Leandro Bolmaro",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "questionable",
-      "label": "Questionable",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 10",
-      "comment": "Muscle strain"
+      "comment": "Not included in official injury report (muscle strain)"
     },
     {
       "name": "Devin Booker",
@@ -105,8 +105,8 @@
       "name": "Stefano Tonut",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 10",
       "comment": "Not included in 12-man roster in Round 9 (coach's decision). Played in the domestic league (11.02)"
     },
@@ -411,10 +411,10 @@
       "name": "Tamir Blatt",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 10",
-      "comment": "Played in the domestic league (11.01). Registered on the EuroLeague roster (11.03)."
+      "comment": "Expected to be included in 12-man roster for Round 10 after playing in the domestic league on Sunday"
     },
     {
       "name": "Tyler Ennis",
@@ -460,6 +460,15 @@
       "label": "Uncertain",
       "round": "Round 10",
       "comment": "Not included in 12-man roster in Round 9 after DNP in Rounds 7-8 (coach's decision). Played in the domestic league (11.01)"
+    },
+    {
+      "name": "Jacob Toppin",
+      "teamName": "Hapoel IBI Tel Aviv",
+      "team": "HTA",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 10",
+      "comment": "DNP in Round 9 (coach's decision)"
     },
     {
       "name": "Chris Duarte",
@@ -588,6 +597,15 @@
       "comment": "Expected to miss 6-8 weeks and return for Round 15 after suffering a partial tear of his quadriceps tendon during a team practice (10.20)"
     },
     {
+      "name": "Daniel Theis",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 10",
+      "comment": "Was in 12-man roster but DNP in Round 9 (coach's decision)"
+    },
+    {
       "name": "Georgios Bourneles",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
@@ -672,10 +690,10 @@
       "name": "Panagiotis Kalaitzakis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 10",
-      "comment": "Not included in 12-man roster (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 11",
+      "comment": "DNP in Round 10 (coach's decision)"
     },
     {
       "name": "Ioannis Kouzeloglou",
@@ -683,53 +701,44 @@
       "team": "PAN",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Out indefinitely, as he's not included in official Euroleague roster"
     },
     {
       "name": "Eleftherios Mantzoukas",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 10",
-      "comment": "Didn't travel for Round 10 after DNP in Round 9 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 11",
+      "comment": "DNP in Rounds 9-10 (coach's decision)"
     },
     {
       "name": "Dimitris Moraitis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 10",
-      "comment": "Didn't travel for Round 10 after DNP in Rounds 8-9 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 11",
+      "comment": "DNP in Rounds 8-10 (coach's decision)"
     },
     {
       "name": "Nikos Rogkavopoulos",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 10",
-      "comment": "Didn't travel for Round 10 after DNP in Rounds 7-9 (hamstring discomfort)"
-    },
-    {
-      "name": "Kostas Sloukas",
-      "teamName": "Panathinaikos AKTOR Athens",
-      "team": "PAN",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 10",
-      "comment": "Included in 12-man roster after DNP in Round 9 (rest)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 11",
+      "comment": "DNP in Rounds 7-10 (hamstring injury)"
     },
     {
       "name": "Iason Varvaritis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 10",
-      "comment": "Didn't travel for Round 10 after DNP in Rounds 1-9 (coach's decision)"
+      "status": "doubtful",
+      "label": "Doubtful",
+      "round": "Round 11",
+      "comment": "DNP in Rounds 1-10 (coach's decision)"
     },
     {
       "name": "Nobel Boungou-Colo",
@@ -827,7 +836,7 @@
       "team": "MAD",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Out indefinitely after suffering a left hamstring injury in a domestic league game (11.01)"
     },
     {
@@ -836,7 +845,7 @@
       "team": "MAD",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Underwent left shoulder surgery on October 14, expected to be out until mid-February/mid-March."
     },
     {
@@ -845,7 +854,7 @@
       "team": "MAD",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Out indefinitely with a torn ACL"
     },
     {
@@ -854,17 +863,17 @@
       "team": "MAD",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Out indefinitely after a complete rupture of the plantar fascia in left foot (10.30)"
     },
     {
       "name": "Sergio Llull",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 10",
-      "comment": "Included in 12-man roster after DNP in Rounds 1-9 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 11",
+      "comment": "Made EuroLeague season debut after DNP in Rounds 1-9 (coach's decision)"
     },
     {
       "name": "Theo Maledon",
@@ -872,35 +881,26 @@
       "team": "MAD",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Out indefinitely due to a right knee sprain (10.30)"
     },
     {
       "name": "Olivier Sarr",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 10",
-      "comment": "Included in 12-man roster after DNP in Rounds 1-9 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 11",
+      "comment": "Played 2 minutes in Round 10 after DNP in Rounds 1-9 (coach's decision)"
     },
     {
       "name": "Max Shulga",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "ready",
-      "label": "Ready",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 10",
-      "comment": "Included in 12-man roster after DNP in Round 9 (coach's decision)"
-    },
-    {
-      "name": "Nick Smith Jr.",
-      "teamName": "Real Madrid",
-      "team": "MAD",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 10",
-      "comment": "Included in 12-man roster after DNP in Rounds 8-9 (right foot sole discomfort)"
+      "comment": "Played 4 minutes in Round 10 after DNP in Round 9 (coach's decision)"
     },
     {
       "name": "Mouhamadou Gueye",
@@ -933,8 +933,8 @@
       "name": "Nate Reuvers",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
       "comment": "Ruled out for Round 10 after DNP in Rounds 8-9 but might be in contention to play in Round 11 (foot bone injury)"
     },
@@ -1020,5 +1020,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-04T19:49:59.967Z"
+  "updatedAt": "2026-11-05T09:34:12.888Z"
 }
