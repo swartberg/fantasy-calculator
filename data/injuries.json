@@ -294,8 +294,8 @@
       "name": "Kamar Baldwin",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
       "comment": "DNP in Rounds 8-9 (coach's decision). Played in the domestic league (11.01-03)"
     },
@@ -303,19 +303,46 @@
       "name": "MarJon Beauchamp",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
       "comment": "DNP in Round 9 (coach's decision). Played in the domestic league (11.03)"
+    },
+    {
+      "name": "Oscar da Silva",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 10",
+      "comment": "Not in 12-man roster in Round 10 (coach's decision)"
     },
     {
       "name": "Kilian Fischer",
       "teamName": "FC Bayern Munich",
       "team": "MUN",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
       "comment": "DNP in Rounds 2-9 (coach's decision).DNP in the domestic league (11.01-03)"
+    },
+    {
+      "name": "Niels Giffey",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 10",
+      "comment": "Not in 12-man roster in Round 10 (coach's decision)"
+    },
+    {
+      "name": "Duane Washington Jr.",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 10",
+      "comment": "Not in 12-man roster in Round 10 (undisclosed)"
     },
     {
       "name": "Aleksander Balcerowski",
@@ -339,8 +366,8 @@
       "name": "Abdu Kone",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
       "comment": "DNP in Rounds 1-9 (coach's decision)"
     },
@@ -429,8 +456,8 @@
       "name": "Tamir Blatt",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
       "comment": "Expected to be included in 12-man roster for Round 10 after playing in the domestic league on Sunday"
     },
@@ -447,8 +474,8 @@
       "name": "Tomer Ginat",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
       "comment": "Not included in 12-man roster in Round 9 after DNP in Rounds 7-8 (coach's decision). Played in the domestic league (11.01)"
     },
@@ -474,8 +501,8 @@
       "name": "Bar Timor",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
       "comment": "Not included in 12-man roster in Round 9 after DNP in Rounds 7-8 (coach's decision). Played in the domestic league (11.01)"
     },
@@ -483,8 +510,8 @@
       "name": "Jacob Toppin",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
       "comment": "DNP in Round 9 (coach's decision)"
     },
@@ -537,8 +564,8 @@
       "name": "Juhann Begarin",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
       "comment": "DNP in Rounds 8-9 (undisclosed injury). DNP in the domestic league (11.01)"
     },
@@ -546,8 +573,8 @@
       "name": "Myles Cale",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
       "comment": "Not included in 12-man roster in Round 9 (coach's decision). DNP in the domestic league (11.01)"
     },
@@ -555,8 +582,8 @@
       "name": "Mathis Dossou-Yovo",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
       "comment": "Adductor muscle injury (out until November). DNP in the domestic league (11.01)"
     },
@@ -564,8 +591,8 @@
       "name": "Edwin Jackson",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
       "comment": "Not included in 12-man roster in Round 9 (coach's decision). Played in the domestic league (11.01)"
     },
@@ -573,8 +600,8 @@
       "name": "Lorenz Sanz",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
       "comment": "Not included in 12-man roster in Round 9 (coach's decision). DNP in the domestic league (11.01)"
     },
@@ -951,8 +978,8 @@
       "name": "Lucas Mari",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
       "comment": "DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.01)"
     },
@@ -1047,5 +1074,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-05T18:04:59.035Z"
+  "updatedAt": "2026-11-05T23:41:00.926Z"
 }
