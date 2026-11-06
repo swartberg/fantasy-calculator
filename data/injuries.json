@@ -87,37 +87,37 @@
       "name": "Yagiz Aksu",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "Included in 12-man roster in Round 8. DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.02)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-9 (coach's decision)"
     },
     {
       "name": "Devon Dotson",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "DNP ir Rounds 8-9 (undisclosed). DNP in the domestic league (11.02)"
+      "comment": "Included in 12-man roster after DNP in Rounds 8-9 (undisclosed)"
     },
     {
       "name": "DaQuan Jeffries",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "Expected to rejoin the team at the beginning of November. DNP in the domestic league (11.02)"
+      "comment": "Out indefinitely after injury in Round 1 (wrist fracture), expected to rejoin the team at the beginning of November"
     },
     {
       "name": "Furkan Korkmaz",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "expected",
-      "label": "Expected",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "DNP in Rounds 8-9 (undisclosed). Played in the domestic league (11.02)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 8-9 (undisclosed). Played in the domestic league (11.02)"
     },
     {
       "name": "Mady Sissoko",
@@ -132,10 +132,10 @@
       "name": "Patrick Baldwin Jr.",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (coach's decision). Played in the domestic league (11.01)"
+      "comment": "Not included in 12-man roster after DNP in Round 9 (coach's decision)"
     },
     {
       "name": "Jovan Bikic",
@@ -150,10 +150,10 @@
       "name": "Nikola Djurisic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (coach's decision). Played in the domestic league (11.01)"
+      "comment": "Not included in 12-man roster after DNP in Round 9 (coach's decision)"
     },
     {
       "name": "Ebuka Izundu",
@@ -162,7 +162,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (coach's decision). Played in the domestic league (11.01)"
+      "comment": "Included in 12-man roster after DNP in Round 9 (coach's decision)"
     },
     {
       "name": "Vojin Medarevic",
@@ -255,13 +255,22 @@
       "comment": "Out indefinitely, as he's not included in official Euroleague roster"
     },
     {
+      "name": "Kosta Kondic",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 10",
+      "comment": "Not included in 12-man roster (coach's decision)"
+    },
+    {
       "name": "Klemen Prepelic",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 after DNP in Round 8 (coach's decision). Played in the domestic league (11.02)"
+      "comment": "Included in 12-man roster after DNP in Round 8-9 (coach's decision)"
     },
     {
       "name": "Tomislav Vuckovic",
@@ -519,10 +528,19 @@
       "name": "John Dibartolomeo",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "DNP in Round 9 (personal reasons). Played in the domestic league (11.01)"
+      "comment": "Included in 12-man roster after DNP in Round 9 (personal reasons)"
+    },
+    {
+      "name": "Amit Ebo",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 10",
+      "comment": "Not included in 12-man roster (coach's decision)"
     },
     {
       "name": "Shane Hunter",
@@ -537,10 +555,10 @@
       "name": "Gur Lavi",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (undisclosed injury). DNP in the domestic league (11.01)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-9 (undisclosed injury)"
     },
     {
       "name": "Gabriel Lundberg",
@@ -555,10 +573,10 @@
       "name": "Daniel Theis",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Was in 12-man roster but DNP in Round 9 (coach's decision)"
+      "comment": "Included in 12-man roster for Round 10. Theis was also in the roster for Round 9, but didn't play (coach's decision)"
     },
     {
       "name": "Georgios Bourneles",
@@ -567,7 +585,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Round 1-9 (coach's decision)"
     },
     {
       "name": "Tyler Dorsey",
@@ -582,46 +600,46 @@
       "name": "Bryant Dunston",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "Included in 12-man roster but DNP in Round 9. DNP in the domestic league (11.01)"
+      "comment": "Not included in 12-man roster after DNP in Round 9 (coach's decision)"
     },
     {
       "name": "Evan Fournier",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Bartzokas expects him to be ready for Round 10 after being sidelined due to shoulder and knee injuries (10.20)"
+      "comment": "Included in 12-man roster after recovering from shoulder and knee injuries"
     },
     {
       "name": "Antonios Karagiannidis",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.01)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-9 (coach's decision)"
     },
     {
       "name": "John Konchar",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Bartzokas said he expects Konchar to play in Round 10 after DNP in Round 9 (new signing)"
+      "comment": "Included in 12-man roster, set to make season debut"
     },
     {
       "name": "Nikola Milutinov",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Played only 5 minutes in Round 9. Played in the domestic league (11.01)"
+      "comment": "Included in 12-man roster after playing 5 minutes in Round 9"
     },
     {
       "name": "Jean Montero",
@@ -636,10 +654,10 @@
       "name": "George Papas",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9 (coach's decision). DNP in the domestice leage (11.01)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-9 (coach's decision)"
     },
     {
       "name": "Panagiotis Kalaitzakis",
@@ -732,6 +750,15 @@
       "comment": "DNP in Round 10 (undisclosed)"
     },
     {
+      "name": "Kyle Allman",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 10",
+      "comment": "Not included in 12-man roster (coach's decision)"
+    },
+    {
       "name": "Mitar Bosnjakovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
@@ -744,10 +771,10 @@
       "name": "Uros Danilovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "DNP in Rounds 2-9 (coach's decision)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 2-9 (coach's decision)"
     },
     {
       "name": "Kevarrius Hayes",
@@ -771,19 +798,19 @@
       "name": "Vanja Marinkovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Played in the domestic league (11.02) (back from Achilles surgery)"
+      "comment": "Included in 12-man roster and set for his season debut after the Achilles injury"
     },
     {
       "name": "Mario Nakic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9 (coach's decision). Played in the domestic league (11.02)"
+      "comment": "Included in 12-man roster after DNP in Round 9 (coach's decision)"
     },
     {
       "name": "Derek Willis",
@@ -897,10 +924,10 @@
       "name": "Matteo Baiocchi",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "DNP in Rounds 1-9(coach's decision). Played in the domestic league (11.02)"
+      "comment": "Not included in 12-man roster after DNP in Rounds 1-9 (coach's decision)"
     },
     {
       "name": "Tommaso Baldasso",
@@ -915,19 +942,19 @@
       "name": "Davide Casarin",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 10",
-      "comment": "Included in 12-man roster but DNP in Round 9 (coach's decision). Played in the domestic league (11.02)"
+      "comment": "Not included in 12-man roster after DNP in Round 9 (coach's decision)"
     },
     {
       "name": "Francesco Ferrari",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 10",
-      "comment": "Not included in 12-man roster in Round 9.(coach's decision). Played in the domestic league (11.02)"
+      "comment": "Included in 12-man roster after DNP in Round 9 (coach's decision)"
     },
     {
       "name": "Marek Blaževič",
@@ -966,5 +993,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-06T15:57:58.316Z"
+  "updatedAt": "2026-11-06T21:33:27.141Z"
 }
