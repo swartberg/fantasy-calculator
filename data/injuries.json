@@ -600,10 +600,10 @@
       "name": "Kostas Papanikolaou",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "doubtful",
+      "label": "Doubtful",
       "round": "Round 11",
-      "comment": "Missed domestic league game due to tendonitis (11.08)"
+      "comment": "Missed domestic league game due to tendonitis (11.08), likely to be out for a week"
     },
     {
       "name": "George Papas",
@@ -930,5 +930,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-08T16:42:38.871Z"
+  "updatedAt": "2026-11-08T22:12:23.868Z"
 }
