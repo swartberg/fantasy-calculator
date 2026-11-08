@@ -134,7 +134,7 @@
       "team": "RED",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Out indefinitely, as he's not included in official Euroleague roster"
     },
     {
@@ -152,7 +152,7 @@
       "team": "RED",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Out indefinitely, as he's not included in official Euroleague roster"
     },
     {
@@ -179,7 +179,7 @@
       "team": "RED",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Out indefinitely, as he's not included in official Euroleague roster"
     },
     {
@@ -188,7 +188,7 @@
       "team": "RED",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Out indefinitely, as he's not included in official Euroleague roster"
     },
     {
@@ -251,7 +251,7 @@
       "team": "DUB",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Was included in 12-man roster but DNP in Rounds 8-10 (coach's decision)"
     },
     {
@@ -260,7 +260,7 @@
       "team": "DUB",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
+      "round": "Round 11",
       "comment": "Out indefinitely, as he's not included in official Euroleague roster"
     },
     {
@@ -912,5 +912,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-07T16:29:19.989Z"
+  "updatedAt": "2026-11-08T09:06:07.186Z"
 }
