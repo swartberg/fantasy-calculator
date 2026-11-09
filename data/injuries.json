@@ -204,10 +204,10 @@
       "name": "Justin Anderson",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
-      "comment": "Out indefinitely after DNP in Rounds 1-9 (hamstring injury)"
+      "comment": "Played in domestic league (11-09) after DNP in Rounds 1-9 (hamstring injury)"
     },
     {
       "name": "Davis Bertans",
@@ -269,8 +269,8 @@
       "team": "DUB",
       "status": "out",
       "label": "Out",
-      "round": "Round 10",
-      "comment": "Out indefinitely after DNP in Rounds 7-9 (back injury)"
+      "round": "Round 11",
+      "comment": "Out indefinitely after DNP in Rounds 7-10 (back injury)"
     },
     {
       "name": "Oscar da Silva",
@@ -307,6 +307,15 @@
       "label": "Uncertain",
       "round": "Round 11",
       "comment": "DNP in Round 10 (undisclosed)"
+    },
+    {
+      "name": "Tosan Evbuomwan",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 11-14",
+      "comment": "Suffered oblique muscle tear (11.09), set to be out around three weeks"
     },
     {
       "name": "Umoja Gibson",
@@ -348,10 +357,10 @@
       "name": "Kevin Punter",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 11",
-      "comment": "Left domestic game early due to an ankle injury (11.08), set to undergo tests on Monday"
+      "status": "out",
+      "label": "Out",
+      "round": "Round 11-16",
+      "comment": "Suffered ankle sprain in domestic league game (11.08), set to be out for six weeks"
     },
     {
       "name": "Onuralp Bitim",
@@ -456,10 +465,10 @@
       "name": "Rodions Kurucs",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 11",
-      "comment": "DNP in Rounds 8-10 (hip injury)"
+      "comment": "Returned to practice and expected to return for Round 11 after DNP in Rounds 8-10 (hip injury)"
     },
     {
       "name": "Marcio Santos",
@@ -930,5 +939,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-08T22:12:23.868Z"
+  "updatedAt": "2026-11-09T20:48:57.325Z"
 }
