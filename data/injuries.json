@@ -111,6 +111,15 @@
       "comment": "DNP in Rounds 8-10 (undisclosed). Played in the domestic league (11.09)"
     },
     {
+      "name": "Jaylen Nowell",
+      "teamName": "Besiktas Istanbul",
+      "team": "BES",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 11",
+      "comment": "Out indefinitely after undergoing surgery on his broken nose (11.10)"
+    },
+    {
       "name": "Mady Sissoko",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
@@ -957,5 +966,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-10T12:43:06.360Z"
+  "updatedAt": "2026-11-10T20:52:15.369Z"
 }
