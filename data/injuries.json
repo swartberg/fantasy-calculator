@@ -375,46 +375,37 @@
       "name": "Onuralp Bitim",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 11",
-      "comment": "DNP in Rounds 1-10 (coach's decision).Played in the domestic league (11.07)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Rounds 1-11 (coach's decision)"
     },
     {
       "name": "Melih Mahmutoglu",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "DNP in Rounds 1-10 (coach's decision). Played in the domestic league (11.07)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Rounds 1-11 (coach's decision)"
     },
     {
       "name": "Nicolo Melli",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "Undisclosed injury"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Round 11 (undisclosed injury)"
     },
     {
       "name": "Sertac Sanli",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "Ankle injury, DNP in Round 10 (coach's decision)"
-    },
-    {
-      "name": "Chris Silva",
-      "teamName": "Fenerbahce Beko Istanbul",
-      "team": "ULK",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "Finalizes agreement to join Partizan after DNP in Round 10 and the domestic league (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Rounds 10-11 (ankle injury)"
     },
     {
       "name": "Oz Blayzer",
@@ -492,27 +483,18 @@
       "name": "Kenan Kamenjas",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "Out indefinitely, as he's on his way to Baskonia and not included in official Dubai's Euroleague roster"
-    },
-    {
-      "name": "Rodions Kurucs",
-      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
-      "team": "BAS",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 11",
-      "comment": "Returned to practice and expected to return for Round 11 after DNP in Rounds 8-10 (hip injury)"
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 12",
+      "comment": "DNP in Round 11 (new signing)"
     },
     {
       "name": "Marcio Santos",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
       "comment": "Out indefinitely (left calf tear)"
     },
     {
@@ -521,17 +503,17 @@
       "team": "BAS",
       "status": "out",
       "label": "Out",
-      "round": "Round 11",
+      "round": "Round 12",
       "comment": "Out after suffering a right thigh muscle injury in Round 7. Expected return in late November."
     },
     {
       "name": "Rolands Smits",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "New signing"
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 12",
+      "comment": "DNP in Round 11 (new signing)"
     },
     {
       "name": "Juhann Begarin",
@@ -726,10 +708,10 @@
       "name": "Joel Ayayi",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "Not included in 12-man roster in Round 11 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Round 11 (coach's decision)"
     },
     {
       "name": "Nobel Boungou-Colo",
@@ -737,53 +719,35 @@
       "team": "PRS",
       "status": "out",
       "label": "Out",
-      "round": "Round 11",
+      "round": "Round 12",
       "comment": "Out indefinitely, as he's not included in official Euroleague roster"
     },
     {
       "name": "Daulton Hommes",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "DNP in Round 9-10 (concussion). Played in the domestic league (11.08)"
-    },
-    {
-      "name": "Frank Ntilikina",
-      "teamName": "Paris Basketball",
-      "team": "PRS",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 11",
-      "comment": "DNP in Round 10 (undisclosed). Played in the domestic league (11.08)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Round 11 (coach's decision)"
     },
     {
       "name": "Maozinha Pereira",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "Not included in 12-man roster in Round 11 (coach's decision)"
-    },
-    {
-      "name": "Terry Tarpey",
-      "teamName": "Paris Basketball",
-      "team": "PRS",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 11",
-      "comment": "DNP in Round 10 (undisclosed). Played in the domestic league (11.08)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Round 11 (coach's decision)"
     },
     {
       "name": "Kyle Allman",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "DNP in Round 10 (coach's decision).Played in the domestic league (11.08)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Round 10-11 (coach's decision)."
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -791,62 +755,53 @@
       "team": "PAR",
       "status": "out",
       "label": "Out",
-      "round": "Round 11",
+      "round": "Round 12",
       "comment": "Out indefinitely, as he's not included in official Euroleague roster"
     },
     {
       "name": "Uros Danilovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "DNP in Rounds 2-10 (coach's decision)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Rounds 2-11 (coach's decision)"
     },
     {
       "name": "Kevarrius Hayes",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "DNP in Round 10 (minor shoulder injury). DNP in the domestic league (11.08)"
-    },
-    {
-      "name": "Tonye Jekiri",
-      "teamName": "Partizan Mozzart Bet Belgrade",
-      "team": "PAR",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 11",
-      "comment": "Will practice with the team ahead of Round 11 after suffering an adductor injury in Round 6"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Rounds 10-11 (minor shoulder injury)"
     },
     {
       "name": "Lamar Stevens",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "Not in 12-man roster in Round 11 (Illness)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Round 11 (illness)"
     },
     {
-      "name": "Luca Vildoza",
+      "name": "Ethan Thompson",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "ready",
-      "label": "Ready",
-      "round": "Round 11",
-      "comment": "Will practice with the team ahead of Round 11 after suffering a hand injury in Round 10"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "Suffered a hip injury in Round 11"
     },
     {
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "Will practice with the team ahead of Round 11 after suffering an ankle injury in Round 1"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Rounds 1-11, but returned to practices (ankle injury)"
     },
     {
       "name": "Facundo Campazzo",
@@ -981,7 +936,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 11",
-      "comment": "Out for eight weeks with an intraspongious fracture (11.09)"
+      "comment": "Out for eight weeks and at least until Round 21 (bone bruise, 11.09)"
     },
     {
       "name": "Marek Blaževič",
@@ -1020,5 +975,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-12T00:47:43.468Z"
+  "updatedAt": "2026-11-12T09:54:01.404Z"
 }
