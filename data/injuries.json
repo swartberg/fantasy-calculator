@@ -186,8 +186,8 @@
       "name": "Johnathan Motley",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "Carries an illness ahead of Round 11 after DNP in Round 10 (coach's decision). Played in the domestic league (11.09)"
     },
@@ -375,8 +375,8 @@
       "name": "Onuralp Bitim",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
       "comment": "DNP in Rounds 1-10 (coach's decision).Played in the domestic league (11.07)"
     },
@@ -384,17 +384,26 @@
       "name": "Melih Mahmutoglu",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Rounds 1-10 (coach's decision). Played in the domestic league (11.07)"
+    },
+    {
+      "name": "Nicolo Melli",
+      "teamName": "Fenerbahce Beko Istanbul",
+      "team": "ULK",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 11",
+      "comment": "Undisclosed injury"
     },
     {
       "name": "Sertac Sanli",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "Ankle injury, DNP in Round 10 (coach's decision)"
     },
@@ -492,8 +501,8 @@
       "name": "Rodions Kurucs",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
       "comment": "Returned to practice and expected to return for Round 11 after DNP in Rounds 8-10 (hip injury)"
     },
@@ -519,8 +528,8 @@
       "name": "Rolands Smits",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "New signing"
     },
@@ -714,6 +723,15 @@
       "comment": "DNP in Rounds 1-10 (coach's decision)"
     },
     {
+      "name": "Joel Ayayi",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 11",
+      "comment": "Not included in 12-man roster in Round 11 (coach's decision)"
+    },
+    {
       "name": "Nobel Boungou-Colo",
       "teamName": "Paris Basketball",
       "team": "PRS",
@@ -726,8 +744,8 @@
       "name": "Daulton Hommes",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "expected",
-      "label": "Expected",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Round 9-10 (concussion). Played in the domestic league (11.08)"
     },
@@ -735,17 +753,26 @@
       "name": "Frank Ntilikina",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
       "comment": "DNP in Round 10 (undisclosed). Played in the domestic league (11.08)"
+    },
+    {
+      "name": "Maozinha Pereira",
+      "teamName": "Paris Basketball",
+      "team": "PRS",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 11",
+      "comment": "Not included in 12-man roster in Round 11 (coach's decision)"
     },
     {
       "name": "Terry Tarpey",
       "teamName": "Paris Basketball",
       "team": "PRS",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
       "comment": "DNP in Round 10 (undisclosed). Played in the domestic league (11.08)"
     },
@@ -753,8 +780,8 @@
       "name": "Kyle Allman",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Round 10 (coach's decision).Played in the domestic league (11.08)"
     },
@@ -771,8 +798,8 @@
       "name": "Uros Danilovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Rounds 2-10 (coach's decision)"
     },
@@ -789,17 +816,26 @@
       "name": "Tonye Jekiri",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
       "comment": "Will practice with the team ahead of Round 11 after suffering an adductor injury in Round 6"
+    },
+    {
+      "name": "Lamar Stevens",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 11",
+      "comment": "Not in 12-man roster in Round 11 (Illness)"
     },
     {
       "name": "Luca Vildoza",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
       "comment": "Will practice with the team ahead of Round 11 after suffering a hand injury in Round 10"
     },
@@ -807,8 +843,8 @@
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "Will practice with the team ahead of Round 11 after suffering an ankle injury in Round 1"
     },
@@ -984,5 +1020,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-11T17:55:07.442Z"
+  "updatedAt": "2026-11-12T00:47:43.468Z"
 }
