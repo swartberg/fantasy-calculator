@@ -8,17 +8,8 @@
       "team": "IST",
       "status": "out",
       "label": "Out",
-      "round": "Round 11",
+      "round": "Round 12",
       "comment": "Out indefinitely (rehab after surgery)"
-    },
-    {
-      "name": "P.J. Dozier",
-      "teamName": "Anadolu Efes Istanbul",
-      "team": "IST",
-      "status": "expected",
-      "label": "Expected",
-      "round": "Round 11",
-      "comment": "Expected to return in Round 11 after a back injury in Round 6."
     },
     {
       "name": "Ruzgar Fenemen",
@@ -26,8 +17,17 @@
       "team": "IST",
       "status": "doubtful",
       "label": "Doubtful",
-      "round": "Round 11",
-      "comment": "Not included in 12-man roster for Round 10 after DNP in Rounds 1-9 (coach's decision)"
+      "round": "Round 12",
+      "comment": "DNP in Rounds 1-11 (coach's decision)"
+    },
+    {
+      "name": "Bruno Fernando",
+      "teamName": "Anadolu Efes Istanbul",
+      "team": "IST",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "Calf injury in Round 11"
     },
     {
       "name": "Mike James",
@@ -45,7 +45,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 11",
-      "comment": "Not included in 12-man roster for Round 10 after DNP in Rounds 1-9 (coach's decision). Played oin the domestic league (11.08)"
+      "comment": "DNP in Rounds 1-11 (coach's decision). Played oin the domestic league (11.08)"
     },
     {
       "name": "David Mutaf",
@@ -53,8 +53,8 @@
       "team": "IST",
       "status": "doubtful",
       "label": "Doubtful",
-      "round": "Round 11",
-      "comment": "Not included in 12-man roster for Round 10 after DNP in Rounds 1-9 (coach's decision). Played in the domestic league (11.08)"
+      "round": "Round 12",
+      "comment": "DNP in Rounds 1-11 (coach's decision). Played in the domestic league (11.08)"
     },
     {
       "name": "Nicola Akele",
@@ -96,8 +96,8 @@
       "name": "Yagiz Aksu",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Rounds 1-10 (coach's decision)"
     },
@@ -105,8 +105,8 @@
       "name": "DaQuan Jeffries",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
       "comment": "Out indefinitely after injury in Round 1 (wrist fracture), expected to rejoin the team at the beginning of November"
     },
@@ -114,8 +114,8 @@
       "name": "Furkan Korkmaz",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
       "comment": "DNP in Rounds 8-10 (undisclosed). Played in the domestic league (11.09)"
     },
@@ -312,19 +312,19 @@
       "name": "Umoja Gibson",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
-      "comment": "Expected to play despite DNP in Round 10 (knee soreness)"
+      "comment": "Included in 12-man roster for Round 11 despite DNP in Round 10 (knee soreness)"
     },
     {
       "name": "Abdu Kone",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
-      "comment": "DNP in Rounds 1-10 (coach's decision)"
+      "comment": "Included in 12-man roster for Round 11. DNP in Rounds 1-10 (coach's decision)"
     },
     {
       "name": "Yoan Makoundou",
@@ -339,10 +339,10 @@
       "name": "Juan Nunez",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
-      "comment": "DNP in Round 9-10 (right ankle sprain), expected to miss around 10 days (10.29). DNP in the domestic league (11.08)"
+      "comment": "DNP in Rounds 9-10 (right ankle sprain), expected to miss around 10 days (10.29). DNP in the domestic league (11.08)"
     },
     {
       "name": "Kevin Punter",
@@ -357,10 +357,10 @@
       "name": "Agustin Ubal",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
-      "comment": "Didn't practice but will travel with the team (back discomfort)"
+      "comment": "Included in 12-man roster for Round 11. Didn't practice but traveled with the team (back discomfort)"
     },
     {
       "name": "Onuralp Bitim",
@@ -528,8 +528,8 @@
       "name": "Juhann Begarin",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Rounds 8-10 (undisclosed injury). DNP in the domestic league (11.07)"
     },
@@ -537,8 +537,8 @@
       "name": "Myles Cale",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Round 10 (coach's decision). DNP in the domestic league (11.07)"
     },
@@ -546,8 +546,8 @@
       "name": "Mathis Dossou-Yovo",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "expected",
-      "label": "Expected",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 11",
       "comment": "Expected to make his season debut after DNP in Rounds 1-10 (adductor muscle injury)"
     },
@@ -555,8 +555,8 @@
       "name": "Lorenz Sanz",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Round 10 (coach's decision). Played in the domestic league (11.07)"
     },
@@ -681,8 +681,8 @@
       "name": "Panagiotis Kalaitzakis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Round 10 (coach's decision). Played in the domestic league (11.08)"
     },
@@ -708,8 +708,8 @@
       "name": "Dimitris Moraitis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Rounds 8-10 (coach's decision). Played in the domestic league (11.08)"
     },
@@ -717,8 +717,8 @@
       "name": "Nikos Rogkavopoulos",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Game-time",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "Practiced ahead of Round 11 after DNP in Rounds 7-10 (hamstring injury) and DNP in the domestic league (11.08)"
     },
@@ -726,8 +726,8 @@
       "name": "Iason Varvaritis",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 11",
       "comment": "DNP in Rounds 1-10 (coach's decision)"
     },
@@ -802,6 +802,15 @@
       "label": "Uncertain",
       "round": "Round 12",
       "comment": "DNP in Rounds 10-11 (minor shoulder injury)"
+    },
+    {
+      "name": "Chris Silva",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 12",
+      "comment": "New signing from Fenerbahce Istanbul (11.13)"
     },
     {
       "name": "Lamar Stevens",
@@ -908,17 +917,17 @@
       "team": "VIR",
       "status": "questionable",
       "label": "Uncertain",
-      "round": "Round 11",
-      "comment": "DNP in Rounds 1-10 (coach's decision). Played in the domestic league (11.09)"
+      "round": "Round 12",
+      "comment": "Included in 12-man lineup for Round 11 but did not play. DNP in Rounds 1-10 (coach's decision). Played in the domestic league (11.09)"
     },
     {
       "name": "Tommaso Baldasso",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
-      "comment": "Ruled out for Round 11 after DNP in Rounds 8-10 (leg contusion)"
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
+      "comment": "DNP in Rounds 8-11 (leg contusion)"
     },
     {
       "name": "Davide Casarin",
@@ -926,16 +935,16 @@
       "team": "VIR",
       "status": "out",
       "label": "Out",
-      "round": "Round 11",
+      "round": "Round 12",
       "comment": "Out for eight weeks and at least until Round 21 (bone bruise, 11.09)"
     },
     {
       "name": "Daniel Hackett",
       "teamName": "Virtus Bologna",
       "team": "VIR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 11",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 12",
       "comment": "Ruled out for Round 11 (undisclosed)"
     },
     {
@@ -975,5 +984,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-13T16:29:51.331Z"
+  "updatedAt": "2026-11-13T23:37:58.939Z"
 }
