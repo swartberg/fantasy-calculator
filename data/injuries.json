@@ -24,10 +24,10 @@
       "name": "Bruno Fernando",
       "teamName": "Anadolu Efes Istanbul",
       "team": "IST",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "Calf injury in Round 11"
+      "comment": "To miss 3-4 weeks with calf injury (11.14)"
     },
     {
       "name": "Mike James",
@@ -615,6 +615,15 @@
       "comment": "DNP in Rounds 1-11 (coach's decision)"
     },
     {
+      "name": "Nikola Milutinov",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 12",
+      "comment": "Fractured distal phalanx of the index finger (11.14)"
+    },
+    {
       "name": "Jean Montero",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
@@ -627,10 +636,10 @@
       "name": "Kostas Papanikolaou",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 12",
-      "comment": "DNP in Round 11 (tendonitis)"
+      "comment": "Played in domestic league (11.14) after DNP in Round 11 (tendonitis)"
     },
     {
       "name": "George Papas",
@@ -948,5 +957,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-14T06:34:48.311Z"
+  "updatedAt": "2026-11-14T15:08:56.719Z"
 }
