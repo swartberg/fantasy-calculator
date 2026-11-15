@@ -387,7 +387,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Round 10-11 (coach's decision)"
+      "comment": "DNP in Round 10-11 (coach's decision). Played in the domestic league (11.14)"
     },
     {
       "name": "Bruno Caboclo",
@@ -396,7 +396,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Round 11 (coach's decision)"
+      "comment": "DNP in Round 11 (coach's decision). DNP in the domestic league (11.14)"
     },
     {
       "name": "Khadeen Carrington",
@@ -405,7 +405,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Round 11 (coach's decision)"
+      "comment": "DNP in Round 11 (coach's decision), Played in the domestic league (11.14)"
     },
     {
       "name": "Tyler Ennis",
@@ -420,10 +420,10 @@
       "name": "Tomer Ginat",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 12",
-      "comment": "DNP in Rounds 7-11 (coach's decision)"
+      "comment": "Played in Round 11 after DNP in Rounds 7-10 (coach's decision) . Played in the domestic league (11.14)"
     },
     {
       "name": "Guy Palatin",
@@ -438,10 +438,10 @@
       "name": "Bar Timor",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "ready",
-      "label": "Ready",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 12",
-      "comment": "Played in Round 11 after DNP in Rounds 7-10 (coach's decision)"
+      "comment": "DNP in Rounds 7-11 (coach's decision). Played in the domestic league (11.14)"
     },
     {
       "name": "Jacob Toppin",
@@ -450,7 +450,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Round 11 (coach's decision)"
+      "comment": "DNP in Round 11 (coach's decision). DNP in the domestic league (11.14)"
     },
     {
       "name": "Kenneth Faried",
@@ -531,7 +531,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "Back injury in Round 11"
+      "comment": "Back injury in Round 11. DNP in the domestic league (11.14)"
     },
     {
       "name": "Amit Ebo",
@@ -558,7 +558,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Rounds 1-11 (undisclosed injury)"
+      "comment": "DNP in Rounds 1-11 (undisclosed injury). DNP in the domestic league (11.14)"
     },
     {
       "name": "Gabriel Lundberg",
@@ -573,10 +573,10 @@
       "name": "Yam Madar",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 12",
-      "comment": "Broken nose in Round 11"
+      "comment": "Broken nose in Round 11. Played in the domestic league (11.14)"
     },
     {
       "name": "Georgios Bourneles",
@@ -711,7 +711,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Round 11 (coach's decision)"
+      "comment": "DNP in Round 11 (coach's decision). Played in the domestic league (11.14)"
     },
     {
       "name": "Nobel Boungou-Colo",
@@ -729,7 +729,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Round 11 (coach's decision)"
+      "comment": "DNP in Round 11 (coach's decision). Played in the domestic league (11.14)"
     },
     {
       "name": "Maozinha Pereira",
@@ -738,7 +738,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Round 11 (coach's decision)"
+      "comment": "DNP in Round 11 (coach's decision). DNP in the domestic league (11.14)"
     },
     {
       "name": "Kyle Allman",
@@ -747,7 +747,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Round 10-11 (coach's decision)."
+      "comment": "DNP in Round 10-11 (coach's decision). Played in the domestic league (11.14)"
     },
     {
       "name": "Mitar Bosnjakovic",
@@ -762,8 +762,8 @@
       "name": "Uros Danilovic",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "doubtful",
+      "label": "Doubtful",
       "round": "Round 12",
       "comment": "DNP in Rounds 2-11 (coach's decision)"
     },
@@ -774,7 +774,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Rounds 10-11 (minor shoulder injury)"
+      "comment": "DNP in Rounds 10-11 (minor shoulder injury). DNP in the domestic league (11.14)"
     },
     {
       "name": "Chris Silva",
@@ -783,7 +783,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 12",
-      "comment": "New signing from Fenerbahce Istanbul (11.13)"
+      "comment": "New signing from Fenerbahce. Played in the domestic league (11.14)"
     },
     {
       "name": "Lamar Stevens",
@@ -792,7 +792,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Round 11 (illness)"
+      "comment": "DNP in Round 11 (illness). DNP in the domestic league (11.14)"
     },
     {
       "name": "Ethan Thompson",
@@ -801,7 +801,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "Suffered a hip injury in Round 11"
+      "comment": "Suffered a hip injury in Round 11. DNP in the domestic league (11.14)"
     },
     {
       "name": "Derek Willis",
@@ -810,7 +810,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Rounds 1-11, but returned to practices (ankle injury)"
+      "comment": "DNP in Rounds 1-11, but returned to practices (ankle injury). DNP in the domestic league (11.14)"
     },
     {
       "name": "Facundo Campazzo",
@@ -957,5 +957,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-14T20:45:50.344Z"
+  "updatedAt": "2026-11-15T01:57:49.244Z"
 }
