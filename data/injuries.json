@@ -207,7 +207,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Rounds 1-11 but played in domestic league on November 9 (hamstring)"
+      "comment": "DNP in Rounds 1-11 but played in domestic league on November 9 (hamstring). Was not registered for ABA League game (11.15)"
     },
     {
       "name": "Davis Bertans",
@@ -243,16 +243,16 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "Was included in 12-man roster in Round 11 but DNP after DNP in Rounds 8-10 (coach's decision)"
+      "comment": "Was included in 12-man roster in Round 11 but did not play after DNP in Rounds 8-10 (coach's decision)"
     },
     {
       "name": "Thomas Walkup",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "out",
-      "label": "Out",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 12",
-      "comment": "Out indefinitely after DNP in Rounds 7-11 (back injury)"
+      "comment": "DNP in Rounds 7-11 (back injury); returned to action in ABA League on Sunday (11.15)"
     },
     {
       "name": "Kilian Fischer",
@@ -291,6 +291,15 @@
       "comment": "Suffered oblique muscle tear (11.09), set to be out for around three weeks until Round 14"
     },
     {
+      "name": "Umoja Gibson",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 12",
+      "comment": "Suffered muscle strain of his left abdominal wall in Round 11. Out for around three weeks"
+    },
+    {
       "name": "Abdu Kone",
       "teamName": "FC Barcelona",
       "team": "BAR",
@@ -312,10 +321,10 @@
       "name": "Juan Nunez",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 12",
-      "comment": "DNP in Rounds 9-11 (right ankle sprain), expected to miss around 10 days (10.29). DNP in the domestic league (11.08)"
+      "comment": "Played in domestic league game (11.15) after DNP in Rounds 9-11 (right ankle sprain)"
     },
     {
       "name": "Kevin Punter",
@@ -690,10 +699,10 @@
       "name": "Nikos Rogkavopoulos",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 12",
-      "comment": "Practiced ahead of Round 11, but DNP in Rounds 7-11 (hamstring injury).DNP in the domestic league (11.08)"
+      "comment": "Practiced ahead of Round 11, but DNP in Rounds 7-11 (hamstring injury). Returned to action in the domestic league (11.15)"
     },
     {
       "name": "Iason Varvaritis",
@@ -927,7 +936,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Rounds 8-11 (coach's decision)"
+      "comment": "DNP in Rounds 8-11 (coach's decision).Played in the domestic league (11.15)"
     },
     {
       "name": "Dovydas Giedraitis",
@@ -936,7 +945,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Rounds 8-11 (coach's decision)"
+      "comment": "DNP in Rounds 8-11 (coach's decision). Played in the domestic league (11.15)"
     },
     {
       "name": "Deividas Sirvydis",
@@ -945,7 +954,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 12",
-      "comment": "DNP in Rounds 8-11 (coach's decision)"
+      "comment": "DNP in Rounds 8-11 (coach's decision). Played in the domestic league (11.15)"
     },
     {
       "name": "Nigel Williams-Goss",
@@ -957,5 +966,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-15T01:57:49.244Z"
+  "updatedAt": "2026-11-15T17:14:19.205Z"
 }
