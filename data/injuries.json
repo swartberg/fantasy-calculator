@@ -27,7 +27,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 12",
-      "comment": "To miss 3-4 weeks with calf injury (11.14)"
+      "comment": "Could be out until Round 15-17 as he's set to miss 3-4 weeks with calf injury (11.14)"
     },
     {
       "name": "Mike James",
@@ -168,10 +168,10 @@
       "name": "Johnathan Motley",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Round 11 (illness) after DNP in Round 10 (coach's decision). DNP in the domestic league (11.15)"
+      "comment": "Ruled out for Round 12 after DNP in Round 11 (illness)"
     },
     {
       "name": "Aleksej Nedeljkovic",
@@ -204,8 +204,8 @@
       "name": "Justin Anderson",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 12",
       "comment": "DNP in Rounds 1-11 but played in domestic league on November 9 (hamstring). Was not registered for ABA League game (11.15)"
     },
@@ -217,6 +217,15 @@
       "label": "Out",
       "round": "Round 12",
       "comment": "DNP in Round 10-11 and is out indefinitely (hamstring injury)"
+    },
+    {
+      "name": "Marcelinho Huertas",
+      "teamName": "Dubai Basketball",
+      "team": "DUB",
+      "status": "questionable",
+      "label": "Game-time",
+      "round": "Round 12",
+      "comment": "New signing"
     },
     {
       "name": "Mouhammadou Jaiteh",
@@ -231,8 +240,8 @@
       "name": "Kosta Kondic",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
       "comment": "DNP in Round 10-11 (hip/psoas muscle injury). DNP in the domestic league (11.15)"
     },
@@ -249,8 +258,8 @@
       "name": "Thomas Walkup",
       "teamName": "Dubai Basketball",
       "team": "DUB",
-      "status": "ready",
-      "label": "Ready",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 12",
       "comment": "DNP in Rounds 7-11 (back injury); returned to action in ABA League on Sunday (11.15)"
     },
@@ -357,10 +366,10 @@
       "name": "Braxton Key",
       "teamName": "Fenerbahce Beko Istanbul",
       "team": "ULK",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "Dislocated finger suffered in Istanbul derby (11.15)"
+      "comment": "Ruled out for Round 12 after suffering a dislocated finger and a tear in domestic league (11.15)"
     },
     {
       "name": "Melih Mahmutoglu",
@@ -377,8 +386,8 @@
       "team": "ULK",
       "status": "out",
       "label": "Out",
-      "round": "Indefinitely",
-      "comment": "DNP in Round 11 and in the domestic league (11.15). Meniscus injury, which needs additional tests"
+      "round": "Round 12",
+      "comment": "Out indefinitely after DNP in Round 11 (meniscus injury). Might require surgery, the extent of the injury will be confirmed after additional tests"
     },
     {
       "name": "Sertac Sanli",
@@ -411,10 +420,10 @@
       "name": "Bruno Caboclo",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Round 11 (coach's decision). DNP in the domestic league (11.14)"
+      "comment": "Ruled out for Round 12 and doubtful for Round 13, after DNP in Round 11 (minor calf tear)"
     },
     {
       "name": "Khadeen Carrington",
@@ -525,6 +534,15 @@
       "comment": "DNP in Rounds 8-11 (undisclosed injury). DNP in the domestic league (11.15)"
     },
     {
+      "name": "Joel Bolomboy",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 12",
+      "comment": "Won't play in Rounds 12-13 after a broken nose in Round 11. Will miss at least 10 days"
+    },
+    {
       "name": "Myles Cale",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
@@ -541,6 +559,15 @@
       "label": "Doubtful",
       "round": "Round 12",
       "comment": "DNP in Rounds 10-11 (coach's decision). DNP in the domestic league (11.15)"
+    },
+    {
+      "name": "Kamar Baldwin",
+      "teamName": "Maccabi Rapyd Tel Aviv",
+      "team": "TEL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 11",
+      "comment": "New signing from Bayern Munich (11.10)"
     },
     {
       "name": "Oshae Brissett",
@@ -612,25 +639,25 @@
       "status": "out",
       "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Rounds 6-11 (suspension), TBD if he'll play after suspension"
+      "comment": "Ruled out for Round 12 (fitness) after DNP in Rounds 6-11 (suspension)"
     },
     {
       "name": "Bryant Dunston",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 12",
-      "comment": "DNP in Round 9-11 (coach's decision). DNP in the domestic league (11.15)"
+      "comment": "Traveled for Round 12 after DNP in Round 9-11 (coach's decision). DNP in the domestic league (11.15)"
     },
     {
       "name": "Antonios Karagiannidis",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Rounds 1-11 (coach's decision). DNP in the domestic league (11.15)"
+      "comment": "Didn't travel for Round 12 after DNP in Rounds 1-11 (coach's decision)"
     },
     {
       "name": "Nikola Milutinov",
@@ -639,7 +666,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 12",
-      "comment": "Fractured distal phalanx of the index finger (11.14)"
+      "comment": "Ruled out for Round 12 (fractured index finger, 11.14)"
     },
     {
       "name": "Jean Montero",
@@ -663,10 +690,10 @@
       "name": "George Papas",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Rounds 1-11 (coach's decision). DNP in the domestic league (11.15)"
+      "comment": "Didn't travel for Round 12 after DNP in Rounds 1-11 (coach's decision)"
     },
     {
       "name": "Panagiotis Kalaitzakis",
@@ -789,10 +816,19 @@
       "name": "Kevarrius Hayes",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Rounds 10-11 (minor shoulder injury). DNP in the domestic league (11.14)"
+      "comment": "Ruled out for Round 12 after DNP in Rounds 10-11 (shoulder injury)"
+    },
+    {
+      "name": "Joffrey Lauvergne",
+      "teamName": "Partizan Mozzart Bet Belgrade",
+      "team": "PAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 12",
+      "comment": "Out indefinitely, as he has been deregistered from EuroLeague roster"
     },
     {
       "name": "Chris Silva",
@@ -808,7 +844,7 @@
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
       "status": "questionable",
-      "label": "Uncertain",
+      "label": "Game-time",
       "round": "Round 12",
       "comment": "DNP in Round 11 (illness). DNP in the domestic league (11.14)"
     },
@@ -816,19 +852,19 @@
       "name": "Ethan Thompson",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "Suffered a hip injury in Round 11. DNP in the domestic league (11.14)"
+      "comment": "Ruled out for Round 12 after suffering a hip injury in Round 11."
     },
     {
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Rounds 1-11, but returned to practices (ankle injury). DNP in the domestic league (11.14)"
+      "comment": "Ruled out for Round 12 after DNP in Rounds 1-11 (ankle injury)"
     },
     {
       "name": "Facundo Campazzo",
@@ -888,19 +924,19 @@
       "name": "Nikola Mirotic",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Rounds 9-11.DNP in the domestic league (11.15) (muscle injury)"
+      "comment": "Ruled out for Round 12 after DNP in Rounds 9-11 (muscle injury)"
     },
     {
       "name": "Nate Reuvers",
       "teamName": "Valencia Basket",
       "team": "PAM",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Rounds 8-11 (foot bone injury). DNP in the domestic league (11.15)"
+      "comment": "Ruled out for Round 12 after DNP in Rounds 8-11 (foot bone injury)"
     },
     {
       "name": "Matteo Baiocchi",
@@ -975,5 +1011,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-16T06:40:30.988Z"
+  "updatedAt": "2026-11-16T18:38:05.089Z"
 }
