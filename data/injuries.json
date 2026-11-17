@@ -63,7 +63,7 @@
       "status": "expected",
       "label": "Expected",
       "round": "Round 12",
-      "comment": "Played 1 minute in Round 12 after DNP in Rounds 2-10 (coach's decision). Played in the domestic league (11.15)"
+      "comment": "Played 1 minute in Round 11 after DNP in Rounds 2-10 (coach's decision). Played in the domestic league (11.15)"
     },
     {
       "name": "Devin Booker",
@@ -105,8 +105,8 @@
       "name": "Jaylen Nowell",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
       "comment": "Out indefinitely after undergoing surgery on his broken nose (11.10)"
     },
@@ -300,6 +300,15 @@
       "comment": "DNP in Round 11 (coach's decision). Played in the domestic league (11.15)"
     },
     {
+      "name": "Austin Wiley",
+      "teamName": "FC Bayern Munich",
+      "team": "MUN",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 12",
+      "comment": "Traveled for Round 12 after playing only 10 seconds in domestic league"
+    },
+    {
       "name": "Tosan Evbuomwan",
       "teamName": "FC Barcelona",
       "team": "BAR",
@@ -330,8 +339,8 @@
       "name": "Yoan Makoundou",
       "teamName": "FC Barcelona",
       "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
       "comment": "Left knee injury"
     },
@@ -537,10 +546,10 @@
       "name": "Juhann Begarin",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Rounds 8-11 (undisclosed injury). DNP in the domestic league (11.15)"
+      "comment": "Didn't travel for Round 12 and 13 after DNP in Rounds 8-11 (undisclosed injury)"
     },
     {
       "name": "Joel Bolomboy",
@@ -555,10 +564,19 @@
       "name": "Myles Cale",
       "teamName": "LDLC ASVEL Villeurbanne",
       "team": "ASV",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 12",
-      "comment": "DNP in Rounds 10-11 (coach's decision). DNP in the domestic league (11.15)"
+      "comment": "Didn't travel for Round 12 and 13 after DNP in Rounds 10-11 (coach's decision)"
+    },
+    {
+      "name": "Yves Pons",
+      "teamName": "LDLC ASVEL Villeurbanne",
+      "team": "ASV",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 12",
+      "comment": "Didn't travel for Round 12 and 13 (undisclosed injury)"
     },
     {
       "name": "Lorenz Sanz",
@@ -573,19 +591,19 @@
       "name": "Kamar Baldwin",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 11",
-      "comment": "New signing from Bayern Munich (11.10)"
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 12",
+      "comment": "Expected to make his Maccabi debut in Round 12"
     },
     {
       "name": "Oshae Brissett",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 12",
-      "comment": "Back injury in Round 11. DNP in the domestic league (11.14)"
+      "comment": "Expected to be ready for Round 12 (back injury in Round 11). DNP in the domestic league (11.14)"
     },
     {
       "name": "Amit Ebo",
@@ -1020,5 +1038,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-17T02:57:35.703Z"
+  "updatedAt": "2026-11-17T13:32:38.901Z"
 }
