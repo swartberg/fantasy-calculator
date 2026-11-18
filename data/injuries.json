@@ -723,6 +723,15 @@
       "comment": "Included in 12-man roster after DNP in Round 9-11 (coach's decision)"
     },
     {
+      "name": "Tyrique Jones",
+      "teamName": "Olympiacos Piraeus",
+      "team": "OLY",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 13",
+      "comment": "Knee discomfort suffered in Round 12"
+    },
+    {
       "name": "Antonios Karagiannidis",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
@@ -1101,5 +1110,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-17T22:27:03.563Z"
+  "updatedAt": "2026-11-18T07:37:32.050Z"
 }
