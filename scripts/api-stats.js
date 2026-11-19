@@ -137,6 +137,43 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 
 /*
+    In the Android app, requests go through the native HTTP
+    plugin, which isn't bound by the web view's CORS rules.
+    In a browser (or if the plugin fails) it's a plain fetch.
+*/
+async function httpGet(url) {
+    const capacitor = window.Capacitor;
+
+    if (capacitor?.isNativePlatform?.()) {
+        try {
+            const options = { url, method: "GET", responseType: "text" };
+
+            const reply = capacitor.Plugins?.CapacitorHttp
+                ? await capacitor.Plugins.CapacitorHttp.request(options)
+                : await capacitor.nativePromise("CapacitorHttp", "request", options);
+
+            const body = reply.data == null || reply.data === ""
+                ? ""
+                : typeof reply.data === "string" ? reply.data : JSON.stringify(reply.data);
+
+            const status = Number(reply.status) || 0;
+
+            return {
+                status,
+                ok: status >= 200 && status < 300,
+                text: async () => body
+            };
+        }
+        catch (error) {
+            console.warn("Native request failed, trying fetch:", error);
+        }
+    }
+
+    return fetch(url);
+}
+
+
+/*
     Raw play-by-play JSON for a game.
     { ok: true, data }       — data is null when the game has no data yet
     { ok: false }            — the feed couldn't be reached
@@ -151,7 +188,7 @@ async function fetchPlayByPlay(gameCode, seasonCode) {
         }
 
         try {
-            const response = await queueRequest(() => fetch(url));
+            const response = await queueRequest(() => httpGet(url));
 
             // Rate limited or server trouble: try again
             if (response.status === 429 || response.status >= 500) {
