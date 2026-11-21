@@ -831,15 +831,6 @@
       "comment": "Ruled out for Round 13 after DNP in Rounds 8-12 (foot bone injury)"
     },
     {
-      "name": "Awudu Abass",
-      "teamName": "Virtus Bologna",
-      "team": "VIR",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 14",
-      "comment": "New signing from Dubai (11.20)"
-    },
-    {
       "name": "Matteo Baiocchi",
       "teamName": "Virtus Bologna",
       "team": "VIR",
@@ -903,5 +894,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-21T03:15:09.957Z"
+  "updatedAt": "2026-11-21T20:33:59.707Z"
 }
