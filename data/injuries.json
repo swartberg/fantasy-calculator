@@ -54,7 +54,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 1-13 (coach's decision)"
+      "comment": "DNP in Rounds 1-13 (coach's decision).Played in the domestic league (11.22)"
     },
     {
       "name": "Nicola Akele",
@@ -135,7 +135,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "Not included in 12-man lineup for Round 13 (coach's decision)"
+      "comment": "Not included in 12-man lineup for Round 13 (coach's decision). Played in the domestic league (11.22)"
     },
     {
       "name": "Vojin Medarevic",
@@ -159,10 +159,10 @@
       "name": "Chima Moneke",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 14",
-      "comment": "DNP in Rounds 12-13 (coach's decision). Navarro says he expects Moneke to join the team soon."
+      "comment": "Returned to domestic action (11.22) after DNP in Rounds 12-13 (coach's decision)"
     },
     {
       "name": "Johnathan Motley",
@@ -171,7 +171,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 11-13 (illness)"
+      "comment": "DNP in Rounds 11-13 (illness). Played in the domestic league (11.22)"
     },
     {
       "name": "Aleksej Nedeljkovic",
@@ -327,6 +327,15 @@
       "comment": "Left knee injury"
     },
     {
+      "name": "Josh Nebo",
+      "teamName": "FC Barcelona",
+      "team": "BAR",
+      "status": "out",
+      "label": "Out",
+      "round": "Out 3 to 4 months",
+      "comment": "Suffered a partial avulsion of the patellar tendon in his right knee (out 3 to 4 months, 11.22)"
+    },
+    {
       "name": "Kevin Punter",
       "teamName": "FC Barcelona",
       "team": "BAR",
@@ -375,10 +384,10 @@
       "name": "Tamir Blatt",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "doubtful",
-      "label": "Doubtful",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 10-13 (coach's decision)"
+      "comment": "DNP in Rounds 10-13 (coach's decision). Played in the domestic league (11.21)"
     },
     {
       "name": "Bruno Caboclo",
@@ -387,7 +396,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 11-13 (minor calf tear)"
+      "comment": "DNP in Rounds 11-13 (minor calf tear). DNP in the domestic league (11.21)"
     },
     {
       "name": "Khadeen Carrington",
@@ -396,14 +405,14 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 14",
-      "comment": "DNP in Rounds 11-13 (coach's decision)"
+      "comment": "DNP in Rounds 11-13 (coach's decision). Played in the domestic league (11.21)"
     },
     {
       "name": "Tyler Ennis",
       "teamName": "Hapoel IBI Tel Aviv",
       "team": "HTA",
-      "status": "out",
-      "label": "Out",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 14",
       "comment": "Joined team practices on November 19 after suffering a long-term injury in January 2026 (torn Achilles)"
     },
@@ -423,7 +432,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 14",
-      "comment": "DNP in Rounds 7-13 (coach's decision)"
+      "comment": "DNP in Rounds 7-13 (coach's decision). Played in the domestic league (11.21)"
     },
     {
       "name": "Kenneth Faried",
@@ -450,16 +459,16 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "Out after suffering a right thigh muscle injury in Round 7. Expected return in late November."
+      "comment": "Out after suffering a right thigh muscle injury in Round 7. Expected return in late November. DNP in the domestic league (11.22)"
     },
     {
       "name": "Rolands Smits",
       "teamName": "Kosner Baskonia Vitoria-Gasteiz",
       "team": "BAS",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "ready",
+      "label": "Ready",
       "round": "Round 14",
-      "comment": "Illness"
+      "comment": "DNP in Round 13 (illness). Played in the domestic league (11.22)"
     },
     {
       "name": "Juhann Begarin",
@@ -513,7 +522,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 14",
-      "comment": "DNP in Rounds 10-13 (coach's decision)"
+      "comment": "DNP in Rounds 10-13 (coach's decision). Played in the domestic league (11.21)"
     },
     {
       "name": "Shane Hunter",
@@ -528,10 +537,10 @@
       "name": "Gur Lavi",
       "teamName": "Maccabi Rapyd Tel Aviv",
       "team": "TEL",
-      "status": "out",
-      "label": "Out",
+      "status": "questionable",
+      "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 1-13 (undisclosed injury)"
+      "comment": "DNP in Rounds 1-13 (undisclosed injury).Played in the domestic league (11.21)"
     },
     {
       "name": "Gabriel Lundberg",
@@ -549,7 +558,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 12-13 (coach's decision)"
+      "comment": "DNP in Rounds 12-13 (coach's decision). Played in the domestic league (11.21)"
     },
     {
       "name": "Georgios Bourneles",
@@ -567,16 +576,16 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 6-13 (suspension)"
+      "comment": "DNP in Rounds 6-13 (suspension). DNP in the domesic league (11.22)"
     },
     {
       "name": "Bryant Dunston",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "ready",
-      "label": "Ready",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 14",
-      "comment": "Only registered in Round 13. Played in Round 12."
+      "comment": "Only registered in Round 13. Played in Round 12. DNP in the domestic league (11.22)"
     },
     {
       "name": "Antonios Karagiannidis",
@@ -585,16 +594,16 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 1-13 (coach's decision)"
+      "comment": "DNP in Rounds 1-13 (coach's decision). Played in the domestic league (11.22)"
     },
     {
       "name": "Nikola Milutinov",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 14",
-      "comment": "DNP in Rounds 12-13 (fractured index finger, 11.14)"
+      "comment": "Expected to return in Round 14 after DNP in Rounds 12-13 (fractured index finger, 11.14) DNP in the domestic league (11.22)"
     },
     {
       "name": "Jean Montero",
@@ -621,7 +630,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Round 13 (coach's decision)"
+      "comment": "DNP in Round 13 (coach's decision). Played in the domestic league (11.21)"
     },
     {
       "name": "Ioannis Kouzeloglou",
@@ -639,7 +648,7 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 14",
-      "comment": "DNP in Rounds 9-13 (coach's decision)"
+      "comment": "DNP in Rounds 9-13 (coach's decision). DNP in the domestic league (11.21)"
     },
     {
       "name": "Dimitris Moraitis",
@@ -648,16 +657,16 @@
       "status": "doubtful",
       "label": "Doubtful",
       "round": "Round 14",
-      "comment": "DNP in Rounds 8-13 (coach's decision)"
+      "comment": "DNP in Rounds 8-13 (coach's decision). Played in the domestic league (11.21)"
     },
     {
       "name": "Nikos Rogkavopoulos",
       "teamName": "Panathinaikos AKTOR Athens",
       "team": "PAN",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 14",
-      "comment": "DNP in Rounds 7-13 (hamstring injury)"
+      "comment": "DNP in Rounds 7-13 (hamstring injury). Played in the domestic league (11.21)"
     },
     {
       "name": "Iason Varvaritis",
@@ -666,7 +675,7 @@
       "status": "out",
       "label": "Out",
       "round": "Round 14",
-      "comment": "DNP in Rounds 1-13 (coach's decision)"
+      "comment": "DNP in Rounds 1-13 (coach's decision). DNP in the domestic league (11.21)"
     },
     {
       "name": "Nobel Boungou-Colo",
@@ -735,8 +744,8 @@
       "name": "Lamar Stevens",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 14",
       "comment": "Calf strain"
     },
@@ -858,13 +867,31 @@
       "comment": "DNP in Round 13 (coach's decision)"
     },
     {
+      "name": "Kaodirichi Akobundu-Ehiogu",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 14",
+      "comment": "Only included in 12-man roster in Round 13. DNP in the domestic league (11.22)"
+    },
+    {
       "name": "Marek Blaževič",
       "teamName": "Zalgiris Kaunas",
       "team": "ZAL",
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 8-13 (coach's decision)"
+      "comment": "DNP in Rounds 8-13 (coach's decision). Played in the domestic league (11.22)"
+    },
+    {
+      "name": "Dovydas Giedraitis",
+      "teamName": "Zalgiris Kaunas",
+      "team": "ZAL",
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 14",
+      "comment": "Only included in 12-man roster in Round 13 after playing 1 minute in Round 12 after DNP in Rounds 8-11 (coach's decision). DNP in the domestic league (11.22)"
     },
     {
       "name": "Maodo Lo",
@@ -873,7 +900,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 12-13 (coach's decision)"
+      "comment": "DNP in Rounds 12-13 (coach's decision). DNP in the domestic league (ankle injury)(11.22)"
     },
     {
       "name": "Deividas Sirvydis",
@@ -882,7 +909,7 @@
       "status": "questionable",
       "label": "Uncertain",
       "round": "Round 14",
-      "comment": "DNP in Rounds 8-13 (coach's decision)"
+      "comment": "DNP in Rounds 8-13 (coach's decision). Played in the domestic league (11.22)"
     },
     {
       "name": "Nigel Williams-Goss",
@@ -894,5 +921,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-21T20:33:59.707Z"
+  "updatedAt": "2026-11-22T17:52:09.036Z"
 }
