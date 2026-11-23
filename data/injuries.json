@@ -93,6 +93,15 @@
       "comment": "DNP in Rounds 1-13 (coach's decision). DNP in the domestic league (11.22)"
     },
     {
+      "name": "Wenyen Gabriel",
+      "teamName": "Besiktas Istanbul",
+      "team": "BES",
+      "status": "out",
+      "label": "Out",
+      "round": "Round 14",
+      "comment": "Out indefinitely with undisclosed longterm injury (11.22)"
+    },
+    {
       "name": "Jaylen Nowell",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
@@ -138,6 +147,15 @@
       "comment": "Not included in 12-man lineup for Round 13 (coach's decision). Played in the domestic league (11.22)"
     },
     {
+      "name": "Chris Jones",
+      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "team": "RED",
+      "status": "questionable",
+      "label": "Game-time",
+      "round": "Round 14",
+      "comment": "DNP in domestic league, Navarro said he's not 100% (undisclosed injury)"
+    },
+    {
       "name": "Vojin Medarevic",
       "teamName": "Crvena Zvezda Meridianbet Belgrade",
       "team": "RED",
@@ -162,7 +180,7 @@
       "status": "ready",
       "label": "Ready",
       "round": "Round 14",
-      "comment": "Returned to domestic action (11.22) after DNP in Rounds 12-13 (coach's decision)"
+      "comment": "Returned to action in the domestic league (11.22) after DNP in Rounds 12-13 (coach's decision)"
     },
     {
       "name": "Johnathan Motley",
@@ -573,10 +591,10 @@
       "name": "Tyler Dorsey",
       "teamName": "Olympiacos Piraeus",
       "team": "OLY",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 14",
-      "comment": "DNP in Rounds 6-13 (suspension). DNP in the domesic league (11.22)"
+      "comment": "Ruled out for Round 14 (national team duties) after DNP in Rounds 6-13."
     },
     {
       "name": "Bryant Dunston",
@@ -744,8 +762,8 @@
       "name": "Lamar Stevens",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 14",
       "comment": "DNP in Round 13 and in the domestic league (11.22) (calf strain)"
     },
@@ -753,8 +771,8 @@
       "name": "Ethan Thompson",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 14",
       "comment": "DNP in Rounds 12-13 (hip injury). DNP in the domestic league (11.22)"
     },
@@ -762,17 +780,17 @@
       "name": "Luca Vildoza",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "expected",
+      "label": "Expected",
       "round": "Round 14",
-      "comment": "DNP in Round 13 and in the domestic league (11.22) (ankle issue)"
+      "comment": "DNP in Round 13 and in the domestic league (11.22) (ankle issue), but traveled with the team."
     },
     {
       "name": "Derek Willis",
       "teamName": "Partizan Mozzart Bet Belgrade",
       "team": "PAR",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 14",
       "comment": "DNP in Rounds 1-13 (ankle injury). DNP in the domestic league (11.22)"
     },
@@ -780,10 +798,10 @@
       "name": "Facundo Campazzo",
       "teamName": "Real Madrid",
       "team": "MAD",
-      "status": "questionable",
-      "label": "Uncertain",
+      "status": "out",
+      "label": "Out",
       "round": "Round 14",
-      "comment": "Out indefinitely after suffering a left hamstring injury in a domestic league game (11.01). DNP in the domestic league (11.22)"
+      "comment": "Ruled out for Round 14 but is reportedly expected to return for Round 15 (left hamstring injury)"
     },
     {
       "name": "Gabriel Deck",
@@ -921,5 +939,5 @@
       "comment": "Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14."
     }
   ],
-  "updatedAt": "2026-11-23T07:48:13.235Z"
+  "updatedAt": "2026-11-23T20:17:50.155Z"
 }
