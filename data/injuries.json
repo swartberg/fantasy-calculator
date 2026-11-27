@@ -93,6 +93,69 @@
       "comment": "DNP in Round 14 (hip/psoas muscle injury)"
     },
     {
+      "name": "Tosan Evbuomwan",
+      "teamName": "Barça",
+      "team": null,
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 15",
+      "comment": "Suffered oblique muscle tear (11.09)"
+    },
+    {
+      "name": "Umoja Gibson",
+      "teamName": "Barça",
+      "team": null,
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 15",
+      "comment": "Suffered a muscle strain of his left abdominal wall in Round 11. Out for around three weeks until Round 15"
+    },
+    {
+      "name": "Killian Hayes",
+      "teamName": "Barça",
+      "team": null,
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 15",
+      "comment": "DNP in Round 14 (dealing with discomfort, new signing)"
+    },
+    {
+      "name": "Abdu Kone",
+      "teamName": "Barça",
+      "team": null,
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 15",
+      "comment": "DNP in Round 14 (coach's decision)"
+    },
+    {
+      "name": "Yoan Makoundou",
+      "teamName": "Barça",
+      "team": null,
+      "status": "questionable",
+      "label": "Uncertain",
+      "round": "Round 15",
+      "comment": "Was included in 12-man roster for Round 14, but did not play after left knee injury"
+    },
+    {
+      "name": "Josh Nebo",
+      "teamName": "Barça",
+      "team": null,
+      "status": "out",
+      "label": "Out",
+      "round": "Round 15",
+      "comment": "Suffered a partial avulsion of the patellar tendon in his right knee (out 3 to 4 months, 11.22)"
+    },
+    {
+      "name": "Kevin Punter",
+      "teamName": "Barça",
+      "team": null,
+      "status": "out",
+      "label": "Out",
+      "round": "Round 15",
+      "comment": "Suffered an ankle sprain in domestic league game (11.08), set to be out for six weeks until Round 18"
+    },
+    {
       "name": "Yagiz Aksu",
       "teamName": "Besiktas Istanbul",
       "team": "BES",
@@ -148,7 +211,7 @@
     },
     {
       "name": "Patrick Baldwin Jr.",
-      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "teamName": "Crvena zvezda Meridianbet",
       "team": "RED",
       "status": "questionable",
       "label": "Uncertain",
@@ -157,7 +220,7 @@
     },
     {
       "name": "Jovan Bikic",
-      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "teamName": "Crvena zvezda Meridianbet",
       "team": "RED",
       "status": "out",
       "label": "Out",
@@ -166,7 +229,7 @@
     },
     {
       "name": "Nikola Djurisic",
-      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "teamName": "Crvena zvezda Meridianbet",
       "team": "RED",
       "status": "questionable",
       "label": "Uncertain",
@@ -175,7 +238,7 @@
     },
     {
       "name": "Ebuka Izundu",
-      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "teamName": "Crvena zvezda Meridianbet",
       "team": "RED",
       "status": "questionable",
       "label": "Uncertain",
@@ -184,7 +247,7 @@
     },
     {
       "name": "Vojin Medarevic",
-      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "teamName": "Crvena zvezda Meridianbet",
       "team": "RED",
       "status": "out",
       "label": "Out",
@@ -193,7 +256,7 @@
     },
     {
       "name": "Stefan Miljenovic",
-      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "teamName": "Crvena zvezda Meridianbet",
       "team": "RED",
       "status": "out",
       "label": "Out",
@@ -202,7 +265,7 @@
     },
     {
       "name": "Aleksej Nedeljkovic",
-      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "teamName": "Crvena zvezda Meridianbet",
       "team": "RED",
       "status": "out",
       "label": "Out",
@@ -211,7 +274,7 @@
     },
     {
       "name": "Ognjen Simjanovski",
-      "teamName": "Crvena Zvezda Meridianbet Belgrade",
+      "teamName": "Crvena zvezda Meridianbet",
       "team": "RED",
       "status": "out",
       "label": "Out",
@@ -307,69 +370,6 @@
       "label": "Ready",
       "round": "Round 15",
       "comment": "Played 7 minutes in Round 14 after DNP in Round 13 (undisclosed injury)"
-    },
-    {
-      "name": "Tosan Evbuomwan",
-      "teamName": "FC Barcelona",
-      "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 15",
-      "comment": "Suffered oblique muscle tear (11.09)"
-    },
-    {
-      "name": "Umoja Gibson",
-      "teamName": "FC Barcelona",
-      "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 15",
-      "comment": "Suffered a muscle strain of his left abdominal wall in Round 11. Out for around three weeks until Round 15"
-    },
-    {
-      "name": "Killian Hayes",
-      "teamName": "FC Barcelona",
-      "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 15",
-      "comment": "DNP in Round 14 (dealing with discomfort, new signing)"
-    },
-    {
-      "name": "Abdu Kone",
-      "teamName": "FC Barcelona",
-      "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 15",
-      "comment": "DNP in Round 14 (coach's decision)"
-    },
-    {
-      "name": "Yoan Makoundou",
-      "teamName": "FC Barcelona",
-      "team": "BAR",
-      "status": "questionable",
-      "label": "Uncertain",
-      "round": "Round 15",
-      "comment": "Was included in 12-man roster for Round 14, but did not play after left knee injury"
-    },
-    {
-      "name": "Josh Nebo",
-      "teamName": "FC Barcelona",
-      "team": "BAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 15",
-      "comment": "Suffered a partial avulsion of the patellar tendon in his right knee (out 3 to 4 months, 11.22)"
-    },
-    {
-      "name": "Kevin Punter",
-      "teamName": "FC Barcelona",
-      "team": "BAR",
-      "status": "out",
-      "label": "Out",
-      "round": "Round 15",
-      "comment": "Suffered an ankle sprain in domestic league game (11.08), set to be out for six weeks until Round 18"
     },
     {
       "name": "Onuralp Bitim",
@@ -481,7 +481,7 @@
     },
     {
       "name": "Kenneth Faried",
-      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "teamName": "Kosner Baskonia",
       "team": "BAS",
       "status": "out",
       "label": "Out",
@@ -490,7 +490,7 @@
     },
     {
       "name": "Marcio Santos",
-      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "teamName": "Kosner Baskonia",
       "team": "BAS",
       "status": "out",
       "label": "Out",
@@ -499,7 +499,7 @@
     },
     {
       "name": "Tadas Sedekerskis",
-      "teamName": "Kosner Baskonia Vitoria-Gasteiz",
+      "teamName": "Kosner Baskonia",
       "team": "BAS",
       "status": "questionable",
       "label": "Uncertain",
@@ -589,7 +589,7 @@
     },
     {
       "name": "Georgios Bourneles",
-      "teamName": "Olympiacos Piraeus",
+      "teamName": "Olympiacos",
       "team": "OLY",
       "status": "doubtful",
       "label": "Doubtful",
@@ -598,7 +598,7 @@
     },
     {
       "name": "Tyler Dorsey",
-      "teamName": "Olympiacos Piraeus",
+      "teamName": "Olympiacos",
       "team": "OLY",
       "status": "questionable",
       "label": "Uncertain",
@@ -607,7 +607,7 @@
     },
     {
       "name": "Antonios Karagiannidis",
-      "teamName": "Olympiacos Piraeus",
+      "teamName": "Olympiacos",
       "team": "OLY",
       "status": "out",
       "label": "Out",
@@ -616,7 +616,7 @@
     },
     {
       "name": "Codi Miller-McIntyre",
-      "teamName": "Olympiacos Piraeus",
+      "teamName": "Olympiacos",
       "team": "OLY",
       "status": "expected",
       "label": "Expected",
@@ -625,7 +625,7 @@
     },
     {
       "name": "Jean Montero",
-      "teamName": "Olympiacos Piraeus",
+      "teamName": "Olympiacos",
       "team": "OLY",
       "status": "out",
       "label": "Out",
@@ -634,7 +634,7 @@
     },
     {
       "name": "George Papas",
-      "teamName": "Olympiacos Piraeus",
+      "teamName": "Olympiacos",
       "team": "OLY",
       "status": "doubtful",
       "label": "Doubtful",
@@ -643,7 +643,7 @@
     },
     {
       "name": "Panagiotis Kalaitzakis",
-      "teamName": "Panathinaikos AKTOR Athens",
+      "teamName": "Panathinaikos",
       "team": "PAN",
       "status": "questionable",
       "label": "Uncertain",
@@ -652,7 +652,7 @@
     },
     {
       "name": "Ioannis Kouzeloglou",
-      "teamName": "Panathinaikos AKTOR Athens",
+      "teamName": "Panathinaikos",
       "team": "PAN",
       "status": "out",
       "label": "Out",
@@ -661,7 +661,7 @@
     },
     {
       "name": "Eleftherios Mantzoukas",
-      "teamName": "Panathinaikos AKTOR Athens",
+      "teamName": "Panathinaikos",
       "team": "PAN",
       "status": "questionable",
       "label": "Uncertain",
@@ -670,7 +670,7 @@
     },
     {
       "name": "Konstantinos Mitoglou",
-      "teamName": "Panathinaikos AKTOR Athens",
+      "teamName": "Panathinaikos",
       "team": "PAN",
       "status": "questionable",
       "label": "Uncertain",
@@ -679,7 +679,7 @@
     },
     {
       "name": "Dimitris Moraitis",
-      "teamName": "Panathinaikos AKTOR Athens",
+      "teamName": "Panathinaikos",
       "team": "PAN",
       "status": "questionable",
       "label": "Uncertain",
@@ -688,7 +688,7 @@
     },
     {
       "name": "Kostas Sloukas",
-      "teamName": "Panathinaikos AKTOR Athens",
+      "teamName": "Panathinaikos",
       "team": "PAN",
       "status": "questionable",
       "label": "Uncertain",
@@ -697,7 +697,7 @@
     },
     {
       "name": "Iason Varvaritis",
-      "teamName": "Panathinaikos AKTOR Athens",
+      "teamName": "Panathinaikos",
       "team": "PAN",
       "status": "questionable",
       "label": "Uncertain",
@@ -742,7 +742,7 @@
     },
     {
       "name": "Mitar Bosnjakovic",
-      "teamName": "Partizan Mozzart Bet Belgrade",
+      "teamName": "Partizan Mozzart Bet",
       "team": "PAR",
       "status": "out",
       "label": "Out",
@@ -751,7 +751,7 @@
     },
     {
       "name": "Uros Danilovic",
-      "teamName": "Partizan Mozzart Bet Belgrade",
+      "teamName": "Partizan Mozzart Bet",
       "team": "PAR",
       "status": "doubtful",
       "label": "Doubtful",
@@ -760,7 +760,7 @@
     },
     {
       "name": "Joffrey Lauvergne",
-      "teamName": "Partizan Mozzart Bet Belgrade",
+      "teamName": "Partizan Mozzart Bet",
       "team": "PAR",
       "status": "out",
       "label": "Out",
@@ -769,7 +769,7 @@
     },
     {
       "name": "Lamar Stevens",
-      "teamName": "Partizan Mozzart Bet Belgrade",
+      "teamName": "Partizan Mozzart Bet",
       "team": "PAR",
       "status": "questionable",
       "label": "Uncertain",
@@ -778,7 +778,7 @@
     },
     {
       "name": "Ethan Thompson",
-      "teamName": "Partizan Mozzart Bet Belgrade",
+      "teamName": "Partizan Mozzart Bet",
       "team": "PAR",
       "status": "questionable",
       "label": "Uncertain",
@@ -787,7 +787,7 @@
     },
     {
       "name": "Luca Vildoza",
-      "teamName": "Partizan Mozzart Bet Belgrade",
+      "teamName": "Partizan Mozzart Bet",
       "team": "PAR",
       "status": "questionable",
       "label": "Uncertain",
@@ -796,7 +796,7 @@
     },
     {
       "name": "Derek Willis",
-      "teamName": "Partizan Mozzart Bet Belgrade",
+      "teamName": "Partizan Mozzart Bet",
       "team": "PAR",
       "status": "questionable",
       "label": "Uncertain",
@@ -922,7 +922,7 @@
     },
     {
       "name": "Marek Blaževič",
-      "teamName": "Zalgiris Kaunas",
+      "teamName": "Žalgiris",
       "team": "ZAL",
       "status": "questionable",
       "label": "Uncertain",
@@ -931,7 +931,7 @@
     },
     {
       "name": "Dovydas Giedraitis",
-      "teamName": "Zalgiris Kaunas",
+      "teamName": "Žalgiris",
       "team": "ZAL",
       "status": "questionable",
       "label": "Uncertain",
@@ -940,7 +940,7 @@
     },
     {
       "name": "Deividas Sirvydis",
-      "teamName": "Zalgiris Kaunas",
+      "teamName": "Žalgiris",
       "team": "ZAL",
       "status": "questionable",
       "label": "Uncertain",
@@ -949,7 +949,7 @@
     },
     {
       "name": "Nigel Williams-Goss",
-      "teamName": "Zalgiris Kaunas",
+      "teamName": "Žalgiris",
       "team": "ZAL",
       "status": "questionable",
       "label": "Uncertain",
@@ -957,5 +957,5 @@
       "comment": "Ruled out for Round 14 (Aggravated previous hamstring injury in Round 6)"
     }
   ],
-  "updatedAt": "2026-11-26T21:39:26.553Z"
+  "updatedAt": "2026-11-27T13:56:33.934Z"
 }
