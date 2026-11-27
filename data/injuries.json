@@ -84,6 +84,15 @@
       "comment": "DNP in Rounds 2-14 (coach's decision)"
     },
     {
+      "name": "Ze'rik Onyema",
+      "teamName": "Armani Olimpia Milan",
+      "team": "MIL",
+      "status": "expected",
+      "label": "Expected",
+      "round": "Round 15",
+      "comment": "New signing (11.25)"
+    },
+    {
       "name": "Alec Peters",
       "teamName": "Armani Olimpia Milan",
       "team": "MIL",
@@ -957,5 +966,5 @@
       "comment": "Ruled out for Round 14 (Aggravated previous hamstring injury in Round 6)"
     }
   ],
-  "updatedAt": "2026-11-27T13:56:33.934Z"
+  "updatedAt": "2026-11-27T22:44:59.488Z"
 }
